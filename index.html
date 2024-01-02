@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
+		<link rel="stylesheet" href="style.css">
 		<meta charset="utf-8">
 		<title>My first three.js app</title>
 		<style>
 			body { margin: 0; }
 		</style>
+		<script type="importmap">
+			{
+			  "imports": {
+				"three": "https://unpkg.com/three@v0.160.0/build/three.module.js",
+				"three/addons/": "https://unpkg.com/three@v0.160.0/examples/jsm/"
+			  }
+			}
+		  </script>
 	</head>
 	<body>
+		<h1> Wagwan </h1>
 		<script type="module" src="/main.js"></script>
 	</body>
 </html>
