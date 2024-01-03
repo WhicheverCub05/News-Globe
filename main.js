@@ -1,6 +1,7 @@
 import * as THREE from 'three';
 import { GUI } from 'dat.gui';
-//import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+//import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 
 // camera and scene
 const scene = new THREE.Scene();
@@ -37,8 +38,7 @@ const line = new THREE.Line(lineGeometry, lineMaterial);
 scene.add( line );
 
 // bool properties of cube and line 
-const cubeSpin = true;
-const lineSpin = true;
+const auto_spin = true;
 
 /*
 
@@ -70,10 +70,13 @@ function animateCube() {
 
 
 function animateLine() {
-    requestAnimationFrame( animateLine );
-    line.rotation.z += 0.01;
-    line.rotation.x += 0.01;
-    renderer.render( scene, camera )
+    if (auto_spin == true) {    
+        requestAnimationFrame( animateLine );
+        line.rotation.z += 0.01;
+        line.rotation.x += 0.01;
+        renderer.render( scene, camera )
+
+    }
 }
 
 
@@ -82,16 +85,19 @@ function showNews() {
     const newsFolder = newsPanel.addFolder('Headlines')
     const settingsFolder = newsPanel.addFolder('Settings')
     
-    var settings = {
-        night_mode: false,
-        auto_spin: true,
-    };
-
-    newsFolder.add(settings, night_mode);
-    settingsFolder.add(settings, auto_spin);
-
     newsFolder.open();
     settingsFolder.open();
+
+    var settings = {
+        night_mode: false,
+        auto_spin: true
+    };
+
+    settingsFolder.add(settings, "night_mode").name("night mode");
+    settingsFolder.add(auto_spin).name("auto spin");
+    
+
+    
 }
 
 
@@ -111,4 +117,4 @@ function toggleAutoSpin() {
 renderer.render(scene, camera)
 animateCube();
 animateLine();
-//showNews();
+showNews();
