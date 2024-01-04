@@ -16,3 +16,7 @@ h1 {
     color: white;
     font-style: bold;
 }
+
+body {
+    overflow: hidden;
+}

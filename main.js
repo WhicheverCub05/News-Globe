@@ -1,13 +1,9 @@
 import * as THREE from 'three';
 import { GUI } from 'dat.gui';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-//import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
+import { OrbitControls } from 'three/addons/controls/OrbitControls';
+import Stats from 'three/addons/libs/stats.module.js';
 
-// camera and scene
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 1, 500);
-camera.position.set( 0, 0, 100 );
-camera.lookAt( 0, 0, 0 );
 
 // renderer
 const renderer = new THREE.WebGLRenderer({antialias: true});
@@ -15,68 +11,99 @@ renderer.setPixelRatio( window.devicePixelRatio );
 renderer.setSize( window.innerWidth, window.innerHeight );
 renderer.shadowMap.enabled = true;
 document.body.appendChild( renderer.domElement );
-//window.addEventListener( 'resize', onWindowResize );
 
-//controlls
-//const controls = new OrbitControls(camera, renderer.domElement)
+// camera and scene
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 150 );
+camera.position.set( 0, 0, 25 );
+camera.lookAt( 0, 0, 0 );
 
-// cube params
-const cubeGeometry = new THREE.BoxGeometry( 2, 1, 1 );
-const cubeMaterial = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-const cube = new THREE.Mesh( cubeGeometry, cubeMaterial );
-scene.add( cube );
-
-// adding lines
-const lineMaterial = new THREE.LineBasicMaterial( { color:0x0000ff } );
-const points = [];
-points.push( new THREE.Vector3( -10, 0, 0 ) ); // adding vectors
-points.push( new THREE.Vector3( 0, 10, 0 ) );
-points.push( new THREE.Vector3( 10, 0, 0) );
-
-const lineGeometry = new THREE.BufferGeometry().setFromPoints(points);
-const line = new THREE.Line(lineGeometry, lineMaterial);
-scene.add( line );
-
-// bool properties of cube and line 
-const auto_spin = true;
-
-/*
-
-// adding hemi light
-const hemiLight = new THREE.HemisphereLight( 0xffffff, 0x8d8d8d, 3 );
-hemiLight.position.set( 0, 5, 0 );
-scene.add( hemiLight );
 
 // adding spotlight
 const dirLight = new THREE.DirectionalLight( 0xffffff, 3 );
-dirLight.position.set( - 3, 10, - 10 );
+dirLight.position.set( 3, 5, 10 );
 dirLight.castShadow = true;
 dirLight.shadow.camera.top = 2;
-dirLight.shadow.camera.bottom = - 2;
-dirLight.shadow.camera.left = - 2;
+dirLight.shadow.camera.bottom = 2;
+dirLight.shadow.camera.left = 2;
 dirLight.shadow.camera.right = 2;
 dirLight.shadow.camera.near = 0.1;
-dirLight.shadow.camera.far = 40;
-scene.add( dirLight );
+dirLight.shadow.camera.far = 4;
 
-*/
+// add light to camera 
+camera.add(dirLight);
+scene.add(camera);
 
-function animateCube() {
-	requestAnimationFrame( animateCube );
-    cube.rotation.x += 0.01;
-    cube.rotation.y += 0.01;
-	renderer.render( scene, camera ); // was just camera
+
+// window resizer 
+window.addEventListener('resize', onWindowResize, false)
+function onWindowResize() {
+    camera.aspect = window.innerWidth / window.innerHeight
+    camera.updateProjectionMatrix()
+    renderer.setSize(window.innerWidth, window.innerHeight)
+    //renderer.render(camera, scene);
+}
+
+// framerate stats
+const stats = new Stats()
+document.body.appendChild(stats.dom)
+
+
+// Orbit controls
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+controls.dampingFactor = 0.12;
+controls.minDistance = 6;
+controls.maxDistance = 40; 
+
+// load the globe
+var globeModel;
+function loadGlobe(){
+
+    const loader = new GLTFLoader();
+    loader.load(
+        'models/World.glb',
+        async function(gltf) {
+            globeModel = gltf.scene;
+            globeModel.scale.multiplyScalar(5);
+            
+            /* adding subdivisions - https://discourse.threejs.org/t/how-to-subdivide-gltf-mesh/11609/3
+            var subdivisions = 2;
+            var modifier = new SubdivisionModifier(subdivisions);
+            globeModel.traverse ( function (child) {
+                if (child.isMesh) {
+                    child.geometry = modifier.modify(child.geometry);
+                }
+            });
+            */
+            await renderer.compileAsync(globeModel, camera, scene);
+            
+            scene.add(globeModel);
+            renderer.render(scene, camera);
+            animateGlobe();
+        },
+        function(xhr) {
+            console.log((xhr.loaded/xhr.total * 100), ' % loaded');
+        },
+        function(error) {
+            console.log('an error happened', error);
+        }
+    );
 }
 
 
-function animateLine() {
-    if (auto_spin == true) {    
-        requestAnimationFrame( animateLine );
-        line.rotation.z += 0.01;
-        line.rotation.x += 0.01;
-        renderer.render( scene, camera )
+// bool properties of globe 
+var auto_spin = true;
+var night_mode = false;
 
+
+
+function animateGlobe() {
+    requestAnimationFrame( animateGlobe );
+    if (auto_spin == true) { 
+        globeModel.rotation.y += 0.001;
     }
+    renderer.render( scene, camera )
 }
 
 
@@ -90,31 +117,52 @@ function showNews() {
 
     var settings = {
         night_mode: false,
-        auto_spin: true
+        auto_spin: true,
+        refreshNews: function() {
+            console.log("Refresh News"); 
+        }
     };
-
-    settingsFolder.add(settings, "night_mode").name("night mode");
-    settingsFolder.add(auto_spin).name("auto spin");
-    
-
-    
+    newsFolder.add(settings, "refreshNews").name("refresh");
+    settingsFolder.add(settings, "night_mode").name("night mode").onChange(toggleNightGlobe);
+    settingsFolder.add(settings, "auto_spin").name("auto spin").onChange(toggleAutoSpin);
 }
 
-
+// render nightglobe
 function toggleNightGlobe() {
-    // render nightglobe
-    // maybe change state of function 
-    // like addglobe (night or day or whatever)
+    // maybe just change lights?
+    if (night_mode == true) {
+        night_mode = false;
+    } else { night_mode = true; }
+    // call function(bol night_globe) that switched globe
+    console.log("toggle night globe. now:", night_mode);
 }
 
 
+// change state of spin or animation
 function toggleAutoSpin() {
-    // change state of spin or animation
+    if (auto_spin == true) {
+        auto_spin = false;
+    } else {
+         auto_spin = true;
+         animateGlobe(); 
+    }
+
+    console.log("toggle auto spin. now:", auto_spin);
 }
 
+function animate() {
+    requestAnimationFrame( animate );
+    controls.update();
+    stats.update();
+    renderer.render(scene, camera);
+    
+}
 
+function init() {
+    loadGlobe();
+    showNews();
+    // renderer.render(scene, camera);
+}
 
-renderer.render(scene, camera)
-animateCube();
-animateLine();
-showNews();
+init();
+animate();
