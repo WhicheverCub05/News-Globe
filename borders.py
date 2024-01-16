@@ -37,12 +37,19 @@ class Article:
 class Country:
     articles = []
 
-    def __init__(self, name, Continent):
+    def __init__(self, name, *Continent):
         self.name = name
-        self.continent = Continent
+        if Continent:
+            self.continent = Continent
 
     def __str__(self):
         return f"name : {self.name},\n" + f"continent : {self.continent.name}"
+
+    def set_continent(Continent):
+        self.continent = Continent
+    
+    def get_continent():
+        return self.continent
 
     def add_article(article):
         self.articles.add(article)
@@ -59,13 +66,23 @@ class Continent:
         self.name = name
 
     def add_country(Country):
-        self.countries.add(Country)
+        for countries in Country:
+            print(str(countries))
+            countries.set_continent(self)
+            self.countries.add(Country)
+            
 
     def get_country(name):
         for country in countries:
             if country.name == name:
                 return country
 
+
+# example countries
+country_list = [Country("England"), 
+                Country("USA"), 
+                Country("China"), 
+                Country("Palestine")]
 
 
 continent_list =   [Continent("ASIA"), 
@@ -76,11 +93,9 @@ continent_list =   [Continent("ASIA"),
                     Continent("SOUTH_AMERICA"), 
                     Continent("EUROPE")]
 
-# example countries
-country_list = [Country("England", continent_list[6]), 
-                Country("USA", continent_list[4]), 
-                Country("China", continent_list[0]), 
-                Country("Palestine", continent_list[6])]
+
+continent_list[0].add_country(country_list[2])
+
 
 # make iteratively and sort my continent
 

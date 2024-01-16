@@ -53,7 +53,7 @@ def write_articles_to_database(file_path, continents):
 
     print("data to write:\n", data)
 
-
+    print("continents: ", continents)
 
     """
     with open(file_path, 'w') as database:
