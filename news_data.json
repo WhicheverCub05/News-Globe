@@ -1,15 +1,70 @@
 [
-{
-        "name": "England",
-        "continent": "EUROPE"
-},{
-        "name": "USA",
-        "continent": "NORTH_AMERICA"
-},{
-        "name": "China",
-        "continent": "ASIA"
-},{
-        "name": "Palestine",
-        "continent": "EUROPE"
-}
-] help me
+    {
+        "py/object": "borders.Continent",
+        "name": "ASIA",
+        "countries": [
+            {
+                "py/object": "borders.Country",
+                "name": "China",
+                "continent": "ASIA",
+                "article": []
+            },
+            {
+                "py/object": "borders.Country",
+                "name": "Russia",
+                "continent": "ASIA",
+                "article": []
+            }
+        ]
+    },
+    {
+        "py/object": "borders.Continent",
+        "name": "AFRICA",
+        "countries": []
+    },
+    {
+        "py/object": "borders.Continent",
+        "name": "AUSTRALIA",
+        "countries": []
+    },
+    {
+        "py/object": "borders.Continent",
+        "name": "ANTARTICA",
+        "countries": []
+    },
+    {
+        "py/object": "borders.Continent",
+        "name": "NORTH_AMERICA",
+        "countries": [
+            {
+                "py/object": "borders.Country",
+                "name": "US",
+                "continent": "NORTH_AMERICA",
+                "article": []
+            }
+        ]
+    },
+    {
+        "py/object": "borders.Continent",
+        "name": "SOUTH_AMERICA",
+        "countries": []
+    },
+    {
+        "py/object": "borders.Continent",
+        "name": "EUROPE",
+        "countries": [
+            {
+                "py/object": "borders.Country",
+                "name": "England",
+                "continent": "EUROPE",
+                "article": []
+            },
+            {
+                "py/object": "borders.Country",
+                "name": "Palestine",
+                "continent": "EUROPE",
+                "article": []
+            }
+        ]
+    }
+]
