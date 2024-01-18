@@ -24,16 +24,18 @@ def scrape_all_news_pages():
     # for each news network
     print("scraping pages")
     response = requests.get(news_dict.get('Al Jazeera'))
-    soup = BeautifulSoup(response.content, 'html.parser')
+    soup = BeautifulSoup(response.content, 'lxml')
 
-    headline = soup.select('span span')
-    news_items = soup.select('li.featured-articles-list__item ')
+    news_items = soup.select('.featured-articles-list__item .u-clickable-card__link') # .featured-articles-list__item span 
 
-    print("news items read:", news_items[0]['.href'])
+    print("news items read:\n")
 
-    for i in range(len(news_items)):
-        article = json.load(news_items[i])
-        print(f"{article}, {headline[i].text}")
+    for item in news_items:
+        news_item = item.text.replace("&shy;", "")
+        # article = json.load(news_items[i])
+        print(f"{item.prettify()}")
+
+    print("\n\n")
 
 
 def read_json_database(file_path):
