@@ -4,12 +4,13 @@ from borders import Country
 from borders import Article
 
 from bs4 import BeautifulSoup
+from datetime import datetime
+from os import path
 import requests
 import borders
 import json
 import jsonpickle # allows for serialization of more complex objects
-from datetime import datetime
-from os import path
+import re
 
 database_file_path = 'news_data.json'
 
@@ -25,15 +26,30 @@ def scrape_all_news_pages():
     print("scraping pages")
     response = requests.get(news_dict.get('Al Jazeera'))
     soup = BeautifulSoup(response.content, 'lxml')
-
-    news_items = soup.select('.featured-articles-list__item .u-clickable-card__link') # .featured-articles-list__item span 
+    
+    news_items_headline = soup.select('.featured-articles-list__item .u-clickable-card__link', href=True) # .featured-articles-list__item span 
+    news_items_date = soup.select(".featured-articles-list__item .gc__date__date .screen-reader-text")
+    news_items_source = soup.select(".featured-articles-list__item .gc__date__date .screen-reader-text")
 
     print("news items read:\n")
 
-    for item in news_items:
-        news_item = item.text.replace("&shy;", "")
-        # article = json.load(news_items[i])
-        print(f"{item.prettify()}")
+    articles = []
+
+    for i in range(len(news_items_headline)):
+        # test_item = re.sub('/\u00AD/g', '', item.text)
+        # print("test item(replace)", test_item)
+        # item_text = item.get_text()
+        # print("item_text:", item_text)
+        print("Headline:", news_items_headline[i].get_text())
+        print(f"aljazeera.com{news_items_headline[i]['href']}")
+        print("date:", news_items_source[i].get_text(), "\n")
+        
+        articles.append(Article(news_items_headline[i].get_text(), 
+                    news_items_date[i].get_text(),
+                    f"aljazeera.com{news_items_headline[i]['href']}"))
+        
+    print(articles)
+    
 
     print("\n\n")
 

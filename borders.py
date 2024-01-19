@@ -3,8 +3,9 @@ class Article:
 
     def __init__(self, headline, date, source):
         self.headline = headline
-        self.source = source
         self.date = date
+        self.source = source
+        
         
     # use __str__ for user
     def __str__(self):
