@@ -7,13 +7,13 @@
                 "py/object": "borders.Country",
                 "name": "China",
                 "continent": "ASIA",
-                "article": []
+                "articles": []
             },
             {
                 "py/object": "borders.Country",
                 "name": "Russia",
                 "continent": "ASIA",
-                "article": []
+                "articles": []
             }
         ]
     },
@@ -40,7 +40,14 @@
                 "py/object": "borders.Country",
                 "name": "US",
                 "continent": "NORTH_AMERICA",
-                "article": []
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Namib\u00adia\u2019s pres\u00adi\u00addent to un\u00adder\u00adgo treat\u00adment af\u00adter \u2018can\u00adcer\u00adous cells\u2019 found",
+                        "date": "Published On 19 Jan 2024",
+                        "source": "aljazeera.com/news/2024/1/19/namibias-president-to-undergo-treatment-after-cancerous-cells-found"
+                    }
+                ]
             }
         ]
     },
@@ -57,13 +64,13 @@
                 "py/object": "borders.Country",
                 "name": "England",
                 "continent": "EUROPE",
-                "article": []
+                "articles": []
             },
             {
                 "py/object": "borders.Country",
                 "name": "Palestine",
                 "continent": "EUROPE",
-                "article": []
+                "articles": []
             }
         ]
     }

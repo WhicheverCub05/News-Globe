@@ -21,6 +21,15 @@ news_dict['BBC'] = 'https://www.bbc.com/news'
 news_dict['Al Jazeera'] = 'https://www.aljazeera.com/news/'
 
 
+def assign_articles_to_country(articles, continents):
+    for article in articles:
+        for continent in continents:
+            for country in continent.countries:
+                if country.name.lower() in article.headline.lower():
+                    country.add_article(article)
+                    print(f"added: {article.headline} to {country.name}")
+
+
 def scrape_all_news_pages():
     # for each news network
     print("scraping pages")
@@ -47,11 +56,9 @@ def scrape_all_news_pages():
         articles.append(Article(news_items_headline[i].get_text(), 
                     news_items_date[i].get_text(),
                     f"aljazeera.com{news_items_headline[i]['href']}"))
-        
-    print(articles)
-    
+    print("\n\n")    
+    return articles
 
-    print("\n\n")
 
 
 def read_json_database(file_path):
@@ -74,9 +81,7 @@ def write_articles_to_database(file_path, continents):
     clear_json_database(file_path)
     
     data = []
-    
-    #print("shit:", json.dumps(countries.__dict__))
-
+    #print("test:", json.dumps(countries.__dict__)
     print("continents: ", str(continents))
 
     with open(file_path, 'w') as database:
@@ -85,7 +90,8 @@ def write_articles_to_database(file_path, continents):
 
 def update_news():
     print("updating news. ", datetime.utcnow().strftime('%B %D %Y - %H:%M:%S')) # was %d
-    scrape_all_news_pages()
+    articles = scrape_all_news_pages()
+    assign_articles_to_country(articles, borders.continent_list)
     write_articles_to_database(database_file_path, borders.continent_list)
 
 

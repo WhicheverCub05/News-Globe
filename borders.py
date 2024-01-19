@@ -39,7 +39,7 @@ class Country:
     def __init__(self, name):
         self.name = name
         self.continent = ""
-        self.article = []
+        self.articles = []
         
     def __str__(self):
         return f"name : {self.name},\n" + f"continent : {self.continent}"
@@ -50,8 +50,8 @@ class Country:
     def get_continent():
         return self.continent
 
-    def add_article(article):
-        self.articles.add(article)
+    def add_article(self, article):
+        self.articles.append(article)
 
     def get_name():
         return self.name
@@ -122,5 +122,6 @@ continent_list[3].add_country(make_countries_from_country_list(antartica_country
 continent_list[4].add_country(make_countries_from_country_list(north_america_country_list)) 
 continent_list[5].add_country(make_countries_from_country_list(south_america_country_list)) 
 continent_list[6].add_country(make_countries_from_country_list(europe_country_list))
+
 
 print("\n ================ \n")
