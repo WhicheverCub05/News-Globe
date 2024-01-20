@@ -7,7 +7,14 @@
                 "py/object": "borders.Country",
                 "name": "China",
                 "continent": "ASIA",
-                "articles": []
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "At least 13 students killed in China school fire: State media",
+                        "date": "Published On 20 Jan 2024",
+                        "source": "aljazeera.com/news/2024/1/20/at-least-13-students-killed-in-china-school-fire-state-media"
+                    }
+                ]
             },
             {
                 "py/object": "borders.Country",
@@ -43,9 +50,9 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Namib\u00adia\u2019s pres\u00adi\u00addent to un\u00adder\u00adgo treat\u00adment af\u00adter \u2018can\u00adcer\u00adous cells\u2019 found",
-                        "date": "Published On 19 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/19/namibias-president-to-undergo-treatment-after-cancerous-cells-found"
+                        "headline": "Photos: Residential building destroyed in deadly strike on Damascus",
+                        "date": "Published On 20 Jan 2024",
+                        "source": "aljazeera.com/gallery/2024/1/20/residential-building-destroyed-in-attack-that-killed-irgc-members-in-syria"
                     }
                 ]
             }

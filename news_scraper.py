@@ -45,17 +45,13 @@ def scrape_all_news_pages():
     articles = []
 
     for i in range(len(news_items_headline)):
-        # test_item = re.sub('/\u00AD/g', '', item.text)
-        # print("test item(replace)", test_item)
-        # item_text = item.get_text()
-        # print("item_text:", item_text)
-        print("Headline:", news_items_headline[i].get_text())
-        print(f"aljazeera.com{news_items_headline[i]['href']}")
-        print("date:", news_items_source[i].get_text(), "\n")
+
+        headline = re.sub('\u00ad', '', news_items_headline[i].get_text())
+        link = f"aljazeera.com{news_items_headline[i]['href']}"
+        date = news_items_date[i].get_text()
         
-        articles.append(Article(news_items_headline[i].get_text(), 
-                    news_items_date[i].get_text(),
-                    f"aljazeera.com{news_items_headline[i]['href']}"))
+        articles.append(Article(headline, date, link))
+
     print("\n\n")    
     return articles
 

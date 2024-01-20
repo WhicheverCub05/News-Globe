@@ -96,6 +96,11 @@ def get_country_from_list(name):
                 return country
 
 
+def get_countries_from_csv():
+    print("reading csv file")
+    #open file and create country objects from each country on the list
+    print("complete")
+
 # countries
 asia_country_list = ["China", "Russia"]
 africa_country_list = []
