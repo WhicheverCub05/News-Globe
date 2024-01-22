@@ -24,8 +24,8 @@ news_dict['Al Jazeera'] = 'https://www.aljazeera.com/news/'
 def assign_articles_to_country(articles, continents):
     for article in articles:
         for continent in continents:
-            for country in continent.countries:
-                if country.name.lower() in article.headline.lower():
+            for country in continent.countries.values():
+                if country.is_associated(article.headline):
                     country.add_article(article)
                     print(f"added: {article.headline} to {country.name}")
 
@@ -51,10 +51,8 @@ def scrape_all_news_pages():
         date = news_items_date[i].get_text()
         
         articles.append(Article(headline, date, link))
-
-    print("\n\n")    
+ 
     return articles
-
 
 
 def read_json_database(file_path):
@@ -77,9 +75,7 @@ def write_articles_to_database(file_path, continents):
     clear_json_database(file_path)
     
     data = []
-    #print("test:", json.dumps(countries.__dict__)
-    print("continents: ", str(continents))
-
+    
     with open(file_path, 'w') as database:
         database.write(jsonpickle.encode(continents, indent = 4))
 

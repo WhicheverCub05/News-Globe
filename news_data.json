@@ -2,83 +2,3219 @@
     {
         "py/object": "borders.Continent",
         "name": "ASIA",
-        "countries": [
-            {
+        "code": "AS",
+        "countries": {
+            "AFG": {
+                "py/object": "borders.Country",
+                "name": "Afghanistan",
+                "code": "AFG",
+                "articles": [],
+                "cities": [
+                    "Kabul",
+                    "Kandahar",
+                    "Herat",
+                    "Farah"
+                ]
+            },
+            "AZE": {
+                "py/object": "borders.Country",
+                "name": "Azerbaijan",
+                "code": "AZE",
+                "articles": [],
+                "cities": [
+                    "Baku"
+                ]
+            },
+            "BHR": {
+                "py/object": "borders.Country",
+                "name": "Bahrain",
+                "code": "BHR",
+                "articles": [],
+                "cities": [
+                    "Manama"
+                ]
+            },
+            "BGD": {
+                "py/object": "borders.Country",
+                "name": "Bangladesh",
+                "code": "BGD",
+                "articles": [],
+                "cities": [
+                    "Dhaka",
+                    "Chattogram",
+                    "Narayanganj",
+                    "Khulna",
+                    "Gazipura",
+                    "Rangapukur",
+                    "Rajshahi",
+                    "Mymensingh",
+                    "Faridpur"
+                ]
+            },
+            "ARM": {
+                "py/object": "borders.Country",
+                "name": "Armenia",
+                "code": "ARM",
+                "articles": [],
+                "cities": [
+                    "Yerevan"
+                ]
+            },
+            "BTN": {
+                "py/object": "borders.Country",
+                "name": "Bhutan",
+                "code": "BTN",
+                "articles": [],
+                "cities": [
+                    "Thimphu"
+                ]
+            },
+            "IOT": {
+                "py/object": "borders.Country",
+                "name": "British Indian Ocean Territory (Chagos Archipelago)",
+                "code": "IOT",
+                "articles": [],
+                "cities": []
+            },
+            "BRN": {
+                "py/object": "borders.Country",
+                "name": "Brunei Darussalam",
+                "code": "BRN",
+                "articles": [],
+                "cities": [
+                    "Bandar Seri Begawan"
+                ]
+            },
+            "MMR": {
+                "py/object": "borders.Country",
+                "name": "Myanmar",
+                "code": "MMR",
+                "articles": [],
+                "cities": [
+                    "Rangoon",
+                    "Nay Pyi Taw",
+                    "Mandalay",
+                    "Kyaukse"
+                ]
+            },
+            "KHM": {
+                "py/object": "borders.Country",
+                "name": "Cambodia",
+                "code": "KHM",
+                "articles": [],
+                "cities": [
+                    "Phnom Penh"
+                ]
+            },
+            "LKA": {
+                "py/object": "borders.Country",
+                "name": "Sri Lanka",
+                "code": "LKA",
+                "articles": [],
+                "cities": [
+                    "Colombo",
+                    "Sri Jayewardenepura Kotte"
+                ]
+            },
+            "CHN": {
                 "py/object": "borders.Country",
                 "name": "China",
-                "continent": "ASIA",
+                "code": "CHN",
+                "articles": [],
+                "cities": [
+                    "Beijing",
+                    "Guangzhou",
+                    "Shanghai",
+                    "Shenzhen",
+                    "Chengdu",
+                    "Xi'an",
+                    "Chongqing",
+                    "Baoding",
+                    "Linyi",
+                    "Dongguan",
+                    "Tianjin",
+                    "Wuhan",
+                    "Nanyang",
+                    "Hangzhou",
+                    "Foshan",
+                    "Tongshan",
+                    "Zhoukou",
+                    "Ganzhou",
+                    "Heze",
+                    "Quanzhou",
+                    "Nanjing",
+                    "Jining",
+                    "Fuyang",
+                    "Shenyang",
+                    "Shangqiu",
+                    "Cangzhou",
+                    "Shaoyang",
+                    "Zhanjiang",
+                    "Yancheng",
+                    "Hengyang",
+                    "Zhumadian",
+                    "Xingtai",
+                    "Bijie",
+                    "Shangrao",
+                    "Zunyi",
+                    "Huanggang",
+                    "Maoming",
+                    "Nanchong",
+                    "Xinyang",
+                    "Qujing",
+                    "Jieyang",
+                    "Liaocheng",
+                    "Dalian",
+                    "Yulin",
+                    "Changde",
+                    "Qingdao",
+                    "Nangandao",
+                    "Pudong",
+                    "Xiangyang",
+                    "Zhengzhou",
+                    "Lu'an",
+                    "Dezhou",
+                    "Jinan",
+                    "Zhaotong",
+                    "Yichun",
+                    "Tai'an",
+                    "Dazhou",
+                    "Langfang",
+                    "Yongzhou",
+                    "Suihua",
+                    "Qiqihar",
+                    "Suzhou",
+                    "Weinan",
+                    "Zhangzhou",
+                    "Yuncheng",
+                    "Xianyang",
+                    "Guilin",
+                    "Taizhou",
+                    "Bozhou",
+                    "Suqian",
+                    "Huaihua",
+                    "Ji'an",
+                    "Xiaoganzhan",
+                    "Pingdingshan",
+                    "Jiujiang",
+                    "Mianyang",
+                    "Huanglongsi",
+                    "Changsha",
+                    "Chenzhou",
+                    "Anqing",
+                    "Jiangmen",
+                    "Xinpu",
+                    "Yibin",
+                    "Yangzhou",
+                    "Hengshui",
+                    "Kunming",
+                    "Yiyang",
+                    "Guigang",
+                    "Changchun",
+                    "Jiangguanchi",
+                    "Meizhou",
+                    "Zhangjiakou",
+                    "Chifeng",
+                    "Urumqi",
+                    "Suzhou",
+                    "Linfen",
+                    "Shantou",
+                    "Luzhou",
+                    "Hefei",
+                    "Liuzhou",
+                    "Zhaoqing",
+                    "Xiaoxita",
+                    "Shijiazhuang",
+                    "Ningbo",
+                    "Fuzhou",
+                    "Zhuzhou",
+                    "Chuzhou",
+                    "Qingyuan",
+                    "Loudi",
+                    "Binzhou",
+                    "Deyang",
+                    "Taiyuan",
+                    "Wuhu",
+                    "Nanning",
+                    "Harbin",
+                    "Baojishi",
+                    "Zaozhuang",
+                    "Xiamen",
+                    "Neijiang",
+                    "Fuzhou",
+                    "Baicheng",
+                    "Anshan",
+                    "Yulinshi",
+                    "Wenzhou",
+                    "Changzhou",
+                    "Puyang",
+                    "Jiaozuo",
+                    "Nanchang",
+                    "Hechi",
+                    "Hohhot",
+                    "Hanzhong",
+                    "Tangshan",
+                    "Shiyan",
+                    "Siping",
+                    "Changzhi",
+                    "Qinzhou",
+                    "Guiyang",
+                    "Bengbu",
+                    "Bazhou",
+                    "Qincheng",
+                    "Suining",
+                    "Wuxi",
+                    "Leshan",
+                    "Putian",
+                    "Zhenjiang",
+                    "Guang'an",
+                    "Tongren",
+                    "Qinhuangdao",
+                    "Tongliao",
+                    "Jinzhou",
+                    "Heyuan",
+                    "Xinzhou",
+                    "Lanzhou",
+                    "Wuzhou",
+                    "Chaoyang",
+                    "Shaoguan",
+                    "Shanwei",
+                    "Rizhao",
+                    "Meishan",
+                    "Ningde",
+                    "Zhongshan",
+                    "Weihai",
+                    "Daqing",
+                    "Haikou",
+                    "Xiangtan",
+                    "Mudanjiang",
+                    "Longyan",
+                    "Tieling",
+                    "Baotou",
+                    "Handan",
+                    "Dingxi",
+                    "Nanping",
+                    "Zigong",
+                    "Chaozhou",
+                    "Weifang",
+                    "Huai'an",
+                    "Zibo",
+                    "Ankang",
+                    "Baoshan",
+                    "Huludao",
+                    "Gulou",
+                    "Yanjiang",
+                    "Sanming",
+                    "Longba",
+                    "Yangjiang",
+                    "Jiamusi",
+                    "Luohe",
+                    "Lincang",
+                    "Xuanzhou",
+                    "Yunfu",
+                    "Shaoxing",
+                    "Yantai",
+                    "Huizhou",
+                    "Lishui",
+                    "Guangyuan",
+                    "Huangshi",
+                    "Xining",
+                    "Dandong",
+                    "Zhuhai",
+                    "Yingkou",
+                    "Lianshan",
+                    "Jilin",
+                    "Yuxi",
+                    "Luoyang",
+                    "Anshun",
+                    "Shangzhou",
+                    "Huainan",
+                    "Kuaidamao",
+                    "Yan'an",
+                    "Jincheng",
+                    "Nantong",
+                    "Sanmenxia",
+                    "Laibin",
+                    "Qinbaling",
+                    "Ma'anshan",
+                    "Shengli",
+                    "Gaoping",
+                    "Taizhou",
+                    "Puning",
+                    "Huaibei",
+                    "Qingyang",
+                    "Chongzuo",
+                    "Yushan",
+                    "Hezhou",
+                    "Pingliang",
+                    "Baicheng",
+                    "Fushun",
+                    "Pingxiang",
+                    "Yinchuan",
+                    "Xiping",
+                    "Jixi",
+                    "Liaoyang",
+                    "Beihai",
+                    "Fuxin",
+                    "Wuwei",
+                    "Shuyangzha",
+                    "Shuozhou",
+                    "Benxi",
+                    "Baiyin",
+                    "Sanzhou",
+                    "Changshu",
+                    "Heihe",
+                    "Jingdezhen",
+                    "Chengtangcun",
+                    "Hebi",
+                    "Huzhou",
+                    "Zhangjiajie",
+                    "Jiaxing",
+                    "Guiping",
+                    "Lianjiang",
+                    "Ximeicun",
+                    "Jianguang",
+                    "Yucheng",
+                    "Xushan",
+                    "Leizhou",
+                    "Huazhou",
+                    "Jinhua",
+                    "Shuangyashan",
+                    "Pizhou",
+                    "Yangshe",
+                    "Guyuan",
+                    "Rui'an",
+                    "Wenling",
+                    "Gaozhou",
+                    "Chizhou",
+                    "Fuqing",
+                    "Wuzhong",
+                    "Pingdu",
+                    "Yangquan",
+                    "Yutan",
+                    "Huangshan",
+                    "Liangshi",
+                    "Xintai",
+                    "Wusong",
+                    "Yushu",
+                    "Rongcheng",
+                    "Huazhou",
+                    "Baishan",
+                    "Dayan",
+                    "Haicheng",
+                    "Yicheng",
+                    "Jiangyin",
+                    "Rucheng",
+                    "Huaiyin",
+                    "Shaoyang",
+                    "Laiwu",
+                    "Jingling",
+                    "Yongcheng",
+                    "Yiwu",
+                    "Beidao",
+                    "Xiangshui",
+                    "Dadukou",
+                    "Lingcheng",
+                    "Xinyu",
+                    "Zhangye",
+                    "Liaoyuan",
+                    "Yingtan",
+                    "Guankou",
+                    "Dingzhou",
+                    "Lianyuan",
+                    "Rongcheng",
+                    "Kaiyuan",
+                    "Zhuji",
+                    "Leiyang",
+                    "Yichun",
+                    "Xiantao",
+                    "Yingchuan",
+                    "Xibeijie",
+                    "Yuyao",
+                    "Hanchuan",
+                    "Gongzhuling",
+                    "Zhufeng",
+                    "Ezhou",
+                    "Xiashi",
+                    "Taixing",
+                    "Zhongwei",
+                    "Mizhou",
+                    "Xishan",
+                    "Hegang",
+                    "Fangchenggang",
+                    "Shouguang",
+                    "Sanya",
+                    "Wutong",
+                    "Linhai",
+                    "Wafangdian",
+                    "Zhongxiang",
+                    "Xinyi",
+                    "Zaoyang",
+                    "Xingyi",
+                    "Shuizhai",
+                    "Xingcheng",
+                    "Dongtai",
+                    "Yingcheng",
+                    "Luocheng",
+                    "Danyang",
+                    "Nada",
+                    "Huilong",
+                    "Wuchuan",
+                    "Taishan",
+                    "Anqiu",
+                    "Feicheng",
+                    "Meishan",
+                    "Taihe",
+                    "Xin'an",
+                    "Taihecun",
+                    "Kashgar",
+                    "Qingzhou",
+                    "Lichuan",
+                    "Daye",
+                    "Hengzhou",
+                    "Zhuanghe",
+                    "Quzhou",
+                    "Lhasa",
+                    "Jiaozhou",
+                    "Yangchun",
+                    "Dengtalu",
+                    "Zhoushan",
+                    "Hai'an",
+                    "Laiyang",
+                    "Kaifeng Chengguanzhen",
+                    "Gaomi",
+                    "Weichanglu",
+                    "Wuxi",
+                    "Leping",
+                    "Shache",
+                    "Hailun",
+                    "Macheng",
+                    "Yuci",
+                    "Dehui",
+                    "Tongchuan",
+                    "Chengxiang",
+                    "Rongjiawan",
+                    "Renqiu",
+                    "Xindi",
+                    "Wu'an",
+                    "Gaoyou",
+                    "Yiyang",
+                    "Hejian",
+                    "Puxi",
+                    "Zijinglu",
+                    "Dongyang",
+                    "Xigaze",
+                    "Qingping",
+                    "Xiangxiang",
+                    "Chaohucun",
+                    "Zouping",
+                    "Cencheng",
+                    "Dali",
+                    "Fuyang",
+                    "Korla",
+                    "Songzi",
+                    "Laixi",
+                    "Zhongba",
+                    "Qamdo",
+                    "Qingnian",
+                    "Xinhualu",
+                    "Guangshui",
+                    "Sizhan",
+                    "Licheng",
+                    "Chengguan",
+                    "Nehe",
+                    "Zunhua",
+                    "Wugang",
+                    "Shuangqiao",
+                    "Langzhong",
+                    "Qian'an",
+                    "Guli",
+                    "Anlu",
+                    "Changsha",
+                    "Shihezi",
+                    "Yatou",
+                    "Xichang",
+                    "Dashiqiao",
+                    "Qianxi",
+                    "Shishi",
+                    "Miluo Chengguanzhen",
+                    "Gaizhou",
+                    "Leling",
+                    "Jianshe",
+                    "Jingcheng",
+                    "Xinmin",
+                    "Shanhu",
+                    "Zhongshu",
+                    "Kumul",
+                    "Pinghu",
+                    "Guankou",
+                    "Songyang",
+                    "Qionghu",
+                    "Zhaodong",
+                    "Puyang Chengguanzhen",
+                    "Wenchang",
+                    "Shulan",
+                    "Lingbao Chengguanzhen",
+                    "Xiping",
+                    "Sanhe",
+                    "Jieshou",
+                    "Guixi",
+                    "Tengyue",
+                    "Wuxue",
+                    "Ruiming",
+                    "Qufu",
+                    "Gaobeidian",
+                    "Xinshi",
+                    "Jin'e",
+                    "Xinxing",
+                    "Suohe",
+                    "Zhuangyuan",
+                    "Bazhou",
+                    "Turpan",
+                    "Meihekou",
+                    "Jurong",
+                    "Zhugang",
+                    "Xinji",
+                    "Changping",
+                    "Zhangshu",
+                    "Zhuozhou",
+                    "Tianchang",
+                    "Sihui",
+                    "Luocheng",
+                    "Chuxiong",
+                    "Wenlan",
+                    "Shangzhi",
+                    "Botou",
+                    "Wancheng",
+                    "Xiulin",
+                    "Fu'an",
+                    "Luofeng",
+                    "Lingyuan",
+                    "Wencheng",
+                    "Shenzhou",
+                    "Kuiju",
+                    "Zhenzhou",
+                    "Lanxi",
+                    "Dangyang",
+                    "Luanzhou",
+                    "Huanghua",
+                    "Xingcheng",
+                    "Kaiyuan",
+                    "Fengcheng",
+                    "Ghulja",
+                    "Fuding",
+                    "Xiangyang",
+                    "Chang'an",
+                    "Aksu",
+                    "Wuhai",
+                    "Mingguang",
+                    "Ailan Mubage",
+                    "Yucheng",
+                    "Anda",
+                    "Longzhou",
+                    "Jinghong",
+                    "Heshan",
+                    "Jiaji",
+                    "Beining",
+                    "Yanji",
+                    "Yicheng",
+                    "Encheng",
+                    "Nagqu",
+                    "Meicheng"
+                ]
+            },
+            "TWN": {
+                "py/object": "borders.Country",
+                "name": "Taiwan",
+                "code": "TWN",
+                "articles": [],
+                "cities": [
+                    "Taipei",
+                    "Taichung",
+                    "Kaohsiung",
+                    "Tainan",
+                    "Zhongli",
+                    "Changhua",
+                    "Pingtung"
+                ]
+            },
+            "CXR": {
+                "py/object": "borders.Country",
+                "name": "Christmas Island",
+                "code": "CXR",
+                "articles": [],
+                "cities": [
+                    "Flying Fish Cove"
+                ]
+            },
+            "CCK": {
+                "py/object": "borders.Country",
+                "name": "Cocos (Keeling) Islands",
+                "code": "CCK",
+                "articles": [],
+                "cities": []
+            },
+            "CYP": {
+                "py/object": "borders.Country",
+                "name": "Cyprus",
+                "code": "CYP",
+                "articles": [],
+                "cities": [
+                    "Nicosia"
+                ]
+            },
+            "GEO": {
+                "py/object": "borders.Country",
+                "name": "Georgia",
+                "code": "GEO",
+                "articles": [],
+                "cities": [
+                    "Tbilisi"
+                ]
+            },
+            "PSE": {
+                "py/object": "borders.Country",
+                "name": "Palestinine",
+                "code": "PSE",
+                "articles": [],
+                "cities": [
+                    "Jerusalem",
+                    "Gaza"
+                ]
+            },
+            "HKG": {
+                "py/object": "borders.Country",
+                "name": "Hong Kong",
+                "code": "HKG",
+                "articles": [],
+                "cities": [
+                    "Hong Kong",
+                    "Kowloon",
+                    "Sha Tin"
+                ]
+            },
+            "IND": {
+                "py/object": "borders.Country",
+                "name": "India",
+                "code": "IND",
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "At least 13 students killed in China school fire: State media",
-                        "date": "Published On 20 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/20/at-least-13-students-killed-in-china-school-fire-state-media"
+                        "headline": "Photos: India\u2019s Modi opens controversial Hindu temple in Ayodhya",
+                        "date": "Published On 22 Jan 2024",
+                        "source": "aljazeera.com/gallery/2024/1/22/indias-modi-opens-controversial-hindu-temple-in-ayodhya"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Sony scraps merger with India\u2019s Zee",
+                        "date": "Published On 22 Jan 2024",
+                        "source": "aljazeera.com/news/2024/1/22/sony-ditches-tie-up-with-indias-zee"
                     }
+                ],
+                "cities": [
+                    "New Delhi",
+                    "Delhi",
+                    "Mumbai",
+                    "Kolkata",
+                    "Bangalore",
+                    "Chennai",
+                    "Hyderabad",
+                    "Pune",
+                    "Ahmedabad",
+                    "Surat",
+                    "Prayagraj",
+                    "Lucknow",
+                    "Jaipur",
+                    "Cawnpore",
+                    "Mirzapur",
+                    "Nagpur",
+                    "Ghaziabad",
+                    "Vadodara",
+                    "Vishakhapatnam",
+                    "Indore",
+                    "Thane",
+                    "Bhopal",
+                    "Chinchvad",
+                    "Patna",
+                    "Bilaspur",
+                    "Ludhiana",
+                    "Agwar",
+                    "Agra",
+                    "Madurai",
+                    "Jamshedpur",
+                    "Nasik",
+                    "Faridabad",
+                    "Aurangabad",
+                    "Rajkot",
+                    "Meerut",
+                    "Jabalpur",
+                    "Kalamboli",
+                    "Vasai",
+                    "Najafgarh",
+                    "Varanasi",
+                    "Srinagar",
+                    "Dhanbad",
+                    "Amritsar",
+                    "Aligarh",
+                    "Guwahati",
+                    "Haora",
+                    "Ranchi",
+                    "Gwalior",
+                    "Chandigarh",
+                    "Vijayawada",
+                    "Jodhpur",
+                    "Raipur",
+                    "Kota",
+                    "Bareilly",
+                    "Coimbatore",
+                    "Solapur",
+                    "Trichinopoly",
+                    "Moradabad",
+                    "Tiruppur",
+                    "Gurgaon",
+                    "Jalandhar",
+                    "Bhubaneshwar",
+                    "Kalkaji Devi",
+                    "Mandvi",
+                    "Bhayandar",
+                    "Patiala",
+                    "Dhulia",
+                    "Thiruvananthapuram",
+                    "Bhiwandi",
+                    "Saharanpur",
+                    "Warangal",
+                    "Shiliguri",
+                    "Vellore",
+                    "Salem",
+                    "Kochi",
+                    "Gorakhpur",
+                    "Narela",
+                    "Guntur",
+                    "Bhavnagar",
+                    "Rasulpur",
+                    "Noida",
+                    "Brahmapur",
+                    "Bhangar",
+                    "Bhilai",
+                    "Bhilai",
+                    "Mangalore",
+                    "Nagercoil",
+                    "Cuttack",
+                    "Raurkela",
+                    "Tumkur",
+                    "Durgapur",
+                    "Dehra Dun",
+                    "Chapra",
+                    "Asansol",
+                    "Kolhapur",
+                    "Ajmer",
+                    "Nanded",
+                    "Amravati",
+                    "Nellore",
+                    "Gulbarga",
+                    "Bikaner",
+                    "Agartala",
+                    "Loni",
+                    "Ujjain",
+                    "Bhilwara",
+                    "Jhansi",
+                    "Ulhasnagar",
+                    "Jammu"
                 ]
             },
-            {
+            "IDN": {
+                "py/object": "borders.Country",
+                "name": "Indonesia",
+                "code": "IDN",
+                "articles": [],
+                "cities": [
+                    "Jakarta",
+                    "Surabaya",
+                    "Medan",
+                    "Malang",
+                    "Bekasi",
+                    "Depok",
+                    "Tangerang",
+                    "Denpasar",
+                    "Sangereng",
+                    "Semarang",
+                    "Palembang",
+                    "Makassar",
+                    "Jepara",
+                    "Sumedang",
+                    "Bagam",
+                    "Cilacap",
+                    "Bandar Lampung",
+                    "Bogor",
+                    "Pekanbaru",
+                    "Padang",
+                    "Samarinda",
+                    "Banjarmasin",
+                    "Tasikmalaya",
+                    "Pontianak",
+                    "Serang",
+                    "Jambi",
+                    "Balikpapan",
+                    "Cimahi",
+                    "Surakarta"
+                ]
+            },
+            "IRN": {
+                "py/object": "borders.Country",
+                "name": "Iran",
+                "code": "IRN",
+                "articles": [],
+                "cities": [
+                    "Tehran",
+                    "Kashan",
+                    "Mashhad",
+                    "Esfahan",
+                    "Karaj",
+                    "Shiraz",
+                    "Tabriz",
+                    "Ahvaz",
+                    "Qom",
+                    "Kermanshah",
+                    "Kerman",
+                    "Orumiyeh",
+                    "Rasht",
+                    "Bahar",
+                    "Zahedan",
+                    "Hamadan",
+                    "Yazd",
+                    "Ardabil",
+                    "Bandar `Abbas",
+                    "Arak"
+                ]
+            },
+            "IRQ": {
+                "py/object": "borders.Country",
+                "name": "Iraq",
+                "code": "IRQ",
+                "articles": [],
+                "cities": [
+                    "Baghdad",
+                    "Mosul",
+                    "Al Basrah",
+                    "Kirkuk",
+                    "As Sulaymaniyah",
+                    "Ar Ramadi",
+                    "Erbil",
+                    "An Najaf",
+                    "Karbala'",
+                    "An Nasiriyah",
+                    "Al Hillah",
+                    "Al `Amarah"
+                ]
+            },
+            "ISR": {
+                "py/object": "borders.Country",
+                "name": "Israel, State of",
+                "code": "ISR",
+                "articles": [],
+                "cities": [
+                    "Jerusalem",
+                    "Tel Aviv-Yafo",
+                    "Haifa"
+                ]
+            },
+            "JPN": {
+                "py/object": "borders.Country",
+                "name": "Japan",
+                "code": "JPN",
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Japan hopes to restore power to \u2018Moon Sniper\u2019",
+                        "date": "Published On 22 Jan 2024",
+                        "source": "aljazeera.com/news/2024/1/22/japan-moon"
+                    }
+                ],
+                "cities": [
+                    "Tokyo",
+                    "Osaka",
+                    "Nagoya",
+                    "Yokohama",
+                    "Fukuoka",
+                    "Sapporo",
+                    "Kawasaki",
+                    "Kobe",
+                    "Kyoto",
+                    "Saitama",
+                    "Hiroshima",
+                    "Sendai",
+                    "Chiba",
+                    "Setagaya",
+                    "Kitakyushu",
+                    "Sakai",
+                    "Niigata",
+                    "Hamamatsu",
+                    "Nerima",
+                    "Kumamoto",
+                    "Ota-ku",
+                    "Sagamihara",
+                    "Okayama",
+                    "Edogawa",
+                    "Shizuoka",
+                    "Adachi",
+                    "Honcho",
+                    "Kagoshima",
+                    "Kawaguchi",
+                    "Suginami-ku",
+                    "Itabashi",
+                    "Hachioji",
+                    "Himeji",
+                    "Koto-ku",
+                    "Utsunomiya",
+                    "Matsuyama"
+                ]
+            },
+            "KAZ": {
+                "py/object": "borders.Country",
+                "name": "Kazakhstan",
+                "code": "KAZ",
+                "articles": [],
+                "cities": [
+                    "Nur-Sultan",
+                    "Almaty",
+                    "Shymkent"
+                ]
+            },
+            "JOR": {
+                "py/object": "borders.Country",
+                "name": "Jordan",
+                "code": "JOR",
+                "articles": [],
+                "cities": [
+                    "Amman",
+                    "Al Mafraq",
+                    "Irbid"
+                ]
+            },
+            "PRK": {
+                "py/object": "borders.Country",
+                "name": "Korea",
+                "code": "PRK",
+                "articles": [],
+                "cities": [
+                    "Pyongyang",
+                    "Hamhung",
+                    "Nampo",
+                    "Ch'ongjin"
+                ]
+            },
+            "KOR": {
+                "py/object": "borders.Country",
+                "name": "Korea",
+                "code": "KOR",
+                "articles": [],
+                "cities": [
+                    "Seoul",
+                    "Busan",
+                    "Incheon",
+                    "Daegu",
+                    "Gwangju",
+                    "Daejeon",
+                    "Suwon",
+                    "Ulsan",
+                    "Tongjin",
+                    "Goyang",
+                    "Changwon",
+                    "Songnam",
+                    "Bucheon",
+                    "Cheongju",
+                    "Yanggok",
+                    "Hwasu-dong",
+                    "Ansan",
+                    "Ch'onan",
+                    "Jeonju",
+                    "Anyang",
+                    "Kimhae",
+                    "Pohang"
+                ]
+            },
+            "KWT": {
+                "py/object": "borders.Country",
+                "name": "Kuwait",
+                "code": "KWT",
+                "articles": [],
+                "cities": [
+                    "Kuwait City"
+                ]
+            },
+            "KGZ": {
+                "py/object": "borders.Country",
+                "name": "Kyrgyz Republic",
+                "code": "KGZ",
+                "articles": [],
+                "cities": [
+                    "Bishkek"
+                ]
+            },
+            "LAO": {
+                "py/object": "borders.Country",
+                "name": "Lao People's Democratic Republic",
+                "code": "LAO",
+                "articles": [],
+                "cities": [
+                    "Vientiane"
+                ]
+            },
+            "LBN": {
+                "py/object": "borders.Country",
+                "name": "Lebanon",
+                "code": "LBN",
+                "articles": [],
+                "cities": [
+                    "Beirut",
+                    "Tripoli"
+                ]
+            },
+            "MAC": {
+                "py/object": "borders.Country",
+                "name": "Macao",
+                "code": "MAC",
+                "articles": [],
+                "cities": [
+                    "Macau"
+                ]
+            },
+            "MYS": {
+                "py/object": "borders.Country",
+                "name": "Malaysia",
+                "code": "MYS",
+                "articles": [],
+                "cities": [
+                    "Kuala Lumpur",
+                    "Putrajaya",
+                    "Seberang Jaya",
+                    "Klang",
+                    "Ipoh",
+                    "Butterworth",
+                    "George Town",
+                    "Petaling Jaya",
+                    "Kuantan",
+                    "Shah Alam"
+                ]
+            },
+            "MDV": {
+                "py/object": "borders.Country",
+                "name": "Maldives",
+                "code": "MDV",
+                "articles": [],
+                "cities": [
+                    "Male"
+                ]
+            },
+            "MNG": {
+                "py/object": "borders.Country",
+                "name": "Mongolia",
+                "code": "MNG",
+                "articles": [],
+                "cities": [
+                    "Ulaanbaatar"
+                ]
+            },
+            "OMN": {
+                "py/object": "borders.Country",
+                "name": "Oman",
+                "code": "OMN",
+                "articles": [],
+                "cities": [
+                    "Muscat"
+                ]
+            },
+            "NPL": {
+                "py/object": "borders.Country",
+                "name": "Nepal",
+                "code": "NPL",
+                "articles": [],
+                "cities": [
+                    "Kathmandu"
+                ]
+            },
+            "PAK": {
+                "py/object": "borders.Country",
+                "name": "Pakistan",
+                "code": "PAK",
+                "articles": [],
+                "cities": [
+                    "Islamabad",
+                    "Karachi",
+                    "Lahore",
+                    "Faisalabad",
+                    "Rawalpindi",
+                    "Gujranwala",
+                    "Peshawar",
+                    "Multan",
+                    "Saidu Sharif",
+                    "Hyderabad City",
+                    "Quetta",
+                    "Bahawalpur",
+                    "Sargodha",
+                    "Sialkot City"
+                ]
+            },
+            "PHL": {
+                "py/object": "borders.Country",
+                "name": "Philippines",
+                "code": "PHL",
+                "articles": [],
+                "cities": [
+                    "Manila",
+                    "Quezon City",
+                    "Davao",
+                    "Caloocan City",
+                    "Canagatan",
+                    "Zamboanga City",
+                    "Cebu City",
+                    "Antipolo",
+                    "Taguig City",
+                    "Pasig City",
+                    "Cagayan de Oro",
+                    "Valenzuela",
+                    "Dasmarinas",
+                    "General Santos",
+                    "City of Paranaque",
+                    "Bacoor",
+                    "Tondo",
+                    "San Jose del Monte",
+                    "Makati City",
+                    "Las Pinas City",
+                    "Bacolod",
+                    "Muntinlupa City",
+                    "City of Calamba"
+                ]
+            },
+            "TLS": {
+                "py/object": "borders.Country",
+                "name": "Timor-Leste",
+                "code": "TLS",
+                "articles": [],
+                "cities": [
+                    "Dili"
+                ]
+            },
+            "QAT": {
+                "py/object": "borders.Country",
+                "name": "Qatar",
+                "code": "QAT",
+                "articles": [],
+                "cities": [
+                    "Doha",
+                    "Ar Rayyan"
+                ]
+            },
+            "RUS": {
                 "py/object": "borders.Country",
                 "name": "Russia",
-                "continent": "ASIA",
-                "articles": []
+                "code": "RUS",
+                "articles": [],
+                "cities": [
+                    "Moscow",
+                    "Saint Petersburg",
+                    "Novosibirsk",
+                    "Yekaterinburg",
+                    "Nizhniy Novgorod",
+                    "Kazan",
+                    "Chelyabinsk",
+                    "Omsk",
+                    "Samara",
+                    "Rostov",
+                    "Ufa",
+                    "Krasnoyarsk",
+                    "Voronezh",
+                    "Perm",
+                    "Volgograd",
+                    "Krasnodar",
+                    "Saratov",
+                    "Tyumen",
+                    "Tolyatti",
+                    "Izhevsk",
+                    "Barnaul",
+                    "Ulyanovsk",
+                    "Irkutsk",
+                    "Khabarovsk",
+                    "Yaroslavl",
+                    "Vladivostok",
+                    "Makhachkala",
+                    "Tomsk",
+                    "Orenburg",
+                    "Kemerovo",
+                    "Novokuznetsk",
+                    "Ryazan",
+                    "Naberezhnyye Chelny",
+                    "Astrakhan",
+                    "Penza",
+                    "Lipetsk",
+                    "Kirov"
+                ]
+            },
+            "SAU": {
+                "py/object": "borders.Country",
+                "name": "Saudi Arabia",
+                "code": "SAU",
+                "articles": [],
+                "cities": [
+                    "Riyadh",
+                    "Jeddah",
+                    "Mecca",
+                    "Medina",
+                    "Ad Dammam",
+                    "Al Hufuf",
+                    "Hafr al Batin",
+                    "Al Hillah",
+                    "At Ta'if",
+                    "Tabuk",
+                    "Al Qatif"
+                ]
+            },
+            "SGP": {
+                "py/object": "borders.Country",
+                "name": "Singapore",
+                "code": "SGP",
+                "articles": [],
+                "cities": [
+                    "Singapore"
+                ]
+            },
+            "VNM": {
+                "py/object": "borders.Country",
+                "name": "Vietnam",
+                "code": "VNM",
+                "articles": [],
+                "cities": [
+                    "Hanoi",
+                    "Ho Chi Minh City",
+                    "Haiphong",
+                    "Can Tho",
+                    "Bien Hoa",
+                    "Thu Duc",
+                    "Quang Ha",
+                    "Hue",
+                    "Tan An",
+                    "Bac Ninh",
+                    "Hai Duong"
+                ]
+            },
+            "SYR": {
+                "py/object": "borders.Country",
+                "name": "Syria",
+                "code": "SYR",
+                "articles": [],
+                "cities": [
+                    "Damascus",
+                    "Aleppo",
+                    "Homs",
+                    "Latakia",
+                    "Hamah"
+                ]
+            },
+            "TJK": {
+                "py/object": "borders.Country",
+                "name": "Tajikistan",
+                "code": "TJK",
+                "articles": [],
+                "cities": [
+                    "Dushanbe",
+                    "Khujand"
+                ]
+            },
+            "THA": {
+                "py/object": "borders.Country",
+                "name": "Thailand",
+                "code": "THA",
+                "articles": [],
+                "cities": [
+                    "Bangkok",
+                    "Chiang Mai"
+                ]
+            },
+            "ARE": {
+                "py/object": "borders.Country",
+                "name": "United Arab Emirates",
+                "code": "ARE",
+                "articles": [],
+                "cities": [
+                    "Abu Dhabi",
+                    "Dubai",
+                    "Sharjah",
+                    "Al `Ayn"
+                ]
+            },
+            "TUR": {
+                "py/object": "borders.Country",
+                "name": "Turkey",
+                "code": "TUR",
+                "articles": [],
+                "cities": [
+                    "Ankara",
+                    "Istanbul",
+                    "Izmir",
+                    "Bursa",
+                    "Antalya",
+                    "Konya",
+                    "Gaziantep",
+                    "Sanliurfa",
+                    "Mersin",
+                    "Adana",
+                    "Diyarbakir",
+                    "Kayseri",
+                    "Samsun",
+                    "Akcaabat",
+                    "Denizli",
+                    "Cankaya",
+                    "Esenyurt",
+                    "Eskisehir",
+                    "Seyhan",
+                    "Kucukcekmece",
+                    "Erzurum",
+                    "Bagcilar",
+                    "Pendik",
+                    "Selcuklu",
+                    "Yildirim"
+                ]
+            },
+            "TKM": {
+                "py/object": "borders.Country",
+                "name": "Turkmenistan",
+                "code": "TKM",
+                "articles": [],
+                "cities": [
+                    "Ashgabat"
+                ]
+            },
+            "UZB": {
+                "py/object": "borders.Country",
+                "name": "Uzbekistan",
+                "code": "UZB",
+                "articles": [],
+                "cities": [
+                    "Tashkent",
+                    "Namangan",
+                    "Samarkand"
+                ]
+            },
+            "YEM": {
+                "py/object": "borders.Country",
+                "name": "Yemen",
+                "code": "YEM",
+                "articles": [],
+                "cities": [
+                    "Sanaa",
+                    "Ta`izz",
+                    "Al Hudaydah",
+                    "Aden"
+                ]
+            },
+            "nan": {
+                "py/object": "borders.Country",
+                "name": "Spratly Islands",
+                "code": NaN,
+                "articles": [],
+                "cities": []
             }
-        ]
+        }
     },
     {
         "py/object": "borders.Continent",
         "name": "AFRICA",
-        "countries": []
-    },
-    {
-        "py/object": "borders.Continent",
-        "name": "AUSTRALIA",
-        "countries": []
+        "code": "AF",
+        "countries": {
+            "DZA": {
+                "py/object": "borders.Country",
+                "name": "Algeria",
+                "code": "DZA",
+                "articles": [],
+                "cities": [
+                    "Algiers",
+                    "Oran"
+                ]
+            },
+            "AGO": {
+                "py/object": "borders.Country",
+                "name": "Angola",
+                "code": "AGO",
+                "articles": [],
+                "cities": [
+                    "Luanda",
+                    "Cacuaco",
+                    "Lubango",
+                    "Cabinda",
+                    "Huambo",
+                    "Malanje",
+                    "Benguela",
+                    "Belas",
+                    "Talatona"
+                ]
+            },
+            "BWA": {
+                "py/object": "borders.Country",
+                "name": "Botswana",
+                "code": "BWA",
+                "articles": [],
+                "cities": [
+                    "Gaborone"
+                ]
+            },
+            "BDI": {
+                "py/object": "borders.Country",
+                "name": "Burundi",
+                "code": "BDI",
+                "articles": [],
+                "cities": [
+                    "Bujumbura",
+                    "Gitega"
+                ]
+            },
+            "CMR": {
+                "py/object": "borders.Country",
+                "name": "Cameroon",
+                "code": "CMR",
+                "articles": [],
+                "cities": [
+                    "Yaounde",
+                    "Douala",
+                    "Bamenda",
+                    "Bafoussam",
+                    "Garoua"
+                ]
+            },
+            "CPV": {
+                "py/object": "borders.Country",
+                "name": "Cape Verde",
+                "code": "CPV",
+                "articles": [],
+                "cities": [
+                    "Praia"
+                ]
+            },
+            "CAF": {
+                "py/object": "borders.Country",
+                "name": "Central African Republic",
+                "code": "CAF",
+                "articles": [],
+                "cities": [
+                    "Bangui"
+                ]
+            },
+            "TCD": {
+                "py/object": "borders.Country",
+                "name": "Chad",
+                "code": "TCD",
+                "articles": [],
+                "cities": [
+                    "N'Djamena"
+                ]
+            },
+            "COM": {
+                "py/object": "borders.Country",
+                "name": "Comoros",
+                "code": "COM",
+                "articles": [],
+                "cities": [
+                    "Moroni"
+                ]
+            },
+            "MYT": {
+                "py/object": "borders.Country",
+                "name": "Mayotte",
+                "code": "MYT",
+                "articles": [],
+                "cities": [
+                    "Mamoudzou"
+                ]
+            },
+            "COG": {
+                "py/object": "borders.Country",
+                "name": "Republic of the Congo ",
+                "code": "COG",
+                "articles": [],
+                "cities": [
+                    "Brazzaville",
+                    "Pointe-Noire"
+                ]
+            },
+            "COD": {
+                "py/object": "borders.Country",
+                "name": "Democratic Republic of the Congo (DRC)",
+                "code": "COD",
+                "articles": [],
+                "cities": [
+                    "Kinshasa",
+                    "Mbuji-Mayi",
+                    "Kananga",
+                    "Lubumbashi",
+                    "Mbandaka",
+                    "Bukavu",
+                    "Kisangani",
+                    "Bunia",
+                    "Tshikapa",
+                    "Uvira",
+                    "Kolwezi"
+                ]
+            },
+            "BEN": {
+                "py/object": "borders.Country",
+                "name": "Benin",
+                "code": "BEN",
+                "articles": [],
+                "cities": [
+                    "Cotonou",
+                    "Porto-Novo",
+                    "Abomey-Calavi"
+                ]
+            },
+            "GNQ": {
+                "py/object": "borders.Country",
+                "name": "Equatorial Guinea",
+                "code": "GNQ",
+                "articles": [],
+                "cities": [
+                    "Malabo"
+                ]
+            },
+            "ETH": {
+                "py/object": "borders.Country",
+                "name": "Ethiopia",
+                "code": "ETH",
+                "articles": [],
+                "cities": [
+                    "Addis Ababa",
+                    "Gode",
+                    "Erer Sata"
+                ]
+            },
+            "ERI": {
+                "py/object": "borders.Country",
+                "name": "Eritrea",
+                "code": "ERI",
+                "articles": [],
+                "cities": [
+                    "Asmara"
+                ]
+            },
+            "DJI": {
+                "py/object": "borders.Country",
+                "name": "Djibouti",
+                "code": "DJI",
+                "articles": [],
+                "cities": [
+                    "Djibouti"
+                ]
+            },
+            "GAB": {
+                "py/object": "borders.Country",
+                "name": "Gabon",
+                "code": "GAB",
+                "articles": [],
+                "cities": [
+                    "Libreville"
+                ]
+            },
+            "GMB": {
+                "py/object": "borders.Country",
+                "name": "Gambia",
+                "code": "GMB",
+                "articles": [],
+                "cities": [
+                    "Banjul"
+                ]
+            },
+            "GHA": {
+                "py/object": "borders.Country",
+                "name": "Ghana",
+                "code": "GHA",
+                "articles": [],
+                "cities": [
+                    "Accra",
+                    "Boankra",
+                    "Kumasi",
+                    "Tamale",
+                    "Domaa-Ahenkro"
+                ]
+            },
+            "GIN": {
+                "py/object": "borders.Country",
+                "name": "Guinea",
+                "code": "GIN",
+                "articles": [],
+                "cities": [
+                    "Conakry"
+                ]
+            },
+            "CIV": {
+                "py/object": "borders.Country",
+                "name": "Cote d'Ivoire",
+                "code": "CIV",
+                "articles": [],
+                "cities": [
+                    "Abidjan",
+                    "Yamoussoukro",
+                    "Yopougon",
+                    "Cocody",
+                    "Bouake",
+                    "Port-Bouet"
+                ]
+            },
+            "KEN": {
+                "py/object": "borders.Country",
+                "name": "Kenya",
+                "code": "KEN",
+                "articles": [],
+                "cities": [
+                    "Nairobi",
+                    "Meru",
+                    "Mombasa"
+                ]
+            },
+            "LSO": {
+                "py/object": "borders.Country",
+                "name": "Lesotho",
+                "code": "LSO",
+                "articles": [],
+                "cities": [
+                    "Maseru"
+                ]
+            },
+            "LBR": {
+                "py/object": "borders.Country",
+                "name": "Liberia",
+                "code": "LBR",
+                "articles": [],
+                "cities": [
+                    "Monrovia"
+                ]
+            },
+            "LBY": {
+                "py/object": "borders.Country",
+                "name": "Libyan Arab Jamahiriya",
+                "code": "LBY",
+                "articles": [],
+                "cities": [
+                    "Tripoli",
+                    "Benghazi"
+                ]
+            },
+            "MDG": {
+                "py/object": "borders.Country",
+                "name": "Madagascar",
+                "code": "MDG",
+                "articles": [],
+                "cities": [
+                    "Antananarivo",
+                    "Androtsy"
+                ]
+            },
+            "MWI": {
+                "py/object": "borders.Country",
+                "name": "Malawi",
+                "code": "MWI",
+                "articles": [],
+                "cities": [
+                    "Lilongwe",
+                    "Blantyre"
+                ]
+            },
+            "MLI": {
+                "py/object": "borders.Country",
+                "name": "Mali",
+                "code": "MLI",
+                "articles": [],
+                "cities": [
+                    "Bamako",
+                    "Balandougou"
+                ]
+            },
+            "MRT": {
+                "py/object": "borders.Country",
+                "name": "Mauritania",
+                "code": "MRT",
+                "articles": [],
+                "cities": [
+                    "Nouakchott"
+                ]
+            },
+            "MUS": {
+                "py/object": "borders.Country",
+                "name": "Mauritius",
+                "code": "MUS",
+                "articles": [],
+                "cities": [
+                    "Port Louis"
+                ]
+            },
+            "MAR": {
+                "py/object": "borders.Country",
+                "name": "Morocco",
+                "code": "MAR",
+                "articles": [],
+                "cities": [
+                    "Rabat",
+                    "Tifariti",
+                    "Casablanca",
+                    "El Kelaa des Srarhna",
+                    "Fes",
+                    "Tangier",
+                    "Marrakech",
+                    "Sale",
+                    "Mediouna",
+                    "Meknes"
+                ]
+            },
+            "MOZ": {
+                "py/object": "borders.Country",
+                "name": "Mozambique",
+                "code": "MOZ",
+                "articles": [],
+                "cities": [
+                    "Maputo",
+                    "Matola",
+                    "Nampula"
+                ]
+            },
+            "NAM": {
+                "py/object": "borders.Country",
+                "name": "Namibia",
+                "code": "NAM",
+                "articles": [],
+                "cities": [
+                    "Windhoek"
+                ]
+            },
+            "NER": {
+                "py/object": "borders.Country",
+                "name": "Niger",
+                "code": "NER",
+                "articles": [],
+                "cities": [
+                    "Niamey"
+                ]
+            },
+            "NGA": {
+                "py/object": "borders.Country",
+                "name": "Nigeria",
+                "code": "NGA",
+                "articles": [],
+                "cities": [
+                    "Abuja",
+                    "Lagos",
+                    "Kano",
+                    "Ibadan",
+                    "Port Harcourt",
+                    "Aba",
+                    "Onitsha",
+                    "Maiduguri",
+                    "Benin City",
+                    "Shagamu",
+                    "Ikare",
+                    "Ogbomoso",
+                    "Owerri",
+                    "Abeokuta",
+                    "Ikeja",
+                    "Akure",
+                    "Ilorin",
+                    "Warri",
+                    "Kaduna",
+                    "Osogbo",
+                    "Enugu",
+                    "Bauchi",
+                    "Jalingo",
+                    "Jos",
+                    "Ile-Ife"
+                ]
+            },
+            "GNB": {
+                "py/object": "borders.Country",
+                "name": "Guinea-Bissau",
+                "code": "GNB",
+                "articles": [],
+                "cities": [
+                    "Bissau"
+                ]
+            },
+            "REU": {
+                "py/object": "borders.Country",
+                "name": "Reunion",
+                "code": "REU",
+                "articles": [],
+                "cities": [
+                    "Saint-Denis"
+                ]
+            },
+            "RWA": {
+                "py/object": "borders.Country",
+                "name": "Rwanda",
+                "code": "RWA",
+                "articles": [],
+                "cities": [
+                    "Kigali"
+                ]
+            },
+            "SHN": {
+                "py/object": "borders.Country",
+                "name": "Saint Helena",
+                "code": "SHN",
+                "articles": [],
+                "cities": [
+                    "Jamestown"
+                ]
+            },
+            "STP": {
+                "py/object": "borders.Country",
+                "name": "Sao Tome and Principe",
+                "code": "STP",
+                "articles": [],
+                "cities": [
+                    "Sao Tome"
+                ]
+            },
+            "SEN": {
+                "py/object": "borders.Country",
+                "name": "Senegal",
+                "code": "SEN",
+                "articles": [],
+                "cities": [
+                    "Dakar",
+                    "Pikine",
+                    "Touba"
+                ]
+            },
+            "SYC": {
+                "py/object": "borders.Country",
+                "name": "Seychelles",
+                "code": "SYC",
+                "articles": [],
+                "cities": [
+                    "Victoria"
+                ]
+            },
+            "SLE": {
+                "py/object": "borders.Country",
+                "name": "Sierra Leone",
+                "code": "SLE",
+                "articles": [],
+                "cities": [
+                    "Freetown"
+                ]
+            },
+            "SOM": {
+                "py/object": "borders.Country",
+                "name": "Somalia",
+                "code": "SOM",
+                "articles": [],
+                "cities": [
+                    "Mogadishu",
+                    "Boosaaso",
+                    "Hargeysa",
+                    "Baidoa",
+                    "Gaalkacyo",
+                    "Baardheere",
+                    "Burco",
+                    "Cadaado"
+                ]
+            },
+            "ZAF": {
+                "py/object": "borders.Country",
+                "name": "South Africa",
+                "code": "ZAF",
+                "articles": [],
+                "cities": [
+                    "Pretoria",
+                    "Cape Town",
+                    "Bloemfontein",
+                    "Johannesburg",
+                    "Soweto",
+                    "Vereeniging",
+                    "Pietermaritzburg",
+                    "Durban",
+                    "Rustenburg",
+                    "Kimberley"
+                ]
+            },
+            "ZWE": {
+                "py/object": "borders.Country",
+                "name": "Zimbabwe",
+                "code": "ZWE",
+                "articles": [],
+                "cities": [
+                    "Harare",
+                    "Bulawayo"
+                ]
+            },
+            "SSD": {
+                "py/object": "borders.Country",
+                "name": "South Sudan",
+                "code": "SSD",
+                "articles": [],
+                "cities": [
+                    "Juba"
+                ]
+            },
+            "ESH": {
+                "py/object": "borders.Country",
+                "name": "Western Sahara",
+                "code": "ESH",
+                "articles": [],
+                "cities": []
+            },
+            "SDN": {
+                "py/object": "borders.Country",
+                "name": "Sudan",
+                "code": "SDN",
+                "articles": [],
+                "cities": [
+                    "Khartoum",
+                    "Omdurman",
+                    "Al Mijlad",
+                    "Khartoum North",
+                    "Port Sudan",
+                    "Kassala"
+                ]
+            },
+            "SWZ": {
+                "py/object": "borders.Country",
+                "name": "Swaziland",
+                "code": "SWZ",
+                "articles": [],
+                "cities": [
+                    "Mbabane",
+                    "Lobamba"
+                ]
+            },
+            "TGO": {
+                "py/object": "borders.Country",
+                "name": "Togo",
+                "code": "TGO",
+                "articles": [],
+                "cities": [
+                    "Lome"
+                ]
+            },
+            "TUN": {
+                "py/object": "borders.Country",
+                "name": "Tunisia",
+                "code": "TUN",
+                "articles": [],
+                "cities": [
+                    "Tunis"
+                ]
+            },
+            "UGA": {
+                "py/object": "borders.Country",
+                "name": "Uganda",
+                "code": "UGA",
+                "articles": [],
+                "cities": [
+                    "Kampala",
+                    "Mbale",
+                    "Nansana"
+                ]
+            },
+            "EGY": {
+                "py/object": "borders.Country",
+                "name": "Egypt",
+                "code": "EGY",
+                "articles": [],
+                "cities": [
+                    "Cairo",
+                    "Giza",
+                    "Alexandria",
+                    "Shubra al Khaymah",
+                    "Al Mansurah",
+                    "Halwan",
+                    "Al Mahallah al Kubra",
+                    "Port Said",
+                    "Suez",
+                    "Al `Ashir min Ramadan"
+                ]
+            },
+            "TZA": {
+                "py/object": "borders.Country",
+                "name": "Tanzania",
+                "code": "TZA",
+                "articles": [],
+                "cities": [
+                    "Dar es Salaam",
+                    "Dodoma",
+                    "Mwanza"
+                ]
+            },
+            "BFA": {
+                "py/object": "borders.Country",
+                "name": "Burkina Faso",
+                "code": "BFA",
+                "articles": [],
+                "cities": [
+                    "Ouagadougou",
+                    "Bobo-Dioulasso"
+                ]
+            },
+            "ZMB": {
+                "py/object": "borders.Country",
+                "name": "Zambia",
+                "code": "ZMB",
+                "articles": [],
+                "cities": [
+                    "Lusaka",
+                    "Ndola",
+                    "Kitwe"
+                ]
+            }
+        }
     },
     {
         "py/object": "borders.Continent",
         "name": "ANTARTICA",
-        "countries": []
+        "code": "AN",
+        "countries": {
+            "ATA": {
+                "py/object": "borders.Country",
+                "name": "Antarctica",
+                "code": "ATA",
+                "articles": [],
+                "cities": []
+            },
+            "BVT": {
+                "py/object": "borders.Country",
+                "name": "Bouvet Island (Bouvetoya)",
+                "code": "BVT",
+                "articles": [],
+                "cities": []
+            },
+            "SGS": {
+                "py/object": "borders.Country",
+                "name": "South Georgia and the South Sandwich Islands",
+                "code": "SGS",
+                "articles": [],
+                "cities": [
+                    "King Edward Point"
+                ]
+            },
+            "ATF": {
+                "py/object": "borders.Country",
+                "name": "French Southern Territories",
+                "code": "ATF",
+                "articles": [],
+                "cities": []
+            },
+            "HMD": {
+                "py/object": "borders.Country",
+                "name": "Heard Island and McDonald Islands",
+                "code": "HMD",
+                "articles": [],
+                "cities": []
+            }
+        }
     },
     {
         "py/object": "borders.Continent",
         "name": "NORTH_AMERICA",
-        "countries": [
-            {
-                "py/object": "borders.Country",
-                "name": "US",
-                "continent": "NORTH_AMERICA",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Photos: Residential building destroyed in deadly strike on Damascus",
-                        "date": "Published On 20 Jan 2024",
-                        "source": "aljazeera.com/gallery/2024/1/20/residential-building-destroyed-in-attack-that-killed-irgc-members-in-syria"
-                    }
-                ]
-            }
-        ]
+        "code": "NA",
+        "countries": {}
     },
     {
         "py/object": "borders.Continent",
         "name": "SOUTH_AMERICA",
-        "countries": []
+        "code": "SA",
+        "countries": {
+            "ARG": {
+                "py/object": "borders.Country",
+                "name": "Argentina",
+                "code": "ARG",
+                "articles": [],
+                "cities": [
+                    "Buenos Aires",
+                    "Cordoba",
+                    "Rosario",
+                    "Santiago del Estero",
+                    "Comodoro Rivadavia",
+                    "Mar del Plata",
+                    "San Miguel de Tucuman",
+                    "Salta"
+                ]
+            },
+            "BOL": {
+                "py/object": "borders.Country",
+                "name": "Bolivia",
+                "code": "BOL",
+                "articles": [],
+                "cities": [
+                    "La Paz",
+                    "Sucre",
+                    "Santa Cruz",
+                    "El Alto",
+                    "Cochabamba"
+                ]
+            },
+            "BRA": {
+                "py/object": "borders.Country",
+                "name": "Brazil",
+                "code": "BRA",
+                "articles": [],
+                "cities": [
+                    "Brasilia",
+                    "Sao Paulo",
+                    "Rio de Janeiro",
+                    "Belo Horizonte",
+                    "Salvador",
+                    "Fortaleza",
+                    "Manaus",
+                    "Santos",
+                    "Curitiba",
+                    "Recife",
+                    "Belem",
+                    "Porto Alegre",
+                    "Goiania",
+                    "Guarulhos",
+                    "Campinas",
+                    "Vila Velha",
+                    "Sao Luis",
+                    "Sao Goncalo",
+                    "Maceio",
+                    "Natal",
+                    "Teresina",
+                    "Campo Grande",
+                    "Natal",
+                    "Iguacu",
+                    "Sao Bernardo do Campo",
+                    "Joao Pessoa",
+                    "Abaete",
+                    "Sao Jose dos Campos",
+                    "Santo Andre",
+                    "Ribeirao Preto",
+                    "Jaboatao",
+                    "Osasco",
+                    "Contagem",
+                    "Sorocaba",
+                    "Aracaju",
+                    "Feira de Santana",
+                    "Uberlandia",
+                    "Cuiaba",
+                    "Juiz de Fora",
+                    "Londrina",
+                    "Ananindeua",
+                    "Joinvile",
+                    "Macapa"
+                ]
+            },
+            "CHL": {
+                "py/object": "borders.Country",
+                "name": "Chile",
+                "code": "CHL",
+                "articles": [],
+                "cities": [
+                    "Santiago",
+                    "Concepcion",
+                    "Puente Alto",
+                    "Maipu"
+                ]
+            },
+            "COL": {
+                "py/object": "borders.Country",
+                "name": "Colombia",
+                "code": "COL",
+                "articles": [],
+                "cities": [
+                    "Bogota",
+                    "Timbio",
+                    "Medellin",
+                    "Cali",
+                    "Barranquilla",
+                    "Cartagena",
+                    "Bucaramanga",
+                    "Palermo",
+                    "Cucuta",
+                    "Soledad",
+                    "Villavicencio",
+                    "Pereira",
+                    "Valledupar",
+                    "Ibague",
+                    "Soacha",
+                    "Santa Marta",
+                    "Monteria"
+                ]
+            },
+            "ECU": {
+                "py/object": "borders.Country",
+                "name": "Ecuador",
+                "code": "ECU",
+                "articles": [],
+                "cities": [
+                    "Quito",
+                    "Guayaquil"
+                ]
+            },
+            "FLK": {
+                "py/object": "borders.Country",
+                "name": "Falkland Islands (Malvinas)",
+                "code": "FLK",
+                "articles": [],
+                "cities": [
+                    "Stanley"
+                ]
+            },
+            "GUF": {
+                "py/object": "borders.Country",
+                "name": "French Guiana",
+                "code": "GUF",
+                "articles": [],
+                "cities": [
+                    "Cayenne"
+                ]
+            },
+            "GUY": {
+                "py/object": "borders.Country",
+                "name": "Guyana",
+                "code": "GUY",
+                "articles": [],
+                "cities": [
+                    "Georgetown"
+                ]
+            },
+            "PRY": {
+                "py/object": "borders.Country",
+                "name": "Paraguay",
+                "code": "PRY",
+                "articles": [],
+                "cities": [
+                    "Asuncion"
+                ]
+            },
+            "PER": {
+                "py/object": "borders.Country",
+                "name": "Peru",
+                "code": "PER",
+                "articles": [],
+                "cities": [
+                    "Lima",
+                    "Callao",
+                    "Arequipa",
+                    "Trujillo",
+                    "Chiclayo"
+                ]
+            },
+            "SUR": {
+                "py/object": "borders.Country",
+                "name": "Suriname",
+                "code": "SUR",
+                "articles": [],
+                "cities": [
+                    "Paramaribo"
+                ]
+            },
+            "URY": {
+                "py/object": "borders.Country",
+                "name": "Uruguay",
+                "code": "URY",
+                "articles": [],
+                "cities": [
+                    "Montevideo"
+                ]
+            },
+            "VEN": {
+                "py/object": "borders.Country",
+                "name": "Venezuela",
+                "code": "VEN",
+                "articles": [],
+                "cities": [
+                    "Caracas",
+                    "Maracaibo",
+                    "Valencia",
+                    "Barquisimeto",
+                    "Barinas",
+                    "Ciudad Guayana",
+                    "Catia La Mar",
+                    "Ciudad Bolivar",
+                    "Santa Teresa del Tuy",
+                    "Maturin"
+                ]
+            }
+        }
     },
     {
         "py/object": "borders.Continent",
         "name": "EUROPE",
-        "countries": [
-            {
+        "code": "EU",
+        "countries": {
+            "ALB": {
                 "py/object": "borders.Country",
-                "name": "England",
-                "continent": "EUROPE",
-                "articles": []
+                "name": "Albania",
+                "code": "ALB",
+                "articles": [],
+                "cities": [
+                    "Tirana"
+                ]
             },
-            {
+            "AND": {
                 "py/object": "borders.Country",
-                "name": "Palestine",
-                "continent": "EUROPE",
-                "articles": []
+                "name": "Andorra",
+                "code": "AND",
+                "articles": [],
+                "cities": [
+                    "Andorra la Vella"
+                ]
+            },
+            "AZE": {
+                "py/object": "borders.Country",
+                "name": "Azerbaijan",
+                "code": "AZE",
+                "articles": [],
+                "cities": [
+                    "Baku"
+                ]
+            },
+            "AUT": {
+                "py/object": "borders.Country",
+                "name": "Austria",
+                "code": "AUT",
+                "articles": [],
+                "cities": [
+                    "Vienna"
+                ]
+            },
+            "ARM": {
+                "py/object": "borders.Country",
+                "name": "Armenia",
+                "code": "ARM",
+                "articles": [],
+                "cities": [
+                    "Yerevan"
+                ]
+            },
+            "BEL": {
+                "py/object": "borders.Country",
+                "name": "Belgium",
+                "code": "BEL",
+                "articles": [],
+                "cities": [
+                    "Brussels",
+                    "Antwerp"
+                ]
+            },
+            "BIH": {
+                "py/object": "borders.Country",
+                "name": "Bosnia and Herzegovina",
+                "code": "BIH",
+                "articles": [],
+                "cities": [
+                    "Sarajevo"
+                ]
+            },
+            "BGR": {
+                "py/object": "borders.Country",
+                "name": "Bulgaria",
+                "code": "BGR",
+                "articles": [],
+                "cities": [
+                    "Sofia"
+                ]
+            },
+            "BLR": {
+                "py/object": "borders.Country",
+                "name": "Belarus",
+                "code": "BLR",
+                "articles": [],
+                "cities": [
+                    "Minsk",
+                    "Homyel'"
+                ]
+            },
+            "HRV": {
+                "py/object": "borders.Country",
+                "name": "Croatia",
+                "code": "HRV",
+                "articles": [],
+                "cities": [
+                    "Zagreb"
+                ]
+            },
+            "CYP": {
+                "py/object": "borders.Country",
+                "name": "Cyprus",
+                "code": "CYP",
+                "articles": [],
+                "cities": [
+                    "Nicosia"
+                ]
+            },
+            "CZE": {
+                "py/object": "borders.Country",
+                "name": "Czech Republic",
+                "code": "CZE",
+                "articles": [],
+                "cities": [
+                    "Prague"
+                ]
+            },
+            "DNK": {
+                "py/object": "borders.Country",
+                "name": "Denmark",
+                "code": "DNK",
+                "articles": [],
+                "cities": [
+                    "Copenhagen"
+                ]
+            },
+            "EST": {
+                "py/object": "borders.Country",
+                "name": "Estonia",
+                "code": "EST",
+                "articles": [],
+                "cities": [
+                    "Tallinn"
+                ]
+            },
+            "FRO": {
+                "py/object": "borders.Country",
+                "name": "Faroe Islands",
+                "code": "FRO",
+                "articles": [],
+                "cities": [
+                    "Torshavn"
+                ]
+            },
+            "FIN": {
+                "py/object": "borders.Country",
+                "name": "Finland",
+                "code": "FIN",
+                "articles": [],
+                "cities": [
+                    "Helsinki"
+                ]
+            },
+            "ALA": {
+                "py/object": "borders.Country",
+                "name": "\u00c5land Islands",
+                "code": "ALA",
+                "articles": [],
+                "cities": []
+            },
+            "FRA": {
+                "py/object": "borders.Country",
+                "name": "France",
+                "code": "FRA",
+                "articles": [],
+                "cities": [
+                    "Paris",
+                    "Marseille",
+                    "Lyon"
+                ]
+            },
+            "GEO": {
+                "py/object": "borders.Country",
+                "name": "Georgia",
+                "code": "GEO",
+                "articles": [],
+                "cities": [
+                    "Tbilisi"
+                ]
+            },
+            "DEU": {
+                "py/object": "borders.Country",
+                "name": "Germany",
+                "code": "DEU",
+                "articles": [],
+                "cities": [
+                    "Berlin",
+                    "Stuttgart",
+                    "Munich",
+                    "Hamburg",
+                    "Cologne",
+                    "Frankfurt",
+                    "Dusseldorf",
+                    "Leipzig",
+                    "Dortmund",
+                    "Essen",
+                    "Bremen",
+                    "Dresden",
+                    "Hannover",
+                    "Nuremberg"
+                ]
+            },
+            "GIB": {
+                "py/object": "borders.Country",
+                "name": "Gibraltar",
+                "code": "GIB",
+                "articles": [],
+                "cities": [
+                    "Gibraltar"
+                ]
+            },
+            "GRC": {
+                "py/object": "borders.Country",
+                "name": "Greece",
+                "code": "GRC",
+                "articles": [],
+                "cities": [
+                    "Athens",
+                    "Thessaloniki"
+                ]
+            },
+            "VAT": {
+                "py/object": "borders.Country",
+                "name": "Holy See (Vatican City State)",
+                "code": "VAT",
+                "articles": [],
+                "cities": [
+                    "Vatican City"
+                ]
+            },
+            "HUN": {
+                "py/object": "borders.Country",
+                "name": "Hungary",
+                "code": "HUN",
+                "articles": [],
+                "cities": [
+                    "Budapest"
+                ]
+            },
+            "ISL": {
+                "py/object": "borders.Country",
+                "name": "Iceland",
+                "code": "ISL",
+                "articles": [],
+                "cities": [
+                    "Reykjavik"
+                ]
+            },
+            "IRL": {
+                "py/object": "borders.Country",
+                "name": "Ireland",
+                "code": "IRL",
+                "articles": [],
+                "cities": [
+                    "Dublin"
+                ]
+            },
+            "ITA": {
+                "py/object": "borders.Country",
+                "name": "Italy",
+                "code": "ITA",
+                "articles": [],
+                "cities": [
+                    "Rome",
+                    "Milan",
+                    "Naples",
+                    "Turin",
+                    "Palermo",
+                    "Genoa"
+                ]
+            },
+            "KAZ": {
+                "py/object": "borders.Country",
+                "name": "Kazakhstan",
+                "code": "KAZ",
+                "articles": [],
+                "cities": [
+                    "Nur-Sultan",
+                    "Almaty",
+                    "Shymkent"
+                ]
+            },
+            "LVA": {
+                "py/object": "borders.Country",
+                "name": "Latvia",
+                "code": "LVA",
+                "articles": [],
+                "cities": [
+                    "Riga"
+                ]
+            },
+            "LIE": {
+                "py/object": "borders.Country",
+                "name": "Liechtenstein",
+                "code": "LIE",
+                "articles": [],
+                "cities": [
+                    "Vaduz"
+                ]
+            },
+            "LTU": {
+                "py/object": "borders.Country",
+                "name": "Lithuania",
+                "code": "LTU",
+                "articles": [],
+                "cities": [
+                    "Vilnius"
+                ]
+            },
+            "LUX": {
+                "py/object": "borders.Country",
+                "name": "Luxembourg",
+                "code": "LUX",
+                "articles": [],
+                "cities": [
+                    "Luxembourg"
+                ]
+            },
+            "MLT": {
+                "py/object": "borders.Country",
+                "name": "Malta",
+                "code": "MLT",
+                "articles": [],
+                "cities": [
+                    "Valletta"
+                ]
+            },
+            "MCO": {
+                "py/object": "borders.Country",
+                "name": "Monaco",
+                "code": "MCO",
+                "articles": [],
+                "cities": [
+                    "Monaco"
+                ]
+            },
+            "MDA": {
+                "py/object": "borders.Country",
+                "name": "Moldova",
+                "code": "MDA",
+                "articles": [],
+                "cities": [
+                    "Chisinau"
+                ]
+            },
+            "MNE": {
+                "py/object": "borders.Country",
+                "name": "Montenegro",
+                "code": "MNE",
+                "articles": [],
+                "cities": [
+                    "Podgorica"
+                ]
+            },
+            "NLD": {
+                "py/object": "borders.Country",
+                "name": "Netherlands",
+                "code": "NLD",
+                "articles": [],
+                "cities": [
+                    "Amsterdam",
+                    "The Hague",
+                    "Rotterdam"
+                ]
+            },
+            "NOR": {
+                "py/object": "borders.Country",
+                "name": "Norway",
+                "code": "NOR",
+                "articles": [],
+                "cities": [
+                    "Oslo"
+                ]
+            },
+            "POL": {
+                "py/object": "borders.Country",
+                "name": "Poland",
+                "code": "POL",
+                "articles": [],
+                "cities": [
+                    "Warsaw",
+                    "Krakow",
+                    "Lodz",
+                    "Wroclaw",
+                    "Poznan"
+                ]
+            },
+            "PRT": {
+                "py/object": "borders.Country",
+                "name": "Portugal",
+                "code": "PRT",
+                "articles": [],
+                "cities": [
+                    "Lisbon",
+                    "Porto"
+                ]
+            },
+            "ROU": {
+                "py/object": "borders.Country",
+                "name": "Romania",
+                "code": "ROU",
+                "articles": [],
+                "cities": [
+                    "Bucharest"
+                ]
+            },
+            "RUS": {
+                "py/object": "borders.Country",
+                "name": "Russia",
+                "code": "RUS",
+                "articles": [],
+                "cities": [
+                    "Moscow",
+                    "Saint Petersburg",
+                    "Novosibirsk",
+                    "Yekaterinburg",
+                    "Nizhniy Novgorod",
+                    "Kazan",
+                    "Chelyabinsk",
+                    "Omsk",
+                    "Samara",
+                    "Rostov",
+                    "Ufa",
+                    "Krasnoyarsk",
+                    "Voronezh",
+                    "Perm",
+                    "Volgograd",
+                    "Krasnodar",
+                    "Saratov",
+                    "Tyumen",
+                    "Tolyatti",
+                    "Izhevsk",
+                    "Barnaul",
+                    "Ulyanovsk",
+                    "Irkutsk",
+                    "Khabarovsk",
+                    "Yaroslavl",
+                    "Vladivostok",
+                    "Makhachkala",
+                    "Tomsk",
+                    "Orenburg",
+                    "Kemerovo",
+                    "Novokuznetsk",
+                    "Ryazan",
+                    "Naberezhnyye Chelny",
+                    "Astrakhan",
+                    "Penza",
+                    "Lipetsk",
+                    "Kirov"
+                ]
+            },
+            "SMR": {
+                "py/object": "borders.Country",
+                "name": "San Marino",
+                "code": "SMR",
+                "articles": [],
+                "cities": [
+                    "San Marino"
+                ]
+            },
+            "SRB": {
+                "py/object": "borders.Country",
+                "name": "Serbia",
+                "code": "SRB",
+                "articles": [],
+                "cities": [
+                    "Belgrade"
+                ]
+            },
+            "SVK": {
+                "py/object": "borders.Country",
+                "name": "Slovakia (Slovak Republic)",
+                "code": "SVK",
+                "articles": [],
+                "cities": [
+                    "Bratislava"
+                ]
+            },
+            "SVN": {
+                "py/object": "borders.Country",
+                "name": "Slovenia",
+                "code": "SVN",
+                "articles": [],
+                "cities": [
+                    "Ljubljana"
+                ]
+            },
+            "ESP": {
+                "py/object": "borders.Country",
+                "name": "Spain",
+                "code": "ESP",
+                "articles": [],
+                "cities": [
+                    "Madrid",
+                    "Barcelona",
+                    "Sevilla",
+                    "Malaga",
+                    "Valencia",
+                    "Bilbao",
+                    "Zaragoza",
+                    "Murcia",
+                    "Palma"
+                ]
+            },
+            "SJM": {
+                "py/object": "borders.Country",
+                "name": "Svalbard & Jan Mayen Islands",
+                "code": "SJM",
+                "articles": [],
+                "cities": []
+            },
+            "SWE": {
+                "py/object": "borders.Country",
+                "name": "Sweden",
+                "code": "SWE",
+                "articles": [],
+                "cities": [
+                    "Stockholm",
+                    "Gothenburg"
+                ]
+            },
+            "CHE": {
+                "py/object": "borders.Country",
+                "name": "Switzerland",
+                "code": "CHE",
+                "articles": [],
+                "cities": [
+                    "Bern"
+                ]
+            },
+            "TUR": {
+                "py/object": "borders.Country",
+                "name": "Turkey",
+                "code": "TUR",
+                "articles": [],
+                "cities": [
+                    "Ankara",
+                    "Istanbul",
+                    "Izmir",
+                    "Bursa",
+                    "Antalya",
+                    "Konya",
+                    "Gaziantep",
+                    "Sanliurfa",
+                    "Mersin",
+                    "Adana",
+                    "Diyarbakir",
+                    "Kayseri",
+                    "Samsun",
+                    "Akcaabat",
+                    "Denizli",
+                    "Cankaya",
+                    "Esenyurt",
+                    "Eskisehir",
+                    "Seyhan",
+                    "Kucukcekmece",
+                    "Erzurum",
+                    "Bagcilar",
+                    "Pendik",
+                    "Selcuklu",
+                    "Yildirim"
+                ]
+            },
+            "UKR": {
+                "py/object": "borders.Country",
+                "name": "Ukraine",
+                "code": "UKR",
+                "articles": [],
+                "cities": [
+                    "Kyiv",
+                    "Kharkiv",
+                    "Odesa",
+                    "Dnipro",
+                    "Donetsk",
+                    "Zaporizhzhia",
+                    "Lviv",
+                    "Kryvyi Rih",
+                    "Sevastopol"
+                ]
+            },
+            "MKD": {
+                "py/object": "borders.Country",
+                "name": "Macedonia",
+                "code": "MKD",
+                "articles": [],
+                "cities": [
+                    "Skopje"
+                ]
+            },
+            "GBR": {
+                "py/object": "borders.Country",
+                "name": "United Kingdom of Great Britain & Northern Ireland",
+                "code": "GBR",
+                "articles": [],
+                "cities": [
+                    "London",
+                    "Birmingham",
+                    "Manchester",
+                    "Liverpool",
+                    "Portsmouth",
+                    "Southampton",
+                    "Leeds",
+                    "Nottingham",
+                    "Glasgow",
+                    "Bristol",
+                    "Sheffield",
+                    "Leicester"
+                ]
+            },
+            "GGY": {
+                "py/object": "borders.Country",
+                "name": "Guernsey",
+                "code": "GGY",
+                "articles": [],
+                "cities": []
+            },
+            "JEY": {
+                "py/object": "borders.Country",
+                "name": "Jersey",
+                "code": "JEY",
+                "articles": [],
+                "cities": [
+                    "Saint Helier"
+                ]
+            },
+            "IMN": {
+                "py/object": "borders.Country",
+                "name": "Isle of Man",
+                "code": "IMN",
+                "articles": [],
+                "cities": [
+                    "Douglas"
+                ]
             }
-        ]
+        }
+    },
+    {
+        "py/object": "borders.Continent",
+        "name": "OCEANIA",
+        "code": "OC",
+        "countries": {
+            "ASM": {
+                "py/object": "borders.Country",
+                "name": "American Samoa",
+                "code": "ASM",
+                "articles": [],
+                "cities": [
+                    "Pago Pago"
+                ]
+            },
+            "AUS": {
+                "py/object": "borders.Country",
+                "name": "Australia",
+                "code": "AUS",
+                "articles": [],
+                "cities": [
+                    "Canberra",
+                    "Sydney",
+                    "Melbourne",
+                    "Brisbane",
+                    "Perth",
+                    "Adelaide",
+                    "Gold Coast"
+                ]
+            },
+            "SLB": {
+                "py/object": "borders.Country",
+                "name": "Solomon Islands",
+                "code": "SLB",
+                "articles": [],
+                "cities": [
+                    "Honiara"
+                ]
+            },
+            "COK": {
+                "py/object": "borders.Country",
+                "name": "Cook Islands",
+                "code": "COK",
+                "articles": [],
+                "cities": [
+                    "Avarua"
+                ]
+            },
+            "FJI": {
+                "py/object": "borders.Country",
+                "name": "Fiji",
+                "code": "FJI",
+                "articles": [],
+                "cities": [
+                    "Suva"
+                ]
+            },
+            "PYF": {
+                "py/object": "borders.Country",
+                "name": "French Polynesia",
+                "code": "PYF",
+                "articles": [],
+                "cities": [
+                    "Papeete"
+                ]
+            },
+            "KIR": {
+                "py/object": "borders.Country",
+                "name": "Kiribati",
+                "code": "KIR",
+                "articles": [],
+                "cities": [
+                    "Tarawa"
+                ]
+            },
+            "GUM": {
+                "py/object": "borders.Country",
+                "name": "Guam",
+                "code": "GUM",
+                "articles": [],
+                "cities": [
+                    "Hagta"
+                ]
+            },
+            "NRU": {
+                "py/object": "borders.Country",
+                "name": "Nauru",
+                "code": "NRU",
+                "articles": [],
+                "cities": [
+                    "Yaren"
+                ]
+            },
+            "NCL": {
+                "py/object": "borders.Country",
+                "name": "New Caledonia",
+                "code": "NCL",
+                "articles": [],
+                "cities": [
+                    "Noumea"
+                ]
+            },
+            "VUT": {
+                "py/object": "borders.Country",
+                "name": "Vanuatu",
+                "code": "VUT",
+                "articles": [],
+                "cities": [
+                    "Port-Vila"
+                ]
+            },
+            "NZL": {
+                "py/object": "borders.Country",
+                "name": "New Zealand",
+                "code": "NZL",
+                "articles": [],
+                "cities": [
+                    "Wellington",
+                    "Auckland"
+                ]
+            },
+            "NIU": {
+                "py/object": "borders.Country",
+                "name": "Niue",
+                "code": "NIU",
+                "articles": [],
+                "cities": [
+                    "Alofi"
+                ]
+            },
+            "NFK": {
+                "py/object": "borders.Country",
+                "name": "Norfolk Island",
+                "code": "NFK",
+                "articles": [],
+                "cities": [
+                    "Kingston"
+                ]
+            },
+            "MNP": {
+                "py/object": "borders.Country",
+                "name": "Northern Mariana Islands",
+                "code": "MNP",
+                "articles": [],
+                "cities": [
+                    "Capitol Hill"
+                ]
+            },
+            "UMI": {
+                "py/object": "borders.Country",
+                "name": "United States Minor Outlying Islands",
+                "code": "UMI",
+                "articles": [],
+                "cities": []
+            },
+            "FSM": {
+                "py/object": "borders.Country",
+                "name": "Micronesia",
+                "code": "FSM",
+                "articles": [],
+                "cities": [
+                    "Palikir"
+                ]
+            },
+            "MHL": {
+                "py/object": "borders.Country",
+                "name": "Marshall Islands",
+                "code": "MHL",
+                "articles": [],
+                "cities": [
+                    "Majuro"
+                ]
+            },
+            "PLW": {
+                "py/object": "borders.Country",
+                "name": "Palau",
+                "code": "PLW",
+                "articles": [],
+                "cities": [
+                    "Ngerulmud"
+                ]
+            },
+            "PNG": {
+                "py/object": "borders.Country",
+                "name": "Papua New Guinea",
+                "code": "PNG",
+                "articles": [],
+                "cities": [
+                    "Port Moresby"
+                ]
+            },
+            "PCN": {
+                "py/object": "borders.Country",
+                "name": "Pitcairn Islands",
+                "code": "PCN",
+                "articles": [],
+                "cities": [
+                    "Adamstown"
+                ]
+            },
+            "TKL": {
+                "py/object": "borders.Country",
+                "name": "Tokelau",
+                "code": "TKL",
+                "articles": [],
+                "cities": []
+            },
+            "TON": {
+                "py/object": "borders.Country",
+                "name": "Tonga",
+                "code": "TON",
+                "articles": [],
+                "cities": [
+                    "Nuku`alofa"
+                ]
+            },
+            "TUV": {
+                "py/object": "borders.Country",
+                "name": "Tuvalu",
+                "code": "TUV",
+                "articles": [],
+                "cities": [
+                    "Funafuti"
+                ]
+            },
+            "WLF": {
+                "py/object": "borders.Country",
+                "name": "Wallis and Futuna",
+                "code": "WLF",
+                "articles": [],
+                "cities": [
+                    "Mata-Utu"
+                ]
+            },
+            "WSM": {
+                "py/object": "borders.Country",
+                "name": "Samoa",
+                "code": "WSM",
+                "articles": [],
+                "cities": [
+                    "Apia"
+                ]
+            },
+            "nan": {
+                "py/object": "borders.Country",
+                "name": "Disputed Territory",
+                "code": NaN,
+                "articles": [],
+                "cities": []
+            }
+        }
     }
 ]

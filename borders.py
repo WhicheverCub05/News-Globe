@@ -1,3 +1,4 @@
+import pandas as pd
 
 class Article:
 
@@ -5,7 +6,6 @@ class Article:
         self.headline = headline
         self.date = date
         self.source = source
-        
         
     # use __str__ for user
     def __str__(self):
@@ -36,38 +36,52 @@ class Article:
 
 class Country:
 
-    def __init__(self, name):
+    def __init__(self, name, code):
         self.name = name
-        self.continent = ""
+        self.code = code
+        # self.continent = ""
         self.articles = []
+        self.cities = []
         
     def __str__(self):
-        return f"name : {self.name},\n" + f"continent : {self.continent}"
-
-    def set_continent(self, continent):
-        self.continent = continent
+        return f"name : {self.name}\n"
     
-    def get_continent():
-        return self.continent
-
     def add_article(self, article):
         self.articles.append(article)
+
+    def add_city(self, city):
+        # print(f"{self.name} adding city:", city)
+        self.cities.append(city)
 
     def get_name():
         return self.name
 
+    def get_code():
+        return self.code
+
+    def is_associated(self, text):
+        # checks if country is associated with content of text due to its name or city names
+        if self.name.lower() in text.lower():
+            return True
+        else:
+            for city in self.cities:
+                if city.lower() in text.lower():
+                    return True
+
+        return False
+
 
 class Continent:
 
-    def __init__(self, name):
+    def __init__(self, name, code):
         self.name = name
-        self.countries = []
+        self.code = code
+        self.countries = {}
 
-    def add_country(self, Country):
-        for country in Country:
-            print(f"{self.name} adding country:", country.name)
-            country.set_continent(self.name)
-            self.countries.append(country)
+
+    def add_country(self, country):
+        # print(f"{self.name} adding country:", country.name)
+        self.countries[country.code] = country
             
 
     def get_country(name):
@@ -96,37 +110,65 @@ def get_country_from_list(name):
                 return country
 
 
-def get_countries_from_csv():
-    print("reading csv file")
-    #open file and create country objects from each country on the list
-    print("complete")
-
-# countries
-asia_country_list = ["China", "Russia"]
-africa_country_list = []
-australia_country_list = []
-antartica_country_list = []
-north_america_country_list = ["US"]
-south_america_country_list = []
-europe_country_list = ["England", "Palestine"]
+continent_list =   [Continent("ASIA", "AS"), 
+                    Continent("AFRICA", "AF"),  
+                    Continent("ANTARTICA", "AN"), 
+                    Continent("NORTH_AMERICA", "NA"), 
+                    Continent("SOUTH_AMERICA", "SA"),
+                    Continent("EUROPE", "EU"), 
+                    Continent("OCEANIA", "OC")]
 
 
-continent_list =   [Continent("ASIA"), 
-                    Continent("AFRICA"), 
-                    Continent("AUSTRALIA"), 
-                    Continent("ANTARTICA"), 
-                    Continent("NORTH_AMERICA"), 
-                    Continent("SOUTH_AMERICA"), 
-                    Continent("EUROPE")]
+def get_countries_from_csv(file_path, continent_list):
+
+    print("Populating continents with cities from:", file_path, "\n")
+    
+    try:
+        countries_file = pd.read_csv(file_path)
+    
+    except FileNotFoundError:
+        print(f"file {file_path} does not exist. please check spelling")
+        exit()
+
+    except e:
+        print("Error while trying to read file")
+        exit()
+
+    for row in range(len(countries_file)):
+        continent_code = countries_file['Continent_Code'][row]
+        country_name = countries_file['Country_Name'][row]
+        country_code = countries_file['Three_Letter_Country_Code'][row]
+        for continent in continent_list:
+            if continent.code == continent_code:
+                continent.add_country(Country(country_name, country_code)) 
+
+    print("complete\n")
 
 
-continent_list[0].add_country(make_countries_from_country_list(asia_country_list)) 
-continent_list[1].add_country(make_countries_from_country_list(africa_country_list)) 
-continent_list[2].add_country(make_countries_from_country_list(australia_country_list)) 
-continent_list[3].add_country(make_countries_from_country_list(antartica_country_list)) 
-continent_list[4].add_country(make_countries_from_country_list(north_america_country_list)) 
-continent_list[5].add_country(make_countries_from_country_list(south_america_country_list)) 
-continent_list[6].add_country(make_countries_from_country_list(europe_country_list))
+def get_cities_from_csv(file_path, continent_list):
+    print("Populating countries with cities from:", file_path, "\n")
+
+    try:
+        cities_file = pd.read_csv(file_path)
+    
+    except FileNotFoundError:
+        print(f"file {file_path} does not exist. please check spelling")
+        exit()
+
+    except e:
+        print("Error while trying to read file")
+        exit()
+
+    for row in range(len(cities_file)):
+        country_code = cities_file["iso3"][row]
+        city_name = cities_file["city_ascii"][row]
+
+        for continent in continent_list:
+            if country_code in continent.countries:
+                continent.countries[country_code].add_city(city_name)
+
+    print("complete\n")
 
 
-print("\n ================ \n")
+get_countries_from_csv("country_and_continent_codes_amended.csv", continent_list)
+get_cities_from_csv("capital_and_large_cities.csv", continent_list)
