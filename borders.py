@@ -121,7 +121,7 @@ continent_list =   [Continent("ASIA", "AS"),
 
 def get_countries_from_csv(file_path, continent_list):
 
-    print("Populating continents with cities from:", file_path, "\n")
+    print("Populating continents with cities from:", file_path)
     
     try:
         countries_file = pd.read_csv(file_path)
@@ -146,7 +146,7 @@ def get_countries_from_csv(file_path, continent_list):
 
 
 def get_cities_from_csv(file_path, continent_list):
-    print("Populating countries with cities from:", file_path, "\n")
+    print("Populating countries with cities from:", file_path)
 
     try:
         cities_file = pd.read_csv(file_path)

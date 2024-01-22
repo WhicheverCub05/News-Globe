@@ -30,29 +30,57 @@ def assign_articles_to_country(articles, continents):
                     print(f"added: {article.headline} to {country.name}")
 
 
-def scrape_all_news_pages():
-    # for each news network
-    print("scraping pages")
-    response = requests.get(news_dict.get('Al Jazeera'))
+def scrape_aljazeera(url):
+    print("scraping Al Jazeera")
+    articles = []
+
+    response = requests.get(url)
     soup = BeautifulSoup(response.content, 'lxml')
     
     news_items_headline = soup.select('.featured-articles-list__item .u-clickable-card__link', href=True) # .featured-articles-list__item span 
     news_items_date = soup.select(".featured-articles-list__item .gc__date__date .screen-reader-text")
     news_items_source = soup.select(".featured-articles-list__item .gc__date__date .screen-reader-text")
 
-    print("news items read:\n")
-
-    articles = []
-
     for i in range(len(news_items_headline)):
-
         headline = re.sub('\u00ad', '', news_items_headline[i].get_text())
-        link = f"aljazeera.com{news_items_headline[i]['href']}"
         date = news_items_date[i].get_text()
-        
-        articles.append(Article(headline, date, link))
+        source = f"aljazeera.com{news_items_headline[i]['href']}"
+        articles.append(Article(headline, date, source))
  
     return articles
+
+
+def scrape_bbc(url):
+    print("\nscraping BBC")
+    articles = []
+
+    response = requests.get(url)
+    soup = BeautifulSoup(response.content, 'lxml')
+
+    news_items_headline = soup.select('.gel-layout__item .gs-c-promo-heading__title') # .featured-articles-list__item span 
+    news_items_date = datetime.today()
+    news_items_source = soup.select(".gel-layout__item .gs-c-promo-heading", href=True)
+
+    for i in range(len(news_items_headline)):
+        headline = news_items_headline[i].get_text()
+        date = news_items_date
+        source = f"bbc.com{news_items_source[i]['href']}"
+        articles.append(Article(headline, date, source))
+
+    return articles
+
+
+def scrape_all_news_pages():
+    all_articles = []
+    tmp_article_list = [] 
+    tmp_article_list.append(scrape_bbc(news_dict.get('BBC')))
+    tmp_article_list.append(scrape_aljazeera(news_dict.get('Al Jazeera')))
+    
+    for article_list in tmp_article_list:
+        for article in article_list:
+            all_articles.append(article)
+            
+    return all_articles
 
 
 def read_json_database(file_path):
@@ -67,15 +95,10 @@ def clear_json_database(file_path):
 
 
 def write_articles_to_database(file_path, continents):
-
     if path.isfile(file_path) is False:
         raise Exception("File not found")
         return 0
-
-    clear_json_database(file_path)
-    
-    data = []
-    
+        
     with open(file_path, 'w') as database:
         database.write(jsonpickle.encode(continents, indent = 4))
 
@@ -83,6 +106,8 @@ def write_articles_to_database(file_path, continents):
 def update_news():
     print("updating news. ", datetime.utcnow().strftime('%B %D %Y - %H:%M:%S')) # was %d
     articles = scrape_all_news_pages()
+    for article in articles:
+        print(article)
     assign_articles_to_country(articles, borders.continent_list)
     write_articles_to_database(database_file_path, borders.continent_list)
 

@@ -120,7 +120,32 @@
                 "py/object": "borders.Country",
                 "name": "China",
                 "code": "CHN",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Eight dead and dozens missing in China landslide",
+                        "date": {
+                            "py/object": "datetime.datetime",
+                            "__reduce__": [
+                                {
+                                    "py/type": "datetime.datetime"
+                                },
+                                [
+                                    "B+gBFhYdLwaN1g=="
+                                ]
+                            ]
+                        },
+                        "source": "bbc.com/news/world-asia-china-68052676"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Canada sets two-year cap on foreign students",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/world-us-canada-68059996"
+                    }
+                ],
                 "cities": [
                     "Beijing",
                     "Guangzhou",
@@ -676,7 +701,32 @@
                 "py/object": "borders.Country",
                 "name": "Palestinine",
                 "code": "PSE",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Dozens reported killed as battle rages in Gaza's Khan Younis",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/world-middle-east-68055933"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "25,000 now killed in Gaza, says Hamas-run ministry",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/world-middle-east-68050172"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Israeli war leader challenges Netanyahu over Gaza",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/world-middle-east-68035744"
+                    }
+                ],
                 "cities": [
                     "Jerusalem",
                     "Gaza"
@@ -700,15 +750,27 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Photos: India\u2019s Modi opens controversial Hindu temple in Ayodhya",
-                        "date": "Published On 22 Jan 2024",
-                        "source": "aljazeera.com/gallery/2024/1/22/indias-modi-opens-controversial-hindu-temple-in-ayodhya"
+                        "headline": "India PM opens grand temple on razed mosque site",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/world-asia-india-68003095"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Sony scraps merger with India\u2019s Zee",
-                        "date": "Published On 22 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/22/sony-ditches-tie-up-with-indias-zee"
+                        "headline": "Sony calls off merger with India media giant Zee",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/business-68054056"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "India PM opens grand temple on razed mosque site",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/world-asia-india-68003095"
                     }
                 ],
                 "cities": [
@@ -863,7 +925,24 @@
                 "py/object": "borders.Country",
                 "name": "Iran",
                 "code": "IRN",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Iran's antisemitic speeches to UK students probed",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/uk-68016330"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Why did Iran launch strikes on its allies' territory?",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/world-middle-east-68021483"
+                    }
+                ],
                 "cities": [
                     "Tehran",
                     "Kashan",
@@ -925,9 +1004,11 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Japan hopes to restore power to \u2018Moon Sniper\u2019",
-                        "date": "Published On 22 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/22/japan-moon"
+                        "headline": "Japan hopes sunlight can save stricken Moon lander",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/science-environment-68055186"
                     }
                 ],
                 "cities": [
@@ -1209,7 +1290,14 @@
                 "py/object": "borders.Country",
                 "name": "Russia",
                 "code": "RUS",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Russian lawmakers consider bill to seize property of Ukraine war critics",
+                        "date": "Published On 22 Jan 2024",
+                        "source": "aljazeera.com/news/2024/1/22/russian-lawmakers-consider-bill-to-seize-property-of-ukraine-war-critics"
+                    }
+                ],
                 "cities": [
                     "Moscow",
                     "Saint Petersburg",
@@ -1471,7 +1559,16 @@
                 "py/object": "borders.Country",
                 "name": "Cameroon",
                 "code": "CMR",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "World-first malaria mass vaccine begins in Cameroon",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/world-africa-68037008"
+                    }
+                ],
                 "cities": [
                     "Yaounde",
                     "Douala",
@@ -1681,7 +1778,16 @@
                 "py/object": "borders.Country",
                 "name": "Liberia",
                 "code": "LBR",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Liberia's new leader fails to end inauguration speech",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/world-africa-68054411"
+                    }
+                ],
                 "cities": [
                     "Monrovia"
                 ]
@@ -2239,7 +2345,16 @@
                 "py/object": "borders.Country",
                 "name": "Ecuador",
                 "code": "ECU",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Ecuador gang members held after hospital stormed",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/world-latin-america-68055945"
+                    }
+                ],
                 "cities": [
                     "Quito",
                     "Guayaquil"
@@ -2285,7 +2400,16 @@
                 "py/object": "borders.Country",
                 "name": "Peru",
                 "code": "PER",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Giraffe Benito on 50-hour trip to escape extreme climate",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/world-latin-america-68061512"
+                    }
+                ],
                 "cities": [
                     "Lima",
                     "Callao",
@@ -2740,7 +2864,11 @@
                 "py/object": "borders.Country",
                 "name": "Russia",
                 "code": "RUS",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/id": 146
+                    }
+                ],
                 "cities": [
                     "Moscow",
                     "Saint Petersburg",
@@ -2821,7 +2949,16 @@
                 "py/object": "borders.Country",
                 "name": "Spain",
                 "code": "ESP",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Briton in Madrid court over Snapchat plane-bomb hoax",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/world-europe-68056421"
+                    }
+                ],
                 "cities": [
                     "Madrid",
                     "Barcelona",
@@ -2897,7 +3034,19 @@
                 "py/object": "borders.Country",
                 "name": "Ukraine",
                 "code": "UKR",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "In Ukraine's river war, drones mean nowhere is safe",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/world-europe-67991772"
+                    },
+                    {
+                        "py/id": 146
+                    }
+                ],
                 "cities": [
                     "Kyiv",
                     "Kharkiv",
@@ -2984,7 +3133,32 @@
                 "py/object": "borders.Country",
                 "name": "Australia",
                 "code": "AUS",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Australia axes 'golden visa' scheme for mega-rich",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/world-australia-68052626"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Australia axes 'golden visa' scheme for mega-rich",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/world-australia-68052626"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Australia axes 'golden visa' scheme for mega-rich",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "bbc.com/news/world-australia-68052626"
+                    }
+                ],
                 "cities": [
                     "Canberra",
                     "Sydney",
