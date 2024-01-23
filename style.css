@@ -5,16 +5,50 @@ h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#info_test {
-    position:absolute;
-    top:100px;
-    width:100%;
+news_header {
+    color:rgb(206, 190, 82);
+    font-size: medium;
+}
+
+sauce {
+    color: rgb(148, 142, 105);
+    font-size: small;
+}
+
+date {
+    color:rgb(148, 142, 105);
+    font-size: small;
+    text-align: right;
+}
+
+#news {
+    padding-top: 10px;
+    height: 55%;
+    border: solid;
+    border-radius: 10px;
+    right: 1%;
+    position: absolute;
+    top: 22%;
+    width: 30%;
     text-align: center;
     z-index: 100;
     display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-style: bold;
+    background: rgba(102, 150, 172, 0.6)
+}
+
+#article {
+    padding: 5px;
+    border: 2px solid cadetblue;
+    border-radius: 4px; 
+    height: 26%;
+    margin: 5px;
+    font-family: Verdana;
+    color: rgb(206, 190, 82);
+    text-align: left;
+    background: rgba(51, 72, 81, 0.8);
 }
 
 body {

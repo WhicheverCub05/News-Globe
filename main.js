@@ -3,6 +3,7 @@ import { GUI } from 'dat.gui';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls';
 import Stats from 'three/addons/libs/stats.module.js';
+import data from './news_data.json' assert {type : 'json'};
 
 // renderer
 const renderer = new THREE.WebGLRenderer({antialias: true});
@@ -107,13 +108,14 @@ function animateGlobe() {
 }
 
 // shows the news for the country selected
-function showNews() {
-    const newsPanel = new GUI(); // {width:300}
-    const newsFolder = newsPanel.addFolder('Headlines')
-    const settingsFolder = newsPanel.addFolder('Settings')
+function showGUI() {
     
-    newsFolder.open();
-    settingsFolder.open();
+    const settingsPanel = new GUI(); // {width:300}
+    const newsFolder = settingsPanel.addFolder('News')
+    const settingsFolder = settingsPanel.addFolder('Graphic')
+    
+    // newsFolder.open();
+    // settingsFolder.open();
 
     var settings = {
         night_mode: false,
@@ -126,6 +128,7 @@ function showNews() {
     settingsFolder.add(settings, "night_mode").name("night mode").onChange(toggleNightGlobe);
     settingsFolder.add(settings, "auto_spin").name("auto spin").onChange(toggleAutoSpin);
 }
+
 
 // render nightglobe
 function toggleNightGlobe() {
@@ -161,9 +164,9 @@ function animate() {
 
 // init bruv
 function init() {
+    showGUI();
+    populateNews('PKG');
     loadGlobe();
-    showNews();
-    // renderer.render(scene, camera);
 }
 
 const countryList = ['Antarctica', 'Albania'];
@@ -182,6 +185,44 @@ function updateNews() {
                 // add to json file https://stackoverflow.com/questions/36856232/write-add-data-in-json-file-using-node-js
         })
     }
+}
+
+
+// gets data from the json files onto the webpage. selects which articles to display
+function populateNews(country_code) {
+    // var continent_list = fetchDataFromJson(data);
+    console.log("Im in populateNews()")
+    console.log("Example North Korea News")
+    
+    var articles = []; 
+    var country;
+
+    console.log("data[0]['countries']", data[0]["countries"]);
+    console.log("data[0].countries", data[0].countries.ARE.articles[0].headline);
+
+    console.log("data[] countries length", data[0].countries.length);
+
+    for (let i=0; i < data.length; i++) {
+        for (let j=0; j < data[i]["countries"].length; j++) {
+            if (data[i][country_code] == country_code) {
+                country = data[i][country_code]
+                articles = country.articles
+            }
+        }
+    }
+
+    console.log("What country is this?:", country_name)
+}
+
+//
+// function fetchDataFromJson(data) {
+//    var continents = JSON.parse(data);
+//    return continents;
+// }
+
+
+function writeNewsToNewsGUI(articles) {
+    
 }
 
 init();

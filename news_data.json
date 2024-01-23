@@ -123,7 +123,7 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Powerful 7.1 earthquake strikes near China\u2019s border with Kyrgyzstan",
+                        "headline": "Three dead as 7.1 earthquake strikes near China\u2019s border with Kyrgyzstan",
                         "date": {
                             "py/object": "datetime.datetime",
                             "__reduce__": [
@@ -131,7 +131,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gBFwotIAVhqg=="
+                                    "B+gBFxAaDg1H6A=="
                                 ]
                             ]
                         },
@@ -712,35 +712,11 @@
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "21 soldiers killed in biggest single Israeli loss during Gaza combat, Israeli military says",
+                        "headline": "24 soldiers killed on deadliest day for Israeli forces in Gaza combat",
                         "date": {
                             "py/id": 39
                         },
                         "source": "cnn.com/2024/01/23/middleeast/gaza-israeli-soldiers-deaths-intl-hnk/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Medical facilities battered amid Israeli assault in Khan\u00a0Younis, say Palestinian officials in Gaza, as death toll rises",
-                        "date": {
-                            "py/id": 39
-                        },
-                        "source": "cnn.com/2024/01/22/middleeast/khan-younis-gaza-israel-attack-intl/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "How Gaza\u2019s hospitals became battlegrounds",
-                        "date": {
-                            "py/id": 39
-                        },
-                        "source": "cnn.comhttps://www.cnn.com/interactive/2024/01/middleeast/gaza-hospitals-destruction-investigation-intl-cmd/"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "See what life is like for ordinary Gazans amid latest assault3:04",
-                        "date": {
-                            "py/id": 39
-                        },
-                        "source": "cnn.com/videos/world/2024/01/23/exp-gaza-khan-younis-israel-war-wedeman-pkg-012312aseg2-cnni-world.cnn"
                     },
                     {
                         "py/object": "borders.Article",
@@ -757,6 +733,22 @@
                             "py/id": 39
                         },
                         "source": "cnn.com/2024/01/22/middleeast/gaza-foreign-aid-dg/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "How Gaza\u2019s hospitals became battlegrounds",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "cnn.comhttps://www.cnn.com/interactive/2024/01/middleeast/gaza-hospitals-destruction-investigation-intl-cmd/"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Medical facilities battered amid Israeli assault in Khan\u00a0Younis, say Palestinian officials in Gaza, as death toll rises",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "cnn.com/2024/01/22/middleeast/khan-younis-gaza-israel-attack-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
@@ -784,7 +776,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gBFwotIAylAQ=="
+                                    "B+gBFxAaDwZFeQ=="
                                 ]
                             ]
                         },
@@ -794,7 +786,7 @@
                         "py/object": "borders.Article",
                         "headline": "Dozens reported killed as battle rages in Gaza's Khan Younis",
                         "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
                         "source": "bbc.com/news/world-middle-east-68055933"
                     },
@@ -802,7 +794,7 @@
                         "py/object": "borders.Article",
                         "headline": "Israel says 24 soldiers killed in Gaza in one day",
                         "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
                         "source": "bbc.com/news/world-middle-east-68065903"
                     }
@@ -830,33 +822,17 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Modi hails a new \u2018divine India\u2019 as he inaugurates controversial Hindu temple ahead of nationwide elections",
+                        "headline": "Photos: Divisive Indian temple consecrated in ceremony overseen by Modi",
                         "date": {
                             "py/id": 39
                         },
-                        "source": "cnn.com/2024/01/22/india/modi-inauguration-india-ayodhya-temple-intl-hnk/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Indian Prime Minister Narendra Modi inaugurates controversial Hindu temple4:39",
-                        "date": {
-                            "py/id": 39
-                        },
-                        "source": "cnn.com/videos/world/2024/01/22/exp-ravi-agrawal-intv-modi-hindu-temple-cnni-world-fst-012210aseg2.cnn"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "See why this long-anticipated temple has divided India2:31",
-                        "date": {
-                            "py/id": 39
-                        },
-                        "source": "cnn.com/videos/world/2024/01/18/ram-mandir-ayodhya-contd-lon-orig-tp.cnn"
+                        "source": "cnn.com/2024/01/23/india/photos-ayodhya-ram-mandir-temple-inauguration-intl-hnk/index.html"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Crowds at India's new Ram temple day after opening",
                         "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
                         "source": "bbc.com/news/world-asia-india-68066261"
                     },
@@ -864,7 +840,7 @@
                         "py/object": "borders.Article",
                         "headline": "No bail, no trial: Freedom on hold for Indian activist",
                         "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
                         "source": "bbc.com/news/world-asia-india-67980484"
                     },
@@ -872,7 +848,7 @@
                         "py/object": "borders.Article",
                         "headline": "No bail, no trial: Freedom on hold for Indian activist",
                         "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
                         "source": "bbc.com/news/world-asia-india-67980484"
                     },
@@ -880,15 +856,31 @@
                         "py/object": "borders.Article",
                         "headline": "Crowds at India's new Ram temple day after opening",
                         "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
                         "source": "bbc.com/news/world-asia-india-68066261"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "LIVE: Syria vs India \u2013 AFC Asian Cup 2023 football",
+                        "headline": "Watch: Indian PM Modi inaugurates temple in Ayodhya",
+                        "date": {
+                            "py/id": 68
+                        },
+                        "source": "bbc.com/news/world-asia-india-68053468"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "India PM opens grand temple on razed mosque site",
+                        "date": {
+                            "py/id": 68
+                        },
+                        "source": "bbc.com/news/world-asia-india-68003095"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "The Take: India\u2019s Ram temple: A \u2018new era\u2019 for Hindu nationalism?",
                         "date": "Published On 23 Jan 2024",
-                        "source": "aljazeera.com/sports/liveblog/2024/1/23/live-syria-vs-india-afc-asian-cup-2023-football"
+                        "source": "aljazeera.com/podcasts/2024/1/23/the-take-indias-ram-temple-a-new-era-for-hindu-nationalism"
                     }
                 ],
                 "cities": [
@@ -1046,17 +1038,19 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
+                        "headline": "Iran to execute protester with mental health condition on Tuesday, says lawyer",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "cnn.com/2024/01/22/world/iran-to-execute-protestor-with-mental-health-issues-says-lawyer/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
                         "headline": "Iran executes protester with mental health condition, judiciary says",
                         "date": {
                             "py/id": 39
                         },
                         "source": "cnn.com/2024/01/23/middleeast/iran-executes-protester-mental-health-intl-hnk/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Iran executes 2022 protester for murder",
-                        "date": "Published On 23 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/23/iran-executes-man-for-killing-policeman-five-others-during-2022-protests"
                     }
                 ],
                 "cities": [
@@ -1120,33 +1114,9 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "North Korea claims to test underwater nuclear-capable drone after US, South Korea and Japan show off naval might",
-                        "date": {
-                            "py/id": 39
-                        },
-                        "source": "cnn.com/2024/01/19/asia/north-korea-underwater-nuclear-drone-test-intl-hnk-ml/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "These Japanese beef croquettes are so popular there\u2019s a 43-year waitlist",
-                        "date": {
-                            "py/id": 39
-                        },
-                        "source": "cnn.com/travel/japanese-kobe-beef-croquettes-43-year-wait-list-intl-hnk/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
                         "headline": "Japan's Princess Aiko gets job with Red Cross",
                         "date": {
-                            "py/id": 69
-                        },
-                        "source": "bbc.com/news/world-asia-68064954"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Japan's Princess Aiko gets job with Red Cross",
-                        "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
                         "source": "bbc.com/news/world-asia-68064954"
                     }
@@ -1227,20 +1197,9 @@
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Number of North Korean defectors nearly triples in 2023, including \u2018elite\u2019 diplomats, South Korea says",
-                        "date": {
-                            "py/id": 39
-                        },
-                        "source": "cnn.com/2024/01/19/asia/north-korea-defectors-elite-covid-intl-hnk/index.html"
-                    },
-                    {
-                        "py/id": 103
-                    },
-                    {
-                        "py/object": "borders.Article",
                         "headline": "Is North Korea's leader actually considering war?",
                         "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
                         "source": "bbc.com/news/world-asia-68052515"
                     },
@@ -1248,7 +1207,7 @@
                         "py/object": "borders.Article",
                         "headline": "Is North Korea's leader actually considering war?",
                         "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
                         "source": "bbc.com/news/world-asia-68052515"
                     }
@@ -1274,19 +1233,13 @@
                         "source": "cnn.com/2024/01/22/asia/south-korea-itaewon-halloween-crowd-crush-intl-hnk/index.html"
                     },
                     {
-                        "py/id": 116
+                        "py/id": 112
                     },
                     {
-                        "py/id": 117
+                        "py/id": 113
                     },
                     {
-                        "py/id": 103
-                    },
-                    {
-                        "py/id": 118
-                    },
-                    {
-                        "py/id": 119
+                        "py/id": 114
                     }
                 ],
                 "cities": [
@@ -1409,7 +1362,32 @@
                 "py/object": "borders.Country",
                 "name": "Oman",
                 "code": "OMN",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Pakistani held for triple murder linked to romance scam",
+                        "date": {
+                            "py/id": 68
+                        },
+                        "source": "bbc.com/news/world-europe-68066311"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Woman arrested for stealing $2,500 of Stanley cups",
+                        "date": {
+                            "py/id": 68
+                        },
+                        "source": "bbc.com/news/world-us-canada-68067495"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Spanish triple murder linked to online romance scam",
+                        "date": {
+                            "py/id": 68
+                        },
+                        "source": "bbc.com/news/world-europe-68066311"
+                    }
+                ],
                 "cities": [
                     "Muscat"
                 ]
@@ -1427,7 +1405,11 @@
                 "py/object": "borders.Country",
                 "name": "Pakistan",
                 "code": "PAK",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/id": 147
+                    }
+                ],
                 "cities": [
                     "Islamabad",
                     "Karachi",
@@ -1498,7 +1480,16 @@
                 "py/object": "borders.Country",
                 "name": "Qatar",
                 "code": "QAT",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "These mind-bending mirrors have appeared in Qatar\u2019s desert. Here\u2019s why",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "cnn.com/travel/olaf-elisasson-mirros-qatar-desert/index.html"
+                    }
+                ],
                 "cities": [
                     "Doha",
                     "Ar Rayyan"
@@ -1511,11 +1502,11 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Russia\u2019s relentless \u2018meat assaults\u2019 are wearing down outmanned and outgunned Ukrainian forces",
+                        "headline": "Kyiv rejects calls to cede land to Russia by Slovakia\u2019s populist leader ahead of high-level meeting",
                         "date": {
                             "py/id": 39
                         },
-                        "source": "cnn.com/2024/01/23/europe/ukraine-weapons-avdiivka-russian-assault-intl-cmd/index.html"
+                        "source": "cnn.com/2024/01/22/world/kyiv-rejects-slovakia-leader-call-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
@@ -1526,15 +1517,15 @@
                         "source": "cnn.com/2024/01/21/europe/ukraine-strikes-russian-controlled-donetsk-intl/index.html"
                     },
                     {
-                        "py/id": 116
-                    },
-                    {
                         "py/object": "borders.Article",
                         "headline": "Ukraine claims it destroyed Russian spy plane in attack over Sea of Azov",
                         "date": {
                             "py/id": 39
                         },
                         "source": "cnn.com/2024/01/15/europe/ukraine-claims-destroyed-russian-aircraft-intl/index.html"
+                    },
+                    {
+                        "py/id": 112
                     },
                     {
                         "py/object": "borders.Article",
@@ -1546,19 +1537,19 @@
                     },
                     {
                         "py/object": "borders.Article",
+                        "headline": "New video shows Russian tank obliterated in strike0:30",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "cnn.com/videos/world/2024/01/23/ukraine-drone-strike-russian-oil-facility-tank-ebof-hnk-vpx.cnn"
+                    },
+                    {
+                        "py/object": "borders.Article",
                         "headline": "Evan Gershkovich begins 300th day in Russian detention4:41",
                         "date": {
                             "py/id": 39
                         },
                         "source": "cnn.com/videos/world/2024/01/23/the-lead-paul-beckett-evan-gershkovich-jake-tapper-live.cnn"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Kyiv rejects calls to cede land to Russia by Slovakia\u2019s populist leader ahead of high-level meeting",
-                        "date": {
-                            "py/id": 39
-                        },
-                        "source": "cnn.com/2024/01/22/world/kyiv-rejects-slovakia-leader-call-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
@@ -1572,23 +1563,23 @@
                         "py/object": "borders.Article",
                         "headline": "Russian sanctioned for Australia's worst data hack",
                         "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
                         "source": "bbc.com/news/world-australia-68064850"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Civilians dead in Russia strikes on Kyiv and Kharkiv",
+                        "headline": "'Send back our husbands' - Russian women in rare protest",
                         "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
-                        "source": "bbc.com/news/world-europe-68066309"
+                        "source": "bbc.com/news/world-europe-68056939"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "'Send back our husbands' - Russian women in rare protest",
                         "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
                         "source": "bbc.com/news/world-europe-68056939"
                     }
@@ -1693,11 +1684,7 @@
                 "py/object": "borders.Country",
                 "name": "Syria",
                 "code": "SYR",
-                "articles": [
-                    {
-                        "py/id": 85
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Damascus",
                     "Aleppo",
@@ -1720,16 +1707,7 @@
                 "py/object": "borders.Country",
                 "name": "Thailand",
                 "code": "THA",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Thailand sentences man to record 50 years in prison for insulting the monarchy",
-                        "date": {
-                            "py/id": 39
-                        },
-                        "source": "cnn.com/2024/01/19/asia/thailand-man-sentenced-50-years-lese-majeste-record-intl-hnk/index.html"
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Bangkok",
                     "Chiang Mai"
@@ -1760,14 +1738,7 @@
                 "py/object": "borders.Country",
                 "name": "Turkey",
                 "code": "TUR",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Turkey\u2019s parliament expected to vote on Sweden\u2019s NATO bid this week",
-                        "date": "Published On 23 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/23/turkeys-parliament-set-to-vote-on-swedens-nato-bid-this-week-reports"
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Ankara",
                     "Istanbul",
@@ -1823,19 +1794,11 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "War in Yemen: UAE funded political assassinations",
+                        "headline": "Mysterious killings in Yemen create climate of fear",
                         "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
                         "source": "bbc.com/news/world-middle-east-67945137"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Watch: Explosions and flashes near Yemen's capital",
-                        "date": {
-                            "py/id": 69
-                        },
-                        "source": "bbc.com/news/world-middle-east-68062245"
                     }
                 ],
                 "cities": [
@@ -1844,13 +1807,6 @@
                     "Al Hudaydah",
                     "Aden"
                 ]
-            },
-            "nan": {
-                "py/object": "borders.Country",
-                "name": "Spratly Islands",
-                "code": NaN,
-                "articles": [],
-                "cities": []
             }
         }
     },
@@ -2071,6 +2027,14 @@
                             "py/id": 39
                         },
                         "source": "cnn.com/2024/01/23/style/jk-bruce-vanderpuije-archive/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "AFCON: Egypt reaches knockout stages after wild finale as Ghana crumbles",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "cnn.com/2024/01/23/sport/afcon-egypt-knockout-stages-ghana-crumbles-spt-intl/index.html"
                     }
                 ],
                 "cities": [
@@ -2145,7 +2109,16 @@
                 "py/object": "borders.Country",
                 "name": "Liberia",
                 "code": "LBR",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Liberia's new president in good health - spokesman",
+                        "date": {
+                            "py/id": 68
+                        },
+                        "source": "bbc.com/news/world-africa-68068033"
+                    }
+                ],
                 "cities": [
                     "Monrovia"
                 ]
@@ -2284,7 +2257,7 @@
                         "date": {
                             "py/id": 39
                         },
-                        "source": "cnn.com/middleeast/live-news/israel-hamas-war-gaza-news-01-21-24/index.html"
+                        "source": "cnn.com/middleeast/live-news/israel-hamas-war-gaza-news-01-22-24/index.html"
                     }
                 ],
                 "cities": [
@@ -2515,7 +2488,11 @@
                 "py/object": "borders.Country",
                 "name": "Egypt",
                 "code": "EGY",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/id": 279
+                    }
+                ],
                 "cities": [
                     "Cairo",
                     "Giza",
@@ -2660,7 +2637,16 @@
                 "py/object": "borders.Country",
                 "name": "Brazil",
                 "code": "BRA",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Brazil dominates \u2018magical\u2019 Nazar\u00e9 Big Wave Challenge as swells reach almost 40 feet",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "cnn.com/2024/01/23/sport/brazil-dominates-nazare-big-wave-challenge-spt-intl/index.html"
+                    }
+                ],
                 "cities": [
                     "Brasilia",
                     "Sao Paulo",
@@ -2758,7 +2744,11 @@
                 "py/object": "borders.Country",
                 "name": "Falkland Islands (Malvinas)",
                 "code": "FLK",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/id": 148
+                    }
+                ],
                 "cities": [
                     "Stanley"
                 ]
@@ -2804,10 +2794,13 @@
                         "source": "cnn.comhttps://www.cnn.com/interactive/2023/11/world/climate-gender-inequality-cnnphotos-as-equals-intl-cmd/"
                     },
                     {
+                        "py/id": 215
+                    },
+                    {
                         "py/object": "borders.Article",
                         "headline": "Giraffe Benito on 50-hour trip to escape extreme climate",
                         "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
                         "source": "bbc.com/news/world-latin-america-68061512"
                     }
@@ -2977,24 +2970,7 @@
                 "py/object": "borders.Country",
                 "name": "Denmark",
                 "code": "DNK",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Denmark\u2019s Crown Princess Mary becomes world\u2019s first Australian-born queen",
-                        "date": {
-                            "py/id": 39
-                        },
-                        "source": "cnn.com/2024/01/02/europe/denmark-crown-princess-mary-australia-frederik-intl-hnk/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Who is Frederik X, the new King of Denmark?",
-                        "date": {
-                            "py/id": 39
-                        },
-                        "source": "cnn.com/2024/01/13/europe/denmark-royals-frederik-profile-intl-scli/index.html"
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Copenhagen"
                 ]
@@ -3037,7 +3013,16 @@
                 "py/object": "borders.Country",
                 "name": "France",
                 "code": "FRA",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Blow up boots, ballet pumps and big suits: What we saw at the men\u2019s shows in Paris",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "cnn.com/2024/01/23/style/paris-fashion-week-fall-winter-menswear/index.html"
+                    }
+                ],
                 "cities": [
                     "Paris",
                     "Marseille",
@@ -3065,14 +3050,6 @@
                             "py/id": 39
                         },
                         "source": "cnn.com/2024/01/15/europe/farmer-protests-germany-far-right-afd-intl/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Mass demonstrations against Germany\u2019s major far-right party3:15",
-                        "date": {
-                            "py/id": 39
-                        },
-                        "source": "cnn.com/videos/world/2024/01/22/exp-germany-protests-shukla-live-fst-01229aseg1-cnni-world.cnn"
                     }
                 ],
                 "cities": [
@@ -3154,25 +3131,9 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "This US couple bought a home in the \u2018forgotten region\u2019 of Italy. Here\u2019s what happened next",
-                        "date": {
-                            "py/id": 39
-                        },
-                        "source": "cnn.com/2024/01/22/travel/this-us-couple-bought-a-home-in-the-forgotten-region-of-italy-heres-what-happened-next/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "The 9-year-old Chinese photographer capturing candid portraits of the stars",
-                        "date": {
-                            "py/id": 39
-                        },
-                        "source": "cnn.com/style/shengsheng-chinese-photographer-intl-hnk/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
                         "headline": "Watch shocking moment car crashes into caf\u00e9 in Italy",
                         "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
                         "source": "bbc.com/news/world-europe-68065924"
                     },
@@ -3180,9 +3141,17 @@
                         "py/object": "borders.Article",
                         "headline": "Watch shocking moment car crashes into caf\u00e9 in Italy",
                         "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
                         "source": "bbc.com/news/world-europe-68065924"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "The discovery of the Americas' long-lost 'Rome'",
+                        "date": {
+                            "py/id": 68
+                        },
+                        "source": "bbc.comhttps://www.bbc.com/travel/article/20240122-the-discovery-of-the-americas-long-lost-rome"
                     }
                 ],
                 "cities": [
@@ -3209,7 +3178,16 @@
                 "py/object": "borders.Country",
                 "name": "Latvia",
                 "code": "LVA",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "21 separate mechanized brigade\u2022Video0:30",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "cnn.com/videos/world/2024/01/23/ukraine-drone-strike-russian-oil-facility-tank-ebof-hnk-vpx.cnn"
+                    }
+                ],
                 "cities": [
                     "Riga"
                 ]
@@ -3229,7 +3207,7 @@
                 "code": "LTU",
                 "articles": [
                     {
-                        "py/id": 177
+                        "py/id": 176
                     }
                 ],
                 "cities": [
@@ -3296,7 +3274,14 @@
                 "py/object": "borders.Country",
                 "name": "Norway",
                 "code": "NOR",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Why is Israel sending Palestinian taxes to Norway?",
+                        "date": "Published On 23 Jan 2024",
+                        "source": "aljazeera.com/news/2024/1/23/why-is-israel-sending-palestinian-taxes-to-norway"
+                    }
+                ],
                 "cities": [
                     "Oslo"
                 ]
@@ -3318,7 +3303,16 @@
                 "py/object": "borders.Country",
                 "name": "Portugal",
                 "code": "PRT",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Surfers flock to Nazar\u00e9, Portugal for Big Wave Challenge0:29",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "cnn.com/videos/world/2024/01/23/exp-surfers-wave-nazar-portugal-vo-012304aseg3-cnni-world.cnn"
+                    }
+                ],
                 "cities": [
                     "Lisbon",
                     "Porto"
@@ -3339,13 +3333,16 @@
                 "code": "RUS",
                 "articles": [
                     {
+                        "py/id": 170
+                    },
+                    {
                         "py/id": 171
                     },
                     {
                         "py/id": 172
                     },
                     {
-                        "py/id": 116
+                        "py/id": 112
                     },
                     {
                         "py/id": 173
@@ -3367,9 +3364,6 @@
                     },
                     {
                         "py/id": 179
-                    },
-                    {
-                        "py/id": 180
                     }
                 ],
                 "cities": [
@@ -3476,11 +3470,7 @@
                 "py/object": "borders.Country",
                 "name": "Sweden",
                 "code": "SWE",
-                "articles": [
-                    {
-                        "py/id": 208
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Stockholm",
                     "Gothenburg"
@@ -3499,11 +3489,7 @@
                 "py/object": "borders.Country",
                 "name": "Turkey",
                 "code": "TUR",
-                "articles": [
-                    {
-                        "py/id": 208
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Ankara",
                     "Istanbul",
@@ -3538,19 +3524,32 @@
                 "code": "UKR",
                 "articles": [
                     {
+                        "py/id": 170
+                    },
+                    {
+                        "py/id": 171
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Situation in Ukraine reaching an \u2018inflection point,\u2019 says military analyst2:34",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "cnn.com/videos/world/2024/01/23/exp-ne-strike-oil-depot-malcolm-davis-intv-cnni-world-012302aseg1.cnn"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Putin\u2019s war must not become \u2018frozen,\u2019 Zelensky warns as Ukraine\u2019s troops face shortages of weaponry and aid",
+                        "date": {
+                            "py/id": 39
+                        },
+                        "source": "cnn.com/2024/01/16/europe/zelensky-davos-wef-ukraine-russia-frozen-intl/index.html"
+                    },
+                    {
                         "py/id": 172
                     },
                     {
-                        "py/id": 173
-                    },
-                    {
                         "py/id": 176
-                    },
-                    {
-                        "py/id": 177
-                    },
-                    {
-                        "py/id": 179
                     }
                 ],
                 "cities": [
@@ -3641,50 +3640,39 @@
                 "code": "AUS",
                 "articles": [
                     {
-                        "py/id": 513
-                    },
-                    {
                         "py/object": "borders.Article",
-                        "headline": "DJ sets and \u2018noisy\u2019 fans: the Australian Open\u2019s new \u2018party court\u2019 is redefining how to watch tennis",
+                        "headline": "Novak Djokovic defeats Taylor Fritz to reach 11th Australian Open semifinal",
                         "date": {
                             "py/id": 39
                         },
-                        "source": "cnn.com/2024/01/23/sport/party-court-australian-open-controversy-spt-intl/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Coco Gauff reaches first Australian Open semifinal with battling win against Marta Kostyuk",
-                        "date": {
-                            "py/id": 39
-                        },
-                        "source": "cnn.com/2024/01/23/sport/coco-gauff-reaches-australian-open-semifinals-spt-intl/index.html"
+                        "source": "cnn.com/2024/01/23/sport/novak-djokovic-taylor-fritz-australian-open-spt-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Former Australian PM Scott Morrison to quit politics",
                         "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
                         "source": "bbc.com/news/world-australia-68065395"
                     },
                     {
-                        "py/id": 178
+                        "py/object": "borders.Article",
+                        "headline": "Former Australian PM Scott Morrison to quit politics",
+                        "date": {
+                            "py/id": 68
+                        },
+                        "source": "bbc.com/news/world-australia-68065395"
+                    },
+                    {
+                        "py/id": 177
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Australia axes 'golden visa' scheme for mega-rich",
                         "date": {
-                            "py/id": 69
+                            "py/id": 68
                         },
                         "source": "bbc.com/news/world-australia-68052626"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Former Australian PM Scott Morrison to quit politics",
-                        "date": {
-                            "py/id": 69
-                        },
-                        "source": "bbc.com/news/world-australia-68065395"
                     }
                 ],
                 "cities": [
@@ -3909,13 +3897,6 @@
                 "cities": [
                     "Apia"
                 ]
-            },
-            "nan": {
-                "py/object": "borders.Country",
-                "name": "Disputed Territory",
-                "code": NaN,
-                "articles": [],
-                "cities": []
             }
         }
     }
