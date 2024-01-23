@@ -13,7 +13,7 @@ class Article:
 
     # use __repr__ instead of __str__ for debugging
     def __repr__(self):
-        return f"headline : {self.headline},\n" + f"source : {self.source},\n" + f"date : {self.date}"
+        return f"headline: {self.headline}\n" + f"source: {self.source}\n" + f"date: {self.date},\n"
 
     def set_headline(headline):
         self.headline = headline

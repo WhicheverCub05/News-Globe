@@ -30,6 +30,33 @@ def assign_articles_to_country(articles, continents):
                     print(f"added: {article.headline} to {country.name}")
 
 
+def scrape_cnn(url):
+    print("scraping CNN")
+    articles = []
+
+    response = requests.get(url)
+    soup = BeautifulSoup(response.content, 'lxml')
+
+    #news_items_headline = soup.select('.container__headline container_lead-plus-headlines__headline .container__headline-text')
+    news_items_block = soup.select('.scope .container .container__link')
+    
+    news_items_date = datetime.today()
+    
+
+    # print("news_items_headline:", news_items_block[0].prettify())
+
+    for i in range(len(news_items_block)):
+        news_items_headline = news_items_block[i].text
+        news_items_source = news_items_block[i].attrs['href']
+
+        headline = re.sub('\n', '', news_items_headline)
+        date = news_items_date
+        source = f"cnn.com{news_items_source}"
+        articles.append(Article(headline, date, source))
+
+    return articles
+    
+
 def scrape_aljazeera(url):
     print("scraping Al Jazeera")
     articles = []
@@ -51,7 +78,7 @@ def scrape_aljazeera(url):
 
 
 def scrape_bbc(url):
-    print("\nscraping BBC")
+    print("scraping BBC")
     articles = []
 
     response = requests.get(url)
@@ -73,6 +100,7 @@ def scrape_bbc(url):
 def scrape_all_news_pages():
     all_articles = []
     tmp_article_list = [] 
+    tmp_article_list.append(scrape_cnn(news_dict.get('CNN')))
     tmp_article_list.append(scrape_bbc(news_dict.get('BBC')))
     tmp_article_list.append(scrape_aljazeera(news_dict.get('Al Jazeera')))
     
