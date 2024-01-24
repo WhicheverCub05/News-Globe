@@ -5,6 +5,7 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls';
 import Stats from 'three/addons/libs/stats.module.js';
 import data from './news_data.json' assert {type : 'json'};
 
+
 // renderer
 const renderer = new THREE.WebGLRenderer({antialias: true});
 renderer.setPixelRatio( window.devicePixelRatio );
@@ -21,7 +22,7 @@ camera.lookAt( 0, 0, 0 );
 
 // adding spotlight
 const dirLight = new THREE.DirectionalLight( 0xffffff, 3 );
-dirLight.position.set( 3, 5, 10 );
+dirLight.position.set( 3, 5, 10 ); // when geometry is smooth, do 20, 12, 10  
 dirLight.castShadow = true;
 dirLight.shadow.camera.top = 2;
 dirLight.shadow.camera.bottom = 2;
@@ -44,9 +45,12 @@ function onWindowResize() {
     //renderer.render(camera, scene);
 }
 
+const search_country_button = document.getElementById("search_country_button");
+search_country_button.addEventListener("click", populateNews(document.getElementById("user_country_code").value));
+
 // framerate stats
-const stats = new Stats()
-document.body.appendChild(stats.dom)
+const stats = new Stats();
+document.body.appendChild(stats.dom);
 
 
 // Orbit controls
@@ -57,29 +61,41 @@ controls.minDistance = 6;
 controls.maxDistance = 40; 
 
 // load the globe
-var globeModel;
+var globeScene;
 function loadGlobe(){
 
     const loader = new GLTFLoader();
     loader.load(
         'models/World.glb',
         async function(gltf) {
-            globeModel = gltf.scene;
-            globeModel.scale.multiplyScalar(5);
-            
-            /* adding subdivisions - https://discourse.threejs.org/t/how-to-subdivide-gltf-mesh/11609/3
-            var subdivisions = 2;
-            var modifier = new SubdivisionModifier(subdivisions);
-            globeModel.traverse ( function (child) {
-                if (child.isMesh) {
-                    child.geometry = modifier.modify(child.geometry);
-                }
-            });
-            */
+            globeScene = gltf.scene;
+            globeScene.scale.multiplyScalar(5);
+            console.log(globeScene)
             // try to get cloud layer to spin at different speed
-            await renderer.compileAsync(globeModel, camera, scene);
+            await renderer.compileAsync(globeScene, camera, scene);
+            // globeScene.fog = new THREE.Fog(0xcccccc, 10, 15 );
+            // globeScene.children[0].computeVertexNormals(true);
+            console.log(globeScene)
             
-            scene.add(globeModel);
+            globeScene.traverse(function (child) {
+                
+                if (child.isMesh) {
+                    // child.material.envMap = envMap;
+                    //Setting the buffer geometry
+                    
+                    // child.geometry.computeVertexNormals();
+                    
+                    console.log("globe object:", child);  
+                }
+                // child.shading = THREE.SmoothShading;
+            })
+
+            //var tempGeometry = new THREE.Geometry().fromBufferGeometry( globeScene );
+            //tempGeometry.mergeVertices();
+            //tempGeometry.computeVertexNormals();
+            //geometry = new THREE.BufferGeometry().fromGeometry( tempGeometry );
+
+            scene.add(globeScene);
             renderer.render(scene, camera);
             animateGlobe();
         },
@@ -102,7 +118,7 @@ var night_mode = false;
 function animateGlobe() {
     requestAnimationFrame( animateGlobe );
     if (auto_spin == true) { 
-        globeModel.rotation.y += 0.0005;
+        globeScene.rotation.y += 0.0005;
     }
     renderer.render( scene, camera )
 }
@@ -113,9 +129,6 @@ function showGUI() {
     const settingsPanel = new GUI(); // {width:300}
     const newsFolder = settingsPanel.addFolder('News')
     const settingsFolder = settingsPanel.addFolder('Graphic')
-    
-    // newsFolder.open();
-    // settingsFolder.open();
 
     var settings = {
         night_mode: false,
@@ -124,7 +137,7 @@ function showGUI() {
             console.log("Refresh News"); 
         }
     };
-    newsFolder.add(settings, "refreshNews").name("refresh");
+    newsFolder.add(settings, "refreshNews").name("refresh").onChange(updateNewsViaPython);
     settingsFolder.add(settings, "night_mode").name("night mode").onChange(toggleNightGlobe);
     settingsFolder.add(settings, "auto_spin").name("auto spin").onChange(toggleAutoSpin);
 }
@@ -162,68 +175,49 @@ function animate() {
     
 }
 
-// init bruv
-function init() {
-    showGUI();
-    populateNews('PKG');
-    loadGlobe();
-}
-
-const countryList = ['Antarctica', 'Albania'];
-
 // update news json file
-function updateNews() {
-    // request for each country
-    for (country in countryList) {
-        var url = 'https://newsapi.org/v2/top-headlines?' +
-            `country=&${country}` +
-            'apiKey=000ea7fadd624916bbae5b365cae8929';
-        var req = new Request(url);
-        fetch(req)
-            .then(function(response) {
-                console.log(response.json());
-                // add to json file https://stackoverflow.com/questions/36856232/write-add-data-in-json-file-using-node-js
-        })
-    }
+function updateNewsViaPython() {
+    var pythonScriptPath = "./news_scraper.py";
+    process.run(["python", pythonScriptPath]);
 }
 
 
 // gets data from the json files onto the webpage. selects which articles to display
 function populateNews(country_code) {
-    // var continent_list = fetchDataFromJson(data);
-    console.log("Im in populateNews()")
-    console.log("Example North Korea News")
-    
-    var articles = []; 
-    var country;
+    if (country_code == '') {
+        return;
+    }
+    const country = getCountry(country_code);
 
-    console.log("data[0]['countries']", data[0]["countries"]);
-    console.log("data[0].countries", data[0].countries.ARE.articles[0].headline);
+    for (var i=0; i < 3; i++) {
+        var article = country.articles[i];
+        document.getElementById(`nh${i+1}`).innerHTML = article.headline;
+        document.getElementById(`sc${i+1}`).innerHTML = article.source;
+        document.getElementById(`dt${i+1}`).innerHTML = article.date;
+    }
+}
 
-    console.log("data[] countries length", data[0].countries.length);
 
-    for (let i=0; i < data.length; i++) {
-        for (let j=0; j < data[i]["countries"].length; j++) {
-            if (data[i][country_code] == country_code) {
-                country = data[i][country_code]
-                articles = country.articles
+function getCountry(country_code) {
+
+    console.log("looking for:", country_code)
+    for (var i = 0; i < data.length; i++) {
+        for (const [code, country] of Object.entries(data[i].countries)) {
+            if (country.code == country_code) {
+                return country
             }
         }
     }
-
-    console.log("What country is this?:", country_name)
+    return 0;
 }
 
-//
-// function fetchDataFromJson(data) {
-//    var continents = JSON.parse(data);
-//    return continents;
-// }
 
-
-function writeNewsToNewsGUI(articles) {
-    
+// init bruv
+function init() {
+    loadGlobe();
+    showGUI();
 }
+
 
 init();
 animate();
