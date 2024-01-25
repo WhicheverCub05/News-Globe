@@ -37,7 +37,7 @@ scene.add(camera);
 
 
 // window resizer 
-window.addEventListener('resize', onWindowResize, false)
+window.addEventListener('resize', onWindowResize, false);
 function onWindowResize() {
     camera.aspect = window.innerWidth / window.innerHeight
     camera.updateProjectionMatrix()
@@ -45,8 +45,12 @@ function onWindowResize() {
     //renderer.render(camera, scene);
 }
 
-const search_country_button = document.getElementById("search_country_button");
-search_country_button.addEventListener("click", populateNews(document.getElementById("user_country_code").value));
+var search_country_button = document.getElementById("search_country_button");
+search_country_button.addEventListener("click", onSearch);
+function onSearch() {
+    var code = (document.getElementById("user_country_code").value)
+    populateNews(code)
+}
 
 // framerate stats
 const stats = new Stats();
@@ -70,12 +74,10 @@ function loadGlobe(){
         async function(gltf) {
             globeScene = gltf.scene;
             globeScene.scale.multiplyScalar(5);
-            console.log(globeScene)
             // try to get cloud layer to spin at different speed
             await renderer.compileAsync(globeScene, camera, scene);
             // globeScene.fog = new THREE.Fog(0xcccccc, 10, 15 );
             // globeScene.children[0].computeVertexNormals(true);
-            console.log(globeScene)
             
             globeScene.traverse(function (child) {
                 
@@ -85,7 +87,7 @@ function loadGlobe(){
                     
                     // child.geometry.computeVertexNormals();
                     
-                    console.log("globe object:", child);  
+                    // console.log("globe object:", child);  
                 }
                 // child.shading = THREE.SmoothShading;
             })
@@ -184,6 +186,7 @@ function updateNewsViaPython() {
 
 // gets data from the json files onto the webpage. selects which articles to display
 function populateNews(country_code) {
+    console.log("populating news:", country_code)
     if (country_code == '') {
         return;
     }
