@@ -18,8 +18,11 @@ database_file_path = 'news_data.json'
 news_dict = {}
 news_dict['CNN'] = 'https://edition.cnn.com/world'
 news_dict['BBC'] = 'https://www.bbc.com/news'
-news_dict['Al Jazeera'] = 'https://www.aljazeera.com/news/'
+news_dict['Al Jazeera'] = ['https://www.aljazeera.com/', 'news/', 'africa/', 'middle-east/', 'asia/', 'us-canada/', 'latin-america/', 'europe/', 'asia-pacific/']
 
+bbc_counter = 0
+cnn_counter = 0
+al_jazeera_counter = 0
 
 def assign_articles_to_country(articles, continents):
     for article in articles:
@@ -31,7 +34,7 @@ def assign_articles_to_country(articles, continents):
 
 
 def scrape_cnn(url):
-    print("scraping CNN")
+    print("\nscraping CNN\n")
     articles = []
 
     response = requests.get(url)
@@ -54,31 +57,38 @@ def scrape_cnn(url):
         source = f"cnn.com{news_items_source}"
         articles.append(Article(headline, date, source))
 
+        global cnn_counter
+        cnn_counter += 1
+
     return articles
     
 
 def scrape_aljazeera(url):
-    print("scraping Al Jazeera")
+    print("\nscraping Al Jazeera")
+    print("url:", url)
+
     articles = []
 
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'lxml')
     
-    news_items_headline = soup.select('.featured-articles-list__item .u-clickable-card__link', href=True) # .featured-articles-list__item span 
+    news_items_content = soup.select('.featured-articles-list__item .u-clickable-card__link', href=True) # .featured-articles-list__item span 
     news_items_date = soup.select(".featured-articles-list__item .gc__date__date .screen-reader-text")
-    news_items_source = soup.select(".featured-articles-list__item .gc__date__date .screen-reader-text")
-
-    for i in range(len(news_items_headline)):
-        headline = re.sub('\u00ad', '', news_items_headline[i].get_text())
+    
+    for i in range(len(news_items_content)):
+        headline = re.sub('\u00ad', '', news_items_content[i].get_text())
         date = news_items_date[i].get_text()
-        source = f"aljazeera.com{news_items_headline[i]['href']}"
+        source = f"aljazeera.com{news_items_content[i]['href']}"
         articles.append(Article(headline, date, source))
- 
+
+        global al_jazeera_counter
+        al_jazeera_counter += 1
+
     return articles
 
 
 def scrape_bbc(url):
-    print("scraping BBC")
+    print("\nscraping BBC\n")
     articles = []
 
     response = requests.get(url)
@@ -91,12 +101,15 @@ def scrape_bbc(url):
     for i in range(len(news_items_headline)):
         headline = news_items_headline[i].get_text()
         date = news_items_date
-        print(news_items_source[i])
+        # print(news_items_source[i])
         if news_items_source[i]['href']:
             source = f"bbc.com{news_items_source[i]['href']}"
         else:
             source = ''
         articles.append(Article(headline, date, source))
+
+        global bbc_counter
+        bbc_counter += 1
 
     return articles
 
@@ -106,12 +119,14 @@ def scrape_all_news_pages():
     tmp_article_list = [] 
     tmp_article_list.append(scrape_cnn(news_dict.get('CNN')))
     tmp_article_list.append(scrape_bbc(news_dict.get('BBC')))
-    tmp_article_list.append(scrape_aljazeera(news_dict.get('Al Jazeera')))
+    
+    for i in range(len(news_dict['Al Jazeera'])-1):
+        tmp_article_list.append(scrape_aljazeera(news_dict.get('Al Jazeera')[0] + news_dict.get('Al Jazeera')[i+1]))
     
     for article_list in tmp_article_list:
         for article in article_list:
             all_articles.append(article)
-            
+
     return all_articles
 
 
@@ -142,6 +157,13 @@ def update_news():
         print(article)
     assign_articles_to_country(articles, borders.continent_list)
     write_articles_to_database(database_file_path, borders.continent_list)
+
+    print("\n")
+    print("bbc: ", bbc_counter)
+    print("cnn: ", cnn_counter)
+    print("al_jazeera: ", al_jazeera_counter)
+
+    print("total: ", bbc_counter+cnn_counter+al_jazeera_counter)
 
 
 if __name__ == "__main__":
