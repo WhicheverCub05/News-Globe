@@ -196,6 +196,7 @@ function populateNews(country_code) {
         var article = country.articles[i];
         document.getElementById(`nh${i+1}`).innerHTML = article.headline;
         document.getElementById(`sc${i+1}`).innerHTML = article.source;
+        document.getElementById(`sc${i+1}`).href = article.source;
         document.getElementById(`dt${i+1}`).innerHTML = article.date;
     }
 }

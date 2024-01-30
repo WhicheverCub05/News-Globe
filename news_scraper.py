@@ -91,7 +91,11 @@ def scrape_bbc(url):
     for i in range(len(news_items_headline)):
         headline = news_items_headline[i].get_text()
         date = news_items_date
-        source = f"bbc.com{news_items_source[i]['href']}"
+        print(news_items_source[i])
+        if news_items_source[i]['href']:
+            source = f"bbc.com{news_items_source[i]['href']}"
+        else:
+            source = ''
         articles.append(Article(headline, date, source))
 
     return articles

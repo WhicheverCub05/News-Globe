@@ -1,3 +1,25 @@
+::-webkit-scrollbar {
+    width: 4px;
+    height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: lightblue;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(121, 121, 199);
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px grey;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-
+
+
 h1 {
     color: green;
     font-size: medium;
@@ -36,7 +58,8 @@ date {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     font-style: bold;
-    background: rgba(102, 150, 172, 0.6)
+    background: rgba(102, 150, 172, 0.6);
+    overflow:auto;
 }
 
 #article {
@@ -49,8 +72,10 @@ date {
     color: rgb(206, 190, 82);
     text-align: left;
     background: rgba(51, 72, 81, 0.8);
+    overflow:auto;
 }
 
 body {
     overflow: hidden;
 }
+
