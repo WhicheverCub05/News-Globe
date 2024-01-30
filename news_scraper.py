@@ -19,10 +19,12 @@ news_dict = {}
 news_dict['CNN'] = 'https://edition.cnn.com/world'
 news_dict['BBC'] = 'https://www.bbc.com/news'
 news_dict['Al Jazeera'] = ['https://www.aljazeera.com/', 'news/', 'africa/', 'middle-east/', 'asia/', 'us-canada/', 'latin-america/', 'europe/', 'asia-pacific/']
+news_dict['The Guardian'] = ['www.theguardian.com/', 'international', '/world/middleeast', '/world/africa', '/world/europe-news', '/world/americas', '/world/asia', '/world/australia-news']
 
 bbc_counter = 0
 cnn_counter = 0
 al_jazeera_counter = 0
+the_guardian_counter = 0
 
 def assign_articles_to_country(articles, continents):
     for article in articles:
@@ -31,6 +33,10 @@ def assign_articles_to_country(articles, continents):
                 if country.is_associated(article.headline):
                     country.add_article(article)
                     print(f"added: {article.headline} to {country.name}")
+
+
+def scrape_the_guardian(url):
+    print("\nscraping the guardian\n")
 
 
 def scrape_cnn(url):

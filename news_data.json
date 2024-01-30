@@ -100,7 +100,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gBHgkkOgT8YQ=="
+                                    "B+gBHgkmCgGZfA=="
                                 ]
                             ]
                         },
@@ -160,7 +160,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gBHgkkOgOIIw=="
+                                    "B+gBHgkmCgABGA=="
                                 ]
                             ]
                         },
@@ -3014,12 +3014,6 @@
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "US reimposes some sanctions after Venezuela bans presidential hopeful",
-                        "date": "Published On 30 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/30/us-reimposes-some-sanctions-after-venezuela-bans-presidential-hopeful"
-                    },
-                    {
-                        "py/object": "borders.Article",
                         "headline": "Venezuela court disqualifies leading opposition presidential candidate",
                         "date": "Published On 27 Jan 2024",
                         "source": "aljazeera.com/news/2024/1/27/venezuela-court-disqualifies-leading-opposition-presidential-candidate"
@@ -3353,7 +3347,7 @@
                 "code": "ITA",
                 "articles": [
                     {
-                        "py/id": 498
+                        "py/id": 497
                     }
                 ],
                 "cities": [
@@ -3663,7 +3657,7 @@
                 "code": "SWE",
                 "articles": [
                     {
-                        "py/id": 572
+                        "py/id": 571
                     },
                     {
                         "py/object": "borders.Article",
