@@ -19,7 +19,7 @@ news_dict = {}
 news_dict['CNN'] = 'https://edition.cnn.com/world'
 news_dict['BBC'] = 'https://www.bbc.com/news'
 news_dict['Al Jazeera'] = ['https://www.aljazeera.com/', 'news/', 'africa/', 'middle-east/', 'asia/', 'us-canada/', 'latin-america/', 'europe/', 'asia-pacific/']
-news_dict['The Guardian'] = ['www.theguardian.com/', 'international', '/world/middleeast', '/world/africa', '/world/europe-news', '/world/americas', '/world/asia', '/world/australia-news']
+news_dict['The Guardian'] = ['https://www.theguardian.com/', 'international', '/world/middleeast', '/world/africa', '/world/europe-news', '/world/americas', '/world/asia', '/world/australia-news']
 
 bbc_counter = 0
 cnn_counter = 0
@@ -27,6 +27,7 @@ al_jazeera_counter = 0
 the_guardian_counter = 0
 
 def assign_articles_to_country(articles, continents):
+    print("\n")
     for article in articles:
         for continent in continents:
             for country in continent.countries.values():
@@ -37,23 +38,23 @@ def assign_articles_to_country(articles, continents):
 
 def scrape_the_guardian(url):
     print("\nscraping the guardian\n")
-
-
-def scrape_cnn(url):
-    print("\nscraping CNN\n")
     articles = []
 
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'lxml')
 
-    #news_items_headline = soup.select('.container__headline container_lead-plus-headlines__headline .container__headline-text')
-    news_items_block = soup.select('.scope .container .container__link')
+    news_item_block = soup.select('')
+
+def scrape_cnn(url):
+    print("\nscraping CNN ", url)
+    articles = []
+
+    response = requests.get(url)
+    soup = BeautifulSoup(response.content, 'lxml')
     
+    news_items_block = soup.select('.scope .container .container__link')
     news_items_date = datetime.today()
     
-
-    # print("news_items_headline:", news_items_block[0].prettify())
-
     for i in range(len(news_items_block)):
         news_items_headline = news_items_block[i].text
         news_items_source = news_items_block[i].attrs['href']
@@ -70,8 +71,7 @@ def scrape_cnn(url):
     
 
 def scrape_aljazeera(url):
-    print("\nscraping Al Jazeera")
-    print("url:", url)
+    print("\nscraping Al Jazeera ", url)
 
     articles = []
 
@@ -94,7 +94,7 @@ def scrape_aljazeera(url):
 
 
 def scrape_bbc(url):
-    print("\nscraping BBC\n")
+    print("\nscraping BBC ", url)
     articles = []
 
     response = requests.get(url)
@@ -159,8 +159,7 @@ def write_articles_to_database(file_path, continents):
 def update_news():
     print("updating news. ", datetime.utcnow().strftime('%B %D %Y - %H:%M:%S')) # was %d
     articles = scrape_all_news_pages()
-    for article in articles:
-        print(article)
+
     assign_articles_to_country(articles, borders.continent_list)
     write_articles_to_database(database_file_path, borders.continent_list)
 

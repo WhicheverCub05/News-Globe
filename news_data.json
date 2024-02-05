@@ -92,31 +92,9 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Why India wants to fence its troubled Myanmar border",
-                        "date": {
-                            "py/object": "datetime.datetime",
-                            "__reduce__": [
-                                {
-                                    "py/type": "datetime.datetime"
-                                },
-                                [
-                                    "B+gBHgkmCgGZfA=="
-                                ]
-                            ]
-                        },
-                        "source": "bbc.com/news/world-asia-india-68078252"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "ASEAN urges \u2018Myanmar-owned and led solution\u2019 to crisis triggered by coup",
-                        "date": "Published On 30 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/30/asean-urges-myanmar-owned-and-led-solution-to-crisis-triggered-by-coup"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "In Myanmar\u2019s Kayah, medics treat war wounded in hidden hospitals",
-                        "date": "Published On 29 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/29/in-myanmars-kayah-medics-treat-war-wounded-in-hidden-hospitals"
+                        "headline": "Myanmar\u2019s rebels see unity as key to victory over weakened military rulers",
+                        "date": "Published On 3 Feb 2024",
+                        "source": "aljazeera.com/features/2024/2/3/myanmars-rebels-see-unity-as-key-to-victory-over-weakened-military-rulers"
                     }
                 ],
                 "cities": [
@@ -130,7 +108,24 @@
                 "py/object": "borders.Country",
                 "name": "Cambodia",
                 "code": "KHM",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "From Greenland to Cambodia, these are 15 unforgettable destinations our editors visited in 2023",
+                        "date": {
+                            "py/object": "datetime.datetime",
+                            "__reduce__": [
+                                {
+                                    "py/type": "datetime.datetime"
+                                },
+                                [
+                                    "B+gCBQ8EIQtvsg=="
+                                ]
+                            ]
+                        },
+                        "source": "cnn.com/cnn-underscored/travel/editors-favorite-destinations-they-visited-2023"
+                    }
+                ],
                 "cities": [
                     "Phnom Penh"
                 ]
@@ -152,7 +147,31 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "The Red Sea crisis tests China\u2019s global ambitions",
+                        "headline": "Senegal to debate extending president\u2019s mandate as protests break out",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/02/05/africa/senegal-parliament-debates-extending-presidents-mandate-intl/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Pigeon suspected of spying for China released in India after PETA intervention, group says",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/02/03/india/india-suspected-chinese-spy-pigeon-release-intl-hnk/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Jason Momoa, Amanda Seyfried, other stars to take part in tonight\u2019s CNN Heroes event",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2023/12/10/world/cnn-hero-of-the-year-how-to-watch/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "China gives detained Australian suspended death sentence",
                         "date": {
                             "py/object": "datetime.datetime",
                             "__reduce__": [
@@ -160,27 +179,63 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gBHgkmCgABGA=="
+                                    "B+gCBQ8EIgHupg=="
                                 ]
                             ]
                         },
-                        "source": "cnn.com/2024/01/30/china/red-sea-china-response-analysis-intl-hnk/index.html"
+                        "source": "bbc.com/news/world-australia-68201475"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Climate-threatened Tuvalu holds election closely watched by China and Taiwan",
+                        "headline": "China can now monitor state-funded projects 24/7",
                         "date": {
-                            "py/id": 43
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/01/26/asia/tuvalu-election-china-taiwan-us-climate-intl/index.html"
+                        "source": "bbc.com/news/business-68027592"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Jason Momoa, Amanda Seyfried, other stars to take part in tonight\u2019s CNN Heroes event",
+                        "headline": "More China tariffs if re-elected, Trump says",
                         "date": {
-                            "py/id": 43
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2023/12/10/world/cnn-hero-of-the-year-how-to-watch/index.html"
+                        "source": "bbc.com/news/business-68201370"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "More China tariffs if re-elected, Trump says",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "bbc.com/news/business-68201370"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Orlando, Beijing and... the village of Stewartby?",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "bbc.com/news/uk-england-68166514"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "China gives detained Australian suspended death sentence",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "bbc.com/news/world-australia-68201475"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Australian writer Yang Hengjun sentenced to death on China spy charges",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "aljazeera.com/news/2024/2/5/australian-writer-yang-hengjun-sentenced-to-death-on-china-spy-charges"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "\u2018Reputational damage\u2019: Singapore\u2019s ruling party grapples with scandal",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "aljazeera.com/news/2024/2/5/reputational-damage-singapores-ruling-party-grapples-with-scandal"
                     }
                 ],
                 "cities": [
@@ -689,11 +744,7 @@
                 "py/object": "borders.Country",
                 "name": "Taiwan",
                 "code": "TWN",
-                "articles": [
-                    {
-                        "py/id": 44
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Taipei",
                     "Taichung",
@@ -745,85 +796,65 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "How to help humanitarian efforts in Israel and Gaza",
+                        "headline": "Ultra-Orthodox\u00a0man\u00a0seen spitting at Christian priest in Jerusalem",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/world/how-to-help-humanitarian-efforts-in-israel-and-gaza/index.html"
+                        "source": "cnn.com/2024/02/04/middleeast/ultraorthodox-spitting-jerusalem-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "How Gaza\u2019s hospitals became battlegrounds",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
                         "source": "cnn.comhttps://www.cnn.com/interactive/2024/01/middleeast/gaza-hospitals-destruction-investigation-intl-cmd/"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "What we know\u00a0about Israel\u2019s allegations against UN staffers in Gaza",
+                        "headline": "More than 800 Western officials sign scathing criticism of Gaza policy",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/2024/01/27/middleeast/unrwa-israel-hamas-october-7-allegations-intl/index.html"
+                        "source": "cnn.com/2024/02/02/middleeast/western-officials-criticism-gaza-policy-israel-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "\u2018There\u2019s no healthcare, no clinics, no vaccinations\u2019: Moms in Gaza struggle with adequate care4:17",
+                        "headline": "At least half of Gaza buildings damaged or destroyed, new analysis shows",
                         "date": {
-                            "py/id": 43
+                            "py/id": 45
                         },
-                        "source": "cnn.com/videos/world/2024/01/29/exp-gaza-pregnant-women-karadsheh-012910aseg2-pkg-cnni-world.cnn"
+                        "source": "bbc.com/news/world-middle-east-68006607"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "UN warning that Gaza aid system could collapse",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "bbc.com/news/world-middle-east-68150519"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Gaza university blown up in massive explosion",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "bbc.com/news/world-middle-east-68138210"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Gaza's largest aid agency 'desperate' after funds paused",
                         "date": {
-                            "py/id": 30
+                            "py/id": 45
                         },
                         "source": "bbc.com/news/world-middle-east-68127544"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Counting the destruction of religious sites in Gaza",
-                        "date": {
-                            "py/id": 30
-                        },
-                        "source": "bbc.com/news/world-middle-east-67983018"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Huge push for Gaza aid - but little hope for those suffering",
-                        "date": {
-                            "py/id": 30
-                        },
-                        "source": "bbc.com/news/world-middle-east-68097993"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Israeli protesters hold up aid trucks to Gaza",
-                        "date": {
-                            "py/id": 30
-                        },
-                        "source": "bbc.com/news/world-middle-east-68103641"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Israel\u2019s war on Gaza: List of key events, day 116",
-                        "date": "Published On 30 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/30/israels-war-on-gaza-list-of-key-events-day-116"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Israel\u2019s war on Gaza: List of key events, day 116",
-                        "date": "Published On 30 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/30/israels-war-on-gaza-list-of-key-events-day-116"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Qatar\u2019s prime minister in US for Gaza truce negotiations",
-                        "date": "Published On 29 Jan 2024",
-                        "source": "aljazeera.com/program/newsfeed/2024/1/29/qatars-prime-minister-in-us-for-talks"
+                        "headline": "Tour of Gaza hospital reveals destruction left by Israeli forces",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "aljazeera.com/program/newsfeed/2024/2/5/tour-of-gaza-hospital-reveals-destruction-left-by-israeli-forces"
                     }
                 ],
                 "cities": [
@@ -838,19 +869,11 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Hong Kong already has a national security law. Now its leader is pushing for another one",
+                        "headline": "Fans angry as Messi does not play in Hong Kong",
                         "date": {
-                            "py/id": 43
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/01/30/asia/hong-kong-security-law-article-23-consultation-intl-hnk/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Nicole Kidman Hong Kong drama not shown in city",
-                        "date": {
-                            "py/id": 30
-                        },
-                        "source": "bbc.com/news/world-asia-china-68125715"
+                        "source": "bbc.com/sport/football/68199137"
                     }
                 ],
                 "cities": [
@@ -865,45 +888,56 @@
                 "code": "IND",
                 "articles": [
                     {
+                        "py/id": 71
+                    },
+                    {
+                        "py/id": 42
+                    },
+                    {
                         "py/object": "borders.Article",
-                        "headline": "Pakistan\u00a0accuses India of extrajudicial killings on\u00a0its territory",
+                        "headline": "Mohammed Salem/Reuters\u2022GalleryGallery",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/2024/01/26/asia/pakistan-accuses-india-extrajudicial-killing-intl-hnk/index.html"
-                    },
-                    {
-                        "py/id": 29
+                        "source": "cnn.com/2023/10/07/world/gallery/israel-gaza-attack-2023/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "India navy rescues Pakistani sailors from pirates",
+                        "headline": "Fake death of Indian actress sparks ethics debate",
                         "date": {
-                            "py/id": 30
+                            "py/id": 45
                         },
-                        "source": "bbc.com/news/world-asia-india-68091830"
+                        "source": "bbc.com/news/world-asia-india-68201524"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "The Sufi shrine caught up in a religious row in India",
+                        "headline": "Chinese ship's port call fans India tensions",
                         "date": {
-                            "py/id": 30
+                            "py/id": 45
                         },
-                        "source": "bbc.com/news/world-asia-india-68090708"
+                        "source": "bbc.com/news/world-asia-india-68163343"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "India's ancient carpet weaving industry meets AI",
+                        "headline": "Chinese ship's port call fans India tensions",
                         "date": {
-                            "py/id": 30
+                            "py/id": 45
                         },
-                        "source": "bbc.com/news/business-67650613"
+                        "source": "bbc.com/news/world-asia-india-68163343"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "The Indian \u2018lost tribe\u2019 that wants to move to Israel, even \u2018fight Hamas\u2019",
-                        "date": "Published On 30 Jan 2024",
-                        "source": "aljazeera.com/economy/2024/1/30/the-indian-lost-tribe-that-wants-to-move-to-israel-even-fight-hamas"
+                        "headline": "Fake death of India actress sparks ethics debate",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "bbc.com/news/world-asia-india-68201524"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Ashwin and Bumrah rattle England as India win second Test",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "aljazeera.com/sports/2024/2/5/india-vs-england-second-test-vishakhapatnam-series-ashwin-bumrah-jaiswal"
                     }
                 ],
                 "cities": [
@@ -1021,7 +1055,14 @@
                 "py/object": "borders.Country",
                 "name": "Indonesia",
                 "code": "IDN",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "\u2018Nothing left\u2019: Indonesia\u2019s tourism industry fears wipeout under tax hike",
+                        "date": "Published On 4 Feb 2024",
+                        "source": "aljazeera.com/news/2024/2/4/nothing-left-indonesias-tourism-industry-fears-wipeout-under-tax-hike"
+                    }
+                ],
                 "cities": [
                     "Jakarta",
                     "Surabaya",
@@ -1061,33 +1102,27 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "The US and Iran are dangerously close to confrontation in the Middle East. Here\u2019s where they both operate",
+                        "headline": "US strikes Iran-backed groups as Israel-Hamas war rages",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/2024/01/24/middleeast/us-iran-middle-east-war-mime-intl/index.html"
+                        "source": "cnn.com/middleeast/live-news/israel-hamas-war-gaza-news-02-05-24/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Gunmen kill nine Pakistani workers in Iranian border region days after military strikes",
+                        "headline": "Analysis: What to make of the US retaliation strikes against pro-Iranian\u00a0militias\u00a0in Iraq and Syria",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/2024/01/28/middleeast/gunmen-kill-nine-pakistanis-in-iranian-border-region-days-after-military-strikes/index.html"
+                        "source": "cnn.com/2024/02/02/middleeast/analysis-us-strikes-iraq-syria-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Retired colonel on a \u2018warning\u2019 to Iran in aftermath of the attack1:10",
+                        "headline": "Examining how Iran-backed militia groups use drones3:38",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/videos/world/2024/01/28/iran-us-troops-killed-drone-attack-jordan-leighton-acostanr-vpx.cnn"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "US, Britain announce sanctions on network that targeted critics of Iran",
-                        "date": "Published On 29 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/29/us-britain-announce-sanctions-on-network-that-targeted-critics-of-iran"
+                        "source": "cnn.com/videos/world/2024/02/04/exp-iran-military-weapons-intv-fst-020402aseg01-cnni-world.cnn"
                     }
                 ],
                 "cities": [
@@ -1120,11 +1155,14 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Asian Cup: Jordan produces stunning late comeback to beat Iraq following red card controversy",
+                        "headline": "What we know about the US strikes in Iraq and Syria",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/2024/01/29/sport/asian-cup-jordan-comeback-iraq-spt-intl/index.html"
+                        "source": "cnn.com/2024/02/03/middleeast/us-strikes-iraq-syria-what-we-know-intl/index.html"
+                    },
+                    {
+                        "py/id": 100
                     }
                 ],
                 "cities": [
@@ -1146,7 +1184,11 @@
                 "py/object": "borders.Country",
                 "name": "Israel, State of",
                 "code": "ISR",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/id": 71
+                    }
+                ],
                 "cities": [
                     "Jerusalem",
                     "Tel Aviv-Yafo",
@@ -1160,43 +1202,11 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Foreign-born residents in Japan sue the government for alleged racial profiling",
+                        "headline": "\u2018Be fearless\u2019: Taylor Swift will make it home for the Super Bowl, Japanese Embassy says",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/2024/01/30/asia/japan-foreign-residents-lawsuit-discrimination-intl-hnk/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Japan\u2019s \u2018Moon Sniper\u2019 wakes up and shares new images of lunar surface",
-                        "date": {
-                            "py/id": 43
-                        },
-                        "source": "cnn.com/2024/01/29/asia/japan-moon-sniper-lander-resumes-intl-hnk-scn/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Foreign residents sue Japan over racial profiling",
-                        "date": {
-                            "py/id": 30
-                        },
-                        "source": "bbc.com/news/world-asia-68137532"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "'Toy poodles' on the Moon: Japan lander gets to work",
-                        "date": {
-                            "py/id": 30
-                        },
-                        "source": "bbc.com/news/science-environment-68131105"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Foreign residents sue Japan over racial profiling",
-                        "date": {
-                            "py/id": 30
-                        },
-                        "source": "bbc.com/news/world-asia-68137532"
+                        "source": "cnn.com/2024/02/02/asia/taylor-swift-super-bowl-japanese-embassy-intl-hnk/index.html"
                     }
                 ],
                 "cities": [
@@ -1256,46 +1266,11 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "How will the U.S. respond after a drone strike kills three American troops in Jordan?5:06",
+                        "headline": "Michael Jordan\u2019s championship sneakers sell for record $8 million at auction",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/videos/world/2024/01/29/exp-u-s-middle-east-analysis-012910aseg1-jon-b-alterman-cnni-world.cnn"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "How will the US respond to the drone attack in Jordan?3:40",
-                        "date": {
-                            "py/id": 43
-                        },
-                        "source": "cnn.com/videos/world/2024/01/29/exp-us-jordan-attack-liebermann-live-012908aseg1-cnni-world.cnn"
-                    },
-                    {
-                        "py/id": 101
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Three US soldiers killed in Jordan attack named",
-                        "date": {
-                            "py/id": 30
-                        },
-                        "source": "bbc.com/news/world-middle-east-68133115"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "What options does US have to respond to Jordan attack?",
-                        "date": {
-                            "py/id": 30
-                        },
-                        "source": "bbc.com/news/world-us-canada-68135774"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Three US soldiers killed in Jordan attack named",
-                        "date": {
-                            "py/id": 30
-                        },
-                        "source": "bbc.com/news/world-middle-east-68133115"
+                        "source": "cnn.com/2024/02/03/style/michael-jordan-championship-sneakers-auction-intl/index.html"
                     }
                 ],
                 "cities": [
@@ -1308,38 +1283,7 @@
                 "py/object": "borders.Country",
                 "name": "Korea",
                 "code": "PRK",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Cool heads must try to lower tensions, says former South Korean foreign minister5:56",
-                        "date": {
-                            "py/id": 43
-                        },
-                        "source": "cnn.com/videos/world/2024/01/29/exp-amanpour-kang-kyung-wha-fst-012901p-seg-2.cnn"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Secret calls and code names: How money makes it to N Korea",
-                        "date": {
-                            "py/id": 30
-                        },
-                        "source": "bbc.com/news/world-asia-68065475"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Why South Korea should be your next 'workcation'",
-                        "date": {
-                            "py/id": 30
-                        },
-                        "source": "bbc.comhttps://www.bbc.com/travel/article/20240129-why-south-korea-should-be-your-next-workcation"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "N Korea fires \u2018several\u2019 cruise missiles in third test in less than a week",
-                        "date": "Published On 30 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/30/n-korea-fires-several-cruise-missiles-in-third-test-in-less-than-a-week"
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Pyongyang",
                     "Hamhung",
@@ -1351,20 +1295,7 @@
                 "py/object": "borders.Country",
                 "name": "Korea",
                 "code": "KOR",
-                "articles": [
-                    {
-                        "py/id": 127
-                    },
-                    {
-                        "py/id": 128
-                    },
-                    {
-                        "py/id": 129
-                    },
-                    {
-                        "py/id": 130
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Seoul",
                     "Busan",
@@ -1440,7 +1371,16 @@
                 "py/object": "borders.Country",
                 "name": "Malaysia",
                 "code": "MYS",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Malaysia cuts prison sentence of disgraced former Prime Minister Najib Razak",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/02/02/asia/malaysia-najib-razak-prison-sentence-halved-intl-hnk/index.html"
+                    }
+                ],
                 "cities": [
                     "Kuala Lumpur",
                     "Putrajaya",
@@ -1481,41 +1421,9 @@
                         "py/object": "borders.Article",
                         "headline": "Remains of ancient Roman triumphal arch unearthed in Serbia",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
                         "source": "cnn.com/2024/01/24/style/serbia-roman-triumphal-arch/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Woman injured in Sydney Harbour shark attack",
-                        "date": {
-                            "py/id": 30
-                        },
-                        "source": "bbc.com/news/world-australia-68137012"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Woman injured in Sydney Harbour shark attack",
-                        "date": {
-                            "py/id": 30
-                        },
-                        "source": "bbc.com/news/world-australia-68137012"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Woman clings to speeding car with stolen dog inside",
-                        "date": {
-                            "py/id": 30
-                        },
-                        "source": "bbc.com/news/world-us-canada-68137078"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Woman injured in Sydney Harbour shark attack",
-                        "date": {
-                            "py/id": 30
-                        },
-                        "source": "bbc.com/news/world-australia-68137012"
                     }
                 ],
                 "cities": [
@@ -1538,32 +1446,41 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Former Pakistan Prime Minister Imran Khan sentenced to 10 years in prison",
+                        "headline": "Jailed Pakistani former Prime Minister Imran Khan and wife convicted for \u2018fraudulent marriage\u2019",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/2024/01/30/asia/pakistan-imran-khan-sentenced-prison-intl-hnk/index.html"
-                    },
-                    {
-                        "py/id": 95
-                    },
-                    {
-                        "py/id": 83
-                    },
-                    {
-                        "py/id": 84
+                        "source": "cnn.com/2024/02/03/asia/imran-khan-convicted-fraudulent-marriage-pakistan-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Pakistan ex-PM Imran Khan, top aide get 10-year jail in state secrets case",
-                        "date": "Published On 30 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/30/pakistan-ex-pm-imran-khan-top-aide-get-10-years-jail-in-state-secrets-case"
+                        "headline": "Pakistan election candidate shot dead as violence escalates ahead of nationwide vote",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/02/01/asia/pakistan-election-candidate-killed-intl-hnk/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Can Pakistan\u2019s politicians break the military\u2019s stranglehold?",
-                        "date": "Published On 30 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/30/can-pakistans-politicians-break-the-militarys-stranglehold"
+                        "headline": "Pakistan's king of comebacks looks set to win again",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "bbc.com/news/world-asia-22167511"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "A jailed star and former convict: Pakistan's election, explained",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "bbc.com/news/world-asia-68005660"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Armed group kills 10 in Pakistan\u2019s restive Khyber Pakhtunkhwa region",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "aljazeera.com/news/2024/2/5/armed-group-kills-10-in-pakistans-restive-khyber-pakhtunkhwa-region"
                     }
                 ],
                 "cities": [
@@ -1627,11 +1544,7 @@
                 "py/object": "borders.Country",
                 "name": "Qatar",
                 "code": "QAT",
-                "articles": [
-                    {
-                        "py/id": 74
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Doha",
                     "Ar Rayyan"
@@ -1644,49 +1557,69 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Russia accuses Ukraine of shooting down military plane, killing all 74 on board",
+                        "headline": "At least 28 killed in strike on Russian-occupied\u00a0town in eastern Ukraine",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/2024/01/24/europe/russian-military-plane-crash-belgorod-intl/index.html"
+                        "source": "cnn.com/2024/02/04/europe/lysychansk-strike-russia-ukraine-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Russian social media trolls \u2018egg crisis\u2019 forcing Putin into damage control mode3:15",
+                        "headline": "Russia and Ukraine complete \u2018major\u2019 prisoner exchange after mysterious plane crash",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/videos/world/2024/01/29/exp-russia-egg-crisis-clare-sebastian-pkg-012912aseg2-cnni-world.cnn"
+                        "source": "cnn.com/2024/01/31/europe/russia-ukraine-prisoner-exchange-plane-crash-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "US figure skaters awarded Olympic gold after Russian skater disqualified",
+                        "headline": "Putin critic and anti-war candidate submits  105,000 signatures for Russian presidential election bid",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/2024/01/30/sport/us-figure-skaters-olympics-kamila-valieva-intl-hnk-spt/index.html"
+                        "source": "cnn.com/2024/01/31/europe/boris-nadezhdin-candidate-russian-election-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Russian figure skater Kamila Valieva banned for four years by Court of Arbitration for Sport",
+                        "headline": "Dozens dead in strike on Russia-held Ukraine city",
                         "date": {
-                            "py/id": 43
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/01/29/sport/kamila-valieva-russia-skating-cas-ruling-spt-intl/index.html"
+                        "source": "bbc.com/news/world-europe-68203541"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Russian anti-war band arrested in Thailand",
+                        "headline": "Dozens dead in strike on Russia-held Ukraine city",
                         "date": {
-                            "py/id": 30
+                            "py/id": 45
                         },
-                        "source": "bbc.com/news/world-asia-68137594"
+                        "source": "bbc.com/news/world-europe-68203541"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Russia-Ukraine war: List of key events, day 706",
-                        "date": "Published On 30 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/30/russia-ukraine-war-list-of-key-events-day-705"
+                        "headline": "Dozens dead in strike on Russia-held Ukraine city",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "bbc.com/news/world-europe-68203541"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Russian authorities cast doubt on antiwar hopeful\u2019s election bid",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "aljazeera.com/news/2024/2/5/putins-anti-war-challenger-faces-likely-exclusion-from-election"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Russia-Ukraine war: List of key events, day 712",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "aljazeera.com/news/2024/2/5/russia-ukraine-war-list-of-key-events-day-712"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Russian wives demand return of reservist husbands fighting in Ukraine",
+                        "date": "Published On 4 Feb 2024",
+                        "source": "aljazeera.com/program/newsfeed/2024/2/4/russian-wives-demand-return-of-reservist-husbands-fighting-in-ukraine"
                     }
                 ],
                 "cities": [
@@ -1752,7 +1685,11 @@
                 "py/object": "borders.Country",
                 "name": "Singapore",
                 "code": "SGP",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/id": 52
+                    }
+                ],
                 "cities": [
                     "Singapore"
                 ]
@@ -1761,7 +1698,16 @@
                 "py/object": "borders.Country",
                 "name": "Vietnam",
                 "code": "VNM",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Lowitja O\u2019Donohue, trailblazer for indigenous Australian rights, dead at 91",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/02/05/australia/lowitja-odonohue-aboriginal-dead-scli-intl/index.html"
+                    }
+                ],
                 "cities": [
                     "Hanoi",
                     "Ho Chi Minh City",
@@ -1780,7 +1726,20 @@
                 "py/object": "borders.Country",
                 "name": "Syria",
                 "code": "SYR",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/id": 105
+                    },
+                    {
+                        "py/id": 100
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Attack on US base in Syria kills Kurdish fighters",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "aljazeera.com/news/2024/2/5/several-kurdish-led-fighters-killed-in-attack-on-us-base-in-syria"
+                    }
+                ],
                 "cities": [
                     "Damascus",
                     "Aleppo",
@@ -1803,37 +1762,7 @@
                 "py/object": "borders.Country",
                 "name": "Thailand",
                 "code": "THA",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "British BASE jumper falls to his death from condominium in Thailand after parachute fails",
-                        "date": {
-                            "py/id": 43
-                        },
-                        "source": "cnn.com/2024/01/29/asia/british-base-jumper-thailand-death-intl-hnk/index.html"
-                    },
-                    {
-                        "py/id": 191
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "LIVE: Uzbekistan vs Thailand \u2013 AFC Asian Cup 2023",
-                        "date": "Published On 30 Jan 2024",
-                        "source": "aljazeera.com/sports/liveblog/2024/1/30/live-uzbekistan-vs-thailand-afc-asian-cup-2023-commentary-updates-score-goals"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "LIVE: Uzbekistan vs Thailand \u2013 AFC Asian Cup 2023",
-                        "date": "Published On 30 Jan 2024",
-                        "source": "aljazeera.com/sports/liveblog/2024/1/30/live-uzbekistan-vs-thailand-afc-asian-cup-2023-commentary-updates-score-goals"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "LIVE: Uzbekistan vs Thailand \u2013 AFC Asian Cup 2023",
-                        "date": "Published On 30 Jan 2024",
-                        "source": "aljazeera.com/sports/liveblog/2024/1/30/live-uzbekistan-vs-thailand-afc-asian-cup-2023-commentary-updates-score-goals"
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Bangkok",
                     "Chiang Mai"
@@ -1846,11 +1775,11 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Dubai is building the world\u2019s tallest residential clock tower",
+                        "headline": "From Bulgari to Armani, ultra-luxe branded residences are booming in Dubai",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/style/dubai-building-worlds-tallest-residential-clock-tower-aeternitas-spc-intl/index.html"
+                        "source": "cnn.com/style/dubai-luxury-branded-residences-hnk-spc-intl/index.html"
                     }
                 ],
                 "cities": [
@@ -1864,40 +1793,7 @@
                 "py/object": "borders.Country",
                 "name": "Turkey",
                 "code": "TUR",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Lone victim of ISIS-claimed Istanbul church shooting was a Muslim, says local official",
-                        "date": {
-                            "py/id": 43
-                        },
-                        "source": "cnn.com/2024/01/29/europe/istanbul-shooting-victim-intl/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Gunmen kill one person during Sunday service at Istanbul church",
-                        "date": {
-                            "py/id": 43
-                        },
-                        "source": "cnn.com/2024/01/28/middleeast/turkey-istanbul-church-shooting-gunmen-intl/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Dozens arrested in connection with Istanbul church shooting4:01",
-                        "date": {
-                            "py/id": 43
-                        },
-                        "source": "cnn.com/videos/world/2024/01/29/exp-istanbul-church-shooting-scott-mclean-012904aseg1-cnni-world.cnn"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Reporter breaks down \u2018terrifying\u2019 security footage of Istanbul church shooting2:08",
-                        "date": {
-                            "py/id": 43
-                        },
-                        "source": "cnn.com/videos/world/2024/01/29/istanbul-church-shooting-isis-intl-ldn-vpx.cnn"
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Ankara",
                     "Istanbul",
@@ -1939,17 +1835,7 @@
                 "py/object": "borders.Country",
                 "name": "Uzbekistan",
                 "code": "UZB",
-                "articles": [
-                    {
-                        "py/id": 212
-                    },
-                    {
-                        "py/id": 213
-                    },
-                    {
-                        "py/id": 214
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Tashkent",
                     "Namangan",
@@ -1963,11 +1849,11 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Oil tanker on fire in\u00a0Gulf\u00a0of Aden after Houthi missile\u00a0attack",
+                        "headline": "A U.S. led coalition launches new round of strikes in Yemen3:58",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/2024/01/26/middleeast/oil-tanker-fire-houthi-missile-attack-gulf-aden-intl/index.html"
+                        "source": "cnn.com/videos/world/2024/02/04/exp-u-s-yemen-strikes-paula-hancocks-020403aseg1-cnni-world.cnn"
                     }
                 ],
                 "cities": [
@@ -2227,19 +2113,19 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Kenya\u00a0court blocks deployment of police officers to Haiti",
+                        "headline": "Huge gas explosion and fire\u00a0kills at least 3, injures hundreds in Kenyan capital",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/2024/01/26/africa/kenyacourt-blocks-deployment-of-police-officers-to-haiti/index.html"
+                        "source": "cnn.com/2024/02/02/africa/kenya-nairobi-gas-explosion-fire-intl-hnk/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Kenya's visa-free dream proves tricky for some",
+                        "headline": "Why Kenyan men fail to condemn deadly misogyny",
                         "date": {
-                            "py/id": 30
+                            "py/id": 45
                         },
-                        "source": "bbc.com/news/world-africa-68093488"
+                        "source": "bbc.com/news/world-africa-68178445"
                     }
                 ],
                 "cities": [
@@ -2300,30 +2186,7 @@
                 "py/object": "borders.Country",
                 "name": "Mali",
                 "code": "MLI",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "More than 40 killed in artisanal mine collapse in southwest Mali, officials say",
-                        "date": {
-                            "py/id": 43
-                        },
-                        "source": "cnn.com/2024/01/25/africa/more-than-40-killed-in-artisanal-mine-collapse-in-southwest-mali-officials-say/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Carlos Gauna/The Malibu Artist",
-                        "date": {
-                            "py/id": 43
-                        },
-                        "source": "cnn.com/2024/01/29/americas/first-sighting-of-newborn-great-white-shark-scn/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Two vessels freed following Somali pirate hijackings",
-                        "date": "Published On 29 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/29/somali-pirates-suspected-of-hijacking-a-sri-lankan-fishing-boat-with-6-crew"
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Bamako",
                     "Balandougou"
@@ -2353,10 +2216,32 @@
                 "code": "MAR",
                 "articles": [
                     {
+                        "py/id": 71
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "As Facebook turns 20, I have something to confess",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/02/04/world/facebook-family-friends-connections-essay-cec/index.html"
+                    },
+                    {
+                        "py/id": 86
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Nova Festival survivor\u2019s strory4:12",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/videos/world/2024/02/01/exp-gaza-hamas-nova-festival-israel-survivor-bianna-golodryga-fst-020112pseg1-cnni-world.cnn"
+                    },
+                    {
                         "py/object": "borders.Article",
                         "headline": "Step inside Emma Stone\u2019s sunlit LA home, up for sale at $4 million",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
                         "source": "cnn.com/2024/01/19/style/emma-stone-los-angeles-home-sale/index.html"
                     }
@@ -2389,7 +2274,16 @@
                 "py/object": "borders.Country",
                 "name": "Namibia",
                 "code": "NAM",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Namibia\u2019s President Hage Geingob dies at 82",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/02/03/africa/namibias-president-hage-geingob-dies-at-82-intl/index.html"
+                    }
+                ],
                 "cities": [
                     "Windhoek"
                 ]
@@ -2487,10 +2381,41 @@
                 "code": "SEN",
                 "articles": [
                     {
+                        "py/id": 41
+                    },
+                    {
                         "py/object": "borders.Article",
-                        "headline": "Ivory Coast vs Senegal 1-1 (5-4 on pens): CAF AFCON 2023 \u2013 as it happened",
-                        "date": "Published On 29 Jan 2024",
-                        "source": "aljazeera.com/sports/liveblog/2024/1/29/live-ivory-coast-vs-senegal-caf-afcon-2023-football"
+                        "headline": "Police clash with protesters in Senegal after the President delays election vote3:26",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/videos/world/2024/02/05/exp-senegal-namibia-elections-protests-madowo-live-02044aseg1-cnni-world.cnn"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Concerns grow over lack of Senegal election date",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "bbc.com/news/world-africa-68194644"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Arrests and tear gas at protests against Senegal election delay",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "aljazeera.com/program/newsfeed/2024/2/5/arrests-within-hundreds-of-senegalese-protestors-after-election-postponed"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Senegal parliament to vote on election delay and Sall tenure extension",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "aljazeera.com/news/2024/2/5/senegal-parliament-votes-on-election-delay-and-sall-tenure-extension"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Photos: Police and protesters clash as Senegal election postponed",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "aljazeera.com/gallery/2024/2/5/police-and-protesters-clash-after-senegal-election-postponed"
                     }
                 ],
                 "cities": [
@@ -2512,7 +2437,16 @@
                 "py/object": "borders.Country",
                 "name": "Sierra Leone",
                 "code": "SLE",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Sierra Leone is losing its forests. This  sanctuary is trying to save chimpanzees and their vital habitat",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/02/02/africa/sierra-leone-chimpanzees-deforestation-intl-cmd/index.html"
+                    }
+                ],
                 "cities": [
                     "Freetown"
                 ]
@@ -2540,17 +2474,11 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "South African police arrest suspect in connection with building fire that killed 77",
+                        "headline": "South African innovator\u2019s medicine-dispensing lockers win prestigious prize",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/2024/01/23/africa/south-africa-arrest-fire-killed-77-intl/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "South Africa\u2019s ANC suspends Jacob Zuma",
-                        "date": "Published On 29 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/29/south-africas-anc-suspends-former-president-jacob-zuma"
+                        "source": "cnn.com/2024/02/01/africa/africa-innovation-prize-royal-academy-of-engineering-spc-intl/index.html"
                     }
                 ],
                 "cities": [
@@ -2570,7 +2498,16 @@
                 "py/object": "borders.Country",
                 "name": "Zimbabwe",
                 "code": "ZWE",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Zimbabwe's governing party wins two-thirds majority",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "bbc.com/news/world-africa-68198049"
+                    }
+                ],
                 "cities": [
                     "Harare",
                     "Bulawayo"
@@ -2580,14 +2517,7 @@
                 "py/object": "borders.Country",
                 "name": "South Sudan",
                 "code": "SSD",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Dozens killed as violence flares in region disputed by Sudan, South Sudan",
-                        "date": "Published On 29 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/29/52-people-killed-in-attack-in-disputed-region-between-sudan-and-south-sudan"
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Juba"
                 ]
@@ -2605,13 +2535,16 @@
                 "code": "SDN",
                 "articles": [
                     {
-                        "py/id": 391
+                        "py/object": "borders.Article",
+                        "headline": "A child dies every two hours in Sudan camp for displaced people: MSF",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "aljazeera.com/news/2024/2/5/a-child-dies-every-two-hours-in-sudan-camp-for-displaced-people-msf"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "ICC accuses Sudan and rebels of Darfur war crimes",
-                        "date": "Published On 30 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/30/icc-prosecutor-says-warring-parties-committing-crimes-in-darfur"
+                        "headline": "A child dies every two hours in Sudan camp for displaced people: MSF",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "aljazeera.com/news/2024/2/5/a-child-dies-every-two-hours-in-sudan-camp-for-displaced-people-msf"
                     }
                 ],
                 "cities": [
@@ -2723,7 +2656,16 @@
                 "py/object": "borders.Country",
                 "name": "Antarctica",
                 "code": "ATA",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Antarctica\u2019s Plastic problem2:59",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/videos/world/2024/02/04/exp-antarctica-plastic-pollution-rosales-pkg-cnni-world.cnn"
+                    }
+                ],
                 "cities": []
             },
             "BVT": {
@@ -2762,7 +2704,598 @@
         "py/object": "borders.Continent",
         "name": "NORTH_AMERICA",
         "code": "NA",
-        "countries": {}
+        "countries": {
+            "ATG": {
+                "py/object": "borders.Country",
+                "name": "Antigua and Barbuda",
+                "code": "ATG",
+                "articles": [],
+                "cities": [
+                    "Saint John's"
+                ]
+            },
+            "BHS": {
+                "py/object": "borders.Country",
+                "name": "Bahamas",
+                "code": "BHS",
+                "articles": [],
+                "cities": [
+                    "Nassau"
+                ]
+            },
+            "BRB": {
+                "py/object": "borders.Country",
+                "name": "Barbados",
+                "code": "BRB",
+                "articles": [],
+                "cities": [
+                    "Bridgetown"
+                ]
+            },
+            "BMU": {
+                "py/object": "borders.Country",
+                "name": "Bermuda",
+                "code": "BMU",
+                "articles": [],
+                "cities": [
+                    "Hamilton"
+                ]
+            },
+            "BLZ": {
+                "py/object": "borders.Country",
+                "name": "Belize",
+                "code": "BLZ",
+                "articles": [],
+                "cities": [
+                    "Belmopan"
+                ]
+            },
+            "VGB": {
+                "py/object": "borders.Country",
+                "name": "British Virgin Islands",
+                "code": "VGB",
+                "articles": [],
+                "cities": [
+                    "Road Town"
+                ]
+            },
+            "CAN": {
+                "py/object": "borders.Country",
+                "name": "Canada",
+                "code": "CAN",
+                "articles": [],
+                "cities": [
+                    "Ottawa",
+                    "Toronto",
+                    "Montreal",
+                    "Vancouver",
+                    "Calgary",
+                    "Edmonton",
+                    "Mississauga",
+                    "Winnipeg",
+                    "Quebec City",
+                    "Hamilton",
+                    "Brampton",
+                    "Surrey"
+                ]
+            },
+            "CYM": {
+                "py/object": "borders.Country",
+                "name": "Cayman Islands",
+                "code": "CYM",
+                "articles": [],
+                "cities": [
+                    "George Town"
+                ]
+            },
+            "CRI": {
+                "py/object": "borders.Country",
+                "name": "Costa Rica",
+                "code": "CRI",
+                "articles": [],
+                "cities": [
+                    "San Jose"
+                ]
+            },
+            "CUB": {
+                "py/object": "borders.Country",
+                "name": "Cuba",
+                "code": "CUB",
+                "articles": [],
+                "cities": [
+                    "Havana",
+                    "Santiago de Cuba"
+                ]
+            },
+            "DMA": {
+                "py/object": "borders.Country",
+                "name": "Dominica",
+                "code": "DMA",
+                "articles": [],
+                "cities": [
+                    "Roseau"
+                ]
+            },
+            "DOM": {
+                "py/object": "borders.Country",
+                "name": "Dominican Republic",
+                "code": "DOM",
+                "articles": [],
+                "cities": [
+                    "Santo Domingo",
+                    "Santiago",
+                    "Santo Domingo Este"
+                ]
+            },
+            "SLV": {
+                "py/object": "borders.Country",
+                "name": "El Salvador",
+                "code": "SLV",
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "El Salvador election results delayed, despite president\u2019s declaration of victory",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/02/05/americas/el-salvador-election-results-intl/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Votes being counted in El Salvador, where strongman president\u2019s victory is all but assured",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/02/04/americas/el-salvador-presidential-election-bukele/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "In El Salvador, self-styled \u2018world\u2019s coolest dictator\u2019 Nayib Bukele heads for re-election\u00a0amid human rights concerns",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/02/03/americas/el-salvador-nayib-bukele-election-preview-intl/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "\u2018World coolest dictator\u2019 Nayib Bukele declares election win in El Salvador",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "aljazeera.com/program/newsfeed/2024/2/5/world-coolest-dictator-nayib-bukele-declares-election-win-in-el-salvador"
+                    }
+                ],
+                "cities": [
+                    "San Salvador"
+                ]
+            },
+            "GRL": {
+                "py/object": "borders.Country",
+                "name": "Greenland",
+                "code": "GRL",
+                "articles": [
+                    {
+                        "py/id": 33
+                    }
+                ],
+                "cities": [
+                    "Nuuk"
+                ]
+            },
+            "GRD": {
+                "py/object": "borders.Country",
+                "name": "Grenada",
+                "code": "GRD",
+                "articles": [],
+                "cities": [
+                    "Saint George's"
+                ]
+            },
+            "GLP": {
+                "py/object": "borders.Country",
+                "name": "Guadeloupe",
+                "code": "GLP",
+                "articles": [],
+                "cities": [
+                    "Basse-Terre"
+                ]
+            },
+            "GTM": {
+                "py/object": "borders.Country",
+                "name": "Guatemala",
+                "code": "GTM",
+                "articles": [],
+                "cities": [
+                    "Guatemala City",
+                    "Villa Nueva",
+                    "Mixco"
+                ]
+            },
+            "HTI": {
+                "py/object": "borders.Country",
+                "name": "Haiti",
+                "code": "HTI",
+                "articles": [],
+                "cities": [
+                    "Port-au-Prince",
+                    "Carrefour"
+                ]
+            },
+            "HND": {
+                "py/object": "borders.Country",
+                "name": "Honduras",
+                "code": "HND",
+                "articles": [],
+                "cities": [
+                    "Tegucigalpa",
+                    "Comayaguela",
+                    "San Pedro Sula"
+                ]
+            },
+            "JAM": {
+                "py/object": "borders.Country",
+                "name": "Jamaica",
+                "code": "JAM",
+                "articles": [],
+                "cities": [
+                    "Kingston"
+                ]
+            },
+            "MTQ": {
+                "py/object": "borders.Country",
+                "name": "Martinique",
+                "code": "MTQ",
+                "articles": [],
+                "cities": [
+                    "Fort-de-France"
+                ]
+            },
+            "MEX": {
+                "py/object": "borders.Country",
+                "name": "Mexico",
+                "code": "MEX",
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "New Jersey to host 2026 World Cup final, Mexico to host opener",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "aljazeera.com/sports/2024/2/5/new-jersey-to-host-2026-fifa-world-cup-final"
+                    }
+                ],
+                "cities": [
+                    "Mexico City",
+                    "Guadalajara",
+                    "Monterrey",
+                    "Tijuana",
+                    "Ecatepec",
+                    "Leon de los Aldama",
+                    "Puebla",
+                    "Zapopan",
+                    "Juarez",
+                    "Ciudad Nezahualcoyotl",
+                    "Mexicali",
+                    "Nezahualcoyotl",
+                    "Morelia",
+                    "Aguascalientes",
+                    "Naucalpan de Juarez",
+                    "Merida",
+                    "Cancun",
+                    "Chihuahua",
+                    "Saltillo",
+                    "Hermosillo",
+                    "Culiacan",
+                    "Queretaro",
+                    "San Luis Potosi",
+                    "Tlajomulco de Zuniga",
+                    "Reynosa",
+                    "Torreon",
+                    "Guadalupe",
+                    "Acapulco de Juarez",
+                    "Tlaquepaque",
+                    "Mazatlan",
+                    "Durango",
+                    "Tlalnepantla",
+                    "Chimalhuacan",
+                    "Tuxtla",
+                    "Irapuato",
+                    "Tonala",
+                    "Ensenada",
+                    "Ixtapaluca",
+                    "Heroica Matamoros",
+                    "Ciudad Apodaca",
+                    "Tultitlan de Mariano Escobedo"
+                ]
+            },
+            "MSR": {
+                "py/object": "borders.Country",
+                "name": "Montserrat",
+                "code": "MSR",
+                "articles": [],
+                "cities": [
+                    "Brades"
+                ]
+            },
+            "ANT": {
+                "py/object": "borders.Country",
+                "name": "Netherlands Antilles",
+                "code": "ANT",
+                "articles": [],
+                "cities": []
+            },
+            "CUW": {
+                "py/object": "borders.Country",
+                "name": "Cura\u00e7ao",
+                "code": "CUW",
+                "articles": [],
+                "cities": [
+                    "Willemstad"
+                ]
+            },
+            "ABW": {
+                "py/object": "borders.Country",
+                "name": "Aruba",
+                "code": "ABW",
+                "articles": [],
+                "cities": [
+                    "Oranjestad"
+                ]
+            },
+            "SXM": {
+                "py/object": "borders.Country",
+                "name": "Sint Maarten (Netherlands)",
+                "code": "SXM",
+                "articles": [],
+                "cities": [
+                    "Philipsburg"
+                ]
+            },
+            "BES": {
+                "py/object": "borders.Country",
+                "name": "Bonaire, Sint Eustatius and Saba",
+                "code": "BES",
+                "articles": [],
+                "cities": []
+            },
+            "NIC": {
+                "py/object": "borders.Country",
+                "name": "Nicaragua",
+                "code": "NIC",
+                "articles": [],
+                "cities": [
+                    "Managua"
+                ]
+            },
+            "UMI": {
+                "py/object": "borders.Country",
+                "name": "United States Minor Outlying Islands",
+                "code": "UMI",
+                "articles": [],
+                "cities": []
+            },
+            "PAN": {
+                "py/object": "borders.Country",
+                "name": "Panama",
+                "code": "PAN",
+                "articles": [],
+                "cities": [
+                    "Panama City"
+                ]
+            },
+            "PRI": {
+                "py/object": "borders.Country",
+                "name": "Puerto Rico",
+                "code": "PRI",
+                "articles": [],
+                "cities": [
+                    "San Juan"
+                ]
+            },
+            "BLM": {
+                "py/object": "borders.Country",
+                "name": "Saint Barthelemy",
+                "code": "BLM",
+                "articles": [],
+                "cities": [
+                    "Gustavia"
+                ]
+            },
+            "KNA": {
+                "py/object": "borders.Country",
+                "name": "Saint Kitts and Nevis",
+                "code": "KNA",
+                "articles": [],
+                "cities": [
+                    "Basseterre"
+                ]
+            },
+            "AIA": {
+                "py/object": "borders.Country",
+                "name": "Anguilla",
+                "code": "AIA",
+                "articles": [],
+                "cities": [
+                    "The Valley"
+                ]
+            },
+            "LCA": {
+                "py/object": "borders.Country",
+                "name": "Saint Lucia",
+                "code": "LCA",
+                "articles": [],
+                "cities": [
+                    "Castries"
+                ]
+            },
+            "MAF": {
+                "py/object": "borders.Country",
+                "name": "Saint Martin",
+                "code": "MAF",
+                "articles": [],
+                "cities": [
+                    "Marigot"
+                ]
+            },
+            "SPM": {
+                "py/object": "borders.Country",
+                "name": "Saint Pierre and Miquelon",
+                "code": "SPM",
+                "articles": [],
+                "cities": [
+                    "Saint-Pierre"
+                ]
+            },
+            "VCT": {
+                "py/object": "borders.Country",
+                "name": "Saint Vincent and the Grenadines",
+                "code": "VCT",
+                "articles": [],
+                "cities": [
+                    "Kingstown"
+                ]
+            },
+            "TTO": {
+                "py/object": "borders.Country",
+                "name": "Trinidad and Tobago",
+                "code": "TTO",
+                "articles": [],
+                "cities": [
+                    "Port of Spain"
+                ]
+            },
+            "TCA": {
+                "py/object": "borders.Country",
+                "name": "Turks and Caicos Islands",
+                "code": "TCA",
+                "articles": [],
+                "cities": [
+                    "Grand Turk"
+                ]
+            },
+            "USA": {
+                "py/object": "borders.Country",
+                "name": "United States of America",
+                "code": "USA",
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "She traveled every New York City subway line \u2014 and photographed every first and last stop",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/style/rita-nannini-new-york-subway-photos/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Queensland Police via Reuters\u2022Video0:54",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/videos/world/2024/02/01/toddler-claw-machine-australia-lon-orig-na-hz.cnn"
+                    },
+                    {
+                        "py/id": 49
+                    }
+                ],
+                "cities": [
+                    "Washington",
+                    "New York",
+                    "Los Angeles",
+                    "Chicago",
+                    "Miami",
+                    "Dallas",
+                    "Houston",
+                    "Philadelphia",
+                    "Atlanta",
+                    "Boston",
+                    "Phoenix",
+                    "Detroit",
+                    "Seattle",
+                    "San Francisco",
+                    "San Diego",
+                    "Minneapolis",
+                    "Brooklyn",
+                    "Tampa",
+                    "Denver",
+                    "Queens",
+                    "Baltimore",
+                    "Las Vegas",
+                    "St. Louis",
+                    "Portland",
+                    "Riverside",
+                    "Orlando",
+                    "Sacramento",
+                    "San Antonio",
+                    "San Jose",
+                    "Pittsburgh",
+                    "Cincinnati",
+                    "Manhattan",
+                    "Cleveland",
+                    "Indianapolis",
+                    "Austin",
+                    "Kansas City",
+                    "Columbus",
+                    "Charlotte",
+                    "Virginia Beach",
+                    "Bronx",
+                    "Milwaukee",
+                    "Providence",
+                    "Jacksonville",
+                    "Salt Lake City",
+                    "Nashville",
+                    "Raleigh",
+                    "Memphis",
+                    "Louisville",
+                    "Richmond",
+                    "Buffalo",
+                    "Oklahoma City",
+                    "Bridgeport",
+                    "New Orleans",
+                    "Fort Worth",
+                    "Hartford",
+                    "Tucson",
+                    "Honolulu",
+                    "McAllen",
+                    "Omaha",
+                    "El Paso",
+                    "Hempstead",
+                    "Albuquerque",
+                    "Rochester",
+                    "Sarasota",
+                    "Fresno",
+                    "Tulsa",
+                    "Allentown",
+                    "Dayton",
+                    "Birmingham",
+                    "Charleston",
+                    "Cape Coral",
+                    "Columbia",
+                    "Concord",
+                    "Colorado Springs",
+                    "Springfield",
+                    "Knoxville",
+                    "Baton Rouge",
+                    "Ogden",
+                    "Grand Rapids",
+                    "Albany",
+                    "Bakersfield",
+                    "Mission Viejo",
+                    "New Haven",
+                    "Worcester",
+                    "Provo",
+                    "Akron",
+                    "Palm Bay",
+                    "Des Moines",
+                    "Murrieta"
+                ]
+            },
+            "VIR": {
+                "py/object": "borders.Country",
+                "name": "United States Virgin Islands",
+                "code": "VIR",
+                "articles": [],
+                "cities": [
+                    "Charlotte Amalie"
+                ]
+            }
+        }
     },
     {
         "py/object": "borders.Continent",
@@ -2773,7 +3306,16 @@
                 "py/object": "borders.Country",
                 "name": "Argentina",
                 "code": "ARG",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "\u2018I don\u2019t know how I will eat.\u2019 For the workers behind Argentina\u2019s national drink, Milei\u2019s reforms are turning sour",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/02/01/americas/milei-reforms-argentina-agriculture-workers-mate-intl/index.html"
+                    }
+                ],
                 "cities": [
                     "Buenos Aires",
                     "Cordoba",
@@ -2802,7 +3344,20 @@
                 "py/object": "borders.Country",
                 "name": "Brazil",
                 "code": "BRA",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/id": 475
+                    },
+                    {
+                        "py/id": 476
+                    },
+                    {
+                        "py/id": 477
+                    },
+                    {
+                        "py/id": 478
+                    }
+                ],
                 "cities": [
                     "Brasilia",
                     "Sao Paulo",
@@ -2853,7 +3408,30 @@
                 "py/object": "borders.Country",
                 "name": "Chile",
                 "code": "CHL",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Drone footage shows Chile forest fire devastation",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "bbc.com/news/world-latin-america-68205132"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "'It was like hell': Dozens killed in Chile wildfires",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "bbc.com/news/world-latin-america-68197170"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Photos: Forest fires rage in central Chile",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "aljazeera.com/gallery/2024/2/5/forest-fires-rage-on-in-central-chile"
+                    }
+                ],
                 "cities": [
                     "Santiago",
                     "Concepcion",
@@ -2868,11 +3446,43 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Colombia\u00a0declares a disaster due to wildfires as it calls for international help",
+                        "headline": "Atmospheric river parks over Southern California, posing potentially deadly flood threat for millions",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/2024/01/25/americas/colombia-disaster-wildfires-el-nino-intl-latam/index.html"
+                        "source": "cnn.com/2024/02/04/us/pineapple-express-storm-california-weather-monday/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "More than 800,000 without power in California as intense atmospheric river brings threat of mudslides and flooding",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/02/04/us/california-atmospheric-river-flooding/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "California braces for a stronger atmospheric river this weekend",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/02/03/weather/california-atmospheric-river-rain-snow/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Meteorologists urge Southern Californians to prepare for very dangerous flood potential from new storm",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/02/02/weather/california-pineapple-express-storm-flooding-climate-friday/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "'Catastrophic' flood risk for drenched California",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "bbc.com/news/world-us-canada-68202944"
                     }
                 ],
                 "cities": [
@@ -2899,16 +3509,7 @@
                 "py/object": "borders.Country",
                 "name": "Ecuador",
                 "code": "ECU",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Gangs, gunmen and cartels running amok. As terror grips the streets of Ecuador, even the armed forces live in fear",
-                        "date": {
-                            "py/id": 43
-                        },
-                        "source": "cnn.com/2024/01/25/americas/ecuador-gangs-terror-cartels-intl/index.html"
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Quito",
                     "Guayaquil"
@@ -2959,12 +3560,9 @@
                         "py/object": "borders.Article",
                         "headline": "How the climate crisis fuels gender inequality",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
                         "source": "cnn.comhttps://www.cnn.com/interactive/2023/11/world/climate-gender-inequality-cnnphotos-as-equals-intl-cmd/"
-                    },
-                    {
-                        "py/id": 44
                     }
                 ],
                 "cities": [
@@ -2997,28 +3595,7 @@
                 "py/object": "borders.Country",
                 "name": "Venezuela",
                 "code": "VEN",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Venezuela\u2019s opposition accuses Maduro government of \u2018repressive escalation\u2019 as court upholds election ban on candidate",
-                        "date": {
-                            "py/id": 43
-                        },
-                        "source": "cnn.com/2024/01/27/americas/venezuela-opposition-outcry-machado-ban-intl/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "US reimposes some sanctions after Venezuela bans presidential hopeful",
-                        "date": "Published On 30 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/30/us-reimposes-some-sanctions-after-venezuela-bans-presidential-hopeful"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Venezuela court disqualifies leading opposition presidential candidate",
-                        "date": "Published On 27 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/27/venezuela-court-disqualifies-leading-opposition-presidential-candidate"
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Caracas",
                     "Maracaibo",
@@ -3043,16 +3620,7 @@
                 "py/object": "borders.Country",
                 "name": "Albania",
                 "code": "ALB",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Albanian court greenlights migration deal with Italy",
-                        "date": {
-                            "py/id": 30
-                        },
-                        "source": "bbc.com/news/world-europe-68132537"
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Tirana"
                 ]
@@ -3208,27 +3776,35 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Protesters hurl soup at the \u2018Mona Lisa\u2019 in Paris",
+                        "headline": "SUV, non merci! Paris votes to triple parking charges for hefty cars",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/2024/01/28/europe/soup-thrown-mona-lisa-louvre-paris-intl/index.html"
+                        "source": "cnn.com/2024/02/05/climate/paris-suvs-parking-charges-triple-climate-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Gown girl: The most eye-catching looks from the Paris couture shows",
+                        "headline": "France on-track to constitutionalize abortion rights",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/2024/01/26/style/paris-haute-couture-review-2024/index.html"
+                        "source": "cnn.com/2024/01/30/europe/france-abortion-rights-vote-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "French farmers plan to blockade Paris1:27",
+                        "headline": "What Paris Jackson and Doja Cat\u2019s latest red carpet looks say about tattoos today",
                         "date": {
-                            "py/id": 43
+                            "py/id": 34
                         },
-                        "source": "cnn.com/videos/world/2024/01/29/exp-france-farmer-protests-012904aseg2-cnni-world.cnn"
+                        "source": "cnn.com/2024/02/05/style/paris-jackson-doja-cat-tattoos-grammys/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Parisians vote for rise in parking fees for SUVs",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "bbc.com/news/world-europe-68196828"
                     }
                 ],
                 "cities": [
@@ -3253,11 +3829,11 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "SHK/Hamburger Kunsthalle/bpk",
+                        "headline": "Does Germany\u2019s economy need more than a cup of coffee?",
                         "date": {
-                            "py/id": 43
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/01/30/style/caspar-david-friedrich-painter-tan/index.html"
+                        "source": "bbc.com/news/world-europe-68181799"
                     }
                 ],
                 "cities": [
@@ -3309,16 +3885,7 @@
                 "py/object": "borders.Country",
                 "name": "Hungary",
                 "code": "HUN",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Hungary\u2019s Orban backs Sweden\u2019s NATO bid, potentially removing last hurdle to accession",
-                        "date": {
-                            "py/id": 43
-                        },
-                        "source": "cnn.com/2024/01/24/europe/hungary-supports-sweden-nato-bid-intl/index.html"
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Budapest"
                 ]
@@ -3336,7 +3903,24 @@
                 "py/object": "borders.Country",
                 "name": "Ireland",
                 "code": "IRL",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Northern Ireland\u00a0power-sharing could resume within days, after two-year hiatus",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/01/30/uk/dup-northern-ireland-power-sharing-intl/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Northern Ireland swears in Michelle O\u2019Neill as First Minister2:57",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/videos/world/2024/02/04/exp-northern-ireland-sinn-fein-michelle-oneill-itn-pkg-020403aseg3.cnn"
+                    }
+                ],
                 "cities": [
                     "Dublin"
                 ]
@@ -3347,7 +3931,20 @@
                 "code": "ITA",
                 "articles": [
                     {
-                        "py/id": 497
+                        "py/object": "borders.Article",
+                        "headline": "The surprising secret history of one of Italy\u2019s favorite foods",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/travel/polenta-italy-americas/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "He decided to move to Italy with his husband. Then his ex-wife bought a home down the road",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/travel/moved-to-italy-with-his-husband-ex-wife/index.html"
                     }
                 ],
                 "cities": [
@@ -3446,16 +4043,7 @@
                 "py/object": "borders.Country",
                 "name": "Netherlands",
                 "code": "NLD",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Netherlands suspends UNRWA funding, calls accusations \u2018too serious\u20197:54",
-                        "date": {
-                            "py/id": 43
-                        },
-                        "source": "cnn.com/videos/world/2024/01/29/exp-unrwa-funding-geoffrey-van-leeuwen-intv-012909aseg01-cnni-world.cnn"
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Amsterdam",
                     "The Hague",
@@ -3466,14 +4054,7 @@
                 "py/object": "borders.Country",
                 "name": "Norway",
                 "code": "NOR",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Norway\u2019s foreign minister tells Al Jazeera why they still fund UNRWA",
-                        "date": "Published On 29 Jan 2024",
-                        "source": "aljazeera.com/program/newsfeed/2024/1/29/norway-to-continue-funding-unrwa"
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Oslo"
                 ]
@@ -3495,20 +4076,7 @@
                 "py/object": "borders.Country",
                 "name": "Portugal",
                 "code": "PRT",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Europe\u2019s thirst for lithium threatens livelihoods, biodiversity in Portugal",
-                        "date": "Published On 30 Jan 2024",
-                        "source": "aljazeera.com/features/2024/1/30/europes-thirst-for-lithium-threatens-livelihoods-biodiversity-in-portugal"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Europe\u2019s thirst for lithium threatens livelihoods, biodiversity in Portugal",
-                        "date": "Published On 30 Jan 2024",
-                        "source": "aljazeera.com/features/2024/1/30/europes-thirst-for-lithium-threatens-livelihoods-biodiversity-in-portugal"
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Lisbon",
                     "Porto"
@@ -3529,22 +4097,31 @@
                 "code": "RUS",
                 "articles": [
                     {
-                        "py/id": 187
+                        "py/id": 178
                     },
                     {
-                        "py/id": 188
+                        "py/id": 179
                     },
                     {
-                        "py/id": 189
+                        "py/id": 180
                     },
                     {
-                        "py/id": 190
+                        "py/id": 181
                     },
                     {
-                        "py/id": 191
+                        "py/id": 182
                     },
                     {
-                        "py/id": 192
+                        "py/id": 183
+                    },
+                    {
+                        "py/id": 184
+                    },
+                    {
+                        "py/id": 185
+                    },
+                    {
+                        "py/id": 186
                     }
                 ],
                 "cities": [
@@ -3602,7 +4179,7 @@
                 "code": "SRB",
                 "articles": [
                     {
-                        "py/id": 161
+                        "py/id": 154
                     }
                 ],
                 "cities": [
@@ -3655,19 +4232,7 @@
                 "py/object": "borders.Country",
                 "name": "Sweden",
                 "code": "SWE",
-                "articles": [
-                    {
-                        "py/id": 571
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Turkish parliament approves Sweden\u2019s NATO membership bid",
-                        "date": {
-                            "py/id": 43
-                        },
-                        "source": "cnn.com/2024/01/23/europe/turkey-vote-sweden-nato-intl/index.html"
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Stockholm",
                     "Gothenburg"
@@ -3686,20 +4251,7 @@
                 "py/object": "borders.Country",
                 "name": "Turkey",
                 "code": "TUR",
-                "articles": [
-                    {
-                        "py/id": 222
-                    },
-                    {
-                        "py/id": 223
-                    },
-                    {
-                        "py/id": 224
-                    },
-                    {
-                        "py/id": 225
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Ankara",
                     "Istanbul",
@@ -3734,26 +4286,57 @@
                 "code": "UKR",
                 "articles": [
                     {
-                        "py/object": "borders.Article",
-                        "headline": "Ukraine\u2019s fight to root out corruption3:16",
-                        "date": {
-                            "py/id": 43
-                        },
-                        "source": "cnn.com/videos/world/2024/01/30/exp-ukraine-corruption-concerns-michael-bociurkew-intv-013002aseg1-cnni-world.cnn"
-                    },
-                    {
-                        "py/id": 187
+                        "py/id": 178
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Nothing but rubble: Ukraine's shattered ghost town Avdiivka",
+                        "headline": "Vitalii Nosach/Global Images Ukraine/Getty Images",
                         "date": {
-                            "py/id": 30
+                            "py/id": 34
                         },
-                        "source": "bbc.com/news/world-europe-68086568"
+                        "source": "cnn.com/2024/01/31/europe/budanov-ukraine-russia-war-intl/index.html"
                     },
                     {
-                        "py/id": 192
+                        "py/object": "borders.Article",
+                        "headline": "Ukraine\u2019s spy chief downplays risks of Trump presidency as he makes fresh plea for aid",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/01/31/europe/budanov-ukraine-russia-war-intl/index.html"
+                    },
+                    {
+                        "py/id": 179
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "EU farmers protest regulations, competition from Ukraine2:59",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/videos/world/2024/02/04/exp-kinkade-pkg-farmer-protest-fst-020401aseg2-cnni-world.cnn"
+                    },
+                    {
+                        "py/id": 181
+                    },
+                    {
+                        "py/id": 182
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "US unveils deal on border and Ukraine aid - but can it pass?",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "bbc.com/news/world-us-canada-68143887"
+                    },
+                    {
+                        "py/id": 183
+                    },
+                    {
+                        "py/id": 185
+                    },
+                    {
+                        "py/id": 186
                     }
                 ],
                 "cities": [
@@ -3781,7 +4364,24 @@
                 "py/object": "borders.Country",
                 "name": "United Kingdom of Great Britain & Northern Ireland",
                 "code": "GBR",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "London police fatally shoot man allegedly armed with a crossbow",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/01/30/europe/london-police-shooting-crossbow-intl/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Arsenal keeps league title hopes alive with \u2018incredible\u2019 win against Liverpool",
+                        "date": {
+                            "py/id": 34
+                        },
+                        "source": "cnn.com/2024/02/05/sport/arsenal-liverpool-premier-league-title-spt-intl/index.html"
+                    }
+                ],
                 "cities": [
                     "London",
                     "Birmingham",
@@ -3808,7 +4408,11 @@
                 "py/object": "borders.Country",
                 "name": "Jersey",
                 "code": "JEY",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/id": 506
+                    }
+                ],
                 "cities": [
                     "Saint Helier"
                 ]
@@ -3844,27 +4448,24 @@
                 "code": "AUS",
                 "articles": [
                     {
+                        "py/id": 196
+                    },
+                    {
+                        "py/id": 44
+                    },
+                    {
                         "py/object": "borders.Article",
-                        "headline": "Rare Sydney Harbour shark attack puts swimmers on edge",
+                        "headline": "Indigenous leader who changed Australia dies aged 91",
                         "date": {
-                            "py/id": 43
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/01/30/australia/australia-sydney-harbour-shark-attack-hnk-intl/index.html"
+                        "source": "bbc.com/news/world-australia-68201228"
                     },
                     {
-                        "py/id": 162
+                        "py/id": 50
                     },
                     {
-                        "py/id": 163
-                    },
-                    {
-                        "py/id": 165
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Australia\u2019s pro-Palestinian activists to continue targeting Israeli ships",
-                        "date": "Published On 29 Jan 2024",
-                        "source": "aljazeera.com/news/2024/1/29/australias-pro-palestinian-activists-to-continue-targeting-israeli-ships"
+                        "py/id": 51
                     }
                 ],
                 "cities": [
@@ -4067,11 +4668,7 @@
                 "py/object": "borders.Country",
                 "name": "Tuvalu",
                 "code": "TUV",
-                "articles": [
-                    {
-                        "py/id": 44
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Funafuti"
                 ]

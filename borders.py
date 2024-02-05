@@ -124,7 +124,7 @@ def get_countries_from_csv(file_path, continent_list):
     print("Populating continents with cities from:", file_path)
     
     try:
-        countries_file = pd.read_csv(file_path)
+        countries_file = pd.read_csv(file_path, keep_default_na=False)
     
     except FileNotFoundError:
         print(f"file {file_path} does not exist. please check spelling")
@@ -141,7 +141,7 @@ def get_countries_from_csv(file_path, continent_list):
         for continent in continent_list:
             if continent.code == continent_code:
                 continent.add_country(Country(country_name, country_code)) 
-
+                
     print("complete\n")
 
 
