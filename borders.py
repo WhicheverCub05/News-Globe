@@ -46,8 +46,11 @@ class Country:
     def __str__(self):
         return f"name : {self.name}\n"
     
-    def add_article(self, article):
-        self.articles.append(article)
+    def add_article(self, new_article):
+        for article in self.articles:
+            if new_article.headline in article.headline:
+                break
+        self.articles.append(new_article)
 
     def add_city(self, city):
         # print(f"{self.name} adding city:", city)
