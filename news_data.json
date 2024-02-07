@@ -20,7 +20,14 @@
                 "py/object": "borders.Country",
                 "name": "Azerbaijan",
                 "code": "AZE",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Aliyev poised to win as Azerbaijan votes in snap presidential election",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/aliyev-poised-to-win-as-azerbaijan-votes-in-snap-presidential-election"
+                    }
+                ],
                 "cities": [
                     "Baku"
                 ]
@@ -38,7 +45,14 @@
                 "py/object": "borders.Country",
                 "name": "Bangladesh",
                 "code": "BGD",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "\u2018India Out\u2019 campaigns simmer in Bangladesh amid election fallout",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/economy/2024/2/7/india-out-campaigns-simmer-in-bangladesh-amid-election-fallout"
+                    }
+                ],
                 "cities": [
                     "Dhaka",
                     "Chattogram",
@@ -92,9 +106,15 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "The Observer view: Xi Jinping is playing deadly games with Myanmar and North Korea",
-                        "date": "https://theguardian.com/commentisfree/2024/feb/04/the-observer-view-xi-jinping-is-playing-deadly-games-with-myanmar-and-north-korea",
-                        "source": ""
+                        "headline": "\u2018Blood and sweat\u2019: Myanmar resistance fights to overturn military coup",
+                        "date": "Published On 1 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/1/blood-and-sweat-myanmar-resistance-fights-to-overturn-military-coup"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Myanmar\u2019s rebels see unity as key to victory over weakened military rulers",
+                        "date": "Published On 3 Feb 2024",
+                        "source": "https://aljazeera.com/features/2024/2/3/myanmars-rebels-see-unity-as-key-to-victory-over-weakened-military-rulers"
                     }
                 ],
                 "cities": [
@@ -128,11 +148,11 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gCBhYhKwLYhQ=="
+                                    "B+gCBxEcOAjfUg=="
                                 ]
                             ]
                         },
-                        "source": "bbc.com/news/world-asia-68090450"
+                        "source": "https://bbc.com/news/world-asia-68090450"
                     }
                 ],
                 "cities": [
@@ -147,7 +167,7 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Biden threatens veto of House Republicans\u2019 standalone Israel aid bill3:35",
+                        "headline": "Jason Momoa, Amanda Seyfried, other stars to take part in tonight\u2019s CNN Heroes event",
                         "date": {
                             "py/object": "datetime.datetime",
                             "__reduce__": [
@@ -155,104 +175,56 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gCBhYhKguT0w=="
+                                    "B+gCBxEcOADPLA=="
                                 ]
                             ]
                         },
-                        "source": "cnn.com/videos/world/2024/02/06/exp-biden-veto-standalone-israel-aid-bill-david-sanger-intv-020602aseg2-world.cnn"
+                        "source": "https://cnn.com/2023/12/10/world/cnn-hero-of-the-year-how-to-watch/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Holiday travel nightmare in China2:10",
+                        "headline": "China anti-fraud app could monitor Tibetans - report",
                         "date": {
-                            "py/id": 42
+                            "py/id": 40
                         },
-                        "source": "cnn.com/videos/world/2024/02/06/exp-china-new-year-travel-020612aseg2-world.cnn"
+                        "source": "https://bbc.com/news/world-asia-china-68213529"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Jason Momoa, Amanda Seyfried, other stars to take part in tonight\u2019s CNN Heroes event",
+                        "headline": "Snowstorms disrupt Lunar New Year travel in China",
                         "date": {
-                            "py/id": 42
+                            "py/id": 40
                         },
-                        "source": "cnn.com/2023/12/10/world/cnn-hero-of-the-year-how-to-watch/index.html"
+                        "source": "https://bbc.com/news/world-asia-china-68224539"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Australian writer Yang Hengjun sentenced to death on China spy charges",
-                        "date": "Published On 5 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/5/australian-writer-yang-hengjun-sentenced-to-death-on-china-spy-charges"
+                        "headline": "Russia and China slam US for Middle East strikes",
+                        "date": "Published On 6 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/6/china-and-russia-slam-us-strikes-on-iraq-syria-at-un"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "\u2018Reputational damage\u2019: Singapore\u2019s ruling party grapples with scandal",
                         "date": "Published On 5 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/5/reputational-damage-singapores-ruling-party-grapples-with-scandal"
+                        "source": "https://aljazeera.com/news/2024/2/5/reputational-damage-singapores-ruling-party-grapples-with-scandal"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Actor suing Disney and Lucasfilm over Mandalorian firing with help from Elon Musk",
-                        "date": "https://theguardian.com/tv-and-radio/2024/feb/06/gina-carano-sues-disney-mandalorian",
-                        "source": ""
+                        "headline": "Australian writer Yang Hengjun sentenced to death on China spy charges",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/5/australian-writer-yang-hengjun-sentenced-to-death-on-china-spy-charges"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "US pornography actor accused of posting propaganda for Iran",
-                        "date": "https://www.theguardian.com/world/2024/feb/05/us-pornography-actor-accused-of-promoting-propaganda-for-iran-after-social-media-posts",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "US pornography actor accused of posting propaganda for Iran",
-                        "date": "https://www.theguardian.com/world/2024/feb/05/us-pornography-actor-accused-of-promoting-propaganda-for-iran-after-social-media-posts",
-                        "source": ""
+                        "headline": "Malaysia halves ex-PM Najib Razak\u2019s jail term in 1MDB corruption scandal",
+                        "date": "Published On 2 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/2/malaysia-reduces-sentence-of-former-pm-najib-razak"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Sunak \u2018out of touch\u2019 for betting \u00a31,000 on Rwanda plan\u2019s success, says Labour",
                         "date": "https://www.theguardian.com/politics/2024/feb/05/rishi-sunak-out-of-touch-bet-rwanda-plan-labour",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Sunak \u2018out of touch\u2019 for betting \u00a31,000 on Rwanda plan\u2019s success, says Labour",
-                        "date": "https://www.theguardian.com/politics/2024/feb/05/rishi-sunak-out-of-touch-bet-rwanda-plan-labour",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "German firm BASF urged to quit Xinjiang over \u2018gross abuses\u2019 of Uyghurs",
-                        "date": "https://theguardian.com/world/2024/feb/06/german-firm-basf-urged-to-quit-xinjiang-over-gross-abuses-of-uyghurs",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "German firm BASF urged to quit Xinjiang over \u2018gross abuses\u2019 of Uyghurs",
-                        "date": "https://theguardian.com/world/2024/feb/06/german-firm-basf-urged-to-quit-xinjiang-over-gross-abuses-of-uyghurs",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Canada\u2019s apology came too late for my grandfather, stolen and abused aged eight",
-                        "date": "https://www.theguardian.com/world/2024/feb/02/sons-of-freedom-canada-apology-violence-trauma",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Canada\u2019s apology came too late for my grandfather, stolen and abused aged eight",
-                        "date": "https://www.theguardian.com/world/2024/feb/02/sons-of-freedom-canada-apology-violence-trauma",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Indigenous reporter fears more journalists will be targeted after arrest as police cleared Canada camp",
-                        "date": "https://www.theguardian.com/world/2024/feb/02/canada-indigenous-journalist-arrested-police-operation",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Indigenous reporter fears more journalists will be targeted after arrest as police cleared Canada camp",
-                        "date": "https://www.theguardian.com/world/2024/feb/02/canada-indigenous-journalist-arrested-police-operation",
                         "source": ""
                     },
                     {
@@ -822,105 +794,164 @@
                     "Nicosia"
                 ]
             },
-            "GEO": {
-                "py/object": "borders.Country",
-                "name": "Georgia",
-                "code": "GEO",
-                "articles": [],
-                "cities": [
-                    "Tbilisi"
-                ]
-            },
             "PSE": {
                 "py/object": "borders.Country",
-                "name": "Palestinine",
+                "name": "Palestine",
                 "code": "PSE",
                 "articles": [
                     {
                         "py/object": "borders.Article",
+                        "headline": "Hamas counterproposal on hostage and ceasefire deal calls for phased Israeli pullout from Gaza and plan to end war",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "https://cnn.com/2024/02/07/middleeast/hamas-counterproposal-israel-pullout-ceasefire-hostages-intl/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
                         "headline": "How Gaza\u2019s hospitals became battlegrounds",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.comhttps://www.cnn.com/interactive/2024/01/middleeast/gaza-hospitals-destruction-investigation-intl-cmd/"
+                        "source": "https://cnn.comhttps://www.cnn.com/interactive/2024/01/middleeast/gaza-hospitals-destruction-investigation-intl-cmd/"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Ultra-Orthodox\u00a0man\u00a0seen spitting at Christian priest in Jerusalem",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/04/middleeast/ultraorthodox-spitting-jerusalem-intl/index.html"
+                        "source": "https://cnn.com/2024/02/04/middleeast/ultraorthodox-spitting-jerusalem-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Misery in Gaza3:37",
+                        "headline": "IDF calls on civilians to leave parts of Gaza City, Khan Younis3:20",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/videos/world/2024/02/06/exp-gaza-survivors-bashir-pkg-020612aseg1-world.cnn"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Hamas responds to proposed Gaza ceasefire plan",
-                        "date": {
-                            "py/id": 37
-                        },
-                        "source": "bbc.com/news/world-middle-east-68223494"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "'Will you come and get me?' Gaza girl's desperate plea before losing contact",
-                        "date": {
-                            "py/id": 37
-                        },
-                        "source": "bbc.com/news/world-middle-east-68180642"
+                        "source": "https://cnn.com/videos/world/2024/02/06/exp-idf-gaza-khan-younis-evacuate-nobilo-live-gotkine-020604aseg2-cnni-world.cnn"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "At least half of Gaza buildings damaged or destroyed, new analysis shows",
                         "date": {
-                            "py/id": 37
+                            "py/id": 40
                         },
-                        "source": "bbc.com/news/world-middle-east-68006607"
+                        "source": "https://bbc.com/news/world-middle-east-68006607"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "UN warning that Gaza aid system could collapse",
                         "date": {
-                            "py/id": 37
+                            "py/id": 40
                         },
-                        "source": "bbc.com/news/world-middle-east-68150519"
+                        "source": "https://bbc.com/news/world-middle-east-68150519"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Gaza university blown up in massive explosion",
                         "date": {
-                            "py/id": 37
+                            "py/id": 40
                         },
-                        "source": "bbc.com/news/world-middle-east-68138210"
+                        "source": "https://bbc.com/news/world-middle-east-68138210"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Gaza's largest aid agency 'desperate' after funds paused",
                         "date": {
-                            "py/id": 37
+                            "py/id": 40
                         },
-                        "source": "bbc.com/news/world-middle-east-68127544"
+                        "source": "https://bbc.com/news/world-middle-east-68127544"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Hamas responds to proposed Gaza ceasefire plan",
-                        "date": {
-                            "py/id": 37
-                        },
-                        "source": "bbc.com/news/world-middle-east-68223494"
+                        "headline": "What\u2019s in Hamas\u2019s 135-day proposal for a Gaza truce?",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/whats-in-hamass-135-day-proposal-for-a-gaza-truce"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "How are journalists in Gaza coping with the war?",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/program/the-stream/2024/2/7/how-are-journalists-in-gaza-coping-with-the-war"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Israeli snipers target sheep in Gaza",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/program/newsfeed/2024/2/7/israeli-snipers-target-sheep-in-gaza"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Palestinian boy drinks from puddle amid Gaza water crisis",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/program/newsfeed/2024/2/7/palestinian-boy-drinks-from-puddle-amid-gaza-water-crisis"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Looking for a penny\u2019s worth of hope amid the genocide in Gaza",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/opinions/2024/2/7/looking-for-a-pennys-worth-of-hope-amid-the-genocide-in-gaza"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Israeli air attacks on Rafah in Gaza",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/program/newsfeed/2024/2/7/israeli-air-attacks-on-rafah-in-gaza"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Blinken in Israel to try to seal Gaza truce deal",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/blinken-in-israel-to-try-to-seal-gaza-truce-deal"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Israel\u2019s war on Gaza: List of key events, day 124",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/israels-war-on-gaza-list-of-key-events-day-124"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Israel\u2019s war on Gaza: Are boycotts hurting US brands?",
+                        "date": "Published On 6 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/6/israels-war-on-gaza-are-boycotts-hurting-us-brands"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Dozens of pro-Palestine protesters arrested in Pennsylvania",
+                        "date": "Published On 6 Feb 2024",
+                        "source": "https://aljazeera.com/program/newsfeed/2024/2/6/dozens-of-protestors-against-gaza-genocide-arrested-in-pennsylvania"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "McDonald\u2019s blames Israel\u2019s war in Gaza for missing sales target",
+                        "date": "Published On 6 Feb 2024",
+                        "source": "https://aljazeera.com/economy/2024/2/6/mcdonalds-blames-israels-war-in-gaza-for-missing-sales-target"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Argentina president says plans to move embassy to Jerusalem",
                         "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/6/argentina-president-javier-milei-says-plans-to-move-embassy-to-jerusalem"
+                        "source": "https://aljazeera.com/news/2024/2/6/argentina-president-javier-milei-says-plans-to-move-embassy-to-jerusalem"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Middle East crisisBlinken says \u2018a lot of work\u2019 remains on Gaza ceasefire and hostage talks",
+                        "date": "https://theguardian.com/world/2024/feb/07/hamas-responds-to-israel-plan-with-three-stage-proposal-to-end-gaza-war",
+                        "source": ""
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Why is there still no Gaza ceasefire? Because self-interested world leaders are obstructing it",
+                        "date": "https://theguardian.com/commentisfree/2024/feb/07/gaza-ceasefire-benjamin-netanyahu-joe-biden-hamas-7-october",
+                        "source": ""
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Is there a way to achieve peace in Israel and Palestine? I believe there is",
+                        "date": "https://theguardian.com/commentisfree/2024/feb/07/israel-palestine-conflict-solution-peace",
+                        "source": ""
                     },
                     {
                         "py/object": "borders.Article",
@@ -930,26 +961,32 @@
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Mapped: how Gaza war led to violence spreading around the Middle East",
-                        "date": "https://www.theguardian.com/world/ng-interactive/2024/jan/30/mapped-gaza-war-violence-spreading-middle-east",
+                        "headline": "Blinken says \u2018a lot of work\u2019 remains on Gaza ceasefire and hostage talks",
+                        "date": "https://theguardian.com/world/2024/feb/07/hamas-responds-to-israel-plan-with-three-stage-proposal-to-end-gaza-war",
+                        "source": ""
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Gaza diary\n                  Gaza diary part 45: \u2018I can\u2019t believe I am in a car \u2013 I ask the driver what he uses for fuel\u2019",
+                        "date": "https://www.theguardian.com/global-development/2024/feb/07/gaza-diary-part-45-i-cant-believe-i-am-in-a-car-i-ask-the-driver-what-he-uses-for-fuel",
+                        "source": ""
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Gaza diary part 45: \u2018I can\u2019t believe I am in a car \u2013 I ask the driver what he uses for fuel\u2019",
+                        "date": "https://www.theguardian.com/global-development/2024/feb/07/gaza-diary-part-45-i-cant-believe-i-am-in-a-car-i-ask-the-driver-what-he-uses-for-fuel",
+                        "source": ""
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "\u2018This is a war on birth\u2019: how one US organization helps pregnant Gazans from afar",
+                        "date": "https://www.theguardian.com/world/2024/feb/07/gaza-pregnant-women-safe-birth-in-palestine-project",
                         "source": ""
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Mapped: how Gaza war led to violence spreading around the Middle East",
                         "date": "https://www.theguardian.com/world/ng-interactive/2024/jan/30/mapped-gaza-war-violence-spreading-middle-east",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Gaza diary\n                  Gaza diary part 44: \u2018The angel of death is roaming the skies, nonstop\u2019",
-                        "date": "https://www.theguardian.com/global-development/2024/feb/05/gaza-diary-part-44-the-angel-of-death-is-roaming-the-skies-nonstop",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Gaza diary part 44: \u2018The angel of death is roaming the skies, nonstop\u2019",
-                        "date": "https://www.theguardian.com/global-development/2024/feb/05/gaza-diary-part-44-the-angel-of-death-is-roaming-the-skies-nonstop",
                         "source": ""
                     }
                 ],
@@ -965,9 +1002,23 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Company worker in Hong Kong pays out \u00a320m in deepfake video call scam",
-                        "date": "https://theguardian.com/world/2024/feb/05/hong-kong-company-deepfake-video-conference-call-scam",
-                        "source": ""
+                        "headline": "Lionel Messi takes to the field in Tokyo as Chinese fans remain angered by Hong Kong no-show",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "https://cnn.com/2024/02/07/sport/lionel-messi-inter-miami-chinese-fans-spt-intl/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Inter Miami\u2019s Messi hopes to play in Tokyo after Hong Kong PR disaster",
+                        "date": "Published On 6 Feb 2024",
+                        "source": "https://aljazeera.com/sports/2024/2/6/lionel-messi-hopes-to-play-in-tokyo-after-hong-kong-pr-disaster"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Four found guilty of rioting over 2019 storming of Hong Kong legislature",
+                        "date": "Published On 1 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/1/four-found-guilty-of-rioting-over-2019-storming-of-hong-kong-legislature"
                     }
                 ],
                 "cities": [
@@ -982,49 +1033,66 @@
                 "code": "IND",
                 "articles": [
                     {
-                        "py/id": 81
+                        "py/id": 74
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Mohammed Salem/Reuters\u2022GalleryGallery",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2023/10/07/world/gallery/israel-gaza-attack-2023/index.html"
+                        "source": "https://cnn.com/2023/10/07/world/gallery/israel-gaza-attack-2023/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Want to live together? Indian state says only if we agree",
+                        "date": {
+                            "py/id": 40
+                        },
+                        "source": "https://bbc.com/news/world-asia-india-68224969"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Chinese ship's port call fans India tensions",
                         "date": {
-                            "py/id": 37
+                            "py/id": 40
                         },
-                        "source": "bbc.com/news/world-asia-india-68163343"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Firecracker factory explosion in India",
-                        "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/program/newsfeed/2024/2/6/firecracker-factory-explosion-in-india"
+                        "source": "https://bbc.com/news/world-asia-india-68163343"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "India beat South Africa: ICC Under-19 World Cup semifinal \u2013 as it happened",
                         "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/sports/liveblog/2024/2/6/live-india-vs-south-africa-under-19-world-cup-semifinal-cricket-commentary"
+                        "source": "https://aljazeera.com/sports/liveblog/2024/2/6/live-india-vs-south-africa-under-19-world-cup-semifinal-cricket-commentary"
+                    },
+                    {
+                        "py/id": 15
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Firecracker factory explosion in India",
+                        "date": "Published On 6 Feb 2024",
+                        "source": "https://aljazeera.com/program/newsfeed/2024/2/6/firecracker-factory-explosion-in-india"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "\u2018Uneasy peace\u2019: In Modi\u2019s seat Varanasi, India\u2019s next temple-mosque spat",
                         "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/6/in-modis-constituency-varanasi-indias-next-temple-mosque-spat-explodes"
+                        "source": "https://aljazeera.com/news/2024/2/6/in-modis-constituency-varanasi-indias-next-temple-mosque-spat-explodes"
                     },
                     {
-                        "py/id": 90
+                        "py/id": 91
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "What\u2019s behind Italy\u2019s Africa initiative? Gas, cynicism and an unspoken colonial past",
-                        "date": "https://www.theguardian.com/commentisfree/2024/feb/05/italy-africa-initiative-gas-giorgia-meloni-eu",
+                        "headline": "India\u2019s plan for untouched Nicobar isles will be \u2018death sentence\u2019 for isolated tribe",
+                        "date": "https://theguardian.com/global-development/2024/feb/07/india-port-airport-power-plant-military-project-great-nicobar-island-death-sentence-shompen-indigenous-people-warning",
+                        "source": ""
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "India\u2019s wealthy \u2018fear London is worse than Delhi for muggings\u2019",
+                        "date": "https://theguardian.com/world/2024/feb/07/indias-wealthy-fear-london-is-worse-than-delhi-for-muggings",
                         "source": ""
                     },
                     {
@@ -1037,18 +1105,6 @@
                         "py/object": "borders.Article",
                         "headline": "South Dakota tribe bans governor from reservation over US border comments",
                         "date": "https://www.theguardian.com/us-news/2024/feb/05/south-dakota-tribe-bans-kristi-noem-reservation-border",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "South Dakota tribe bans governor from reservation over US border comments",
-                        "date": "https://www.theguardian.com/us-news/2024/feb/05/south-dakota-tribe-bans-kristi-noem-reservation-border",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Indian model Poonam Pandey fakes death to raise cervical cancer awareness",
-                        "date": "https://theguardian.com/world/2024/feb/03/indian-model-poonam-pandey-fakes-death-cervical-cancer-awareness",
                         "source": ""
                     }
                 ],
@@ -1172,7 +1228,13 @@
                         "py/object": "borders.Article",
                         "headline": "Voters mull party or family as Indonesian president\u2019s son runs for office",
                         "date": "Published On 5 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/5/scepticism-as-gibran-rakabuming-raka-runs-for-indonesias-vice-presidency"
+                        "source": "https://aljazeera.com/news/2024/2/5/scepticism-as-gibran-rakabuming-raka-runs-for-indonesias-vice-presidency"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "\u2018Nothing left\u2019: Indonesia\u2019s tourism industry fears wipeout under tax hike",
+                        "date": "Published On 4 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/4/nothing-left-indonesias-tourism-industry-fears-wipeout-under-tax-hike"
                     }
                 ],
                 "cities": [
@@ -1214,29 +1276,17 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Analysis: What to make of the US retaliation strikes against pro-Iranian\u00a0militias\u00a0in Iraq and Syria",
+                        "headline": "Examining Iran\u2019s control over its proxies and allies2:25",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/02/middleeast/analysis-us-strikes-iraq-syria-intl/index.html"
-                    },
-                    {
-                        "py/id": 48
-                    },
-                    {
-                        "py/id": 49
+                        "source": "https://cnn.com/videos/world/2024/02/07/exp-iran-proxies-hancocks-pkg-020703aseg2-cnni-world.cnn"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Lloyds and Santander accused of providing accounts for Iranian front companies",
-                        "date": "https://www.theguardian.com/business/2024/feb/05/lloyds-and-santander-accused-of-providing-accounts-for-iranian-front-companies",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Lloyds and Santander accused of providing accounts for Iranian front companies",
-                        "date": "https://www.theguardian.com/business/2024/feb/05/lloyds-and-santander-accused-of-providing-accounts-for-iranian-front-companies",
-                        "source": ""
+                        "headline": "LIVE: Iran vs Qatar \u2013 AFC Asian Cup 2023 semifinal",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/sports/liveblog/2024/2/7/live-iran-vs-qatar-afc-asian-cup-2023-semifinal-goal-score-commentary-football"
                     }
                 ],
                 "cities": [
@@ -1269,38 +1319,11 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "What we know about the US strikes in Iraq and Syria",
+                        "headline": "\u2018We hold the US responsible,\u2019 says brother of Iraqi student killed in airstrikes",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/03/middleeast/us-strikes-iraq-syria-what-we-know-intl/index.html"
-                    },
-                    {
-                        "py/id": 120
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "UN envoy in Iraq to step down at end of May, says country \u2018on a knife edge\u2019",
-                        "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/6/un-envoy-in-iraq-to-step-down-at-end-of-may-says-country-on-a-knife-edge"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "UN envoy in Iraq to step down at end of May, says country \u2018on a knife edge\u2019",
-                        "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/6/un-envoy-in-iraq-to-step-down-at-end-of-may-says-country-on-a-knife-edge"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Rights and freedom\n                 UN to investigate claims of corruption in Iraq aid project",
-                        "date": "https://www.theguardian.com/global-development/2024/feb/05/un-to-investigate-claims-of-corruption-in-iraq-aid-project",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "UN to investigate claims of corruption in Iraq aid project",
-                        "date": "https://www.theguardian.com/global-development/2024/feb/05/un-to-investigate-claims-of-corruption-in-iraq-aid-project",
-                        "source": ""
+                        "source": "https://cnn.com/2024/02/06/middleeast/us-airstrikes-iraqi-student-killed-intl/index.html"
                     }
                 ],
                 "cities": [
@@ -1324,10 +1347,10 @@
                 "code": "ISR",
                 "articles": [
                     {
-                        "py/id": 81
+                        "py/id": 74
                     },
                     {
-                        "py/id": 90
+                        "py/id": 91
                     }
                 ],
                 "cities": [
@@ -1345,63 +1368,39 @@
                         "py/object": "borders.Article",
                         "headline": "Pod of at least 10 killer whales appears trapped by sea ice in Japan",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/06/asia/killer-whales-trapped-sea-ice-japan-intl/index.html"
+                        "source": "https://cnn.com/2024/02/06/asia/killer-whales-trapped-sea-ice-japan-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "\u2018Be fearless\u2019: Taylor Swift will make it home for the Super Bowl, Japanese Embassy says",
+                        "headline": "Taylor Swift mania sweeps Tokyo for sold-out concerts, with all eyes on return trip to Super Bowl",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/02/asia/taylor-swift-super-bowl-japanese-embassy-intl-hnk/index.html"
+                        "source": "https://cnn.com/2024/02/07/asia/taylor-swift-japan-tokyo-eras-tour-intl-hnk/index.html"
+                    },
+                    {
+                        "py/id": 104
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Ukrainian-born Miss Japan relinquishes crown following alleged affair",
+                        "headline": "Trapped orcas escape from drift ice near Japan",
                         "date": {
-                            "py/id": 42
+                            "py/id": 40
                         },
-                        "source": "cnn.com/2024/02/06/style/miss-japan-ukraine-relinquishes-crown/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Miss Japan steps down after tabloid exposes affair",
-                        "date": {
-                            "py/id": 37
-                        },
-                        "source": "bbc.com/news/world-asia-68213223"
+                        "source": "https://bbc.com/news/world-asia-68226423"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Orcas trapped in drift ice off the coast of Japan",
                         "date": {
-                            "py/id": 37
+                            "py/id": 40
                         },
-                        "source": "bbc.com/news/world-68222247"
+                        "source": "https://bbc.com/news/world-68222247"
                     },
                     {
-                        "py/object": "borders.Article",
-                        "headline": "Orcas trapped in drift ice off the coast of Japan",
-                        "date": {
-                            "py/id": 37
-                        },
-                        "source": "bbc.com/news/world-68222247"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Miss Japan steps down after tabloid exposes affair",
-                        "date": {
-                            "py/id": 37
-                        },
-                        "source": "bbc.com/news/world-asia-68213223"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Ukraine-born Miss Japan returns title after revelations about affair",
-                        "date": "https://theguardian.com/world/2024/feb/06/ukraine-born-miss-japan-returns-title-after-revelations-about-affair",
-                        "source": ""
+                        "py/id": 105
                     },
                     {
                         "py/object": "borders.Article",
@@ -1431,18 +1430,6 @@
                         "py/object": "borders.Article",
                         "headline": "Japan\u2019s former PM Taro Aso insults female foreign minister \u2013 video",
                         "date": "https://theguardian.com/world/video/2024/jan/31/japans-former-pm-insults-female-foreign-minister-video",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Japan becomes fifth country to put spacecraft on moon as lander reaches lunar surface \u2013 video",
-                        "date": "https://theguardian.com/world/video/2024/jan/19/japan-becomes-fifth-country-to-put-spacecraft-on-moon-as-lander-reaches-lunar-surface-video",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Ukraine-born Miss Japan returns title after revelations about affair",
-                        "date": "https://theguardian.com/world/2024/feb/06/ukraine-born-miss-japan-returns-title-after-revelations-about-affair",
                         "source": ""
                     }
                 ],
@@ -1503,15 +1490,9 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Jordan defeats South Korea in historic match in AFC Asian Cup semifinals",
-                        "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/gallery/2024/2/6/jordan-defeats-south-korea-in-historic-match-in-afc-asian-cup-semifinals"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Jordan reach final after famous win against South Korea",
-                        "date": "https://theguardian.com/football/2024/feb/06/jordan-reach-final-of-asian-cup-after-historic-win-against-south-korea",
-                        "source": ""
+                        "headline": "Jordan\u2019s an-Nashama make dreams come true to reach first Asian Cup final",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/sports/2024/2/7/jordan-make-dreams-come-true-to-reach-first-asian-cup-final"
                     }
                 ],
                 "cities": [
@@ -1522,19 +1503,9 @@
             },
             "PRK": {
                 "py/object": "borders.Country",
-                "name": "Korea",
+                "name": "North Korea",
                 "code": "PRK",
-                "articles": [
-                    {
-                        "py/id": 158
-                    },
-                    {
-                        "py/id": 159
-                    },
-                    {
-                        "py/id": 29
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Pyongyang",
                     "Hamhung",
@@ -1544,19 +1515,9 @@
             },
             "KOR": {
                 "py/object": "borders.Country",
-                "name": "Korea",
+                "name": "South Korea",
                 "code": "KOR",
-                "articles": [
-                    {
-                        "py/id": 158
-                    },
-                    {
-                        "py/id": 159
-                    },
-                    {
-                        "py/id": 29
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Seoul",
                     "Busan",
@@ -1632,7 +1593,23 @@
                 "py/object": "borders.Country",
                 "name": "Malaysia",
                 "code": "MYS",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "In legal no-man\u2019s land, refugees in Malaysia struggle to eat, pay rent",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/in-legal-no-mans-land-refugees-in-malaysia-struggle-to-eat-pay-rent"
+                    },
+                    {
+                        "py/id": 51
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Dozens of Rohingya refugees flee Malaysian immigration detention centre",
+                        "date": "Published On 2 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/2/dozens-of-rohingya-refugees-flee-malaysian-immigration-detention-centre"
+                    }
+                ],
                 "cities": [
                     "Kuala Lumpur",
                     "Putrajaya",
@@ -1652,25 +1629,7 @@
                 "code": "MDV",
                 "articles": [
                     {
-                        "py/object": "borders.Article",
-                        "headline": "Can Gambia\u2019s trailblazing female photographer score a place at the World Cup?",
-                        "date": "https://theguardian.com/global-development/2024/feb/06/she-shoots-but-can-gambias-trailblazing-female-photographer-score-a-place-at-the-world-cup",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "The age of extinction\n                \u2018We said, there must be ladies\u2019: the pioneering Maasai women ending all-male leadership of the land",
-                        "date": "https://www.theguardian.com/environment/2024/jan/31/maasai-women-kenyan-wildlife-reserve",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "\u2018We said, there must be ladies\u2019: the pioneering Maasai women ending all-male leadership of the land",
-                        "date": "https://www.theguardian.com/environment/2024/jan/31/maasai-women-kenyan-wildlife-reserve",
-                        "source": ""
-                    },
-                    {
-                        "py/id": 149
+                        "py/id": 148
                     }
                 ],
                 "cities": [
@@ -1700,45 +1659,19 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Canadian police apologize to woman for taking 6 years to bring charges in sexual assault investigation involving hockey stars",
-                        "date": {
-                            "py/id": 42
-                        },
-                        "source": "cnn.com/2024/02/05/world/canada-hockey-players-court-sexual-assault-case/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Rare Roman funerary bed discovered in London",
-                        "date": {
-                            "py/id": 42
-                        },
-                        "source": "cnn.com/2024/02/05/style/roman-funerary-bed-gbr-intl-scli-scn/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
                         "headline": "Remains of ancient Roman triumphal arch unearthed in Serbia",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/01/24/style/serbia-roman-triumphal-arch/index.html"
+                        "source": "https://cnn.com/2024/01/24/style/serbia-roman-triumphal-arch/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Woman once seen as royal threat now keeping show on the road",
-                        "date": "https://theguardian.com/uk-news/2024/feb/06/queen-camilla-to-continue-full-programme-of-activities",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Yazidi woman held by IS for 10 years freed by Kurdish fighters in Syria",
-                        "date": "https://www.theguardian.com/world/2024/feb/05/yazidi-woman-held-by-is-for-10-years-freed-by-kurdish-fighters-in-syria",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Yazidi woman held by IS for 10 years freed by Kurdish fighters in Syria",
-                        "date": "https://www.theguardian.com/world/2024/feb/05/yazidi-woman-held-by-is-for-10-years-freed-by-kurdish-fighters-in-syria",
-                        "source": ""
+                        "headline": "The Kansas City Chiefs are honoring the only woman to attend all 57 Super Bowls",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "https://cnn.com/2024/02/07/sport/norma-knobel-hunt-chiefs-super-bowl-cec/index.html"
                     }
                 ],
                 "cities": [
@@ -1761,52 +1694,150 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
+                        "headline": "Pakistan on edge as it gears up for its general election3:51",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "https://cnn.com/videos/world/2024/02/07/exp-pakistan-elections-preview-coren-pkg-020701aseg1-cnni-world.cnn"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Pakistan on edge as old dynasties vie for power and populist Imran Khan languishes in prison",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "https://cnn.com/2024/02/07/asia/pakistan-election-candidates-analysis-intl-hnk/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
                         "headline": "Jailed Pakistani former Prime Minister Imran Khan and wife convicted for \u2018fraudulent marriage\u2019",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/03/asia/imran-khan-convicted-fraudulent-marriage-pakistan-intl/index.html"
+                        "source": "https://cnn.com/2024/02/03/asia/imran-khan-convicted-fraudulent-marriage-pakistan-intl/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Explained: Who are the key players in Pakistan\u2019s election?3:22",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "https://cnn.com/videos/world/2024/02/06/pakistan-elections-key-players-contd-lon-orig.cnn"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Bomb blasts kill dozens day before Pakistan vote",
+                        "date": {
+                            "py/id": 40
+                        },
+                        "source": "https://bbc.com/news/world-asia-68226516"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Who is really pulling the strings in a divided Pakistan?",
                         "date": {
-                            "py/id": 37
+                            "py/id": 40
                         },
-                        "source": "bbc.com/news/world-asia-68177777"
+                        "source": "https://bbc.com/news/world-asia-68177777"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Pakistan's king of comebacks looks set to win again",
                         "date": {
-                            "py/id": 37
+                            "py/id": 40
                         },
-                        "source": "bbc.com/news/world-asia-22167511"
+                        "source": "https://bbc.com/news/world-asia-22167511"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "A jailed star and former convict: Pakistan's election, explained",
                         "date": {
-                            "py/id": 37
+                            "py/id": 40
                         },
-                        "source": "bbc.com/news/world-asia-68005660"
+                        "source": "https://bbc.com/news/world-asia-68005660"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "\u2018Why single us out?\u2019 Pakistan\u2019s Ahmadi minority boycotts elections, again",
+                        "headline": "The Take: Pakistan prepares to vote with Imran Khan in jail",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/podcasts/2024/2/7/the-take-pakistan-prepares-to-vote-with-imran-khan-in-jail"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "As election campaign ends in Pakistan, many lament Imran Khan\u2019s absence",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/features/2024/2/7/as-election-campaign-ends-in-pakistan-many-lament-imran-khans-absence"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Twin bombings kill at least 28 as Pakistan prepares for elections",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/blast-kills-at-least-six-people-in-pakistan-ahead-of-elections"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Pakistan\u2019s election: Can the next government bring economic stability?",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/economy/2024/2/7/pakistans-election-can-the-incoming-government-bring-economic-stability"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "\u2018Guerilla campaign\u2019: How Imran Khan is fighting Pakistan election from jail",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/features/2024/2/7/guerilla-jalsa-how-imran-khan-is-fighting-pakistan-elections-from-jail"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Pakistan election 2024 updates: Blasts at candidates\u2019 offices, 24 killed",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/liveblog/2024/2/7/pakistan-election-2024-one-day-out-live"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Pakistan election 2024: How the voting works",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/pakistan-elections-2024-how-the-voting-works"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "\u2018Why single us out?\u2019 Pakistan\u2019s Ahmadi minority boycotts election, again",
                         "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/6/why-single-us-out-pakistans-ahmadi-minority-disassociates-from-polls"
+                        "source": "https://aljazeera.com/news/2024/2/6/why-single-us-out-pakistans-ahmadi-minority-disassociates-from-polls"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Army looms large as Nawaz Sharif eases towards fourth term in Pakistan",
-                        "date": "https://theguardian.com/world/2024/feb/05/pakistan-election-nawaz-sharif",
+                        "headline": "Imran Khan\u2019s party fights state pressure in Pakistan election",
+                        "date": "https://theguardian.com/world/2024/feb/07/harassed-constantly-imran-khans-party-fights-state-pressure-in-pakistan-election",
+                        "source": ""
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "At least 30 killed in two bombings on day before Pakistan election",
+                        "date": "https://theguardian.com/world/2024/feb/07/bombings-at-election-offices-in-pakistan",
+                        "source": ""
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "\u2018Harassed constantly\u2019: Imran Khan\u2019s party fights state pressure in Pakistan election",
+                        "date": "https://theguardian.com/world/2024/feb/07/harassed-constantly-imran-khans-party-fights-state-pressure-in-pakistan-election",
+                        "source": ""
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Pakistan: two explosions hit party offices in Balochistan in run-up to elections \u2013 video",
+                        "date": "https://theguardian.com/world/video/2024/feb/07/pakistan-twin-explosions-hit-party-offices-in-balochistan-in-run-up-to-elections-video",
                         "source": ""
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "The Guardian view on Pakistan\u2019s elections and Imran Khan: the military wins, again",
                         "date": "https://theguardian.com/commentisfree/2024/feb/06/the-guardian-view-on-pakistans-elections-and-imran-khan-the-military-wins-again",
+                        "source": ""
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Army looms large as Nawaz Sharif eases towards fourth term in Pakistan",
+                        "date": "https://theguardian.com/world/2024/feb/05/pakistan-election-nawaz-sharif",
                         "source": ""
                     }
                 ],
@@ -1836,7 +1867,7 @@
                         "py/object": "borders.Article",
                         "headline": "Prospects shaky for Philippines\u2019 government and communist peace talks",
                         "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/6/prospects-shaky-for-philippines-government-and-communist-peace-talks"
+                        "source": "https://aljazeera.com/news/2024/2/6/prospects-shaky-for-philippines-government-and-communist-peace-talks"
                     }
                 ],
                 "cities": [
@@ -1880,199 +1911,18 @@
                 "code": "QAT",
                 "articles": [
                     {
-                        "py/object": "borders.Article",
-                        "headline": "Qatar says Hamas response to truce proposal \u2018generally positive\u2019",
-                        "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/6/qatar-says-hamas-response-to-truce-proposal-generally-positive"
+                        "py/id": 129
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Qatar says Hamas response to truce proposal \u2018generally positive\u2019",
                         "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/6/qatar-says-hamas-response-to-truce-proposal-generally-positive"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Qatar says Hamas response to truce proposal \u2018generally positive\u2019",
-                        "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/6/qatar-says-hamas-response-to-truce-proposal-generally-positive"
+                        "source": "https://aljazeera.com/news/2024/2/6/qatar-says-hamas-response-to-truce-proposal-generally-positive"
                     }
                 ],
                 "cities": [
                     "Doha",
                     "Ar Rayyan"
-                ]
-            },
-            "RUS": {
-                "py/object": "borders.Country",
-                "name": "Russia",
-                "code": "RUS",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "A Ukrainian pilot outlines how drones powered by jet skis sunk a Russian warship",
-                        "date": {
-                            "py/id": 42
-                        },
-                        "source": "cnn.com/2024/02/05/europe/ukraine-drone-jet-skis-russian-warship-intl/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "World Court dismisses much of Ukraine\u2019s case against Russia",
-                        "date": {
-                            "py/id": 42
-                        },
-                        "source": "cnn.com/2024/01/31/europe/ukraine-russia-icj-mh17-intl/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "'Russia's Google' owner pulls out of home country",
-                        "date": {
-                            "py/id": 37
-                        },
-                        "source": "bbc.com/news/business-68213191"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Tucker Carlson to interview Russia's Putin",
-                        "date": {
-                            "py/id": 37
-                        },
-                        "source": "bbc.com/news/world-europe-68223148"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Tucker Carlson to interview Russia's Putin",
-                        "date": {
-                            "py/id": 37
-                        },
-                        "source": "bbc.com/news/world-europe-68223148"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Tucker Carlson to interview Russia's Putin",
-                        "date": {
-                            "py/id": 37
-                        },
-                        "source": "bbc.com/news/world-europe-68223148"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Tucker Carlson confirms Russia trip and teases interview",
-                        "date": "https://theguardian.com/us-news/2024/feb/06/tucker-carlson-russia-trip-vladimir-putin-interview",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "How Russia is taking control of the Arctic",
-                        "date": "https://theguardian.com/world/video/2024/jan/25/how-russia-is-taking-control-of-the-arctic-video",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Ukrainian special forces \u2018in Sudan operating against Russian mercenaries\u2019",
-                        "date": "https://theguardian.com/world/2024/feb/06/ukrainian-special-forces-sudan-russian-mercenaries-wagner",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Ukrainian special forces \u2018in Sudan operating against Russian mercenaries\u2019",
-                        "date": "https://www.theguardian.com/world/2024/feb/06/ukrainian-special-forces-sudan-russian-mercenaries-wagner",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Ukrainian special forces \u2018in Sudan operating against Russian mercenaries\u2019",
-                        "date": "https://www.theguardian.com/world/2024/feb/06/ukrainian-special-forces-sudan-russian-mercenaries-wagner",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Ukrainian special forces \u2018in Sudan operating against Russian mercenaries\u2019",
-                        "date": "https://www.theguardian.com/world/2024/feb/06/ukrainian-special-forces-sudan-russian-mercenaries-wagner",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Ukrainian special forces \u2018in Sudan operating against Russian mercenaries\u2019",
-                        "date": "https://www.theguardian.com/world/2024/feb/06/ukrainian-special-forces-sudan-russian-mercenaries-wagner",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "UK manufacturers hit by Red Sea disruption and rising shipping costs",
-                        "date": "https://www.theguardian.com/business/2024/feb/01/uk-manufacturers-hit-by-red-sea-disruption-and-rising-shipping-costs",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "UK manufacturers hit by Red Sea disruption and rising shipping costs",
-                        "date": "https://www.theguardian.com/business/2024/feb/01/uk-manufacturers-hit-by-red-sea-disruption-and-rising-shipping-costs",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Tucker Carlson confirms Russia trip and teases Putin interview",
-                        "date": "https://theguardian.com/us-news/2024/feb/06/tucker-carlson-russia-trip-vladimir-putin-interview",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Tucker Carlson confirms Russia trip and teases Putin interview",
-                        "date": "https://theguardian.com/us-news/2024/feb/06/tucker-carlson-russia-trip-vladimir-putin-interview",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "ICC \u2018turf war\u2019 blocking Ukrainian bid to have top Russians tried, advocate says",
-                        "date": "https://theguardian.com/law/2024/feb/06/icj-ukraine-russia-prosecutions-philippe-sands",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Ukrainian special forces \u2018in Sudan operating against Russian mercenaries\u2019",
-                        "date": "https://theguardian.com/world/2024/feb/06/ukrainian-special-forces-sudan-russian-mercenaries-wagner",
-                        "source": ""
-                    }
-                ],
-                "cities": [
-                    "Moscow",
-                    "Saint Petersburg",
-                    "Novosibirsk",
-                    "Yekaterinburg",
-                    "Nizhniy Novgorod",
-                    "Kazan",
-                    "Chelyabinsk",
-                    "Omsk",
-                    "Samara",
-                    "Rostov",
-                    "Ufa",
-                    "Krasnoyarsk",
-                    "Voronezh",
-                    "Perm",
-                    "Volgograd",
-                    "Krasnodar",
-                    "Saratov",
-                    "Tyumen",
-                    "Tolyatti",
-                    "Izhevsk",
-                    "Barnaul",
-                    "Ulyanovsk",
-                    "Irkutsk",
-                    "Khabarovsk",
-                    "Yaroslavl",
-                    "Vladivostok",
-                    "Makhachkala",
-                    "Tomsk",
-                    "Orenburg",
-                    "Kemerovo",
-                    "Novokuznetsk",
-                    "Ryazan",
-                    "Naberezhnyye Chelny",
-                    "Astrakhan",
-                    "Penza",
-                    "Lipetsk",
-                    "Kirov"
                 ]
             },
             "SAU": {
@@ -2082,8 +1932,8 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Top US consultancies face scrutiny over role in Saudi Arabia\u2019s sports push",
-                        "date": "https://www.theguardian.com/world/2024/feb/06/consultancies-saudi-arabia-sports-us-senate-disclosure-subpoena",
+                        "headline": "Tyson Fury v Oleksandr Usyk fight rescheduled for 18 May in Riyadh",
+                        "date": "https://theguardian.com/sport/2024/feb/03/tyson-fury-v-oleksandr-usyk-fight-rescheduled-for-18-may-in-riyadh",
                         "source": ""
                     },
                     {
@@ -2113,7 +1963,7 @@
                 "code": "SGP",
                 "articles": [
                     {
-                        "py/id": 46
+                        "py/id": 49
                     }
                 ],
                 "cities": [
@@ -2145,40 +1995,10 @@
                 "code": "SYR",
                 "articles": [
                     {
-                        "py/id": 126
-                    },
-                    {
-                        "py/id": 120
-                    },
-                    {
-                        "py/id": 201
-                    },
-                    {
-                        "py/id": 202
-                    },
-                    {
                         "py/object": "borders.Article",
-                        "headline": "US-backed Kurdish fighters killed in drone strike on US base in Syria",
-                        "date": "https://www.theguardian.com/world/2024/feb/05/us-backed-kurds-islamic-resistance-killed-drone-strike-us-base-eastern-syria",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "US-backed Kurdish fighters killed in drone strike on US base in Syria",
-                        "date": "https://www.theguardian.com/world/2024/feb/05/us-backed-kurds-islamic-resistance-killed-drone-strike-us-base-eastern-syria",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Middle East crisis live\n                  Middle East crisis: Drone strike in Syria reported to have killed six members of US-backed Kurdish-led group \u2013 as it happened",
-                        "date": "https://www.theguardian.com/world/live/2024/feb/05/middle-east-crisis-live-updates-latest-israel-strikes-gaza-unrwa-funding-palestine-hamas-hostage-deal-blinken-saudi-arabia-visit",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Middle East crisis: Drone strike in Syria reported to have killed six members of US-backed Kurdish-led group \u2013 as it happened",
-                        "date": "https://www.theguardian.com/world/live/2024/feb/05/middle-east-crisis-live-updates-latest-israel-strikes-gaza-unrwa-funding-palestine-hamas-hostage-deal-blinken-saudi-arabia-visit",
-                        "source": ""
+                        "headline": "In northwest Syria, some earthquake debris is gone, an emptiness remains",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/features/longform/2024/2/7/in-northwest-syria-some-earthquake-debris-is-gone-an-emptiness-remains"
                     }
                 ],
                 "cities": [
@@ -2206,6 +2026,18 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
+                        "headline": "Thailand, Muslim separatists agree on new plan to end violence",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/thailand-muslim-separatists-agree-on-new-plan-to-end-insurgency"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Thailand deports dissident Russian rockers to Israel",
+                        "date": "Published On 1 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/1/thailand-deports-dissident-russian-rockers-to-israel"
+                    },
+                    {
+                        "py/object": "borders.Article",
                         "headline": "Thailand\u2019s former PM candidate Pita Limjaroenrat handed suspended sentence in latest legal blow",
                         "date": "https://theguardian.com/world/2024/feb/06/thailand-pita-limjaroenrat-suspended-sentence-former-pm-candidate-unlawful-rally",
                         "source": ""
@@ -2225,9 +2057,9 @@
                         "py/object": "borders.Article",
                         "headline": "From Bulgari to Armani, ultra-luxe branded residences are booming in Dubai",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/style/dubai-luxury-branded-residences-hnk-spc-intl/index.html"
+                        "source": "https://cnn.com/style/dubai-luxury-branded-residences-hnk-spc-intl/index.html"
                     }
                 ],
                 "cities": [
@@ -2244,19 +2076,23 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "\u2018I envy people who have a grave to visit\u2019: Earthquake survivors in Turkey struggle to rebuild their lives one year on",
+                        "headline": "One killed during attack on main courthouse in Istanbul",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/06/europe/earthquake-survivors-turkey-rebuild-intl-cmd/index.html"
+                        "source": "https://cnn.com/2024/02/06/europe/istanbul-court-attack-turkey-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "How a grieving mother exposed the truth of Turkey\u2019s deadly earthquake",
-                        "date": {
-                            "py/id": 37
-                        },
-                        "source": "bbc.com/news/world-europe-68203542"
+                        "headline": "In Turkey\u2019s Gaziantep, weddings are dispelling some post-earthquake sadness",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/in-turkeys-gaziantep-weddings-are-dispelling-some-post-earthquake-sadness"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Flowers, tears, tree planting in Adiyaman to remember Turkey\u2019s earthquake",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/gallery/2024/2/7/flowers-tears-tree-planting-in-adiyaman-to-remember-turkeys-earthquake"
                     }
                 ],
                 "cities": [
@@ -2314,14 +2150,22 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Houthis may sabotage western internet cables in Red Sea, Yemen telecoms firms warn",
-                        "date": "https://www.theguardian.com/world/2024/feb/05/houthis-may-sabotage-western-internet-cables-in-red-sea-yemen-telecoms-firms-warn",
+                        "headline": "Strikes against Houthis are \u2018actually galvanizing them\", says Yemen conflict expert3:17",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "https://cnn.com/videos/world/2024/02/06/exp-amanpour-hisham-al-omeisy-fst02061pseg2-cnni-world-intv.cnn"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "UK politics: Badenoch accuses Starmer of exploiting Brianna Ghey tragedy after Sunak makes trans jibe during PMQs",
+                        "date": "https://theguardian.com/politics/live/2024/feb/07/rishi-sunak-pmqs-victoria-atkins-labour-conservatives-nhs-dentists-politics-live",
                         "source": ""
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Houthis may sabotage western internet cables in Red Sea, Yemen telecoms firms warn",
-                        "date": "https://www.theguardian.com/world/2024/feb/05/houthis-may-sabotage-western-internet-cables-in-red-sea-yemen-telecoms-firms-warn",
+                        "headline": "LiveBadenoch accuses Starmer of exploiting Brianna Ghey tragedy after Sunak makes trans jibe during PMQs \u2013 UK politics live",
+                        "date": "https://www.theguardian.com/politics/live/2024/feb/07/rishi-sunak-pmqs-victoria-atkins-labour-conservatives-nhs-dentists-politics-live",
                         "source": ""
                     }
                 ],
@@ -2502,24 +2346,6 @@
                         "headline": "We must act on Ethiopia food crisis, says UK minister",
                         "date": "https://www.theguardian.com/world/2024/feb/05/we-must-act-on-ethiopia-food-crisis-says-uk-minister",
                         "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "We must act on Ethiopia food crisis, says UK minister",
-                        "date": "https://www.theguardian.com/world/2024/feb/05/we-must-act-on-ethiopia-food-crisis-says-uk-minister",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Ethiopia hails return of its first plane, stolen by Mussolini in 1930s",
-                        "date": "https://www.theguardian.com/world/2024/jan/31/ethiopia-hails-return-of-its-first-plane-stolen-by-mussolini-in-1930s",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Ethiopia hails return of its first plane, stolen by Mussolini in 1930s",
-                        "date": "https://www.theguardian.com/world/2024/jan/31/ethiopia-hails-return-of-its-first-plane-stolen-by-mussolini-in-1930s",
-                        "source": ""
                     }
                 ],
                 "cities": [
@@ -2559,11 +2385,7 @@
                 "py/object": "borders.Country",
                 "name": "Gambia",
                 "code": "GMB",
-                "articles": [
-                    {
-                        "py/id": 187
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Banjul"
                 ]
@@ -2613,40 +2435,20 @@
                         "py/object": "borders.Article",
                         "headline": "Kenyan cult leader charged with murder of 191 children",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/06/africa/kenyan-cult-leader-charged-with-murder-of-191-children-intl/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Huge gas explosion and fire\u00a0kills at least 3, injures hundreds in Kenyan capital",
-                        "date": {
-                            "py/id": 42
-                        },
-                        "source": "cnn.com/2024/02/02/africa/kenya-nairobi-gas-explosion-fire-intl-hnk/index.html"
+                        "source": "https://cnn.com/2024/02/06/africa/kenyan-cult-leader-charged-with-murder-of-191-children-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "\u2018Prime suspect\u2019 in deadly Kenya gas blast appears in court",
                         "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/6/kenyan-police-arrests-prime-suspect-in-nairobi-gas-explosion"
+                        "source": "https://aljazeera.com/news/2024/2/6/kenyan-police-arrests-prime-suspect-in-nairobi-gas-explosion"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Kenya gas explosion kills at least three and injures hundreds",
                         "date": "https://www.theguardian.com/world/2024/feb/02/kenya-gas-explosion-death-toll-nairobi",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Kenya gas explosion kills at least three and injures hundreds",
-                        "date": "https://www.theguardian.com/world/2024/feb/02/kenya-gas-explosion-death-toll-nairobi",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Moment of deadly gas explosion in Kenyan capital \u2013 video",
-                        "date": "https://www.theguardian.com/world/video/2024/feb/02/gas-blast-in-kenyan-capital-injures-hundreds-video",
                         "source": ""
                     },
                     {
@@ -2694,20 +2496,7 @@
                 "py/object": "borders.Country",
                 "name": "Madagascar",
                 "code": "MDG",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "\u2018A way to open up to the world\u2019: gallery galvanises Madagascar\u2019s art scene",
-                        "date": "https://www.theguardian.com/global-development/2024/feb/01/fondation-h-gallery-antananarivo-galvanises-madagascar-art-scene-madame-zo",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "\u2018A way to open up to the world\u2019: gallery galvanises Madagascar\u2019s art scene",
-                        "date": "https://www.theguardian.com/global-development/2024/feb/01/fondation-h-gallery-antananarivo-galvanises-madagascar-art-scene-madame-zo",
-                        "source": ""
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Antananarivo",
                     "Androtsy"
@@ -2717,7 +2506,14 @@
                 "py/object": "borders.Country",
                 "name": "Malawi",
                 "code": "MWI",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "The mothers helping fight cervical cancer in Malawi",
+                        "date": "https://theguardian.com/global-development/2024/feb/06/mothers-helping-fight-cervical-cancer-hpv-vaccination-in-malawi",
+                        "source": ""
+                    }
+                ],
                 "cities": [
                     "Lilongwe",
                     "Blantyre"
@@ -2732,7 +2528,7 @@
                         "py/object": "borders.Article",
                         "headline": "Ten dead, 20 others injured in multiple blasts in market in Somali capital",
                         "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/6/ten-dead-20-others-injured-in-multiple-blasts-in-market-in-somali-capital"
+                        "source": "https://aljazeera.com/news/2024/2/6/ten-dead-20-others-injured-in-multiple-blasts-in-market-in-somali-capital"
                     }
                 ],
                 "cities": [
@@ -2764,27 +2560,32 @@
                 "code": "MAR",
                 "articles": [
                     {
-                        "py/id": 81
+                        "py/id": 74
                     },
                     {
-                        "py/id": 103
+                        "py/id": 110
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Step inside Emma Stone\u2019s sunlit LA home, up for sale at $4 million",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/01/19/style/emma-stone-los-angeles-home-sale/index.html"
+                        "source": "https://cnn.com/2024/01/19/style/emma-stone-los-angeles-home-sale/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Scotland's epic fire festivals to banish winter",
+                        "date": {
+                            "py/id": 40
+                        },
+                        "source": "https://bbc.comhttps://www.bbc.com/travel/article/20240207-scotlands-epic-viking-themed-fire-festivals-to-banish-winter"
                     },
                     {
                         "py/id": 90
                     },
                     {
-                        "py/object": "borders.Article",
-                        "headline": "How Gregg Wallace became the ultimate lifestyle guru",
-                        "date": "https://theguardian.com/tv-and-radio/2024/feb/06/its-alan-partridge-meets-gwyneth-paltrow-how-gregg-wallace-became-the-ultimate-lifestyle-guru",
-                        "source": ""
+                        "py/id": 91
                     }
                 ],
                 "cities": [
@@ -2820,15 +2621,9 @@
                         "py/object": "borders.Article",
                         "headline": "Namibia\u2019s President Hage Geingob dies at 82",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/03/africa/namibias-president-hage-geingob-dies-at-82-intl/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Hage Geingob, Namibia\u2019s president, dies aged 82 after cancer treatment",
-                        "date": "https://www.theguardian.com/world/2024/feb/04/hage-geingob-namibias-president-dies-aged-82-after-cancer-treatment",
-                        "source": ""
+                        "source": "https://cnn.com/2024/02/03/africa/namibias-president-hage-geingob-dies-at-82-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
@@ -2848,22 +2643,26 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "South Africa slams Nigeria for football safety warning",
-                        "date": {
-                            "py/id": 37
-                        },
-                        "source": "bbc.com/news/world-africa-68210687"
+                        "headline": "LIVE: Nigeria vs South Africa \u2013 CAF AFCON 2023 semifinal",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/sports/liveblog/2024/2/7/live-nigeria-vs-south-africa-caf-afcon-semifinal-football"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Battle for supremacy as Nigeria, South Africa seek final spot at AFCON 2023",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/features/2024/2/7/beyond-football-nigeria-south-africa-rivalry-rekindled-at-afcon-2023"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Osimhen a major doubt for Nigeria ahead of South Africa AFCON semifinal",
                         "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/sports/2024/2/6/nigeria-vs-south-africa-caf-afcon-2023-semifinal-preview"
+                        "source": "https://aljazeera.com/sports/2024/2/6/nigeria-vs-south-africa-caf-afcon-2023-semifinal-preview"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Nigerian traditional monarch shot dead and wife kidnapped from palace",
-                        "date": "https://www.theguardian.com/world/2024/feb/02/nigeria-traditional-monarch-oba-aremu-olusegun-shot-dead-wife-kidnapped",
+                        "headline": "From the archive: From Lagos to Winchester \u2013 how a divisive Nigerian pastor built a global following \u2013 podcast",
+                        "date": "https://theguardian.com/news/audio/2024/feb/07/from-the-archive-from-lagos-to-winchester-how-a-divisive-nigerian-pastor-built-a-global-following-podcast",
                         "source": ""
                     },
                     {
@@ -2883,16 +2682,33 @@
                 "code": "NGA",
                 "articles": [
                     {
-                        "py/id": 422
+                        "py/object": "borders.Article",
+                        "headline": "UK football fan flies 8,000 miles to abandoned game",
+                        "date": {
+                            "py/id": 40
+                        },
+                        "source": "https://bbc.com/news/uk-england-manchester-68228130"
                     },
                     {
-                        "py/id": 423
+                        "py/id": 397
                     },
                     {
-                        "py/id": 424
+                        "py/id": 398
                     },
                     {
-                        "py/id": 425
+                        "py/id": 399
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Fury\u2019s five-fight plan includes Joshua showdown",
+                        "date": "https://theguardian.com/sport/2024/feb/07/tyson-fury-five-fight-plan-heavyweight-boxing-anthony-joshua",
+                        "source": ""
+                    },
+                    {
+                        "py/id": 400
+                    },
+                    {
+                        "py/id": 401
                     }
                 ],
                 "cities": [
@@ -2947,10 +2763,7 @@
                 "code": "RWA",
                 "articles": [
                     {
-                        "py/id": 50
-                    },
-                    {
-                        "py/id": 51
+                        "py/id": 52
                     }
                 ],
                 "cities": [
@@ -2982,34 +2795,60 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
+                        "headline": "Senegal was Africa\u2019s poster child for democracy. Where did it all go wrong?",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "https://cnn.com/2024/02/07/africa/senegal-parliament-delay-election-analysis-intl/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
                         "headline": "Senegal faces political crisis as President Macky Sall delays polls",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/05/africa/senegal-parliament-debates-extending-presidents-mandate-intl/index.html"
+                        "source": "https://cnn.com/2024/02/05/africa/senegal-parliament-debates-extending-presidents-mandate-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Senegalese brace for the worst but hope for the best amid election delay",
                         "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/features/2024/2/6/we-are-at-crossroads-tension-builds-in-senegal-amid-election-delay"
+                        "source": "https://aljazeera.com/features/2024/2/6/we-are-at-crossroads-tension-builds-in-senegal-amid-election-delay"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Senegal parliament delays election to December 15 after chaotic vote",
+                        "date": "Published On 6 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/6/senegal-parliament-delays-election-to-december-15-after-chaotic-vote"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Is Senegal heading for political turmoil?",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "https://aljazeera.com/program/inside-story/2024/2/5/is-senegal-heading-for-political-turmoil"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Arrests and tear gas at protests against Senegal election delay",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "https://aljazeera.com/program/newsfeed/2024/2/5/arrests-within-hundreds-of-senegalese-protestors-after-election-postponed"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Senegal parliament to vote on election delay and Sall tenure extension",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/5/senegal-parliament-votes-on-election-delay-and-sall-tenure-extension"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Photos: Police and protesters clash as Senegal election postponed",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "https://aljazeera.com/gallery/2024/2/5/police-and-protesters-clash-after-senegal-election-postponed"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Senegal riot police fire teargas to break up protests over postponed election",
                         "date": "https://www.theguardian.com/world/2024/feb/05/senegal-restricts-mobile-internet-amid-protests-postponed-election",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Senegal riot police fire teargas to break up protests over postponed election",
-                        "date": "https://www.theguardian.com/world/2024/feb/05/senegal-restricts-mobile-internet-amid-protests-postponed-election",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Senegal president postpones election hours before official campaign start",
-                        "date": "https://www.theguardian.com/world/2024/feb/04/senegal-president-postpones-election-hours-before-official-campaign-start",
                         "source": ""
                     },
                     {
@@ -3044,12 +2883,6 @@
                         "headline": "Three girls die after FGM rituals in Sierra Leone",
                         "date": "https://www.theguardian.com/global-development/2024/feb/02/girls-die-after-fgm-ceremonies-in-sierra-leone",
                         "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Three girls die after FGM rituals in Sierra Leone",
-                        "date": "https://www.theguardian.com/global-development/2024/feb/02/girls-die-after-fgm-ceremonies-in-sierra-leone",
-                        "source": ""
                     }
                 ],
                 "cities": [
@@ -3078,13 +2911,22 @@
                 "code": "ZAF",
                 "articles": [
                     {
-                        "py/id": 422
+                        "py/id": 397
                     },
                     {
-                        "py/id": 423
+                        "py/id": 398
                     },
                     {
-                        "py/id": 106
+                        "py/id": 399
+                    },
+                    {
+                        "py/id": 113
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "South Africa women stun Australia with historic ODI win to set up decider",
+                        "date": "https://theguardian.com/sport/2024/feb/07/australia-south-africa-womens-cricket-second-odi-match-report",
+                        "source": ""
                     }
                 ],
                 "cities": [
@@ -3114,20 +2956,7 @@
                 "py/object": "borders.Country",
                 "name": "South Sudan",
                 "code": "SSD",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Fair Access\n                South Sudan flooding hampers efforts to contain hepatitis E outbreak",
-                        "date": "https://www.theguardian.com/global-development/2024/jan/31/south-sudan-flooding-hampers-efforts-to-contain-hepatitis-e-outbreak",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "South Sudan flooding hampers efforts to contain hepatitis E outbreak",
-                        "date": "https://www.theguardian.com/global-development/2024/jan/31/south-sudan-flooding-hampers-efforts-to-contain-hepatitis-e-outbreak",
-                        "source": ""
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Juba"
                 ]
@@ -3145,28 +2974,36 @@
                 "code": "SDN",
                 "articles": [
                     {
-                        "py/id": 240
+                        "py/object": "borders.Article",
+                        "headline": "U.N.: More than 6 million people displaced in Sudan5:13",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "https://cnn.com/videos/world/2024/02/06/exp-unicef-sudan-crisis-guest-elder-live-020602pseg2-cnni-world.cnn"
                     },
                     {
-                        "py/id": 241
+                        "py/object": "borders.Article",
+                        "headline": "Network blackout cuts communications for millions in war-torn Sudan",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/network-blackout-cuts-communications-for-millions-in-war-torn-sudan"
                     },
                     {
-                        "py/id": 242
+                        "py/object": "borders.Article",
+                        "headline": "UN calls for $4.1bn in aid for Sudan, says crisis needs world\u2019s attention",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/un-calls-for-4-1bn-in-aid-for-sudan-says-crisis-needs-worlds-attention"
                     },
                     {
-                        "py/id": 243
+                        "py/object": "borders.Article",
+                        "headline": "UN warns of \u2018epic suffering\u2019 in Sudan and appeals for $4bn in aid",
+                        "date": "https://www.theguardian.com/global-development/2024/feb/07/un-warns-of-epic-suffering-in-sudan-and-appeals-for-4bn-in-aid",
+                        "source": ""
                     },
                     {
-                        "py/id": 244
-                    },
-                    {
-                        "py/id": 473
-                    },
-                    {
-                        "py/id": 474
-                    },
-                    {
-                        "py/id": 250
+                        "py/object": "borders.Article",
+                        "headline": "Ukrainian special forces \u2018in Sudan operating against Russian mercenaries\u2019",
+                        "date": "https://www.theguardian.com/world/2024/feb/06/ukrainian-special-forces-sudan-russian-mercenaries-wagner",
+                        "source": ""
                     }
                 ],
                 "cities": [
@@ -3376,32 +3213,7 @@
                 "py/object": "borders.Country",
                 "name": "Canada",
                 "code": "CAN",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Raccoon plunges parts of Toronto into darkness after mishap at power utility",
-                        "date": "https://www.theguardian.com/world/2024/feb/02/raccoon-toronto-power-outage-canada",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Raccoon plunges parts of Toronto into darkness after mishap at power utility",
-                        "date": "https://www.theguardian.com/world/2024/feb/02/raccoon-toronto-power-outage-canada",
-                        "source": ""
-                    },
-                    {
-                        "py/id": 54
-                    },
-                    {
-                        "py/id": 55
-                    },
-                    {
-                        "py/id": 56
-                    },
-                    {
-                        "py/id": 57
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Ottawa",
                     "Toronto",
@@ -3439,7 +3251,16 @@
                 "py/object": "borders.Country",
                 "name": "Cuba",
                 "code": "CUB",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Huge waves and high winds hurl jellyfish and seaweed into the streets of Havana",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "https://cnn.com/2024/02/07/climate/cuba-havana-weather-intl/index.html"
+                    }
+                ],
                 "cities": [
                     "Havana",
                     "Santiago de Cuba"
@@ -3474,50 +3295,54 @@
                         "py/object": "borders.Article",
                         "headline": "El Salvador\u2019s Nayib Bukele set for landslide election victory",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/05/americas/el-salvador-election-results-intl/index.html"
+                        "source": "https://cnn.com/2024/02/05/americas/el-salvador-election-results-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Votes being counted in El Salvador, where strongman president\u2019s victory is all but assured",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/04/americas/el-salvador-presidential-election-bukele/index.html"
+                        "source": "https://cnn.com/2024/02/04/americas/el-salvador-presidential-election-bukele/index.html"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "In El Salvador, self-styled \u2018world\u2019s coolest dictator\u2019 Nayib Bukele heads for re-election\u00a0amid human rights concerns",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/03/americas/el-salvador-nayib-bukele-election-preview-intl/index.html"
+                        "source": "https://cnn.com/2024/02/03/americas/el-salvador-nayib-bukele-election-preview-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "El Salvador's President Bukele revels in landslide win",
-                        "date": {
-                            "py/id": 37
-                        },
-                        "source": "bbc.com/news/world-latin-america-68205036"
+                        "headline": "\u2018World coolest dictator\u2019 Nayib Bukele declares election win in El Salvador",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "https://aljazeera.com/program/newsfeed/2024/2/5/world-coolest-dictator-nayib-bukele-declares-election-win-in-el-salvador"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "El Salvador\u2019s Bukele claims landslide election win",
+                        "date": "Published On 4 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/4/el-salvador-votes-with-nayib-bukele-poised-for-second-presidential-term"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "\u2018Trapped in this hell\u2019: How one El Salvador town transformed under Bukele",
+                        "date": "Published On 2 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/2/trapped-in-this-hell-how-one-el-salvador-town-transformed-under-bukele"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "The Take: \u2018World\u2019s coolest dictator\u2019 set for re-election in El Salvador",
+                        "date": "Published On 2 Feb 2024",
+                        "source": "https://aljazeera.com/podcasts/2024/2/2/the-take-worlds-coolest-dictator-set-for-reelection-in-el-salvador"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Nayib Bukele re-elected as El Salvador president in landslide win",
                         "date": "https://www.theguardian.com/world/2024/feb/05/nayib-bukele-re-elected-as-el-salvador-president-in-landslide-win",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Nayib Bukele re-elected as El Salvador president in landslide win",
-                        "date": "https://www.theguardian.com/world/2024/feb/05/nayib-bukele-re-elected-as-el-salvador-president-in-landslide-win",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "El Salvador re-elects Nayib Bukele as president in a landslide \u2013 video",
-                        "date": "https://www.theguardian.com/world/video/2024/feb/05/el-salvador-re-elects-nayib-bukele-as-president-in-a-landslide-video",
                         "source": ""
                     },
                     {
@@ -3536,12 +3361,6 @@
                         "py/object": "borders.Article",
                         "headline": "Gold fever: big mining companies circle as El Salvador prepares to reverse ban",
                         "date": "https://www.theguardian.com/global-development/2024/feb/03/gold-why-the-fight-over-mining-el-salvador-precious-metal-may-not-be-over",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "El Salvador strongman Bukele eyes re-election \u2013 never mind the constitution",
-                        "date": "https://www.theguardian.com/world/2024/feb/03/nayib-bukele-el-salvador-president-election",
                         "source": ""
                     },
                     {
@@ -3639,9 +3458,17 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Biden attacks Republicans for \u2018caving\u2019 to Trump on US-Mexico border security bill",
-                        "date": "https://theguardian.com/us-news/2024/feb/06/joe-biden-congress-mexico-border-security-bill-trump",
-                        "source": ""
+                        "headline": "'People will keep dying': Fentanyl crisis grips Mexico's border cities",
+                        "date": {
+                            "py/id": 40
+                        },
+                        "source": "https://bbc.com/news/world-latin-america-68101263"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "New Jersey to host 2026 World Cup final, Mexico to host opener",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "https://aljazeera.com/sports/2024/2/5/new-jersey-to-host-2026-fifa-world-cup-final"
                     }
                 ],
                 "cities": [
@@ -3862,34 +3689,28 @@
                         "py/object": "borders.Article",
                         "headline": "See inside Sof\u00eda Vergara\u2019s sumptuous Los Angeles home",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/06/style/sofia-vergara-home-photos-architectural-digest-cec/index.html"
+                        "source": "https://cnn.com/2024/02/06/style/sofia-vergara-home-photos-architectural-digest-cec/index.html"
+                    },
+                    {
+                        "py/id": 193
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Kansas City Chiefs stars face jeers from crowd as Super Bowl week begins in Las Vegas",
+                        "headline": "Eight of New Orleans' best live music venues",
                         "date": {
-                            "py/id": 42
+                            "py/id": 40
                         },
-                        "source": "cnn.com/2024/02/06/sport/super-bowl-nfl-opening-night-chiefs-49ers-spt-intl/index.html"
+                        "source": "https://bbc.comhttps://www.bbc.com/travel/article/20240207-an-insiders-guide-to-the-best-live-music-venues-in-new-orleans"
+                    },
+                    {
+                        "py/id": 105
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Yes, the Los Angeles River is dramatically full. But it\u2019s just \u2018doing its job\u2019",
                         "date": "https://theguardian.com/us-news/2024/feb/06/los-angeles-river-pictures-rain-storms-flooding",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Las Vegas mayor Carolyn Goodman says A\u2019s should stay in Oakland",
-                        "date": "https://theguardian.com/sport/2024/feb/06/super-bowl-opening-night-media-day",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Ali Smith\u2019s 90s New York punk scene",
-                        "date": "https://theguardian.com/artanddesign/2024/feb/05/ali-smiths-90s-new-york-punk-scene-in-pictures",
                         "source": ""
                     }
                 ],
@@ -4010,24 +3831,18 @@
                         "py/object": "borders.Article",
                         "headline": "\u2018I don\u2019t know how I will eat.\u2019 For the workers behind Argentina\u2019s national drink, Milei\u2019s reforms are turning sour",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/01/americas/milei-reforms-argentina-agriculture-workers-mate-intl/index.html"
+                        "source": "https://cnn.com/2024/02/01/americas/milei-reforms-argentina-agriculture-workers-mate-intl/index.html"
                     },
                     {
-                        "py/id": 90
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Argentina\u2019s lower house votes for Javier Milei\u2019s sweeping reform package",
-                        "date": "https://www.theguardian.com/world/2024/feb/02/argentinas-lower-house-votes-for-javier-mileis-sweeping-reform-package",
-                        "source": ""
+                        "py/id": 91
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Argentina\u2019s lower house votes for Javier Milei\u2019s sweeping reform package",
-                        "date": "https://www.theguardian.com/world/2024/feb/02/argentinas-lower-house-votes-for-javier-mileis-sweeping-reform-package",
-                        "source": ""
+                        "headline": "Argentina\u2019s lower house approves Milei\u2019s \u2018omnibus\u2019 reform bill",
+                        "date": "Published On 3 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/3/argentinas-lower-house-approves-mileis-omnibus-reform-bill"
                     }
                 ],
                 "cities": [
@@ -4060,34 +3875,31 @@
                 "code": "BRA",
                 "articles": [
                     {
-                        "py/id": 565
+                        "py/id": 549
                     },
                     {
-                        "py/id": 566
+                        "py/id": 550
                     },
                     {
-                        "py/id": 567
+                        "py/id": 551
                     },
                     {
-                        "py/id": 568
+                        "py/id": 552
                     },
                     {
-                        "py/id": 569
+                        "py/id": 553
                     },
                     {
-                        "py/id": 570
+                        "py/id": 554
                     },
                     {
-                        "py/id": 571
+                        "py/id": 555
                     },
                     {
-                        "py/id": 572
+                        "py/id": 556
                     },
                     {
-                        "py/object": "borders.Article",
-                        "headline": "\u2018Enough of being bossed around by men\u2019: Brazil\u2019s first all-women samba school dances to its own beat",
-                        "date": "https://www.theguardian.com/global-development/2024/feb/05/brazil-first-all-women-samba-school-dance-rio-carnival",
-                        "source": ""
+                        "py/id": 557
                     },
                     {
                         "py/object": "borders.Article",
@@ -4096,16 +3908,13 @@
                         "source": ""
                     },
                     {
-                        "py/id": 573
+                        "py/id": 558
                     },
                     {
-                        "py/id": 574
+                        "py/id": 559
                     },
                     {
-                        "py/id": 575
-                    },
-                    {
-                        "py/id": 576
+                        "py/id": 560
                     }
                 ],
                 "cities": [
@@ -4161,80 +3970,62 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Former Chilean President Sebastian\u00a0Pinera has died in a helicopter crash, says his office",
+                        "headline": "Former Chilean President Sebastian\u00a0Pinera killed in helicopter crash",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/06/americas/chile-sebastian-pinera-dead-helicopter-crash-intl-latam/index.html"
+                        "source": "https://cnn.com/2024/02/06/americas/chile-sebastian-pinera-dead-helicopter-crash-intl-latam/index.html"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Wildfires that are turning neighborhoods to ash are likely Chile\u2019s deadliest on record, UN agency says",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/06/climate/chile-wildfires-deadliest-climate-intl/index.html"
+                        "source": "https://cnn.com/2024/02/06/climate/chile-wildfires-deadliest-climate-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "More than 120 killed by raging wildfires in Chile as authorities warn toll will rise",
+                        "headline": "Former Chilean President Sebastian Pinera killed in helicopter crash2:41",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/03/climate/chile-wildfires-state-of-emergency-intl-hnk/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "At least 120 people have been killed in wildfires in Chile2:42",
-                        "date": {
-                            "py/id": 42
-                        },
-                        "source": "cnn.com/videos/world/2024/02/06/exp-chile-wildfires-pkg-fst-020506pseg1-cnni-world.cnn"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Former president of Chile dies in helicopter crash",
-                        "date": {
-                            "py/id": 37
-                        },
-                        "source": "bbc.com/news/world-latin-america-68223520"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Former president of Chile dies in helicopter crash",
-                        "date": {
-                            "py/id": 37
-                        },
-                        "source": "bbc.com/news/world-latin-america-68223520"
+                        "source": "https://cnn.com/videos/world/2024/02/07/exp-chile-pinera-helicopter-crash-oppman-lklv-020702aseg2-cnni-world.cnn"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Chile ex-president Sebastian Pinera dies in helicopter crash",
                         "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/6/chile-ex-president-sebastian-pinera-dies-in-helicopter-crash"
+                        "source": "https://aljazeera.com/news/2024/2/6/chile-ex-president-sebastian-pinera-dies-in-helicopter-crash"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Chile ex-president Sebastian Pinera dies in helicopter crash",
-                        "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/6/chile-ex-president-sebastian-pinera-dies-in-helicopter-crash"
+                        "headline": "Photos: Forest fires rage in central Chile",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "https://aljazeera.com/gallery/2024/2/5/forest-fires-rage-on-in-central-chile"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Former Chilean president dies in helicopter crash",
-                        "date": "https://theguardian.com/world/2024/feb/06/former-chilean-president-sebastian-pinera-dies-in-helicopter-crash",
-                        "source": ""
+                        "headline": "Death toll in Chile wildfires rises to 122",
+                        "date": "Published On 5 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/5/chiles-wildfires-kill-at-least-99-as-boric-warns-death-toll-to-rise"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Former Chilean president Sebasti\u00e1n Pi\u00f1era dies in helicopter crash",
-                        "date": "https://theguardian.com/world/2024/feb/06/former-chilean-president-sebastian-pinera-dies-in-helicopter-crash",
-                        "source": ""
+                        "headline": "Out of control wildfires kill dozens in Chile",
+                        "date": "Published On 4 Feb 2024",
+                        "source": "https://aljazeera.com/program/newsfeed/2024/2/4/out-of-control-wildfires-kill-dozens-in-chile"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Former Chilean president Sebasti\u00e1n Pi\u00f1era dies in helicopter crash",
-                        "date": "https://www.theguardian.com/world/2024/feb/06/former-chilean-president-sebastian-pinera-dies-in-helicopter-crash",
+                        "headline": "More than 60 people killed as forest fires rage in Chile",
+                        "date": "Published On 3 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/3/chile-declares-state-of-emergency-over-raging-forest-fires"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "The Settlers review \u2013 ultra-violent study of Chile\u2019s butchery of its indigenous people",
+                        "date": "https://www.theguardian.com/film/2024/feb/07/the-settlers-review-ultra-violent-study-of-chiles-butchery-of-its-indigenous-people",
                         "source": ""
                     },
                     {
@@ -4251,26 +4042,8 @@
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Chile wildfires death toll rises to 131",
-                        "date": "https://www.theguardian.com/world/2024/feb/06/chile-wildfires-death-toll-rises-valparaiso-vina-del-mar",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
                         "headline": "\u2018Like a war zone\u2019: Chile wildfire death toll reaches 123 amid race to clear rubble",
                         "date": "https://www.theguardian.com/world/2024/feb/05/chile-fires-death-toll",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "\u2018Like a war zone\u2019: Chile wildfire death toll reaches 123 amid race to clear rubble",
-                        "date": "https://www.theguardian.com/world/2024/feb/05/chile-fires-death-toll",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Chilean forest fires destroy homes in Valpara\u00edso region \u2013 in pictures",
-                        "date": "https://www.theguardian.com/world/gallery/2024/feb/05/chilean-forest-fires-destroy-homes-in-valparaiso-region-in-pictures",
                         "source": ""
                     },
                     {
@@ -4287,18 +4060,6 @@
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "State-of-the-art telescope in Chile to offer best view yet of universe",
-                        "date": "https://www.theguardian.com/science/2024/feb/05/astronomy-telescope-chile-vera-c-rubin-observatory",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "At least 112 dead as authorities struggle to contain forest fires in Chile",
-                        "date": "https://www.theguardian.com/world/2024/feb/04/authorities-struggle-to-contain-forest-fires-in-chile",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
                         "headline": "At least 112 dead as authorities struggle to contain forest fires in Chile",
                         "date": "https://www.theguardian.com/world/2024/feb/04/authorities-struggle-to-contain-forest-fires-in-chile",
                         "source": ""
@@ -4311,26 +4072,8 @@
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Drone footage shows destruction after deadly wildfires hit Chile \u2013 video report",
-                        "date": "https://www.theguardian.com/world/video/2024/feb/04/drone-footage-destruction-deadly-wildfires-chile-video-report",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
                         "headline": "Forest fires in Chile cause multiple deaths and widespread destruction",
                         "date": "https://www.theguardian.com/world/2024/feb/03/forest-fires-in-chile-cause-multiple-deaths-and-widespread-destruction",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Forest fires in Chile cause multiple deaths and widespread destruction",
-                        "date": "https://www.theguardian.com/world/2024/feb/03/forest-fires-in-chile-cause-multiple-deaths-and-widespread-destruction",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Former Chilean president Sebasti\u00e1n Pi\u00f1era dies in helicopter crash",
-                        "date": "https://theguardian.com/world/2024/feb/06/former-chilean-president-sebastian-pinera-dies-in-helicopter-crash",
                         "source": ""
                     }
                 ],
@@ -4350,50 +4093,36 @@
                         "py/object": "borders.Article",
                         "headline": "Deadly storm in Southern California triggers hundreds of mudslides and floods roads",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/05/weather/storm-california-san-diego-la-weather/index.html"
+                        "source": "https://cnn.com/2024/02/05/weather/storm-california-san-diego-la-weather/index.html"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Deadly atmospheric river parks over Southern California, flooding roads and causing more than 100 mudslides",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/04/us/pineapple-express-storm-california-weather-monday/index.html"
+                        "source": "https://cnn.com/2024/02/04/us/pineapple-express-storm-california-weather-monday/index.html"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "More than 800,000 without power in California as intense atmospheric river brings threat of mudslides and flooding",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/04/us/california-atmospheric-river-flooding/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Why the Pineapple Express has drenched California",
-                        "date": {
-                            "py/id": 37
-                        },
-                        "source": "bbc.com/news/world-us-canada-68218352"
+                        "source": "https://cnn.com/2024/02/04/us/california-atmospheric-river-flooding/index.html"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Colombia agrees with ELN rebel group to extend truce",
                         "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/6/colombia-and-eln-rebel-group-agree-for-a-six-month-ceasefire-extension"
+                        "source": "https://aljazeera.com/news/2024/2/6/colombia-and-eln-rebel-group-agree-for-a-six-month-ceasefire-extension"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "A deadly, atmospheric-river fuelled storm is causing chaos across California",
                         "date": "https://theguardian.com/us-news/video/2024/feb/06/a-deadly-atmospheric-river-fuelled-storm-is-causing-chaos-across-california-video",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Powerful atmospheric river batters California",
-                        "date": "https://theguardian.com/us-news/gallery/2024/feb/05/california-storm-atmospheric-river-photos",
                         "source": ""
                     }
                 ],
@@ -4472,34 +4201,48 @@
                         "py/object": "borders.Article",
                         "headline": "How the climate crisis fuels gender inequality",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.comhttps://www.cnn.com/interactive/2023/11/world/climate-gender-inequality-cnnphotos-as-equals-intl-cmd/"
+                        "source": "https://cnn.comhttps://www.cnn.com/interactive/2023/11/world/climate-gender-inequality-cnnphotos-as-equals-intl-cmd/"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Should there be a Category 6 for hurricanes? These climate scientists say yes",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/05/weather/category-six-hurricanes-climate-scientists/index.html"
+                        "source": "https://cnn.com/2024/02/05/weather/category-six-hurricanes-climate-scientists/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "The EU just unveiled one of the world\u2019s most ambitious climate plans. But can it deliver?",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "https://cnn.com/2024/02/06/climate/eu-climate-plan-emissions-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "EU recommends ambitious 2040 climate target, goes light on farming",
                         "date": "Published On 6 Feb 2024",
-                        "source": "aljazeera.com/news/2024/2/6/eu-recommends-ambitious-2040-climate-target-goes-light-on-farming"
+                        "source": "https://aljazeera.com/news/2024/2/6/eu-recommends-ambitious-2040-climate-target-goes-light-on-farming"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "After 38 attacks on art, climate protesters have fallen into big oil\u2019s trap \u2013 it\u2019s time to change tack",
-                        "date": "https://theguardian.com/artanddesign/2024/feb/06/after-38-attacks-on-art-climate-protesters-have-fallen-into-big-oils-trap-its-time-to-change-tack",
+                        "headline": "This is the year of the climate election. Journalists should cover it that way",
+                        "date": "https://theguardian.com/commentisfree/2024/feb/07/climate-change-presidential-election-media-coverage",
                         "source": ""
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Climate activists face charges after a month in maximum security jail",
                         "date": "https://theguardian.com/world/2024/feb/06/uganda-climate-pipeline-activists-students-jail-charges",
+                        "source": ""
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Promoter announces global concerts to tackle climate crisis",
+                        "date": "https://theguardian.com/music/2024/feb/07/live-aid-promoter-announces-global-concerts-to-tackle-climate-crisis-earth-aid-live-harvey-goldsmith",
                         "source": ""
                     }
                 ],
@@ -4572,20 +4315,18 @@
                     "Andorra la Vella"
                 ]
             },
-            "AZE": {
-                "py/object": "borders.Country",
-                "name": "Azerbaijan",
-                "code": "AZE",
-                "articles": [],
-                "cities": [
-                    "Baku"
-                ]
-            },
             "AUT": {
                 "py/object": "borders.Country",
                 "name": "Austria",
                 "code": "AUT",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "My mission to seek out Vienna\u2019s modernist masterpieces",
+                        "date": "https://theguardian.com/travel/2024/feb/07/baroques-off-my-mission-to-seek-out-viennas-modernist-masterpieces",
+                        "source": ""
+                    }
+                ],
                 "cities": [
                     "Vienna"
                 ]
@@ -4622,7 +4363,16 @@
                 "py/object": "borders.Country",
                 "name": "Bulgaria",
                 "code": "BGR",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Italian star Sofia Goggia suffers broken leg in training accident, becoming latest injury-stricken skier this season",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "https://cnn.com/2024/02/06/sport/sofia-goggia-ski-serious-injury-spt-intl/index.html"
+                    }
+                ],
                 "cities": [
                     "Sofia"
                 ]
@@ -4714,26 +4464,6 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "What Paris Jackson and Doja Cat\u2019s latest red carpet looks say about tattoos today",
-                        "date": {
-                            "py/id": 42
-                        },
-                        "source": "cnn.com/2024/02/05/style/paris-jackson-doja-cat-tattoos-grammys/index.html"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "After Paris\u2019s coup against SUVs, the UK should slam the brakes on these polluting monsters too",
-                        "date": "https://theguardian.com/commentisfree/2024/feb/06/paris-suvs-uk-parisians-triple-parking-charges",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "After Paris\u2019s coup against SUVs, the UK should slam the brakes on these polluting monsters too",
-                        "date": "https://theguardian.com/commentisfree/2024/feb/06/paris-suvs-uk-parisians-triple-parking-charges",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
                         "headline": "After Paris\u2019s coup against SUVs, the UK should slam the brakes on these polluting monsters too",
                         "date": "https://theguardian.com/commentisfree/2024/feb/06/paris-suvs-uk-parisians-triple-parking-charges",
                         "source": ""
@@ -4763,12 +4493,6 @@
                         "py/object": "borders.Article",
                         "headline": "Tens of thousands protest in Berlin in latest rally against far-right AfD party",
                         "date": "https://theguardian.com/world/video/2024/feb/03/tens-of-thousands-protest-in-berlin-in-latest-rally-against-far-right-afd-party-video",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Tractor chaos, neo-Nazis and a flatlining economy: why has Germany lost the plot?",
-                        "date": "https://theguardian.com/commentisfree/2024/feb/06/germany-tractor-neo-nazi-economy-politics",
                         "source": ""
                     },
                     {
@@ -4827,7 +4551,20 @@
                 "py/object": "borders.Country",
                 "name": "Hungary",
                 "code": "HUN",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "EU launches legal action against Hungary\u2019s \u2018sovereignty\u2019 law",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/eu-launches-legal-action-against-hungarys-sovereignty-law"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "EU to take action against Hungary\u2019s \u2018sovereignty\u2019 law",
+                        "date": "https://theguardian.com/world/2024/feb/07/eu-to-take-action-against-hungary-sovereignty-law-viktor-orban",
+                        "source": ""
+                    }
+                ],
                 "cities": [
                     "Budapest"
                 ]
@@ -4846,6 +4583,12 @@
                 "name": "Ireland",
                 "code": "IRL",
                 "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Northern Ireland Sikhs eagerly await reopening of place of worship",
+                        "date": "https://theguardian.com/world/2024/feb/07/northern-ireland-sikhs-reopening-gurdwara-derry",
+                        "source": ""
+                    },
                     {
                         "py/object": "borders.Article",
                         "headline": "New Northern Ireland Brexit trade rules approved paving way for power sharing",
@@ -4869,10 +4612,7 @@
                 "code": "ITA",
                 "articles": [
                     {
-                        "py/id": 108
-                    },
-                    {
-                        "py/id": 109
+                        "py/id": 118
                     }
                 ],
                 "cities": [
@@ -4882,17 +4622,6 @@
                     "Turin",
                     "Palermo",
                     "Genoa"
-                ]
-            },
-            "KAZ": {
-                "py/object": "borders.Country",
-                "name": "Kazakhstan",
-                "code": "KAZ",
-                "articles": [],
-                "cities": [
-                    "Nur-Sultan",
-                    "Almaty",
-                    "Shymkent"
                 ]
             },
             "LVA": {
@@ -5032,61 +4761,91 @@
                 "code": "RUS",
                 "articles": [
                     {
-                        "py/id": 232
+                        "py/object": "borders.Article",
+                        "headline": "Ukraine says it sank Russian warship off coast of Crimea and unleashed \u2018massive\u2019 missile barrage on peninsula",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "https://cnn.com/2024/02/01/europe/ukraine-russian-warship-crimea-ivanovets-intl/index.html"
                     },
                     {
-                        "py/id": 233
+                        "py/object": "borders.Article",
+                        "headline": "Russian air strikes claim five lives in Ukraine",
+                        "date": {
+                            "py/id": 40
+                        },
+                        "source": "https://bbc.com/news/world-europe-68224416"
                     },
                     {
-                        "py/id": 234
+                        "py/object": "borders.Article",
+                        "headline": "Tucker Carlson interviews Russia's Putin - Kremlin",
+                        "date": {
+                            "py/id": 40
+                        },
+                        "source": "https://bbc.com/news/world-europe-68223148"
                     },
                     {
-                        "py/id": 235
+                        "py/object": "borders.Article",
+                        "headline": "Ukraine\u2019s Zaluzhny touts drones as path to victory; Russia suffers strikes",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/ukraines-zaluzhny-touts-drones-as-path-to-victory-russia-suffers-strikes"
                     },
                     {
-                        "py/id": 236
+                        "py/id": 48
                     },
                     {
-                        "py/id": 237
+                        "py/object": "borders.Article",
+                        "headline": "Russia hits targets across Ukraine in \u2018massive\u2019 missile, drone strikes",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/russia-hits-targets-across-ukraine-in-massive-missile-drone-strikes"
                     },
                     {
-                        "py/id": 238
+                        "py/object": "borders.Article",
+                        "headline": "Death toll from Russian attacks rises as Borrell meets officials in Kyiv",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/liveblog/2024/2/7/russia-ukraine-war-live-news-at-least-3-dead-as-russia-attacks-ukraine"
                     },
                     {
-                        "py/id": 239
+                        "py/object": "borders.Article",
+                        "headline": "Russia-Ukraine war: List of key events, day 714",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/russia-ukraine-war-list-of-key-events-day-714"
                     },
                     {
-                        "py/id": 240
+                        "py/id": 255
                     },
                     {
-                        "py/id": 241
+                        "py/object": "borders.Article",
+                        "headline": "Moscow confirms Russian president's interview with TV host Tucker Carlson",
+                        "date": "https://theguardian.com/world/2024/feb/07/moscow-confirms-putin-interview-with-tucker-carlson",
+                        "source": ""
                     },
                     {
-                        "py/id": 242
+                        "py/object": "borders.Article",
+                        "headline": "How Russia is taking control of the Arctic",
+                        "date": "https://theguardian.com/world/video/2024/jan/25/how-russia-is-taking-control-of-the-arctic-video",
+                        "source": ""
                     },
                     {
-                        "py/id": 243
+                        "py/object": "borders.Article",
+                        "headline": "Moscow confirms Putin interview with Tucker Carlson",
+                        "date": "https://theguardian.com/world/2024/feb/07/moscow-confirms-putin-interview-with-tucker-carlson",
+                        "source": ""
                     },
                     {
-                        "py/id": 244
+                        "py/object": "borders.Article",
+                        "headline": "Wagner group building new HQ and integrating with Russian national guard, new leader says \u2013 as it happened",
+                        "date": "https://theguardian.com/world/live/2024/feb/07/russia-ukraine-war-live-explosions-in-kyiv-and-other-cities-amid-mass-russian-missile-strikes",
+                        "source": ""
                     },
                     {
-                        "py/id": 245
+                        "py/id": 465
                     },
                     {
-                        "py/id": 246
-                    },
-                    {
-                        "py/id": 247
-                    },
-                    {
-                        "py/id": 248
-                    },
-                    {
-                        "py/id": 249
-                    },
-                    {
-                        "py/id": 250
+                        "py/object": "borders.Article",
+                        "headline": "UK manufacturers hit by Red Sea disruption and rising shipping costs",
+                        "date": "https://www.theguardian.com/business/2024/feb/01/uk-manufacturers-hit-by-red-sea-disruption-and-rising-shipping-costs",
+                        "source": ""
                     }
                 ],
                 "cities": [
@@ -5144,7 +4903,7 @@
                 "code": "SRB",
                 "articles": [
                     {
-                        "py/id": 199
+                        "py/id": 192
                     }
                 ],
                 "cities": [
@@ -5173,20 +4932,7 @@
                 "py/object": "borders.Country",
                 "name": "Spain",
                 "code": "ESP",
-                "articles": [
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Refugee files complaint to UN against Spain over 2014 border deaths",
-                        "date": "https://www.theguardian.com/world/2024/feb/01/refugee-files-complaint-un-spain-2014-border-deaths-spanish-enclave-ceuta",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Refugee files complaint to UN against Spain over 2014 border deaths",
-                        "date": "https://www.theguardian.com/world/2024/feb/01/refugee-files-complaint-un-spain-2014-border-deaths-spanish-enclave-ceuta",
-                        "source": ""
-                    }
-                ],
+                "articles": [],
                 "cities": [
                     "Madrid",
                     "Barcelona",
@@ -5210,7 +4956,32 @@
                 "py/object": "borders.Country",
                 "name": "Sweden",
                 "code": "SWE",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "\u2018It\u2019s healthy to be on war alert\u2019: Sweden\u2019s conscription push gathers pace",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/its-healthy-to-be-on-war-alert-swedens-conscription-push-gathers-pace"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Sweden closes probe into Nord Stream pipeline blast",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/sweden-ends-nord-stream-probe-citing-lack-of-jurisdiction"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "\u2018Now we are not safe\u2019: Sweden\u2019s Kurds fear Nato deal has sold them out",
+                        "date": "https://theguardian.com/world/2024/feb/07/now-we-are-not-safe-swedens-kurds-fear-nato-deal-has-sold-them-out",
+                        "source": ""
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "In Sweden, we\u2019re smug about our \u2018neutrality\u2019. The truth is not so squeaky clean",
+                        "date": "https://theguardian.com/commentisfree/2024/feb/07/sweden-neutrality-join-nato-history",
+                        "source": ""
+                    }
+                ],
                 "cities": [
                     "Stockholm",
                     "Gothenburg"
@@ -5225,46 +4996,6 @@
                     "Bern"
                 ]
             },
-            "TUR": {
-                "py/object": "borders.Country",
-                "name": "Turkey",
-                "code": "TUR",
-                "articles": [
-                    {
-                        "py/id": 283
-                    },
-                    {
-                        "py/id": 284
-                    }
-                ],
-                "cities": [
-                    "Ankara",
-                    "Istanbul",
-                    "Izmir",
-                    "Bursa",
-                    "Antalya",
-                    "Konya",
-                    "Gaziantep",
-                    "Sanliurfa",
-                    "Mersin",
-                    "Adana",
-                    "Diyarbakir",
-                    "Kayseri",
-                    "Samsun",
-                    "Akcaabat",
-                    "Denizli",
-                    "Cankaya",
-                    "Esenyurt",
-                    "Eskisehir",
-                    "Seyhan",
-                    "Kucukcekmece",
-                    "Erzurum",
-                    "Bagcilar",
-                    "Pendik",
-                    "Selcuklu",
-                    "Yildirim"
-                ]
-            },
             "UKR": {
                 "py/object": "borders.Country",
                 "name": "Ukraine",
@@ -5272,33 +5003,63 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
+                        "headline": "Exclusive: Ukraine must adapt to a reduction in Western military aid, embattled army chief says",
+                        "date": {
+                            "py/id": 45
+                        },
+                        "source": "https://cnn.com/2024/02/01/europe/zaluzhnyi-ukraine-russia-war-analysis-intl/index.html"
+                    },
+                    {
+                        "py/id": 865
+                    },
+                    {
+                        "py/object": "borders.Article",
                         "headline": "EU agrees $50B funding deal for Ukraine at pivotal time in the war",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/01/europe/eu-ukraine-funding-deal-intl/index.html"
+                        "source": "https://cnn.com/2024/02/01/europe/eu-ukraine-funding-deal-intl/index.html"
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Zelensky set to announce dismissal of Ukraine\u2019s top commander within days as rift grows over war, source says",
+                        "headline": "Czech Foreign Minister discusses expanding aid for Ukraine5:30",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/01/31/europe/zaluzhny-oust-ukraine-army-zelensky-intl/index.html"
+                        "source": "https://cnn.com/videos/world/2024/02/06/exp-czech-foreign-minister-ukraine-lipavsky-live-020602pseg1-cnni-world.cnn"
                     },
                     {
-                        "py/id": 233
+                        "py/id": 866
+                    },
+                    {
+                        "py/id": 868
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Ukraine\u2019s spy chief downplays risks of Trump presidency as he makes fresh plea for aid",
-                        "date": {
-                            "py/id": 42
-                        },
-                        "source": "cnn.com/2024/01/31/europe/budanov-ukraine-russia-war-intl/index.html"
+                        "headline": "Ukraine lawmakers pass first reading of mobilisation bill",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/ukraine-aims-to-bolster-troops-with-new-law"
                     },
                     {
-                        "py/id": 144
+                        "py/object": "borders.Article",
+                        "headline": "US House rejects Israel-only bill; Ukraine-Israel-border bill shaky",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/us-republican-led-israel-only-bill-fails-ukraine-israel-border-bill-shaky"
+                    },
+                    {
+                        "py/id": 869
+                    },
+                    {
+                        "py/id": 870
+                    },
+                    {
+                        "py/id": 871
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "Blasts heard in Kyiv and other cities amid mass missile strikes",
+                        "date": "https://theguardian.com/world/2024/feb/07/kyiv-ukraine-russia-airstrikes-missiles-death-toll",
+                        "source": ""
                     },
                     {
                         "py/object": "borders.Article",
@@ -5307,10 +5068,13 @@
                         "source": ""
                     },
                     {
-                        "py/id": 146
+                        "py/object": "borders.Article",
+                        "headline": "Blasts heard in Kyiv and other Ukrainian cities amid mass missile strikes",
+                        "date": "https://theguardian.com/world/2024/feb/07/kyiv-ukraine-russia-airstrikes-missiles-death-toll",
+                        "source": ""
                     },
                     {
-                        "py/id": 151
+                        "py/id": 145
                     }
                 ],
                 "cities": [
@@ -5341,20 +5105,14 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Children among 9 injured in suspected corrosive substance attack in London",
+                        "headline": "London attack suspect wanted for attempted murder",
                         "date": {
-                            "py/id": 42
+                            "py/id": 40
                         },
-                        "source": "cnn.com/2024/02/01/uk/london-corrosive-substance-attack-clapham-intl-hnk/index.html"
+                        "source": "https://bbc.com/news/uk-68233014"
                     },
                     {
-                        "py/id": 198
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Plymouth Argyle 1-4 Leeds United (aet): FA Cup fourth round replay",
-                        "date": "https://theguardian.com/football/live/2024/feb/06/plymouth-argyle-v-leeds-united-fa-cup-fourth-round-replay-live",
-                        "source": ""
+                        "py/id": 117
                     }
                 ],
                 "cities": [
@@ -5383,7 +5141,11 @@
                 "py/object": "borders.Country",
                 "name": "Jersey",
                 "code": "JEY",
-                "articles": [],
+                "articles": [
+                    {
+                        "py/id": 589
+                    }
+                ],
                 "cities": [
                     "Saint Helier"
                 ]
@@ -5419,7 +5181,10 @@
                 "code": "AUS",
                 "articles": [
                     {
-                        "py/id": 45
+                        "py/id": 50
+                    },
+                    {
+                        "py/id": 448
                     },
                     {
                         "py/object": "borders.Article",
@@ -5429,44 +5194,8 @@
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "switch to the \n        Australia edition",
-                        "date": "https://www.theguardian.com/preference/edition/au",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "switch to the \n                         Australia edition",
-                        "date": "https://www.theguardian.com/preference/edition/au",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "switch to the \n        Australia edition",
-                        "date": "https://www.theguardian.com/preference/edition/au",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "switch to the \n                         Australia edition",
-                        "date": "https://www.theguardian.com/preference/edition/au",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "switch to the \n        Australia edition",
-                        "date": "https://www.theguardian.com/preference/edition/au",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "switch to the \n                         Australia edition",
-                        "date": "https://www.theguardian.com/preference/edition/au",
-                        "source": ""
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Australian academic Yang Hengjun given suspended death sentence by Chinese court",
-                        "date": "https://theguardian.com/world/2024/feb/05/australian-academic-yang-hengjun-given-suspended-death-sentence-by-chinese-court-writer-wong",
+                        "headline": "Australian influencers promote flavoured nicotine pouches to vape-addicted youths",
+                        "date": "https://theguardian.com/australia-news/2024/feb/07/all-good-to-take-to-school-australian-influencers-spruik-flavoured-nicotine-pouches-to-vape-addicted-youths",
                         "source": ""
                     },
                     {
@@ -5576,9 +5305,21 @@
                         "py/object": "borders.Article",
                         "headline": "Militants squabble over fate of New Zealand pilot on anniversary of his kidnapping",
                         "date": {
-                            "py/id": 42
+                            "py/id": 45
                         },
-                        "source": "cnn.com/2024/02/06/asia/new-zealand-west-papua-militants-phillip-mehrtens-intl-hnk/index.html"
+                        "source": "https://cnn.com/2024/02/06/asia/new-zealand-west-papua-militants-phillip-mehrtens-intl-hnk/index.html"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "New Zealand calls on Papua rebels to release pilot kidnapped a year ago",
+                        "date": "Published On 7 Feb 2024",
+                        "source": "https://aljazeera.com/news/2024/2/7/new-zealand-calls-on-papua-rebels-to-release-pilot-kidnapped-a-year-ago"
+                    },
+                    {
+                        "py/object": "borders.Article",
+                        "headline": "New Zealand pilot kidnapped a year ago in West Papua will be freed, rebel group says",
+                        "date": "https://theguardian.com/world/2024/feb/07/kidnapped-nz-pilot-phillip-mehrtens-release-west-papua",
+                        "source": ""
                     },
                     {
                         "py/object": "borders.Article",
@@ -5618,13 +5359,6 @@
                 "cities": [
                     "Capitol Hill"
                 ]
-            },
-            "UMI": {
-                "py/object": "borders.Country",
-                "name": "United States Minor Outlying Islands",
-                "code": "UMI",
-                "articles": [],
-                "cities": []
             },
             "FSM": {
                 "py/object": "borders.Country",

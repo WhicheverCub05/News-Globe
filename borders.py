@@ -47,10 +47,16 @@ class Country:
         return f"name : {self.name}\n"
     
     def add_article(self, new_article):
-        for article in self.articles:
-            if new_article.headline in article.headline:
-                break
-        self.articles.append(new_article)
+        if len(self.articles) < 1:
+            self.articles.append(new_article)
+        else:
+            for article in self.articles:
+                if new_article.headline == article.headline:
+                    return False
+                            
+            self.articles.append(new_article)
+            return True
+                
 
     def add_city(self, city):
         # print(f"{self.name} adding city:", city)
@@ -102,14 +108,14 @@ def make_countries_from_country_list(countries):
 
 def get_continent_from_list(name):
     for continent in continent_list:
-        if lower(continent.name) == lower(name):
+        if continent.name.lower() == name.lower():
             return continent
 
 
 def get_country_from_list(name):
     for continent in continent_list:
         for country in continent.countries:
-            if lower(country) == lower(name):
+            if country.lower() == name.lower():
                 return country
 
 
