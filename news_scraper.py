@@ -20,6 +20,7 @@ news_dict['CNN'] = 'https://edition.cnn.com/world'
 news_dict['BBC'] = 'https://www.bbc.com/news'
 news_dict['Al Jazeera'] = ['https://www.aljazeera.com/', 'news', 'africa', 'middle-east', 'asia', 'us-canada', 'latin-america', 'europe', 'asia-pacific']
 news_dict['The Guardian'] = ['https://www.theguardian.com/', 'international', 'world/middleeast', 'world/africa', 'world/europe-news', 'world/americas', 'world/asia', 'world/australia-news']
+news_dict['Euro News'] = ['https://www.euronews.com/', 'my-europe', 'news/international']
 
 # counter for how many articles scraped
 news_dict_count = {}
@@ -27,6 +28,7 @@ news_dict_count['CNN'] = 0
 news_dict_count['BBC'] = 0
 news_dict_count['Al Jazeera'] = 0
 news_dict_count['The Guardian'] = 0
+news_dict_count['Euro News'] = 0
 
 # counter for how many articles are relevant 
 relevent_articles = 0
@@ -49,6 +51,43 @@ def assign_articles_to_country(articles, continents):
                         relevent_articles += 1
 
 
+def scrape_euronews(url):
+    """scrapes euronews
+
+    Args:
+        url (string): url of the news site
+
+    Returns:
+        Article array: array of all articles from page
+    """
+    print("scraping euronews", url)
+    articles = []
+
+    response = requests.get(url)
+    soup = BeautifulSoup(response.content, 'lxml')
+
+    news_item_block = soup.select('article a')
+
+    for item in news_item_block:
+        headline = item.get('aria-label')
+        source = ""
+
+        if headline == None:
+            continue
+
+        if item.get('href'):
+            source = item.get('href')
+            if 'https' not in source:
+                source = f'https://euronews.com{source}'
+        else:
+            continue
+
+        articles.append(Article(headline, source, ""))
+        news_dict_count['Euro News'] += 1
+
+    return articles
+
+
 def scrape_the_guardian(url):
     """scrapes the guardian news
 
@@ -60,6 +99,7 @@ def scrape_the_guardian(url):
     """
     print("scraping the guardian ", url)
     articles = []
+
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'lxml')
 
@@ -215,6 +255,9 @@ def scrape_all_news_pages():
     for i in range(len(news_dict['The Guardian'])-1):
         tmp_article_list.append(scrape_the_guardian(news_dict.get('The Guardian')[0] + news_dict.get('The Guardian')[i+1]))
     
+    for i in range(len(news_dict['Euro News'])-1):
+        tmp_article_list.append(scrape_euronews(news_dict.get('Euro News')[0] + news_dict.get('Euro News')[i+1]))
+
     for article_list in tmp_article_list:
         for article in article_list:
             all_articles.append(article)
