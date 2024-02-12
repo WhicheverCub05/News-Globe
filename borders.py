@@ -2,7 +2,7 @@ import pandas as pd
 
 class Article:
 
-    def __init__(self, headline, date, source):
+    def __init__(self, headline, source, date):
         self.headline = headline
         self.date = date
         self.source = source
@@ -14,24 +14,6 @@ class Article:
     # use __repr__ instead of __str__ for debugging
     def __repr__(self):
         return f"headline: {self.headline}\n" + f"source: {self.source}\n" + f"date: {self.date},\n"
-
-    def set_headline(headline):
-        self.headline = headline
-
-    def set_source(source):
-        self.source = source
-
-    def set_date(date):
-        self.date = date
-
-    def get_headline():
-        return self.headline
-
-    def get_source():
-        return self.source
-    
-    def get_date():
-        return self.date
 
 
 class Country:
@@ -62,11 +44,6 @@ class Country:
         # print(f"{self.name} adding city:", city)
         self.cities.append(city)
 
-    def get_name():
-        return self.name
-
-    def get_code():
-        return self.code
 
     def is_associated(self, text):
         # checks if country is associated with content of text due to its name or city names
@@ -179,5 +156,5 @@ def get_cities_from_csv(file_path, continent_list):
     print("complete\n")
 
 
-get_countries_from_csv("country_and_continent_codes_amended.csv", continent_list)
-get_cities_from_csv("capital_and_large_cities.csv", continent_list)
+get_countries_from_csv("location_data/country_and_continent_codes_amended.csv", continent_list)
+get_cities_from_csv("location_data/capital_and_large_cities.csv", continent_list)
