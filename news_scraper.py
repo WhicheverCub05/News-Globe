@@ -3,22 +3,27 @@ from datetime import datetime
 from os import path
 import borders
 import json
-import jsonpickle # allows for serialization of more complex objects
+import jsonpickle  # allows for serialization of more complex objects
 import scraper_class as sc
 
 database_file_path = 'news_data.json'
 
-# defining which news networks  
+# defining which news networks
 news_dict = {}
-news_dict['CNN'] = sc.cnn_scraper,['https://edition.cnn.com/', 'world']
+news_dict['CNN'] = sc.cnn_scraper, ['https://edition.cnn.com/', 'world']
 news_dict['BBC'] = sc.bbc_scraper, ['https://www.bbc.com/', 'news']
-news_dict['Al Jazeera'] = sc.al_jazeera_scraper, ['https://www.aljazeera.com/', 'news', 'africa', 'middle-east', 'asia', 'us-canada', 'latin-america', 'europe', 'asia-pacific']
-news_dict['The Guardian'] = sc.the_guardian_scraper, ['https://www.theguardian.com/', 'international', 'world/middleeast', 'world/africa', 'world/europe-news', 'world/americas', 'world/asia', 'world/australia-news']
-news_dict['Euro News'] = sc.euronews_scraper, ['https://www.euronews.com/', 'my-europe', 'my-europe/europe-news', 'news/international', 'programs/world']
-news_dict['Africa News'] = sc.africanews_scraper, ['https://www.africanews.com/', 'news', 'business','sport', 'culture', 'science-technology']
-news_dict['Reuters'] = sc.reuters_scraper, ['https://www.reuters.com/', 'world', 'world/africa', 'world/china', 'world/europe', 'world/india', 'world/japan', 'world/middle-east', 'world/americas']
+news_dict['Al Jazeera'] = sc.al_jazeera_scraper, ['https://www.aljazeera.com/', 'news',
+                                                  'africa', 'middle-east', 'asia', 'us-canada', 'latin-america', 'europe', 'asia-pacific']
+news_dict['The Guardian'] = sc.the_guardian_scraper, ['https://www.theguardian.com/', 'international',
+                                                      'world/middleeast', 'world/africa', 'world/europe-news', 'world/americas', 'world/asia', 'world/australia-news']
+news_dict['Euro News'] = sc.euronews_scraper, ['https://www.euronews.com/',
+                                               'my-europe', 'my-europe/europe-news', 'news/international', 'programs/world']
+news_dict['Africa News'] = sc.africanews_scraper, ['https://www.africanews.com/',
+                                                   'news', 'business', 'sport', 'culture', 'science-technology']
+news_dict['Reuters'] = sc.reuters_scraper, ['https://www.reuters.com/', 'world', 'world/africa',
+                                            'world/china', 'world/europe', 'world/india', 'world/japan', 'world/middle-east', 'world/americas']
 
-# counter for how many articles are relevant 
+# counter for how many articles are relevant
 relevent_articles = 0
 
 
@@ -39,18 +44,17 @@ def assign_articles_to_country(articles, continents):
                         relevent_articles += 1
 
 
-
 def scrape_all_news_pages(news_channels):
     """calls all news scrape functions and compiles articles into one array
 
     Args:
         news_channels (dict): dictionary of news sites
-    
+
     Returns:
         Articles array: All articles
     """
     all_articles = []
-    tmp_article_list = [] 
+    tmp_article_list = []
     print("\n")
 
     for news_name, news_info in news_dict.items():
@@ -97,20 +101,21 @@ def write_articles_to_database(file_path, continents):
     if path.isfile(file_path) is False:
         raise Exception("File not found")
         return
-        
+
     with open(file_path, 'w') as database:
-        database.write(jsonpickle.encode(continents, indent = 4))
+        database.write(jsonpickle.encode(continents, indent=4))
 
 
 def update_news():
     """updates news and prints number of articles 
     """
-    print("updating news. ", datetime.utcnow().strftime('%B %D %Y - %H:%M:%S')) # was %d
+    print("updating news. ", datetime.utcnow().strftime(
+        '%B %D %Y - %H:%M:%S'))  # was %d
     articles = scrape_all_news_pages(news_dict)
 
     assign_articles_to_country(articles, borders.continent_list)
     write_articles_to_database(database_file_path, borders.continent_list)
-    
+
     total_articles = 0
 
     print("total: ", total_articles)
@@ -122,11 +127,8 @@ if __name__ == "__main__":
     """
     last_update_date_utc = datetime.utcnow()
     update_news()
-    
+
     while True:
-        if (datetime.utcnow().hour - last_update_date_utc.hour) >= 6 :
+        if (datetime.utcnow().hour - last_update_date_utc.hour) >= 6:
             update_news()
         break
-
-
-
