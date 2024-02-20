@@ -1,12 +1,13 @@
 import pandas as pd
 
+
 class Article:
 
     def __init__(self, headline, source, date):
         self.headline = headline
         self.date = date
         self.source = source
-        
+
     # use __str__ for user
     def __str__(self):
         return f"headline : {self.headline}"
@@ -24,10 +25,10 @@ class Country:
         # self.continent = ""
         self.articles = []
         self.cities = []
-        
+
     def __str__(self):
         return f"name : {self.name}\n"
-    
+
     def add_article(self, new_article):
         if len(self.articles) < 1:
             self.articles.append(new_article)
@@ -35,15 +36,13 @@ class Country:
             for article in self.articles:
                 if new_article.headline == article.headline:
                     return False
-                            
+
             self.articles.append(new_article)
             return True
-                
 
     def add_city(self, city):
         # print(f"{self.name} adding city:", city)
         self.cities.append(city)
-
 
     def is_associated(self, text):
         # checks if country is associated with content of text due to its name or city names
@@ -64,17 +63,15 @@ class Continent:
         self.code = code
         self.countries = {}
 
-
     def add_country(self, country):
         # print(f"{self.name} adding country:", country.name)
         self.countries[country.code] = country
-            
 
-    def get_country(name):
-        for country in countries:
+    def get_country(self, name):
+        for country in self.countries:
             if country.name == name:
                 return country
-            
+
 
 def make_countries_from_country_list(countries):
     country_objects_list = []
@@ -96,27 +93,27 @@ def get_country_from_list(name):
                 return country
 
 
-continent_list =   [Continent("ASIA", "AS"), 
-                    Continent("AFRICA", "AF"),  
-                    Continent("ANTARTICA", "AN"), 
-                    Continent("NORTH_AMERICA", "NA"), 
-                    Continent("SOUTH_AMERICA", "SA"),
-                    Continent("EUROPE", "EU"), 
-                    Continent("OCEANIA", "OC")]
+continent_list = [Continent("ASIA", "AS"),
+                  Continent("AFRICA", "AF"),
+                  Continent("ANTARTICA", "AN"),
+                  Continent("NORTH_AMERICA", "NA"),
+                  Continent("SOUTH_AMERICA", "SA"),
+                  Continent("EUROPE", "EU"),
+                  Continent("OCEANIA", "OC")]
 
 
 def get_countries_from_csv(file_path, continent_list):
 
     print("Populating continents with cities from:", file_path)
-    
+
     try:
         countries_file = pd.read_csv(file_path, keep_default_na=False)
-    
+
     except FileNotFoundError:
         print(f"file {file_path} does not exist. please check spelling")
         exit()
 
-    except e:
+    except Exception as e:
         print("Error while trying to read file")
         exit()
 
@@ -126,8 +123,8 @@ def get_countries_from_csv(file_path, continent_list):
         country_code = countries_file['Three_Letter_Country_Code'][row]
         for continent in continent_list:
             if continent.code == continent_code:
-                continent.add_country(Country(country_name, country_code)) 
-                
+                continent.add_country(Country(country_name, country_code))
+
     print("complete\n")
 
 
@@ -136,12 +133,12 @@ def get_cities_from_csv(file_path, continent_list):
 
     try:
         cities_file = pd.read_csv(file_path)
-    
+
     except FileNotFoundError:
         print(f"file {file_path} does not exist. please check spelling")
         exit()
 
-    except e:
+    except Exception as e:
         print("Error while trying to read file")
         exit()
 
@@ -156,5 +153,7 @@ def get_cities_from_csv(file_path, continent_list):
     print("complete\n")
 
 
-get_countries_from_csv("location_data/country_and_continent_codes_amended.csv", continent_list)
-get_cities_from_csv("location_data/capital_and_large_cities.csv", continent_list)
+get_countries_from_csv(
+    "location_data/country_and_continent_codes_amended.csv", continent_list)
+get_cities_from_csv(
+    "location_data/capital_and_large_cities.csv", continent_list)
