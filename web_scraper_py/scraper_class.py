@@ -311,7 +311,7 @@ class reuters_scraper(web_scraper):
             url (string): webpage url
         """
 
-        options = webdriver.ChromeOption()
+        options = webdriver.ChromeOptions()
         options.add_argument("--headless")
 
         options.page_load_strategy = "none"  # set so whole page doesn't need to load
@@ -327,6 +327,7 @@ class reuters_scraper(web_scraper):
         article_box = driver.find_element(
             By.CSS_SELECTOR, "main[id*='main-content']")
 
+        print(article_box)
         article_list = article_box.find_elements(By.TAG_NAME, "li")
 
         headline = driver.find_element(
