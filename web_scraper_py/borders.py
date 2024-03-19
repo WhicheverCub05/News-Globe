@@ -2,7 +2,8 @@ import pandas as pd
 
 
 class Article:
-
+    """Article class which stores information about an article (headline, source, date)
+    """
     def __init__(self, headline, source, date):
         self.headline = headline
         self.date = date
@@ -18,7 +19,8 @@ class Article:
 
 
 class Country:
-
+    """Country class which stores array of articles country info like cities 
+    """
     def __init__(self, name, code):
         self.name = name
         self.code = code
@@ -57,7 +59,8 @@ class Country:
 
 
 class Continent:
-
+    """Continent class which stores array of countries 
+    """
     def __init__(self, name, code):
         self.name = name
         self.code = code
@@ -103,7 +106,12 @@ continent_list = [Continent("ASIA", "AS"),
 
 
 def get_countries_from_csv(file_path, continent_list):
+    """reads csv file with country information 
 
+    Args:
+        file_path (_type_): _description_
+        continent_list (_type_): _description_
+    """
     print("Populating continents with cities from:", file_path)
 
     try:
@@ -153,7 +161,4 @@ def get_cities_from_csv(file_path, continent_list):
     print("complete\n")
 
 
-get_countries_from_csv(
-    "location_data/country_and_continent_codes_amended.csv", continent_list)
-get_cities_from_csv(
-    "location_data/capital_and_large_cities.csv", continent_list)
+

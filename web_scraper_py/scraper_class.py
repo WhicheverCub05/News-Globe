@@ -5,9 +5,13 @@ import requests
 import re
 import time
 import pandas as pd
-from selenium import webdriver
-from selenium.webdriver import Chrome
+
+# from selenium import webdriver
+# from selenium.webdriver import Chrome
+
 from selenium.webdriver.common.by import By
+from selenium import webdriver
+from selenium.webdriver.common.keys import Keys
 
 
 class web_scraper:
@@ -100,9 +104,11 @@ class web_scraper:
 
     def scrape_all(self):
         for i in range(len(self.webpages)-1):
+            current_article_count = len(self.articles)
             page_url = self.webpages[0] + self.webpages[i+1]
-            print(f"scraping {page_url}")
             self.scrape_page(page_url)
+            print(
+                f"scraping {page_url} : {len(self.articles)-current_article_count}")
         self.article_count = len(self.articles)
 
 
@@ -151,21 +157,23 @@ class bbc_scraper(web_scraper):
         """
         soup = self.get_page(url)
 
-        # .featured-articles-list__item span
-        news_items_headline = soup.select(
-            '.gel-layout__item .gs-c-promo-heading__title')
-        news_items_source = soup.select(
-            ".gel-layout__item .gs-c-promo-heading", href=True)
-        news_items_date = datetime.today()
+        class_name = ".sc-4befc967-1.gzOvMy"  # .sc-b8778340-3.gxEarx
 
-        for i in range(len(news_items_headline)):
-            headline = news_items_headline[i].get_text()
-            date = news_items_date
+        news_items = soup.select(f'{class_name}')
+
+        for i in range(len(news_items)):
+            headline = news_items[i].select("h2")
+
+            if headline != "" and headline != []:
+                headline = headline[0].get_text()
+            else:
+                continue
+            date = "news_item_date"
 
             headline = self.format_headline(headline)
 
-            if news_items_source[i]['href']:
-                source = self.format_source(news_items_source[i]['href'])
+            if news_items[i]['href']:
+                source = self.format_source(news_items[i]['href'])
             else:
                 continue
             if not headline or not source:
@@ -305,32 +313,9 @@ class reuters_scraper(web_scraper):
     """
 
     def scrape_page(self, url):
-        """overriten method from web_scraper parent class to scrape reuters. uses selenium to scrape javascript
+        """ <still developing> overriten method from web_scraper parent class to scrape reuters. uses selenium to scrape javascript
 
         Args:
             url (string): webpage url
         """
-
-        options = webdriver.ChromeOptions()
-        options.add_argument("--headless")
-
-        options.page_load_strategy = "none"  # set so whole page doesn't need to load
-
-        driver = Chrome(options=options)
-
-        driver.implicitly_wait(5)  # allows 5 seconds for page to load
-
-        driver.get(url)
-        # allows driver 10 seconds to load javascript elements (list of articles)
-        time.sleep(10)
-
-        article_box = driver.find_element(
-            By.CSS_SELECTOR, "main[id*='main-content']")
-
-        print(article_box)
-        article_list = article_box.find_elements(By.TAG_NAME, "li")
-
-        headline = driver.find_element(
-            By.CSS_SELECTOR, "main[id*='main-content']>a")
-
-        index = 0
+        return 0

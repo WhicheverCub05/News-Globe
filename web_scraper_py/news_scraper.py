@@ -6,16 +6,18 @@ import json
 import jsonpickle  # allows for serialization of more complex objects
 import scraper_class as sc
 
-database_file_path = 'news_data.json'
+database_file_path = 'news_data/news_data.json'
 
 # defining which news networks
 news_dict = {}
-news_dict['CNN'] = sc.cnn_scraper, ['https://edition.cnn.com/', 'world']
-news_dict['BBC'] = sc.bbc_scraper, ['https://www.bbc.com/', 'news']
+news_dict['CNN'] = sc.cnn_scraper, ['https://edition.cnn.com/world/', 'africa', 'americas',
+                                    'asia', 'australia', 'china', 'europe', 'india', 'middle-east', 'united-kingdom']
+news_dict['BBC'] = sc.bbc_scraper, ['https://www.bbc.com/', 'news/world/africa',
+                                    'news/world/asia', 'news/world/australia', 'news/world/europe', 'news/world/latin_america', 'news/world/middle_east', 'news/world/us_and_canada']
 news_dict['Al Jazeera'] = sc.al_jazeera_scraper, ['https://www.aljazeera.com/', 'news',
                                                   'africa', 'middle-east', 'asia', 'us-canada', 'latin-america', 'europe', 'asia-pacific']
 news_dict['The Guardian'] = sc.the_guardian_scraper, ['https://www.theguardian.com/', 'international',
-                                                      'world/middleeast', 'world/africa', 'world/europe-news', 'world/americas', 'world/asia', 'world/australia-news']
+                                                      'world/middleeast', 'world/africa', 'world/europe-news', 'world/americas', 'world/asia', 'australia-news']
 news_dict['Euro News'] = sc.euronews_scraper, ['https://www.euronews.com/',
                                                'my-europe', 'my-europe/europe-news', 'news/international', 'programs/world']
 news_dict['Africa News'] = sc.africanews_scraper, ['https://www.africanews.com/',
@@ -24,6 +26,7 @@ news_dict['Reuters'] = sc.reuters_scraper, ['https://www.reuters.com/', 'world',
                                             'world/china', 'world/europe', 'world/india', 'world/japan', 'world/middle-east', 'world/americas']
 
 # counter for how many articles are relevant
+total_articles = 0
 relevent_articles = 0
 
 
@@ -36,7 +39,9 @@ def assign_articles_to_country(articles, continents):
     """
     print("\n")
     global relevent_articles
+    global total_articles
     for article in articles:
+        total_articles += 1
         for continent in continents:
             for country in continent.countries.values():
                 if country.is_associated(article.headline):
@@ -116,8 +121,6 @@ def update_news():
     assign_articles_to_country(articles, borders.continent_list)
     write_articles_to_database(database_file_path, borders.continent_list)
 
-    total_articles = 0
-
     print("total: ", total_articles)
     print("total relevent: ", relevent_articles)
 
@@ -125,6 +128,11 @@ def update_news():
 if __name__ == "__main__":
     """while running, updates news every 6 hours
     """
+    borders.get_countries_from_csv(
+        "location_data/country_and_continent_codes_amended.csv", borders.continent_list)
+    borders.get_cities_from_csv(
+        "location_data/capital_and_large_cities.csv", borders.continent_list)
+
     last_update_date_utc = datetime.utcnow()
     update_news()
 
