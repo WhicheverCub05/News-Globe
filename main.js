@@ -3,7 +3,7 @@ import { GUI } from 'dat.gui';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls';
 import Stats from 'three/addons/libs/stats.module.js';
-import data from './news_data.json' assert { type: 'json' };
+import data from './news_data/news_data.json' assert { type: 'json' };
 
 // renderer
 const renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -21,11 +21,11 @@ const camera = new THREE.PerspectiveCamera(
   150
 );
 camera.position.set(0, 0, 25);
-camera.lookAt(0, 0, 0);
+camera.lookAt(20, 0, 0);
 
 // adding spotlight
 const dirLight = new THREE.DirectionalLight(0xffffff, 3);
-dirLight.position.set(3, 5, 10); // when geometry is smooth, do 20, 12, 10
+dirLight.position.set(20, 12, 10); // when geometry is smooth, do 20, 12, 10, else 3, 5, 10
 dirLight.castShadow = true;
 dirLight.shadow.camera.top = 2;
 dirLight.shadow.camera.bottom = 2;
@@ -52,6 +52,20 @@ search_country_button.addEventListener('click', onSearch);
 function onSearch() {
   var code = document.getElementById('user_country_code').value;
   populateNews(code);
+}
+
+var about_bar_open = false;
+var about_button = document.getElementById('about_button');
+search_country_button.addEventListener('click', toggleAbout);
+function toggleAbout() {
+  if (about_bar_open == false) {
+    // open about sidebar
+
+    about_bar_open = true;
+  } else {
+    // close about sidebar
+    about_bar_open = false;
+  }
 }
 
 // framerate stats
@@ -133,10 +147,7 @@ function showGUI() {
       console.log('Refresh News');
     },
   };
-  newsFolder
-    .add(settings, 'refreshNews')
-    .name('refresh')
-    .onChange(updateNewsViaPython);
+  newsFolder.add(settings, 'refreshNews').name('refresh').onChange(updateNews);
   settingsFolder
     .add(settings, 'night_mode')
     .name('night mode')
@@ -180,7 +191,7 @@ function animate() {
 }
 
 // update news json file
-function updateNewsViaPython() {
+function updateNews() {
   var pythonScriptPath = './news_scraper.py';
   process.run(['python', pythonScriptPath]);
 }
