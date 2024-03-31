@@ -1,81 +1,209 @@
+@import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700';
+
 ::-webkit-scrollbar {
-    width: 4px;
-    height: 4px;
+  width: 4px;
+  height: 4px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: lightblue;
-    border-radius: 5px;
+  background: lightblue;
+  border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(121, 121, 199);
+  background: rgb(121, 121, 199);
 }
 
 ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 3px grey;
-    border-radius: 5px;
+  box-shadow: inset 0 0 3px grey;
+  border-radius: 5px;
 }
 
-::-webkit-scrollbar-
+::-webkit-scrollbar- body {
+  overflow: hidden;
+}
 
+.whole_page {
+  position: absolute;
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  color: #e6ffe9;
+}
+.page_interactible {
+  pointer-events: auto;
+}
 
 h1 {
-    color: green;
-    font-size: medium;
-    font: oblique;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: green;
+  font-size: medium;
+  font: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h3 {
+  color: #ddd;
+  font-size: medium;
+  font: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+about_text {
+  color: #ddd;
+  font-size: small;
+  font: oblique;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 news_header {
-    color:rgb(206, 190, 82);
-    font-size: medium;
+  color: #8d844d;
+  font-size: medium;
 }
 
 sauce {
-    color: rgb(148, 142, 105);
-    font-size: small;
+  color: rgb(148, 142, 105);
+  font-size: small;
 }
 
 date {
-    color:rgb(148, 142, 105);
-    font-size: small;
-    text-align: right;
+  color: rgb(148, 142, 105);
+  font-size: small;
+  text-align: right;
+}
+
+#input_country_code {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 #news {
-    padding-top: 10px;
-    height: 55%;
-    border: solid;
-    border-radius: 10px;
-    right: 1%;
-    position: absolute;
-    top: 22%;
-    width: 30%;
-    text-align: center;
-    z-index: 100;
-    display: block;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white;
-    font-style: bold;
-    background: rgba(102, 150, 172, 0.6);
-    overflow:auto;
+  padding-top: 10px;
+  height: 55%;
+  border: solid;
+  border-radius: 10px;
+  right: 1%;
+  position: absolute;
+  top: 22%;
+  width: 30%;
+  text-align: center;
+  z-index: 100;
+  display: block;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-style: bold;
+  background: rgba(102, 150, 172, 0.6);
+  overflow: auto;
 }
 
 #article {
-    padding: 5px;
-    border: 2px solid cadetblue;
-    border-radius: 4px; 
-    height: 26%;
-    margin: 5px;
-    font-family: Verdana;
-    color: rgb(206, 190, 82);
-    text-align: left;
-    background: rgba(51, 72, 81, 0.8);
-    overflow:auto;
+  padding: 5px;
+  border: 2px solid cadetblue;
+  border-radius: 4px;
+  height: 26%;
+  margin: 5px;
+  font-family: Verdana;
+  color: rgb(206, 190, 82);
+  text-align: left;
+  background: rgba(51, 72, 81, 0.8);
+  overflow: auto;
 }
 
-body {
-    overflow: hidden;
+a,
+a:hover,
+a:focus {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.3s;
 }
 
+.navbar {
+  padding: 15px 10px;
+  background: #232121;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 40px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+  box-shadow: rgba(0, 0, 0, 0.1);
+  outline: none !important;
+  border: none;
+}
+
+.line {
+  width: 100%;
+  height: 10px;
+  border-bottom: 1px dashed #ddd;
+  margin: 40px 0;
+}
+
+.wrapper {
+  display: flex;
+  width: 100%;
+  align-items: stretch;
+}
+
+#sidebar {
+  min-width: 250px;
+  max-width: 250px;
+  background: rgb(0, 0, 0);
+  color: #fff;
+  transition: all 0.3s;
+  display: none;
+}
+
+#sidebarCollapse {
+  color: rgb(145, 145, 145);
+  background: #131313;
+  border-color: #000000;
+}
+
+#sidebar.active {
+  margin-left: -250px;
+}
+
+#sidebar .sidebarHeader {
+  padding: 10px;
+  background: #1f1f1f;
+}
+
+#sidebar ul.components {
+  padding: 20px 0;
+  border-bottom: 1px solid #4b4b4b;
+}
+
+#sidebar ul p {
+  color: #fff;
+  padding: 10px;
+}
+
+#sidebar ul li a {
+  padding: 10px;
+  font-size: 1.1em;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: #000000;
+  background: #fff;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded='true'] {
+  color: #fff;
+  background: #303130;
+}
+
+a[data-toggle='collapse'] {
+  position: relative;
+}
+
+.dropdown-toggle::after {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}

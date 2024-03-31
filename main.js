@@ -1,9 +1,13 @@
 import * as THREE from 'three';
+import * as BufferGeometryUtils from 'three/addons/utils/BufferGeometryUtils.js';
+import { VertexNormalsHelper } from 'three/addons/helpers/VertexNormalsHelper.js';
+import * as Popper from '@popperjs/core';
+import * as bootstrap from 'bootstrap';
 import { GUI } from 'dat.gui';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls';
 import Stats from 'three/addons/libs/stats.module.js';
-import data from './news_data/news_data.json' assert { type: 'json' };
+import data from './news_data/news_data.json' with { type: 'json' };
 
 // renderer
 const renderer = new THREE.WebGLRenderer({ antialias: true });
@@ -24,7 +28,7 @@ camera.position.set(0, 0, 25);
 camera.lookAt(20, 0, 0);
 
 // adding spotlight
-const dirLight = new THREE.DirectionalLight(0xffffff, 3);
+const dirLight = new THREE.DirectionalLight(0xe6ecf5, 4);
 dirLight.position.set(20, 12, 10); // when geometry is smooth, do 20, 12, 10, else 3, 5, 10
 dirLight.castShadow = true;
 dirLight.shadow.camera.top = 2;
@@ -47,30 +51,42 @@ function onWindowResize() {
   //renderer.render(camera, scene);
 }
 
+// search country news (by iso3) using button 
 var search_country_button = document.getElementById('search_country_button');
-search_country_button.addEventListener('click', onSearch);
-function onSearch() {
+search_country_button.addEventListener('click', search_news);
+function search_news() {
   var code = document.getElementById('user_country_code').value;
   populateNews(code);
 }
 
-var about_bar_open = false;
-var about_button = document.getElementById('about_button');
-search_country_button.addEventListener('click', toggleAbout);
-function toggleAbout() {
-  if (about_bar_open == false) {
-    // open about sidebar
+// search country news (by iso3) using 'enter' keypress 
+var search_country_input = document.getElementById('user_country_code');
+search_country_input.addEventListener('keypress', function(event) {
+  if (event.key == "Enter") {
+    event.preventDefault();
+    search_country_button.click();
+  }
+});
 
-    about_bar_open = true;
+// open/close about sidebar
+var sidebarButton = document.getElementById('sidebarCollapse');
+sidebarButton.addEventListener('click', toggleNav);
+function toggleNav() {
+  var sidebarStatus = document.getElementById('sidebar').style.display;
+  console.log(sidebarStatus)
+  if (sidebarStatus == 'none' || sidebarStatus == "") {
+    document.getElementById('sidebar').style.display = 'block';
+    console.log("opening sidebar")
   } else {
-    // close about sidebar
-    about_bar_open = false;
+    document.getElementById('sidebar').style.display = 'none';
+    console.log("closing sidebar")
   }
 }
 
 // framerate stats
 const stats = new Stats();
-document.body.appendChild(stats.dom);
+stats.position = "bottom-left"
+// document.body.appendChild(stats.dom);
 
 // Orbit controls
 const controls = new OrbitControls(camera, renderer.domElement);
@@ -89,26 +105,27 @@ function loadGlobe() {
       globeScene = gltf.scene;
       globeScene.scale.multiplyScalar(5);
       // try to get cloud layer to spin at different speed
-      await renderer.compileAsync(globeScene, camera, scene);
       // globeScene.fog = new THREE.Fog(0xcccccc, 10, 15 );
-      // globeScene.children[0].computeVertexNormals(true);
-
+      globeScene.getObjectByName("Sphere").geometry.scale = (0.05, 1, 2);
+      console.log(globeScene.getObjectByName("Sphere").geometry)
+      
+      var globeSceneMesh
       globeScene.traverse(function (child) {
         if (child.isMesh) {
-          // child.material.envMap = envMap;
-          //Setting the buffer geometry
-          // child.geometry.computeVertexNormals();
-          // console.log("globe object:", child);
+          console.log(child)
+          globeSceneMesh = child
         }
-        // child.shading = THREE.SmoothShading;
       });
-
-      //var tempGeometry = new THREE.Geometry().fromBufferGeometry( globeScene );
-      //tempGeometry.mergeVertices();
-      //tempGeometry.computeVertexNormals();
-      //geometry = new THREE.BufferGeometry().fromGeometry( tempGeometry );
-
+      await renderer.compileAsync(globeScene, camera, scene);
+      
+      globeSceneMesh.geometry.deleteAttribute('normal')
+      globeSceneMesh.geometry = BufferGeometryUtils.mergeVertices(globeSceneMesh.geometry)
+      globeSceneMesh.geometry.computeVertexNormals();
+      // globeSceneMesh.geometry.normalizeNormals();
+      // window.helper = new VertexNormalsHelper( globeSceneMesh, 0.3, 0xff0000 );
+      
       scene.add(globeScene);
+      // scene.add(helper);
       renderer.render(scene, camera);
       animateGlobe();
     },
@@ -131,11 +148,12 @@ function animateGlobe() {
   if (auto_spin == true) {
     globeScene.rotation.y += 0.0005;
   }
+  // helper.update();
   renderer.render(scene, camera);
 }
 
 // shows the news for the country selected
-function showGUI() {
+function optionsMenu() {
   const settingsPanel = new GUI(); // {width:300}
   const newsFolder = settingsPanel.addFolder('News');
   const settingsFolder = settingsPanel.addFolder('Graphic');
@@ -156,6 +174,7 @@ function showGUI() {
     .add(settings, 'auto_spin')
     .name('auto spin')
     .onChange(toggleAutoSpin);
+    settingsPanel.close;
 }
 
 // render nightglobe
@@ -228,7 +247,7 @@ function getCountry(country_code) {
 // init bruv
 function init() {
   loadGlobe();
-  showGUI();
+  optionsMenu();
 }
 
 init();
