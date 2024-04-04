@@ -1,6 +1,9 @@
 # News-Globe
 Developing 3D interactive globe which allows the user to see the news of a selected country  
 
+Webpage URL:
+### http://newsglobe.today/
+
 major and capital cities of countries (capital_and_large_cities.csv) aquired from https://simplemaps.com/data/world-cities.
 
 news_scraper.py scrapes data from different news websites and writes the articles to news_data.json.
