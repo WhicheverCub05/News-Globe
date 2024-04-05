@@ -9,6 +9,9 @@ import { OrbitControls } from 'three/addons/controls/OrbitControls';
 import Stats from 'three/addons/libs/stats.module.js';
 import data from './news_data/news_data.json' with { type: 'json' };
 
+// trying to prevent cache compiling when webpage restarted 
+THREE.Cache.enabled = false;
+
 // renderer
 const renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setPixelRatio(window.devicePixelRatio);
@@ -68,18 +71,18 @@ search_country_input.addEventListener('keypress', function(event) {
   }
 });
 
-// open/close about sidebar
-var sidebarButton = document.getElementById('sidebarCollapse');
-sidebarButton.addEventListener('click', toggleNav);
-function toggleNav() {
-  var sidebarStatus = document.getElementById('sidebar').style.display;
-  console.log(sidebarStatus)
-  if (sidebarStatus == 'none' || sidebarStatus == "") {
-    document.getElementById('sidebar').style.display = 'block';
-    console.log("opening sidebar")
+// open/close about about sidebar
+var about_button = document.getElementById('aboutSidebarButton');
+about_button.addEventListener('click', toggleAboutMenu);
+function toggleAboutMenu() {
+  var aboutSidebarStatus = document.getElementById('aboutSidebar').style.display;
+  console.log(aboutSidebarStatus)
+  if (aboutSidebarStatus == 'none' || aboutSidebarStatus == "") {
+    document.getElementById('aboutSidebar').style.display = 'block';
+    console.log("opening about sidebar")
   } else {
-    document.getElementById('sidebar').style.display = 'none';
-    console.log("closing sidebar")
+    document.getElementById('aboutSidebar').style.display = 'none';
+    console.log("closing about sidebar")
   }
 }
 
@@ -107,12 +110,10 @@ function loadGlobe() {
       // try to get cloud layer to spin at different speed
       // globeScene.fog = new THREE.Fog(0xcccccc, 10, 15 );
       globeScene.getObjectByName("Sphere").geometry.scale = (0.05, 1, 2);
-      console.log(globeScene.getObjectByName("Sphere").geometry)
       
       var globeSceneMesh
       globeScene.traverse(function (child) {
         if (child.isMesh) {
-          console.log(child)
           globeSceneMesh = child
         }
       });
@@ -243,6 +244,22 @@ function getCountry(country_code) {
   }
   return 0;
 }
+
+
+if (window.performance) {
+  console.info("window.performance works fine on this browser");
+}
+if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
+  renderer.dispose();
+  console.info( "This page is reloaded" );
+} else {
+  console.info( "This page is not reloaded");
+}
+
+// unloads HTML
+//window.addEventListener('onunload', function () {
+//  document.documentElement.innerHTML = '';
+//});
 
 // init bruv
 function init() {

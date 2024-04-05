@@ -10,6 +10,9 @@
     />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="pragma" content="no-cache" />
     <title>Global News</title>
     <style>
       body {
@@ -40,12 +43,12 @@
       <script type="module" src="/main.js"></script>
 
       <div class="page_interactible">
-        <button type="button" id="sidebarCollapse" class="btn btn-success">
+        <button type="button" id="aboutSidebarButton" class="btn btn-success">
           <i class="fas fa-align-left"></i>
           <span>About</span>
         </button>
       </div>
-      <nav id="sidebar" class="page_interactible">
+      <nav id="aboutSidebar">
         <div class="sidebarHeader"></div>
 
         <ul class="list-unstyled components">
@@ -54,7 +57,10 @@
             from different sources everyday so you can track the latest news for
             your country of choice.
           </about_text>
-          <about_text href="https://github.com/WhicheverCub05/News-Globe">
+          <about_text
+            class="page_interactible"
+            href="https://github.com/WhicheverCub05/News-Globe"
+          >
             github/WhicheverCub05/News-Globe
           </about_text>
         </ul>

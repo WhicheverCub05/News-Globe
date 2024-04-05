@@ -94,6 +94,7 @@ date {
   font-style: bold;
   background: rgba(102, 150, 172, 0.6);
   overflow: auto;
+  resize: both;
 }
 
 #article {
@@ -145,7 +146,8 @@ a:focus {
   align-items: stretch;
 }
 
-#sidebar {
+#aboutSidebar {
+  padding: 10px;
   min-width: 250px;
   max-width: 250px;
   background: rgb(0, 0, 0);
@@ -154,7 +156,7 @@ a:focus {
   display: none;
 }
 
-#sidebarCollapse {
+#aboutSidebarButton {
   color: rgb(145, 145, 145);
   background: #131313;
   border-color: #000000;
