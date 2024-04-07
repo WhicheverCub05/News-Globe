@@ -147,7 +147,7 @@ var night_mode = false;
 function animateGlobe() {
   requestAnimationFrame(animateGlobe);
   if (auto_spin == true) {
-    globeScene.rotation.y += 0.0005;
+    globeScene.rotation.y += 0.0003;
   }
   // helper.update();
   renderer.render(scene, camera);
