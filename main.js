@@ -22,17 +22,17 @@ document.body.appendChild(renderer.domElement);
 // camera and scene
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
-  45,
+  35,
   window.innerWidth / window.innerHeight,
-  0.1,
-  150
+  1,
+  50
 );
 camera.position.set(0, 0, 25);
 camera.lookAt(20, 0, 0);
 
 // adding spotlight
-const dirLight = new THREE.DirectionalLight(0xe6ecf5, 4);
-dirLight.position.set(20, 12, 10); // when geometry is smooth, do 20, 12, 10, else 3, 5, 10
+const dirLight = new THREE.DirectionalLight(0xe6ecf5, 2.5);
+dirLight.position.set(-25, 12, 10); // when geometry is smooth, do 20, 12, 10, else 3, 5, 10
 dirLight.castShadow = true;
 dirLight.shadow.camera.top = 2;
 dirLight.shadow.camera.bottom = 2;

@@ -157,6 +157,7 @@ a:focus {
 }
 
 #aboutSidebarButton {
+  padding: 10px;
   color: rgb(145, 145, 145);
   background: #131313;
   border-color: #000000;
