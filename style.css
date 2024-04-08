@@ -56,18 +56,18 @@ about_text {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-news_header {
-  color: #8d844d;
+news_headline {
+  color: #e2d688;
   font-size: medium;
 }
 
-sauce {
-  color: rgb(148, 142, 105);
+news_source {
+  color: rgb(197, 189, 133);
   font-size: small;
 }
 
-date {
-  color: rgb(148, 142, 105);
+news_date {
+  color: rgb(175, 168, 124);
   font-size: small;
   text-align: right;
 }

@@ -19,6 +19,7 @@ renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.shadowMap.enabled = true;
 document.body.appendChild(renderer.domElement);
 
+
 // camera and scene
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera(
@@ -31,7 +32,7 @@ camera.position.set(0, 0, 25);
 camera.lookAt(20, 0, 0);
 
 // adding spotlight
-const dirLight = new THREE.DirectionalLight(0xe6ecf5, 2.5);
+const dirLight = new THREE.DirectionalLight(0xe6ecf5, 3.0);
 dirLight.position.set(-25, 12, 10); // when geometry is smooth, do 20, 12, 10, else 3, 5, 10
 dirLight.castShadow = true;
 dirLight.shadow.camera.top = 2;
@@ -59,7 +60,7 @@ var search_country_button = document.getElementById('search_country_button');
 search_country_button.addEventListener('click', search_news);
 function search_news() {
   var code = document.getElementById('user_country_code').value;
-  populateNews(code);
+  populateNews2(code);
 }
 
 // search country news (by iso3) using 'enter' keypress 
@@ -222,7 +223,7 @@ function populateNews(country_code) {
   if (country_code == '') {
     return;
   }
-  const country = getCountry(country_code);
+  const country = getCountryByCode(country_code);
 
   for (var i = 0; i < 3; i++) {
     var article = country.articles[i];
@@ -233,7 +234,36 @@ function populateNews(country_code) {
   }
 }
 
-function getCountry(country_code) {
+
+function populateNews2(country_name) {
+  console.log('populating news list:', country_name);
+  if (country_name == '') {
+    return
+  }
+  const country = getCountryByCode(country_name);
+  const dFrag = document.createDocumentFragment();
+  for (let article_index in country.articles) {
+    if (country.articles[article_index].headline) {
+      const new_article = document.createElement('div');
+      new_article.setAttribute("id", "article");
+      let headline = document.createElement('news_headline');
+      let source = document.createElement('news_source');
+      // date = document.createElement('news_date');
+      headline.textContent = country.articles[article_index].headline + "\n";
+      source.textContent = country.articles[article_index].source;
+      //date.textContent = country.articles[article_index].date;
+      new_article.appendChild(headline);
+      new_article.appendChild(source);
+      dFrag.appendChild(new_article);
+    }
+    
+  }
+  document.getElementById('news').appendChild(dFrag);
+  
+}
+
+
+function getCountryByCode(country_code) {
   console.log('looking for:', country_code);
   for (var i = 0; i < data.length; i++) {
     for (const [code, country] of Object.entries(data[i].countries)) {
@@ -246,6 +276,17 @@ function getCountry(country_code) {
 }
 
 
+// init bruv
+function init() {
+  loadGlobe();
+  optionsMenu();
+}
+
+init();
+animate();
+
+
+// clearing renderer cache when reloaded
 if (window.performance) {
   console.info("window.performance works fine on this browser");
 }
@@ -260,12 +301,3 @@ if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
 //window.addEventListener('onunload', function () {
 //  document.documentElement.innerHTML = '';
 //});
-
-// init bruv
-function init() {
-  loadGlobe();
-  optionsMenu();
-}
-
-init();
-animate();
