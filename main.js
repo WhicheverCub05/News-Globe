@@ -7,9 +7,9 @@ import { GUI } from 'dat.gui';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls';
 import Stats from 'three/addons/libs/stats.module.js';
-import data from './news_data/news_data.json' with { type: 'json' };
+import data from './news_data/news_data.json' assert { type: 'json' };
 
-// trying to prevent cache compiling when webpage restarted 
+// trying to prevent cache compiling when webpage restarted
 THREE.Cache.enabled = false;
 
 // renderer
@@ -18,7 +18,6 @@ renderer.setPixelRatio(window.devicePixelRatio);
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.shadowMap.enabled = true;
 document.body.appendChild(renderer.domElement);
-
 
 // camera and scene
 const scene = new THREE.Scene();
@@ -55,7 +54,7 @@ function onWindowResize() {
   //renderer.render(camera, scene);
 }
 
-// search country news (by iso3) using button 
+// search country news (by iso3) using button
 var search_country_button = document.getElementById('search_country_button');
 search_country_button.addEventListener('click', search_news);
 function search_news() {
@@ -63,10 +62,10 @@ function search_news() {
   populateNews2(code);
 }
 
-// search country news (by iso3) using 'enter' keypress 
+// search country news (by iso3) using 'enter' keypress
 var search_country_input = document.getElementById('user_country_code');
-search_country_input.addEventListener('keypress', function(event) {
-  if (event.key == "Enter") {
+search_country_input.addEventListener('keypress', function (event) {
+  if (event.key == 'Enter') {
     event.preventDefault();
     search_country_button.click();
   }
@@ -76,20 +75,21 @@ search_country_input.addEventListener('keypress', function(event) {
 var about_button = document.getElementById('aboutSidebarButton');
 about_button.addEventListener('click', toggleAboutMenu);
 function toggleAboutMenu() {
-  var aboutSidebarStatus = document.getElementById('aboutSidebar').style.display;
-  console.log(aboutSidebarStatus)
-  if (aboutSidebarStatus == 'none' || aboutSidebarStatus == "") {
+  var aboutSidebarStatus =
+    document.getElementById('aboutSidebar').style.display;
+  console.log(aboutSidebarStatus);
+  if (aboutSidebarStatus == 'none' || aboutSidebarStatus == '') {
     document.getElementById('aboutSidebar').style.display = 'block';
-    console.log("opening about sidebar")
+    console.log('opening about sidebar');
   } else {
     document.getElementById('aboutSidebar').style.display = 'none';
-    console.log("closing about sidebar")
+    console.log('closing about sidebar');
   }
 }
 
 // framerate stats
 const stats = new Stats();
-stats.position = "bottom-left"
+stats.position = 'bottom-left';
 // document.body.appendChild(stats.dom);
 
 // Orbit controls
@@ -110,22 +110,24 @@ function loadGlobe() {
       globeScene.scale.multiplyScalar(5);
       // try to get cloud layer to spin at different speed
       // globeScene.fog = new THREE.Fog(0xcccccc, 10, 15 );
-      globeScene.getObjectByName("Sphere").geometry.scale = (0.05, 1, 2);
-      
-      var globeSceneMesh
+      globeScene.getObjectByName('Sphere').geometry.scale = (0.05, 1, 2);
+
+      var globeSceneMesh;
       globeScene.traverse(function (child) {
         if (child.isMesh) {
-          globeSceneMesh = child
+          globeSceneMesh = child;
         }
       });
       await renderer.compileAsync(globeScene, camera, scene);
-      
-      globeSceneMesh.geometry.deleteAttribute('normal')
-      globeSceneMesh.geometry = BufferGeometryUtils.mergeVertices(globeSceneMesh.geometry)
+
+      globeSceneMesh.geometry.deleteAttribute('normal');
+      globeSceneMesh.geometry = BufferGeometryUtils.mergeVertices(
+        globeSceneMesh.geometry
+      );
       globeSceneMesh.geometry.computeVertexNormals();
       // globeSceneMesh.geometry.normalizeNormals();
       // window.helper = new VertexNormalsHelper( globeSceneMesh, 0.3, 0xff0000 );
-      
+
       scene.add(globeScene);
       // scene.add(helper);
       renderer.render(scene, camera);
@@ -176,7 +178,7 @@ function optionsMenu() {
     .add(settings, 'auto_spin')
     .name('auto spin')
     .onChange(toggleAutoSpin);
-    settingsPanel.close;
+  settingsPanel.close;
 }
 
 // render nightglobe
@@ -234,34 +236,30 @@ function populateNews(country_code) {
   }
 }
 
-
 function populateNews2(country_name) {
   console.log('populating news list:', country_name);
   if (country_name == '') {
-    return
+    return;
   }
   const country = getCountryByCode(country_name);
   const dFrag = document.createDocumentFragment();
   for (let article_index in country.articles) {
     if (country.articles[article_index].headline) {
       const new_article = document.createElement('div');
-      new_article.setAttribute("id", "article");
+      new_article.setAttribute('id', 'article');
       let headline = document.createElement('news_headline');
       let source = document.createElement('news_source');
       // date = document.createElement('news_date');
-      headline.textContent = country.articles[article_index].headline + "\n";
+      headline.textContent = country.articles[article_index].headline + '\n';
       source.textContent = country.articles[article_index].source;
       //date.textContent = country.articles[article_index].date;
       new_article.appendChild(headline);
       new_article.appendChild(source);
       dFrag.appendChild(new_article);
     }
-    
   }
   document.getElementById('news').appendChild(dFrag);
-  
 }
-
 
 function getCountryByCode(country_code) {
   console.log('looking for:', country_code);
@@ -275,7 +273,6 @@ function getCountryByCode(country_code) {
   return 0;
 }
 
-
 // init bruv
 function init() {
   loadGlobe();
@@ -285,16 +282,15 @@ function init() {
 init();
 animate();
 
-
 // clearing renderer cache when reloaded
 if (window.performance) {
-  console.info("window.performance works fine on this browser");
+  console.info('window.performance works fine on this browser');
 }
 if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
   renderer.dispose();
-  console.info( "This page is reloaded" );
+  console.info('This page is reloaded');
 } else {
-  console.info( "This page is not reloaded");
+  console.info('This page is not reloaded');
 }
 
 // unloads HTML
