@@ -223,11 +223,20 @@ function updateNews() {
 // gets data from the json files onto the webpage. selects which articles to display
 function populateNews(country_name) {
   let article_count = 0;
+  const country_name_display = document.getElementById('country_name');
   console.log('populating news list:', country_name);
   if (country_name == '') {
     return;
   }
   const country = getCountryByName(country_name);
+
+  if (country) {
+    country_name_display.text = country.name;
+  } else {
+    country_name_display.text = "Can't find country. Please try again";
+    return 0;
+  }
+
   const dFrag = document.createDocumentFragment();
   for (let article_index in country.articles) {
     if (country.articles[article_index].headline) {
@@ -259,16 +268,8 @@ function populateNews(country_name) {
 function clearNews() {
   // find all id="article" and delete them
   const news_box = document.getElementById('news');
-  //console.log(news_box);
   let total_articles = 0;
   let deleted_articles = 0;
-  // for (let object of news_box.children) {
-  //  if (object.getAttribute('id') == 'article') {
-  //object.remove();
-  //    deleted_articles += 1;
-  //  }
-  //  total_articles += 1;
-  //}
   let all_articles = document.querySelectorAll('div[id=article]');
   for (let article of all_articles) {
     article.remove();
@@ -303,8 +304,7 @@ function getCountryByName(country_name) {
   for (var i = 0; i < data.length; i++) {
     for (const [name, country] of Object.entries(data[i].countries)) {
       //console.log(country.name);
-      if (country.name.toLowerCase() == country_name) {
-        console.log('found country');
+      if (country.name.toLowerCase().includes(country_name)) {
         return country;
       }
     }

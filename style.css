@@ -49,6 +49,17 @@ h3 {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+#country_name {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: small;
+  font: oblique;
+  font-weight: bold;
+  position: relative;
+  top: -8px;
+  z-index: 100;
+  padding: 0px;
+}
+
 about_text {
   color: #ddd;
   font-size: small;
@@ -64,13 +75,18 @@ news_headline {
 news_source {
   color: rgb(197, 189, 133);
   font-size: small;
-  pointer-events:auto;
+  pointer-events: auto;
 }
 
 news_date {
   color: rgb(175, 168, 124);
   font-size: small;
   text-align: right;
+}
+
+#globe_renderer {
+  z-index: 0;
+  position: relative;
 }
 
 #input_country_code {
@@ -80,22 +96,24 @@ news_date {
 
 #news {
   padding-top: 10px;
+  position: fixed;
   height: 55%;
+  min-height: 300px;
+  width: 30%;
+  min-width: 300px;
+  top: 22%;
+  right: 15px;
+  overflow: auto;
+  resize: both;
   border: solid;
   border-radius: 10px;
-  right: 1%;
-  position: absolute;
-  top: 22%;
-  width: 30%;
   text-align: center;
   z-index: 100;
   display: block;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-style: bold;
-  background: rgba(102, 150, 172, 0.6);
-  overflow: auto;
-  resize: both;
+  background: rgba(102, 150, 172, 0.35);
 }
 
 #article {
