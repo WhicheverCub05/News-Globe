@@ -64,6 +64,7 @@ news_headline {
 news_source {
   color: rgb(197, 189, 133);
   font-size: small;
+  pointer-events:auto;
 }
 
 news_date {

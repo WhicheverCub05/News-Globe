@@ -59,7 +59,8 @@ var search_country_button = document.getElementById('search_country_button');
 search_country_button.addEventListener('click', search_news);
 function search_news() {
   var code = document.getElementById('user_country_code').value;
-  populateNews2(code);
+  clearNews();
+  populateNews(code);
 }
 
 // search country news (by iso3) using 'enter' keypress
@@ -220,52 +221,89 @@ function updateNews() {
 }
 
 // gets data from the json files onto the webpage. selects which articles to display
-function populateNews(country_code) {
-  console.log('populating news:', country_code);
-  if (country_code == '') {
-    return;
-  }
-  const country = getCountryByCode(country_code);
-
-  for (var i = 0; i < 3; i++) {
-    var article = country.articles[i];
-    document.getElementById(`nh${i + 1}`).innerHTML = article.headline;
-    document.getElementById(`sc${i + 1}`).innerHTML = article.source;
-    document.getElementById(`sc${i + 1}`).href = article.source;
-    document.getElementById(`dt${i + 1}`).innerHTML = article.date;
-  }
-}
-
-function populateNews2(country_name) {
+function populateNews(country_name) {
+  let article_count = 0;
   console.log('populating news list:', country_name);
   if (country_name == '') {
     return;
   }
-  const country = getCountryByCode(country_name);
+  const country = getCountryByName(country_name);
   const dFrag = document.createDocumentFragment();
   for (let article_index in country.articles) {
     if (country.articles[article_index].headline) {
       const new_article = document.createElement('div');
       new_article.setAttribute('id', 'article');
+
       let headline = document.createElement('news_headline');
       let source = document.createElement('news_source');
       // date = document.createElement('news_date');
+
       headline.textContent = country.articles[article_index].headline + '\n';
       source.textContent = country.articles[article_index].source;
       //date.textContent = country.articles[article_index].date;
+
       new_article.appendChild(headline);
       new_article.appendChild(source);
+      //new_article.appendChild(date);
+
       dFrag.appendChild(new_article);
+      article_count += 1;
     }
   }
   document.getElementById('news').appendChild(dFrag);
+  console.log('articles added: ', article_count);
 }
 
+// removes current articles on display so another country's articles can take place
+function clearNews() {
+  // find all id="article" and delete them
+  const news_box = document.getElementById('news');
+  //console.log(news_box);
+  let total_articles = 0;
+  let deleted_articles = 0;
+  // for (let object of news_box.children) {
+  //  if (object.getAttribute('id') == 'article') {
+  //object.remove();
+  //    deleted_articles += 1;
+  //  }
+  //  total_articles += 1;
+  //}
+  let all_articles = document.querySelectorAll('div[id=article]');
+  for (let article of all_articles) {
+    article.remove();
+    deleted_articles += 1;
+  }
+
+  console.log('new_box total children: ', total_articles);
+  console.log('news box: ', news_box);
+  console.log('deleted articles: ', deleted_articles);
+
+  console.log('=========================');
+}
+
+// gets the country object by iso3 code
 function getCountryByCode(country_code) {
+  country_code = country_code.toLowerCase();
   console.log('looking for:', country_code);
   for (var i = 0; i < data.length; i++) {
     for (const [code, country] of Object.entries(data[i].countries)) {
-      if (country.code == country_code) {
+      if (country.code.toLowerCase() == country_code) {
+        return country;
+      }
+    }
+  }
+  return 0;
+}
+
+// gets the country object by name
+function getCountryByName(country_name) {
+  country_name = country_name.toLowerCase();
+  console.log('looking for:', country_name);
+  for (var i = 0; i < data.length; i++) {
+    for (const [name, country] of Object.entries(data[i].countries)) {
+      //console.log(country.name);
+      if (country.name.toLowerCase() == country_name) {
+        console.log('found country');
         return country;
       }
     }
