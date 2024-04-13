@@ -240,6 +240,7 @@ function populateNews(country_name) {
 
       headline.textContent = country.articles[article_index].headline + '\n';
       source.textContent = country.articles[article_index].source;
+      source.setAttribute('href', country.articles[article_index].source);
       //date.textContent = country.articles[article_index].date;
 
       new_article.appendChild(headline);
