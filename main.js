@@ -31,7 +31,7 @@ camera.position.set(0, 0, 25);
 camera.lookAt(20, 0, 0);
 
 // adding spotlight
-const dirLight = new THREE.DirectionalLight(0xe6ecf5, 3.0);
+const dirLight = new THREE.DirectionalLight(0xffffff, 3.5);
 dirLight.position.set(-25, 12, 10); // when geometry is smooth, do 20, 12, 10, else 3, 5, 10
 dirLight.castShadow = true;
 dirLight.shadow.camera.top = 2;
