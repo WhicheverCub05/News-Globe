@@ -25,7 +25,7 @@ const camera = new THREE.PerspectiveCamera(
   35,
   window.innerWidth / window.innerHeight,
   1,
-  50
+  100
 );
 camera.position.set(0, 0, 25);
 camera.lookAt(20, 0, 0);
@@ -33,7 +33,7 @@ camera.lookAt(20, 0, 0);
 // adding spotlight
 const dirLight = new THREE.DirectionalLight(0xffffff, 3.5);
 dirLight.position.set(-25, 12, 10); // when geometry is smooth, do 20, 12, 10, else 3, 5, 10
-dirLight.castShadow = true;
+dirLight.castShadow = false;
 dirLight.shadow.camera.top = 2;
 dirLight.shadow.camera.bottom = 2;
 dirLight.shadow.camera.left = 2;
@@ -101,37 +101,38 @@ controls.minDistance = 6;
 controls.maxDistance = 40;
 
 // load the globe
-var globeScene;
+var globeObject;
+var moonObject;
+var moonGroup;
 function loadGlobe() {
   const loader = new GLTFLoader();
   loader.load(
     'models/World.glb',
     async function (gltf) {
-      globeScene = gltf.scene;
-      globeScene.scale.multiplyScalar(5);
+      globeObject = gltf.scene.children[0];
+      globeObject.castShadow = true;
+      globeObject.receiveShadow = true;
+      globeObject.emissiveIntensity = 12;
+      globeObject.scale.multiplyScalar(5);
       // try to get cloud layer to spin at different speed
-      // globeScene.fog = new THREE.Fog(0xcccccc, 10, 15 );
-      globeScene.getObjectByName('Sphere').geometry.scale = (0.05, 1, 2);
 
-      var globeSceneMesh;
-      globeScene.traverse(function (child) {
+      var globeObjectMesh;
+      globeObject.traverse(function (child) {
         if (child.isMesh) {
-          globeSceneMesh = child;
+          globeObjectMesh = child;
         }
       });
-      await renderer.compileAsync(globeScene, camera, scene);
 
-      globeSceneMesh.geometry.deleteAttribute('normal');
-      globeSceneMesh.geometry = BufferGeometryUtils.mergeVertices(
-        globeSceneMesh.geometry
+      globeObjectMesh.geometry.deleteAttribute('normal');
+      globeObjectMesh.geometry = BufferGeometryUtils.mergeVertices(
+        globeObjectMesh.geometry
       );
-      globeSceneMesh.geometry.computeVertexNormals();
-      // globeSceneMesh.geometry.normalizeNormals();
-      // window.helper = new VertexNormalsHelper( globeSceneMesh, 0.3, 0xff0000 );
+      globeObjectMesh.geometry.computeVertexNormals();
 
-      scene.add(globeScene);
+      await renderer.compileAsync(globeObject, moonObject, camera, scene);
+      scene.add(globeObject);
+      console.log('adding globe', globeObject);
       // scene.add(helper);
-      renderer.render(scene, camera);
       animateGlobe();
     },
     function (xhr) {
@@ -141,6 +142,25 @@ function loadGlobe() {
       console.log('an error happened', error);
     }
   );
+  loader.load('models/NASA_moon.glb', async function (gltf) {
+    //globeObject.add
+    moonObject = gltf.scene.children[0];
+    moonObject.scale.multiplyScalar(0.001);
+    //moonObject.position.setX(20);
+    moonObject.castShadow = true;
+    moonObject.receiveShadow = true;
+
+    console.log('adding moon', moonObject);
+
+    moonGroup = new THREE.Group();
+    await renderer.compileAsync(moonObject, camera, scene);
+    moonGroup.add(moonObject);
+    scene.add(moonGroup);
+
+    moonObject.position.set(20, 0, 0);
+
+    animateMoon();
+  });
 }
 
 // bool properties of globe
@@ -151,9 +171,16 @@ var night_mode = false;
 function animateGlobe() {
   requestAnimationFrame(animateGlobe);
   if (auto_spin == true) {
-    globeScene.rotation.y += 0.0003;
+    globeObject.rotation.y -= 0.0003;
   }
   // helper.update();
+  renderer.render(scene, camera);
+}
+
+// rotate moon around earth
+function animateMoon() {
+  requestAnimationFrame(animateMoon);
+  moonGroup.rotation.y += 0.00015;
   renderer.render(scene, camera);
 }
 
@@ -179,7 +206,7 @@ function optionsMenu() {
     .add(settings, 'auto_spin')
     .name('auto spin')
     .onChange(toggleAutoSpin);
-  settingsPanel.close;
+  settingsPanel.close();
 }
 
 // render nightglobe
@@ -326,13 +353,10 @@ if (window.performance) {
   console.info('window.performance works fine on this browser');
 }
 if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
-  renderer.dispose();
+  if (renderer) {
+    renderer.dispose();
+  }
   console.info('This page is reloaded');
 } else {
   console.info('This page is not reloaded');
 }
-
-// unloads HTML
-//window.addEventListener('onunload', function () {
-//  document.documentElement.innerHTML = '';
-//});

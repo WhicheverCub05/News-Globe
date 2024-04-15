@@ -92,6 +92,12 @@ news_date {
 #input_country_code {
   padding-left: 10px;
   padding-right: 10px;
+  direction: ltr;
+}
+
+#search_country_button {
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 #news {
@@ -105,7 +111,7 @@ news_date {
   right: 15px;
   overflow: auto;
   resize: both;
-  border: solid;
+  direction: rtl;
   border-radius: 10px;
   text-align: center;
   z-index: 100;
@@ -113,6 +119,7 @@ news_date {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
   font-style: bold;
+  border: solid;
   background: rgba(102, 150, 172, 0.35);
 }
 
