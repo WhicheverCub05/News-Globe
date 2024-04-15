@@ -129,7 +129,7 @@ function loadGlobe() {
       );
       globeObjectMesh.geometry.computeVertexNormals();
 
-      await renderer.compileAsync(globeObject, moonObject, camera, scene);
+      await renderer.compileAsync(globeObject, camera, scene);
       scene.add(globeObject);
       console.log('adding globe', globeObject);
       // scene.add(helper);
