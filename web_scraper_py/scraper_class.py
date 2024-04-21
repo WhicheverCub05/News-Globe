@@ -41,6 +41,8 @@ class web_scraper:
             return False
         if "edition" in headline.lower():
             return False
+        if "getty" in headline.lower():
+            return False
         if len(headline) > 150:
             return False
         headline = headline.lstrip()
@@ -107,9 +109,10 @@ class web_scraper:
             current_article_count = len(self.articles)
             page_url = self.webpages[0] + self.webpages[i+1]
             self.scrape_page(page_url)
-            print(
-                f"scraping {page_url} : {len(self.articles)-current_article_count}")
+            # print(
+            #    f"scraping {page_url} : {len(self.articles)-current_article_count}")
         self.article_count = len(self.articles)
+        print("Number of articles: ", self.article_count)
 
 
 class cnn_scraper(web_scraper):

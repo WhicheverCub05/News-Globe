@@ -112,6 +112,8 @@ def write_articles_to_database(file_path, continents):
 
 
 def update_news():
+    global total_articles
+    global revelent_articles
     """updates news and prints number of articles 
     """
     print("updating news. ", datetime.utcnow().strftime(
