@@ -56,7 +56,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gEFRAWKQQxYg=="
+                                    "B+gEFRAZAQTETw=="
                                 ]
                             ]
                         },
@@ -128,7 +128,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gEFRAWKgNjGA=="
+                                    "B+gEFRAZAgJ3Vw=="
                                 ]
                             ]
                         },
@@ -291,7 +291,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gEFRAWKwDeqw=="
+                                    "B+gEFRAZAg8SlQ=="
                                 ]
                             ]
                         },
@@ -363,7 +363,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gEFRAWLAWfag=="
+                                    "B+gEFRAZBATl+g=="
                                 ]
                             ]
                         },
@@ -1179,7 +1179,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gEFRAWLAu13g=="
+                                    "B+gEFRAZBAu+rg=="
                                 ]
                             ]
                         },
@@ -1930,12 +1930,6 @@
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Man detained in France after bomb threat at Iran consulate",
-                        "date": "Published On 19 Apr 2024",
-                        "source": "https://www.aljazeera.com/news/2024/4/19/man-arrested-in-france-after-bomb-threat-at-iran-consulate"
-                    },
-                    {
-                        "py/object": "borders.Article",
                         "headline": "Muted Iranian reaction to attack provides short-term wins for Netanyahu",
                         "date": "",
                         "source": "https://www.theguardian.com/world/2024/apr/19/muted-iranian-reaction-to-attack-short-term-win-for-netanyahu"
@@ -2080,7 +2074,7 @@
                         "source": "https://www.theguardian.com/world/live/2024/apr/20/middle-east-crisis-iran-israel-gaza-war-hamas-iraq-netanyahu"
                     },
                     {
-                        "py/id": 225
+                        "py/id": 224
                     },
                     {
                         "py/object": "borders.Article",
@@ -2231,7 +2225,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gEFRAWKw27jw=="
+                                    "B+gEFRAZAw3d1Q=="
                                 ]
                             ]
                         },
@@ -2316,7 +2310,7 @@
                         "source": "https://www.bbc.com/news/business-68823705"
                     },
                     {
-                        "py/id": 270
+                        "py/id": 269
                     },
                     {
                         "py/object": "borders.Article",
@@ -2450,7 +2444,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gEFRAWKgnXbQ=="
+                                    "B+gEFRAZAgiiJg=="
                                 ]
                             ]
                         },
@@ -2534,7 +2528,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gEFRAWKQslFg=="
+                                    "B+gEFRAZAQr1HA=="
                                 ]
                             ]
                         },
@@ -2627,7 +2621,7 @@
                         "source": "https://www.aljazeera.com/sports/liveblog/2024/4/21/live-pakistan-vs-new-zealand-third-t20-international"
                     },
                     {
-                        "py/id": 254
+                        "py/id": 253
                     },
                     {
                         "py/object": "borders.Article",
@@ -2802,7 +2796,7 @@
                         "py/object": "borders.Article",
                         "headline": "Lowitja O\u2019Donoghue, trailblazer for indigenous Australian rights, dead at 91",
                         "date": {
-                            "py/id": 304
+                            "py/id": 303
                         },
                         "source": "https://edition.cnn.com/world/2024/02/05/australia/lowitja-odonoghue-aboriginal-dead-scli-intl/index.html"
                     },
@@ -2810,7 +2804,7 @@
                         "py/id": 61
                     },
                     {
-                        "py/id": 335
+                        "py/id": 334
                     },
                     {
                         "py/object": "borders.Article",
@@ -3519,7 +3513,7 @@
                         "py/object": "borders.Article",
                         "headline": "Stabbed bishop delivers first message from hospital as malicious disinformation spreads",
                         "date": {
-                            "py/id": 304
+                            "py/id": 303
                         },
                         "source": "https://edition.cnn.com/world/2024/04/18/australia/australia-disinformation-stabbing-attacks-intl-hnk/index.html"
                     },
@@ -3565,7 +3559,7 @@
                 "code": "MAR",
                 "articles": [
                     {
-                        "py/id": 316
+                        "py/id": 315
                     },
                     {
                         "py/object": "borders.Article",
@@ -3576,7 +3570,7 @@
                         "source": "https://edition.cnn.com/world/2024/04/15/tech/iphone-sales-plunging/index.html"
                     },
                     {
-                        "py/id": 371
+                        "py/id": 370
                     },
                     {
                         "py/id": 139
@@ -3722,10 +3716,10 @@
                         "source": "https://edition.cnn.com/world/videos/business/2023/08/31/nigerian-star-fireboy-dml-larry-madowo-pkg-08266aseg1-cnni-business.cnn"
                     },
                     {
-                        "py/id": 314
+                        "py/id": 313
                     },
                     {
-                        "py/id": 315
+                        "py/id": 314
                     },
                     {
                         "py/object": "borders.Article",
@@ -3800,7 +3794,7 @@
                         "source": "https://www.theguardian.com/world/2024/apr/20/us-withdrawal-niger-security-pact-russia"
                     },
                     {
-                        "py/id": 324
+                        "py/id": 323
                     },
                     {
                         "py/object": "borders.Article",
@@ -3827,7 +3821,7 @@
                         "source": "https://www.africanews.com/2024/04/21/nigerian-chess-master-plays-for-60-hours-in-bid-to-set-new-world-record/"
                     },
                     {
-                        "py/id": 515
+                        "py/id": 514
                     },
                     {
                         "py/object": "borders.Article",
@@ -3876,6 +3870,9 @@
                 "code": "NGA",
                 "articles": [
                     {
+                        "py/id": 541
+                    },
+                    {
                         "py/id": 542
                     },
                     {
@@ -3894,13 +3891,13 @@
                         "py/id": 547
                     },
                     {
-                        "py/id": 548
+                        "py/id": 313
                     },
                     {
                         "py/id": 314
                     },
                     {
-                        "py/id": 315
+                        "py/id": 549
                     },
                     {
                         "py/id": 550
@@ -3909,7 +3906,7 @@
                         "py/id": 551
                     },
                     {
-                        "py/id": 552
+                        "py/id": 553
                     },
                     {
                         "py/id": 554
@@ -3918,13 +3915,10 @@
                         "py/id": 555
                     },
                     {
-                        "py/id": 556
+                        "py/id": 557
                     },
                     {
-                        "py/id": 558
-                    },
-                    {
-                        "py/id": 335
+                        "py/id": 334
                     },
                     {
                         "py/object": "borders.Article",
@@ -3933,13 +3927,13 @@
                         "source": "https://www.theguardian.com/world/2024/apr/21/approval-of-61bn-aid-from-us-shows-ukraine-will-not-be-abandoned-says-zelenskiy"
                     },
                     {
-                        "py/id": 324
+                        "py/id": 323
+                    },
+                    {
+                        "py/id": 559
                     },
                     {
                         "py/id": 560
-                    },
-                    {
-                        "py/id": 561
                     },
                     {
                         "py/object": "borders.Article",
@@ -3966,16 +3960,19 @@
                         "source": "https://www.euronews.com/2024/04/18/eu-foreign-policy-chief-josep-borrell-warns-middle-east-on-edge-of-regional-war"
                     },
                     {
-                        "py/id": 562
+                        "py/id": 561
                     },
                     {
-                        "py/id": 563
+                        "py/id": 562
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Environmental Volunteering: Activists gather in Lagos ahead of World Earth Day",
                         "date": "",
                         "source": "https://www.africanews.com/2024/04/21/environmental-volunteering-activists-gather-in-lagos-ahead-of-world-earth-day/"
+                    },
+                    {
+                        "py/id": 563
                     },
                     {
                         "py/id": 564
@@ -3991,9 +3988,6 @@
                     },
                     {
                         "py/id": 568
-                    },
-                    {
-                        "py/id": 569
                     }
                 ],
                 "cities": [
@@ -4196,7 +4190,7 @@
                 "code": "SOM",
                 "articles": [
                     {
-                        "py/id": 514
+                        "py/id": 513
                     }
                 ],
                 "cities": [
@@ -4693,7 +4687,7 @@
                         "py/object": "borders.Article",
                         "headline": "Cuba sees rare protests amid power cuts and food shortages",
                         "date": {
-                            "py/id": 318
+                            "py/id": 317
                         },
                         "source": "https://edition.cnn.com/world/2024/03/18/americas/cuba-protests-food-economy-intl-latam/index.html"
                     },
@@ -4813,7 +4807,7 @@
                         "py/object": "borders.Article",
                         "headline": "Carnage\u00a0on the\u00a0streets of Port-au-Prince as world stalls on a promised intervention for Haiti",
                         "date": {
-                            "py/id": 318
+                            "py/id": 317
                         },
                         "source": "https://edition.cnn.com/world/2024/03/21/americas/haiti-council-gang-intl-latam/index.html"
                     },
@@ -4821,7 +4815,7 @@
                         "py/object": "borders.Article",
                         "headline": "UN maternity aid looted in Port-au-Prince as Haiti crisis deepens",
                         "date": {
-                            "py/id": 318
+                            "py/id": 317
                         },
                         "source": "https://edition.cnn.com/world/2024/03/17/americas/haiti-unicef-child-aid-looted-intl-hnk/index.html"
                     },
@@ -4832,7 +4826,7 @@
                         "source": "https://www.aljazeera.com/news/2024/4/18/unconscionable-us-sends-dozens-to-haiti-on-deportation-flight"
                     },
                     {
-                        "py/id": 731
+                        "py/id": 730
                     },
                     {
                         "py/object": "borders.Article",
@@ -4924,7 +4918,7 @@
                         "py/object": "borders.Article",
                         "headline": "A lake in Mexico\u2019s \u2018magical town\u2019 is disappearing. Authorities blame drought, and theft",
                         "date": {
-                            "py/id": 318
+                            "py/id": 317
                         },
                         "source": "https://edition.cnn.com/world/2024/04/17/americas/lake-patzcuaro-mexico-dry-water-theft-intl-latam/index.html"
                     },
@@ -4932,7 +4926,7 @@
                         "py/object": "borders.Article",
                         "headline": "In Mexico\u2019s supersized election, a wave of assassinations has put democracy itself in the crosshairs",
                         "date": {
-                            "py/id": 318
+                            "py/id": 317
                         },
                         "source": "https://edition.cnn.com/world/2024/04/11/americas/mexico-election-assassination-intl-latam/index.html"
                     },
@@ -4940,7 +4934,7 @@
                         "py/object": "borders.Article",
                         "headline": "\u2018Outrage against international law\u2019: Mexico breaks diplomatic ties with Ecuador over embassy raid",
                         "date": {
-                            "py/id": 318
+                            "py/id": 317
                         },
                         "source": "https://edition.cnn.com/world/2024/04/06/americas/ecuador-vice-president-arrest-mexico-embassy-diplomatic-tensions-intl-hnk/index.html"
                     },
@@ -4948,7 +4942,7 @@
                         "py/object": "borders.Article",
                         "headline": "Eight Chinese migrants found dead on Mexico beach after boat capsizes",
                         "date": {
-                            "py/id": 318
+                            "py/id": 317
                         },
                         "source": "https://edition.cnn.com/world/2024/04/01/americas/mexico-coast-eight-chinese-migrants-found-dead-intl-hnk/index.html"
                     },
@@ -5260,7 +5254,7 @@
                         "source": "https://www.africanews.com/2024/04/21/black-chicagoans-feel-left-behind-as-millions-marshaled-for-migrant-crisis/"
                     },
                     {
-                        "py/id": 492
+                        "py/id": 491
                     }
                 ],
                 "cities": [
@@ -5380,7 +5374,7 @@
                         "py/object": "borders.Article",
                         "headline": "Argentina and Colombia move to mend ties after Milei calls Petro a \u2018terrorist murderer\u2019 in CNN interview",
                         "date": {
-                            "py/id": 318
+                            "py/id": 317
                         },
                         "source": "https://edition.cnn.com/world/2024/04/01/americas/argentina-colombia-diplomatic-ties-milei-interview-intl-hnk/index.html"
                     },
@@ -5421,21 +5415,21 @@
                 "code": "BRA",
                 "articles": [
                     {
-                        "py/id": 317
+                        "py/id": 316
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Brazil\u2019s former President Jair Bolsonaro\u00a0indicted for allegedly falsifying Covid vaccination data",
                         "date": {
-                            "py/id": 318
+                            "py/id": 317
                         },
                         "source": "https://edition.cnn.com/world/2024/03/19/americas/brazil-jair-bolsonaro-indicted-covid-vaccine-intl-latam/index.html"
                     },
                     {
-                        "py/id": 738
+                        "py/id": 737
                     },
                     {
-                        "py/id": 321
+                        "py/id": 320
                     },
                     {
                         "py/object": "borders.Article",
@@ -5444,10 +5438,10 @@
                         "source": "https://www.aljazeera.com/sports/2024/4/17/brazil-football-legend-romario-announces-comeback-at-58"
                     },
                     {
-                        "py/id": 278
+                        "py/id": 277
                     },
                     {
-                        "py/id": 325
+                        "py/id": 324
                     },
                     {
                         "py/object": "borders.Article",
@@ -5511,7 +5505,7 @@
                         "py/object": "borders.Article",
                         "headline": "Chilean report into LATAM Airlines flight plunge finds \u2018involuntary movement forward\u2019 from pilot\u2019s seat",
                         "date": {
-                            "py/id": 318
+                            "py/id": 317
                         },
                         "source": "https://edition.cnn.com/world/2024/04/17/americas/chile-aviation-report-pilot-seat-intl-latam/index.html"
                     }
@@ -5529,13 +5523,13 @@
                 "code": "COL",
                 "articles": [
                     {
-                        "py/id": 864
+                        "py/id": 863
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Colombia expels Argentine diplomats after Milei calls Petro \u2018terrorist murderer\u2019 in CNN interview",
                         "date": {
-                            "py/id": 318
+                            "py/id": 317
                         },
                         "source": "https://edition.cnn.com/world/2024/03/28/americas/colombia-expels-argentine-diplomats-milei-cnn-interview-intl/index.html"
                     },
@@ -5593,12 +5587,12 @@
                         "py/object": "borders.Article",
                         "headline": "Ecuador\u2019s former vice president hospitalized days after arrest in Mexican embassy",
                         "date": {
-                            "py/id": 318
+                            "py/id": 317
                         },
                         "source": "https://edition.cnn.com/world/2024/04/08/americas/ecuador-jorge-glas-hospital-mexico-intl-latam/index.html"
                     },
                     {
-                        "py/id": 780
+                        "py/id": 779
                     },
                     {
                         "py/object": "borders.Article",
@@ -5619,7 +5613,7 @@
                         "source": "https://www.aljazeera.com/news/2024/4/17/ecuador-declares-energy-emergency-amid-severe-regional-drought-and-el-nino"
                     },
                     {
-                        "py/id": 766
+                        "py/id": 765
                     },
                     {
                         "py/object": "borders.Article",
@@ -5640,7 +5634,7 @@
                         "source": "https://www.theguardian.com/world/2024/apr/21/ecuador-referendum-vote-security-measures"
                     },
                     {
-                        "py/id": 575
+                        "py/id": 574
                     },
                     {
                         "py/object": "borders.Article",
@@ -5722,7 +5716,7 @@
                         "source": "https://www.euronews.com/my-europe/2024/04/12/state-of-the-union-decisions-on-climate-transparency-and-migration"
                     },
                     {
-                        "py/id": 489
+                        "py/id": 488
                     }
                 ],
                 "cities": [
@@ -5769,7 +5763,7 @@
                         "source": "https://www.aljazeera.com/news/2024/4/18/us-reimposes-oil-sanctions-against-venezuela-over-election-concerns"
                     },
                     {
-                        "py/id": 766
+                        "py/id": 765
                     },
                     {
                         "py/object": "borders.Article",
@@ -5986,7 +5980,7 @@
                         "py/object": "borders.Article",
                         "headline": "Denmark\u00a0closes\u00a0major shipping strait over faulty missile launcher",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://edition.cnn.com/world/2024/04/04/europe/denmark-shipping-strait-missile-launcher-intl/index.html"
                     },
@@ -6082,9 +6076,6 @@
                         "source": "https://www.bbc.com/sport/olympics/68091759"
                     },
                     {
-                        "py/id": 221
-                    },
-                    {
                         "py/object": "borders.Article",
                         "headline": "The 1924 Paris Olympics saved the Games. Can this year\u2019s event repeat that success?",
                         "date": "",
@@ -6109,7 +6100,7 @@
                         "source": "https://www.theguardian.com/world/live/2024/apr/15/europe-live-sudan-paris-conference-anniversary"
                     },
                     {
-                        "py/id": 761
+                        "py/id": 760
                     },
                     {
                         "py/object": "borders.Article",
@@ -6130,7 +6121,7 @@
                         "source": "https://www.euronews.com/2024/04/21/eighty-years-on-france-marks-milestone-in-womens-right-to-vote"
                     },
                     {
-                        "py/id": 235
+                        "py/id": 234
                     },
                     {
                         "py/object": "borders.Article",
@@ -6160,7 +6151,7 @@
                         "py/object": "borders.Article",
                         "headline": "Violent clashes break out in Georgia amid\u00a0controversial \u2018foreign agents\u2019 law debate",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://edition.cnn.com/world/2024/04/16/europe/georgia-protests-foreign-agents-law-intl-latam/index.html"
                     },
@@ -6168,7 +6159,7 @@
                         "py/object": "borders.Article",
                         "headline": "Parliament of Georgia via Reuters",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://edition.cnn.com/world/2024/04/15/europe/georgia-punch-parliament-foreign-agent-intl/index.html"
                     },
@@ -6176,7 +6167,7 @@
                         "py/object": "borders.Article",
                         "headline": "Georgian politician punches opponent in face in brawl over \u2018foreign agent\u2019 law",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://edition.cnn.com/world/2024/04/15/europe/georgia-punch-parliament-foreign-agent-intl/index.html"
                     },
@@ -6221,13 +6212,13 @@
                 "code": "DEU",
                 "articles": [
                     {
-                        "py/id": 406
+                        "py/id": 405
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Germany to give Holocaust survivors $236 payout to help them cope with October 7 attacks",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://edition.cnn.com/world/2024/04/12/europe/israeli-holocaust-germany-payout-october-7-intl/index.html"
                     },
@@ -6382,7 +6373,7 @@
                 "code": "ITA",
                 "articles": [
                     {
-                        "py/id": 965
+                        "py/id": 964
                     },
                     {
                         "py/object": "borders.Article",
@@ -6403,7 +6394,7 @@
                         "source": "https://www.euronews.com/2024/04/18/italys-mario-draghi-calls-for-radical-change-in-europe"
                     },
                     {
-                        "py/id": 950
+                        "py/id": 949
                     },
                     {
                         "py/object": "borders.Article",
@@ -6536,7 +6527,7 @@
                         "py/object": "borders.Article",
                         "headline": "Poland is debating an end to its near-total abortion ban, setting up a heated political fight",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://edition.cnn.com/world/2024/04/11/europe/poland-abortion-debate-tusk-intl/index.html"
                     },
@@ -6553,7 +6544,7 @@
                         "source": "https://www.euronews.com/my-europe/2024/04/15/poland-ends-long-wait-and-gets-first-payment-of-eu-recovery-funds-63-billion"
                     },
                     {
-                        "py/id": 1070
+                        "py/id": 1069
                     }
                 ],
                 "cities": [
@@ -6604,7 +6595,7 @@
                         "source": "https://edition.cnn.com/world/2024/03/07/politics/general-warns-russia-influence-africa/index.html"
                     },
                     {
-                        "py/id": 549
+                        "py/id": 548
                     },
                     {
                         "py/id": 156
@@ -6616,7 +6607,7 @@
                         "py/object": "borders.Article",
                         "headline": "Ukraine launches drone attacks targeting Russian energy infrastructure, Ukraine special services source says",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://edition.cnn.com/world/2024/04/20/europe/ukraine-drone-attacks-russia-intl/index.html"
                     },
@@ -6624,7 +6615,7 @@
                         "py/object": "borders.Article",
                         "headline": "\u2018Ghostly\u2019 city: How Russia\u2019s war in Ukraine is taking a\u00a0toll on its own Belgorod region",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://edition.cnn.com/world/2024/04/20/europe/russia-belgorod-impact-ukraine-war-intl-cmd/index.html"
                     },
@@ -6632,7 +6623,7 @@
                         "py/object": "borders.Article",
                         "headline": "Russia\u2019s front-line gains highlight Kyiv\u2019s desperate need for US military aid",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://edition.cnn.com/world/2024/04/19/europe/russia-frontline-gains-ukraine-military-aid-intl-cmd/index.html"
                     },
@@ -6640,7 +6631,7 @@
                         "py/object": "borders.Article",
                         "headline": "Polish man charged in connection with alleged Russian plot to kill Ukraine leader Zelensky",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://edition.cnn.com/world/2024/04/18/europe/zelensky-assassination-plot-poland-arrest-intl-hnk/index.html"
                     },
@@ -6648,7 +6639,7 @@
                         "py/object": "borders.Article",
                         "headline": "Ukraine \u2018ran out of missiles\u2019 to thwart Russian strike on power plant, Zelensky says",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://edition.cnn.com/world/2024/04/16/europe/ukraine-missiles-air-defense-zelensky-israel-intl/index.html"
                     },
@@ -6656,18 +6647,18 @@
                         "py/object": "borders.Article",
                         "headline": "Russian invasion of Ukraine: Latest news, analysis and videos",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://www.cnn.com/world/europe/ukraine"
                     },
                     {
-                        "py/id": 261
+                        "py/id": 260
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Russian opposition leader Alexey Navalny\u2019s memoir will be published in October",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://edition.cnn.com/world/2024/04/11/europe/russia-navalny-memoir-intl/index.html"
                     },
@@ -6675,7 +6666,7 @@
                         "py/object": "borders.Article",
                         "headline": "Anger boils over for some amid record floods in Russia\u2019s Urals",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://edition.cnn.com/world/2024/04/09/europe/russia-urals-flooding-intl/index.html"
                     },
@@ -6683,7 +6674,7 @@
                         "py/object": "borders.Article",
                         "headline": "Russian-controlled Zaporizhzhia nuclear reactor damaged following drone attack",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://edition.cnn.com/world/2024/04/07/europe/russian-controlled-zaporizhzhia-nuclear-reactor-damaged-following-drone-attack/index.html"
                     },
@@ -6691,7 +6682,7 @@
                         "py/object": "borders.Article",
                         "headline": "Ukraine claims major drone strike on Russian airfield, killing servicemen and destroying aircraft",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://edition.cnn.com/world/2024/04/05/europe/ukraine-drone-strikes-rostov-region-russia-intl/index.html"
                     },
@@ -6708,7 +6699,7 @@
                         "source": "https://www.bbc.com/news/world-europe-68848317"
                     },
                     {
-                        "py/id": 1025
+                        "py/id": 1024
                     },
                     {
                         "py/id": 74
@@ -6732,10 +6723,10 @@
                         "source": "https://www.bbc.com/news/world-europe-68868399"
                     },
                     {
-                        "py/id": 347
+                        "py/id": 346
                     },
                     {
-                        "py/id": 557
+                        "py/id": 556
                     },
                     {
                         "py/object": "borders.Article",
@@ -6750,7 +6741,7 @@
                         "py/id": 82
                     },
                     {
-                        "py/id": 559
+                        "py/id": 558
                     },
                     {
                         "py/object": "borders.Article",
@@ -6759,7 +6750,7 @@
                         "source": "https://www.theguardian.com/commentisfree/2024/apr/19/as-we-celebrate-the-permanent-residency-granted-to-sydneys-bollard-man-the-deportation-bill-looms-over-others"
                     },
                     {
-                        "py/id": 952
+                        "py/id": 951
                     },
                     {
                         "py/object": "borders.Article",
@@ -6798,7 +6789,7 @@
                         "source": "https://www.euronews.com/2024/04/18/german-police-arrest-two-men-for-plotting-sabotage-on-russias-behalf"
                     },
                     {
-                        "py/id": 530
+                        "py/id": 529
                     }
                 ],
                 "cities": [
@@ -6926,10 +6917,10 @@
                         "source": "https://www.euronews.com/travel/2024/04/19/we-need-to-eliminate-references-to-it-online-barcelona-bus-route-taken-off-maps-to-deter-t"
                     },
                     {
-                        "py/id": 1029
+                        "py/id": 1028
                     },
                     {
-                        "py/id": 1030
+                        "py/id": 1029
                     }
                 ],
                 "cities": [
@@ -6979,18 +6970,21 @@
                         "py/id": 156
                     },
                     {
-                        "py/id": 1110
+                        "py/id": 1109
                     },
                     {
-                        "py/id": 1111
+                        "py/id": 1110
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Ukraine\u2019s air defenders claim two major firsts, but missiles evading interception kill 7",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://edition.cnn.com/world/2024/04/19/europe/ukraine-air-defense-russian-bomber-dnipropetrovsk-intl/index.html"
+                    },
+                    {
+                        "py/id": 1111
                     },
                     {
                         "py/id": 1112
@@ -7002,21 +6996,18 @@
                         "py/id": 1114
                     },
                     {
-                        "py/id": 1115
-                    },
-                    {
                         "py/object": "borders.Article",
                         "headline": "Ukraine \u2018will lose the war\u2019 if US fails to approve aid, says Zelensky",
                         "date": {
-                            "py/id": 262
+                            "py/id": 261
                         },
                         "source": "https://edition.cnn.com/world/2024/04/08/europe/ukraine-lose-war-us-congress-zelensky-intl/index.html"
                     },
                     {
-                        "py/id": 1118
+                        "py/id": 1117
                     },
                     {
-                        "py/id": 1119
+                        "py/id": 1118
                     },
                     {
                         "py/object": "borders.Article",
@@ -7025,7 +7016,7 @@
                         "source": "https://www.bbc.com/news/world-us-canada-68848277"
                     },
                     {
-                        "py/id": 1120
+                        "py/id": 1119
                     },
                     {
                         "py/object": "borders.Article",
@@ -7034,7 +7025,7 @@
                         "source": "https://www.bbc.com/news/world-europe-68843542"
                     },
                     {
-                        "py/id": 1124
+                        "py/id": 1123
                     },
                     {
                         "py/object": "borders.Article",
@@ -7082,7 +7073,7 @@
                         "py/id": 110
                     },
                     {
-                        "py/id": 1125
+                        "py/id": 1124
                     },
                     {
                         "py/object": "borders.Article",
@@ -7103,7 +7094,7 @@
                         "source": "https://www.theguardian.com/commentisfree/2024/apr/21/observer-view-world-dithers-ukraine-plight-grows-more-precarious"
                     },
                     {
-                        "py/id": 574
+                        "py/id": 573
                     },
                     {
                         "py/object": "borders.Article",
@@ -7130,7 +7121,7 @@
                         "source": "https://www.euronews.com/2024/03/22/two-years-on-how-is-ukraine-adapting-to-a-long-term-war"
                     },
                     {
-                        "py/id": 1128
+                        "py/id": 1127
                     },
                     {
                         "py/id": 112
@@ -7142,10 +7133,10 @@
                         "source": "https://www.euronews.com/video/2024/04/20/nato-chief-urges-allies-to-give-air-defence-systems-to-ukraine"
                     },
                     {
-                        "py/id": 1129
+                        "py/id": 1128
                     },
                     {
-                        "py/id": 1130
+                        "py/id": 1129
                     },
                     {
                         "py/object": "borders.Article",
@@ -7154,7 +7145,7 @@
                         "source": "https://www.euronews.com/2024/04/19/mike-pence-us-will-continue-to-support-ukraine"
                     },
                     {
-                        "py/id": 1131
+                        "py/id": 1130
                     }
                 ],
                 "cities": [
@@ -7244,10 +7235,10 @@
                         "source": "https://www.theguardian.com/football/live/2024/apr/21/fulham-v-liverpool-premier-league-live"
                     },
                     {
-                        "py/id": 487
+                        "py/id": 486
                     },
                     {
-                        "py/id": 491
+                        "py/id": 490
                     },
                     {
                         "py/id": 190
@@ -7318,7 +7309,7 @@
                         "py/object": "borders.Article",
                         "headline": "Australian Jewish Association via X",
                         "date": {
-                            "py/id": 304
+                            "py/id": 303
                         },
                         "source": "https://edition.cnn.com/world/2024/04/18/australia/australia-disinformation-stabbing-attacks-intl-hnk/index.html"
                     },
@@ -7326,7 +7317,7 @@
                         "py/object": "borders.Article",
                         "headline": "Stabbing of bishop at Sydney church a \u2018terrorist act,\u2019 police say",
                         "date": {
-                            "py/id": 304
+                            "py/id": 303
                         },
                         "source": "https://edition.cnn.com/world/2024/04/15/australia/sydney-australia-stabbing-wakeley-intl/index.html"
                     },
@@ -7334,7 +7325,7 @@
                         "py/object": "borders.Article",
                         "headline": "Sydney mall attacker may have targeted women, police say, as more details emerge of his six victims",
                         "date": {
-                            "py/id": 304
+                            "py/id": 303
                         },
                         "source": "https://edition.cnn.com/world/2024/04/15/australia/australia-sydney-mall-attacker-targeted-women-victims-intl-hnk/index.html"
                     },
@@ -7342,7 +7333,7 @@
                         "py/object": "borders.Article",
                         "headline": "Blueberry grown in Australia breaks record as world\u2019s heaviest",
                         "date": {
-                            "py/id": 304
+                            "py/id": 303
                         },
                         "source": "https://edition.cnn.com/world/2024/03/15/australia/worlds-heaviest-blueberry-scli-intl/index.html"
                     },
@@ -7350,7 +7341,7 @@
                         "py/object": "borders.Article",
                         "headline": "Alleged murder of Sydney couple by police officer reopens old wounds in LGBTQ+ community",
                         "date": {
-                            "py/id": 304
+                            "py/id": 303
                         },
                         "source": "https://edition.cnn.com/world/2024/03/01/australia/australia-police-murder-mardi-gras-intl-hnk/index.html"
                     },
@@ -7358,18 +7349,18 @@
                         "py/object": "borders.Article",
                         "headline": "Australian police find bodies in search for missing couple",
                         "date": {
-                            "py/id": 304
+                            "py/id": 303
                         },
                         "source": "https://edition.cnn.com/world/2024/02/27/australia/australia-missing-gay-couple-bodies-intl-hnk/index.html"
                     },
                     {
-                        "py/id": 360
+                        "py/id": 359
                     },
                     {
                         "py/object": "borders.Article",
                         "headline": "Former Australian bishop charged with historical sex offenses",
                         "date": {
-                            "py/id": 304
+                            "py/id": 303
                         },
                         "source": "https://edition.cnn.com/world/2024/02/22/australia/australia-bishop-saunders-charged-historical-sex-offenses-intl-hnk/index.html"
                     },
@@ -7377,7 +7368,7 @@
                         "py/object": "borders.Article",
                         "headline": "16-year-old Taylor Swift fan\u00a0killed on way to Australia concert",
                         "date": {
-                            "py/id": 304
+                            "py/id": 303
                         },
                         "source": "https://edition.cnn.com/world/2024/02/17/australia/teenage-taylor-swift-fan-dies-australia-era-tours-intl-hnk/index.html"
                     },
@@ -7385,7 +7376,7 @@
                         "py/object": "borders.Article",
                         "headline": "Rare Sydney Harbour shark attack puts swimmers on edge",
                         "date": {
-                            "py/id": 304
+                            "py/id": 303
                         },
                         "source": "https://edition.cnn.com/world/2024/01/30/australia/australia-sydney-harbour-shark-attack-hnk-intl/index.html"
                     },
@@ -7531,7 +7522,7 @@
                         "source": "https://www.theguardian.com/australia-news/2024/apr/22/bra-gum-tree-australia-menindee-canberra"
                     },
                     {
-                        "py/id": 322
+                        "py/id": 321
                     },
                     {
                         "py/object": "borders.Article",
@@ -7573,7 +7564,7 @@
                         "source": "https://www.theguardian.com/australia-news/2014/dec/10/australian-politics-subscribe-by-email"
                     },
                     {
-                        "py/id": 1126
+                        "py/id": 1125
                     },
                     {
                         "py/id": 188
@@ -7728,15 +7719,15 @@
                         "py/object": "borders.Article",
                         "headline": "Court orders millions in compensation for survivors of New Zealand\u2019s deadly volcanic eruption",
                         "date": {
-                            "py/id": 304
+                            "py/id": 303
                         },
                         "source": "https://edition.cnn.com/world/2024/03/01/australia/new-zealand-court-orders-compensation-for-volcanic-eruption-intl-hnk/index.html"
                     },
                     {
-                        "py/id": 334
+                        "py/id": 333
                     },
                     {
-                        "py/id": 335
+                        "py/id": 334
                     },
                     {
                         "py/object": "borders.Article",
@@ -7751,7 +7742,7 @@
                         "source": "https://www.theguardian.com/world/2024/apr/18/ram-new-zealand-elderly-couple-found-dead-farm"
                     },
                     {
-                        "py/id": 1261
+                        "py/id": 1260
                     }
                 ],
                 "cities": [
