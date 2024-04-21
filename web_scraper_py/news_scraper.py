@@ -116,6 +116,7 @@ def update_news():
     """
     print("updating news. ", datetime.utcnow().strftime(
         '%B %D %Y - %H:%M:%S'))  # was %d
+
     articles = scrape_all_news_pages(news_dict)
 
     assign_articles_to_country(articles, borders.continent_list)
@@ -133,10 +134,4 @@ if __name__ == "__main__":
     borders.get_cities_from_csv(
         "location_data/capital_and_large_cities.csv", borders.continent_list)
 
-    last_update_date_utc = datetime.utcnow()
     update_news()
-
-    while True:
-        if (datetime.utcnow().hour - last_update_date_utc.hour) >= 6:
-            update_news()
-        break
