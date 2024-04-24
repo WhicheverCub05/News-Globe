@@ -19,7 +19,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gEGBUhEwXhnw=="
+                                    "B+gEGBUjOgsCBQ=="
                                 ]
                             ]
                         },
@@ -66,7 +66,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gEGBUhEgijjw=="
+                                    "B+gEGBUjOQ2uHQ=="
                                 ]
                             ]
                         },
@@ -294,7 +294,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gEGBUhFAfzDw=="
+                                    "B+gEGBUjOwfk7Q=="
                                 ]
                             ]
                         },
@@ -414,7 +414,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gEGBUhFQSVmw=="
+                                    "B+gEGBUjOw39aw=="
                                 ]
                             ]
                         },
@@ -430,7 +430,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gEGBUhFQrWig=="
+                                    "B+gEGBUkAATJSA=="
                                 ]
                             ]
                         },
@@ -446,7 +446,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gEGBUhFgeq8A=="
+                                    "B+gEGBUkAQOk1Q=="
                                 ]
                             ]
                         },
@@ -1373,7 +1373,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gEGBUhFgGiXA=="
+                                    "B+gEGBUkAAyPEg=="
                                 ]
                             ]
                         },
@@ -2061,7 +2061,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gEGBUhEg65uw=="
+                                    "B+gEGBUjOgSQdw=="
                                 ]
                             ]
                         },
@@ -2194,21 +2194,9 @@
                     },
                     {
                         "py/object": "borders.Article",
-                        "headline": "Inside Guardian Weekly                Israel and Iran cross the line: inside the 26 April Guardian Weekly",
-                        "date": "",
-                        "source": "https://www.theguardian.com/news/2024/apr/24/israel-and-iran-cross-the-line-inside-the-26-april-guardian-weekly"
-                    },
-                    {
-                        "py/object": "borders.Article",
                         "headline": "Israel and Iran cross the line: inside the 26 April Guardian Weekly",
                         "date": "",
                         "source": "https://www.theguardian.com/news/2024/apr/24/israel-and-iran-cross-the-line-inside-the-26-april-guardian-weekly"
-                    },
-                    {
-                        "py/object": "borders.Article",
-                        "headline": "Rights and freedom                  Iranian women violently dragged from streets by police amid hijab crackdown",
-                        "date": "",
-                        "source": "https://www.theguardian.com/global-development/2024/apr/24/iranian-women-violently-dragged-from-streets-by-police-amid-hijab-crackdown"
                     },
                     {
                         "py/object": "borders.Article",
@@ -2622,7 +2610,7 @@
                         "source": "https://edition.cnn.com/world/videos/sports/2024/01/11/exp-african-voices-011108aseg2-cnni-sports.cnn"
                     },
                     {
-                        "py/id": 274
+                        "py/id": 272
                     },
                     {
                         "py/id": 84
@@ -2634,7 +2622,7 @@
                         "py/id": 91
                     },
                     {
-                        "py/id": 320
+                        "py/id": 318
                     },
                     {
                         "py/id": 110
@@ -3669,7 +3657,7 @@
                                     "py/type": "datetime.datetime"
                                 },
                                 [
-                                    "B+gEGBUhEwz9pA=="
+                                    "B+gEGBUjOwHIJw=="
                                 ]
                             ]
                         },
@@ -3705,7 +3693,7 @@
                 "code": "MAR",
                 "articles": [
                     {
-                        "py/id": 335
+                        "py/id": 333
                     },
                     {
                         "py/id": 63
@@ -3735,7 +3723,7 @@
                         "source": "https://www.theguardian.com/world/2024/apr/20/tory-mp-from-slave-owning-family-set-to-gain-3m-from-sale-of-former-plantation"
                     },
                     {
-                        "py/id": 276
+                        "py/id": 274
                     },
                     {
                         "py/object": "borders.Article",
@@ -3872,10 +3860,10 @@
                         "source": "https://edition.cnn.com/world/videos/business/2023/08/31/nigerian-star-fireboy-dml-larry-madowo-pkg-08266aseg1-cnni-business.cnn"
                     },
                     {
-                        "py/id": 333
+                        "py/id": 331
                     },
                     {
-                        "py/id": 334
+                        "py/id": 332
                     },
                     {
                         "py/object": "borders.Article",
@@ -3976,6 +3964,12 @@
                 "code": "NGA",
                 "articles": [
                     {
+                        "py/id": 558
+                    },
+                    {
+                        "py/id": 559
+                    },
+                    {
                         "py/id": 560
                     },
                     {
@@ -3991,16 +3985,16 @@
                         "py/id": 564
                     },
                     {
-                        "py/id": 565
+                        "py/id": 331
+                    },
+                    {
+                        "py/id": 332
                     },
                     {
                         "py/id": 566
                     },
                     {
-                        "py/id": 333
-                    },
-                    {
-                        "py/id": 334
+                        "py/id": 567
                     },
                     {
                         "py/id": 568
@@ -4012,10 +4006,10 @@
                         "py/id": 570
                     },
                     {
-                        "py/id": 571
+                        "py/id": 572
                     },
                     {
-                        "py/id": 572
+                        "py/id": 573
                     },
                     {
                         "py/id": 574
@@ -4031,12 +4025,6 @@
                     },
                     {
                         "py/id": 578
-                    },
-                    {
-                        "py/id": 579
-                    },
-                    {
-                        "py/id": 580
                     }
                 ],
                 "cities": [
@@ -4203,7 +4191,7 @@
                 "code": "SYC",
                 "articles": [
                     {
-                        "py/id": 342
+                        "py/id": 340
                     }
                 ],
                 "cities": [
@@ -4748,12 +4736,6 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Body of Canadian dad missing after he dies in Cuba",
-                        "date": "news_item_date",
-                        "source": "https://www.bbc.com/news/world-us-canada-68885840"
-                    },
-                    {
-                        "py/object": "borders.Article",
                         "headline": "A littler splash and a Cuban mystery",
                         "date": "",
                         "source": "https://www.theguardian.com/community/gallery/2024/apr/24/a-littler-splash-and-a-cuban-mystery-readers-best-photos"
@@ -5232,7 +5214,7 @@
                 "articles": [
                     {
                         "py/object": "borders.Article",
-                        "headline": "Pressure builds on Columbia president to resign",
+                        "headline": "US Speaker calls on Columbia president to resign",
                         "date": "news_item_date",
                         "source": "https://www.bbc.com/news/world-us-canada-68893185"
                     },
@@ -5493,7 +5475,7 @@
                 "code": "BRA",
                 "articles": [
                     {
-                        "py/id": 337
+                        "py/id": 335
                     },
                     {
                         "py/object": "borders.Article",
@@ -5502,7 +5484,7 @@
                         "source": "https://www.bbc.com/news/world-latin-america-68772590"
                     },
                     {
-                        "py/id": 341
+                        "py/id": 339
                     },
                     {
                         "py/object": "borders.Article",
@@ -5511,7 +5493,7 @@
                         "source": "https://www.aljazeera.com/sports/2024/4/17/brazil-football-legend-romario-announces-comeback-at-58"
                     },
                     {
-                        "py/id": 296
+                        "py/id": 294
                     },
                     {
                         "py/object": "borders.Article",
@@ -5601,7 +5583,7 @@
                         "source": "https://edition.cnn.com/world/2024/04/09/americas/colombia-bogota-water-rationing-drought-intl-latam/index.html"
                     },
                     {
-                        "py/id": 870
+                        "py/id": 867
                     },
                     {
                         "py/object": "borders.Article",
@@ -5630,10 +5612,10 @@
                         "source": "https://www.aljazeera.com/news/2024/4/22/tens-of-thousands-protest-potential-reforms-in-colombia"
                     },
                     {
-                        "py/id": 857
+                        "py/id": 854
                     },
                     {
-                        "py/id": 858
+                        "py/id": 855
                     }
                 ],
                 "cities": [
@@ -5678,10 +5660,10 @@
                         "source": "https://edition.cnn.com/world/2024/04/07/americas/outrage-mexican-embassy-ecuador-intl/index.html"
                     },
                     {
-                        "py/id": 782
+                        "py/id": 779
                     },
                     {
-                        "py/id": 783
+                        "py/id": 780
                     },
                     {
                         "py/object": "borders.Article",
@@ -5761,7 +5743,7 @@
                 "code": "PER",
                 "articles": [
                     {
-                        "py/id": 336
+                        "py/id": 334
                     },
                     {
                         "py/object": "borders.Article",
@@ -6075,7 +6057,7 @@
                 "code": "FIN",
                 "articles": [
                     {
-                        "py/id": 407
+                        "py/id": 405
                     }
                 ],
                 "cities": [
@@ -6109,7 +6091,7 @@
                         "source": "https://www.theguardian.com/travel/2024/apr/24/rail-route-of-the-month-avignon-to-lyon-france-wine"
                     },
                     {
-                        "py/id": 765
+                        "py/id": 762
                     },
                     {
                         "py/object": "borders.Article",
@@ -6118,7 +6100,7 @@
                         "source": "https://www.euronews.com/video/2021/09/24/victim-care-and-mass-attacks-how-has-france-changed-since-2015"
                     },
                     {
-                        "py/id": 960
+                        "py/id": 957
                     },
                     {
                         "py/object": "borders.Article",
@@ -6223,7 +6205,7 @@
                 "code": "DEU",
                 "articles": [
                     {
-                        "py/id": 419
+                        "py/id": 417
                     },
                     {
                         "py/id": 70
@@ -6245,7 +6227,7 @@
                         "source": "https://edition.cnn.com/world/2024/04/12/europe/israeli-holocaust-germany-payout-october-7-intl/index.html"
                     },
                     {
-                        "py/id": 569
+                        "py/id": 567
                     },
                     {
                         "py/object": "borders.Article",
@@ -6334,6 +6316,12 @@
                 "code": "GRC",
                 "articles": [
                     {
+                        "py/id": 405
+                    },
+                    {
+                        "py/id": 406
+                    },
+                    {
                         "py/id": 407
                     },
                     {
@@ -6343,19 +6331,13 @@
                         "py/id": 409
                     },
                     {
-                        "py/id": 410
-                    },
-                    {
-                        "py/id": 411
-                    },
-                    {
                         "py/object": "borders.Article",
                         "headline": "Why are plans to build more wind farms in Greece so controversial?",
                         "date": "",
                         "source": "https://www.euronews.com/2024/04/12/why-are-plans-to-build-more-onshore-wind-farms-in-greece-so-controversial"
                     },
                     {
-                        "py/id": 412
+                        "py/id": 410
                     }
                 ],
                 "cities": [
@@ -6600,7 +6582,7 @@
                         "source": "https://edition.cnn.com/world/2024/03/07/politics/general-warns-russia-influence-africa/index.html"
                     },
                     {
-                        "py/id": 567
+                        "py/id": 565
                     },
                     {
                         "py/id": 73
@@ -6646,7 +6628,7 @@
                         "source": "https://www.cnn.com/world/europe/ukraine"
                     },
                     {
-                        "py/id": 280
+                        "py/id": 278
                     },
                     {
                         "py/object": "borders.Article",
@@ -6698,7 +6680,7 @@
                         "source": "https://www.aljazeera.com/news/2024/4/24/ukraine-wins-bipartisan-us-support-strikes-russia-from-afar"
                     },
                     {
-                        "py/id": 573
+                        "py/id": 571
                     },
                     {
                         "py/object": "borders.Article",
@@ -6794,7 +6776,7 @@
                         "source": "https://www.euronews.com/2024/04/23/russian-forces-gain-ground-in-eastern-ukraine"
                     },
                     {
-                        "py/id": 282
+                        "py/id": 280
                     },
                     {
                         "py/object": "borders.Article",
@@ -6803,7 +6785,7 @@
                         "source": "https://www.euronews.com/video/2024/04/23/watch-russia-strikes-odesa-injuring-at-least-nine-civilians"
                     },
                     {
-                        "py/id": 548
+                        "py/id": 546
                     }
                 ],
                 "cities": [
@@ -6951,10 +6933,10 @@
                         "source": "https://www.africanews.com/2024/04/23/usain-bolt-hails-jude-bellinghams-impact-at-real-madrid/"
                     },
                     {
-                        "py/id": 1030
+                        "py/id": 1027
                     },
                     {
-                        "py/id": 1031
+                        "py/id": 1028
                     }
                 ],
                 "cities": [
@@ -7009,16 +6991,16 @@
                         "source": "https://edition.cnn.com/world/2024/04/22/europe/ukraine-awaits-us-military-aid-intl-cmd/index.html"
                     },
                     {
+                        "py/id": 1103
+                    },
+                    {
+                        "py/id": 1104
+                    },
+                    {
+                        "py/id": 1105
+                    },
+                    {
                         "py/id": 1106
-                    },
-                    {
-                        "py/id": 1107
-                    },
-                    {
-                        "py/id": 1108
-                    },
-                    {
-                        "py/id": 1109
                     },
                     {
                         "py/id": 199
@@ -7048,7 +7030,7 @@
                         "source": "https://www.bbc.com/news/world-europe-68872783"
                     },
                     {
-                        "py/id": 1113
+                        "py/id": 1110
                     },
                     {
                         "py/object": "borders.Article",
@@ -7063,16 +7045,16 @@
                         "source": "https://www.aljazeera.com/news/2024/4/24/biden-signs-law-securing-billions-in-us-aid-for-ukraine-israel"
                     },
                     {
-                        "py/id": 1115
+                        "py/id": 1112
                     },
                     {
                         "py/id": 135
                     },
                     {
-                        "py/id": 1116
+                        "py/id": 1113
                     },
                     {
-                        "py/id": 1119
+                        "py/id": 1116
                     },
                     {
                         "py/id": 137
@@ -7087,13 +7069,13 @@
                         "py/id": 138
                     },
                     {
+                        "py/id": 1117
+                    },
+                    {
+                        "py/id": 1025
+                    },
+                    {
                         "py/id": 1120
-                    },
-                    {
-                        "py/id": 1028
-                    },
-                    {
-                        "py/id": 1123
                     },
                     {
                         "py/object": "borders.Article",
@@ -7108,13 +7090,13 @@
                         "source": "https://www.euronews.com/my-europe/2024/04/22/patriots-for-ukraine-calls-grow-for-eu-countries-to-step-up-donations-of-air-defence-syste"
                     },
                     {
-                        "py/id": 1126
+                        "py/id": 1123
                     },
                     {
-                        "py/id": 1127
+                        "py/id": 1124
                     },
                     {
-                        "py/id": 263
+                        "py/id": 261
                     },
                     {
                         "py/object": "borders.Article",
@@ -7132,10 +7114,10 @@
                         "source": "https://www.euronews.com/2024/04/24/us-senate-passes-95-billion-foreign-aid-package-for-ukraine-and-israel"
                     },
                     {
-                        "py/id": 1129
+                        "py/id": 1126
                     },
                     {
-                        "py/id": 1130
+                        "py/id": 1127
                     },
                     {
                         "py/object": "borders.Article",
@@ -7198,7 +7180,7 @@
                         "source": "https://edition.cnn.com/world/2024/04/24/uk/horses-running-loose-in-central-london-say-police-intl-scli-gbr/index.html"
                     },
                     {
-                        "py/id": 484
+                        "py/id": 482
                     },
                     {
                         "py/object": "borders.Article",
@@ -7207,7 +7189,7 @@
                         "source": "https://www.aljazeera.com/sports/liveblog/2024/4/24/live-everton-vs-liverpool-premier-league-football"
                     },
                     {
-                        "py/id": 504
+                        "py/id": 502
                     },
                     {
                         "py/object": "borders.Article",
@@ -7222,7 +7204,7 @@
                         "source": "https://www.theguardian.com/lifeandstyle/2024/apr/24/a-moment-that-changed-me-van-joyriders-new-zealand-london"
                     },
                     {
-                        "py/id": 543
+                        "py/id": 541
                     },
                     {
                         "py/object": "borders.Article",
@@ -7243,10 +7225,10 @@
                         "source": "https://www.euronews.com/2024/04/24/several-military-horses-run-wild-in-london-injuring-four-people"
                     },
                     {
-                        "py/id": 508
+                        "py/id": 506
                     },
                     {
-                        "py/id": 509
+                        "py/id": 507
                     },
                     {
                         "py/id": 227
@@ -7317,7 +7299,7 @@
                         "py/object": "borders.Article",
                         "headline": "\u2018I have nothing against moms\u2019: Comedian Arj Barker defends move that\u2019s caused controversy in Australia",
                         "date": {
-                            "py/id": 531
+                            "py/id": 529
                         },
                         "source": "https://edition.cnn.com/world/2024/04/23/australia/us-comedian-arj-barker-mother-baby-melbourne-intl-hnk/index.html"
                     },
@@ -7325,7 +7307,7 @@
                         "py/object": "borders.Article",
                         "headline": "Australian Jewish Association via X",
                         "date": {
-                            "py/id": 531
+                            "py/id": 529
                         },
                         "source": "https://edition.cnn.com/world/2024/04/18/australia/australia-disinformation-stabbing-attacks-intl-hnk/index.html"
                     },
@@ -7333,7 +7315,7 @@
                         "py/object": "borders.Article",
                         "headline": "Stabbing of bishop at Sydney church a \u2018terrorist act,\u2019 police say",
                         "date": {
-                            "py/id": 531
+                            "py/id": 529
                         },
                         "source": "https://edition.cnn.com/world/2024/04/15/australia/sydney-australia-stabbing-wakeley-intl/index.html"
                     },
@@ -7341,7 +7323,7 @@
                         "py/object": "borders.Article",
                         "headline": "Sydney mall attacker may have targeted women, police say, as more details emerge of his six victims",
                         "date": {
-                            "py/id": 531
+                            "py/id": 529
                         },
                         "source": "https://edition.cnn.com/world/2024/04/15/australia/australia-sydney-mall-attacker-targeted-women-victims-intl-hnk/index.html"
                     },
@@ -7349,7 +7331,7 @@
                         "py/object": "borders.Article",
                         "headline": "Blueberry grown in Australia breaks record as world\u2019s heaviest",
                         "date": {
-                            "py/id": 531
+                            "py/id": 529
                         },
                         "source": "https://edition.cnn.com/world/2024/03/15/australia/worlds-heaviest-blueberry-scli-intl/index.html"
                     },
@@ -7357,7 +7339,7 @@
                         "py/object": "borders.Article",
                         "headline": "Alleged murder of Sydney couple by police officer reopens old wounds in LGBTQ+ community",
                         "date": {
-                            "py/id": 531
+                            "py/id": 529
                         },
                         "source": "https://edition.cnn.com/world/2024/03/01/australia/australia-police-murder-mardi-gras-intl-hnk/index.html"
                     },
@@ -7365,7 +7347,7 @@
                         "py/object": "borders.Article",
                         "headline": "Australian state orders 30,000 people to evacuate due to \u2018catastrophic\u2019 fire risk",
                         "date": {
-                            "py/id": 531
+                            "py/id": 529
                         },
                         "source": "https://edition.cnn.com/world/2024/02/28/australia/australia-victoria-wildfire-intl-hnk/index.html"
                     },
@@ -7373,7 +7355,7 @@
                         "py/object": "borders.Article",
                         "headline": "Photographer accuses Taylor Swift\u2019s father of assault in Australia",
                         "date": {
-                            "py/id": 531
+                            "py/id": 529
                         },
                         "source": "https://edition.cnn.com/world/2024/02/27/australia/taylor-swift-father-australia-police-intl-hnk/index.html"
                     },
@@ -7381,7 +7363,7 @@
                         "py/object": "borders.Article",
                         "headline": "Australian police officer charged with murdering missing couple",
                         "date": {
-                            "py/id": 531
+                            "py/id": 529
                         },
                         "source": "https://edition.cnn.com/world/2024/02/23/australia/australia-police-murder-charge-missing-gay-couple-nsw-intl-hnk/index.html"
                     },
@@ -7389,7 +7371,7 @@
                         "py/object": "borders.Article",
                         "headline": "Australia unveils plan for largest navy buildup since World War II",
                         "date": {
-                            "py/id": 531
+                            "py/id": 529
                         },
                         "source": "https://edition.cnn.com/world/2024/02/20/australia/australia-navy-buildup-intl-hnk-ml/index.html"
                     },
@@ -7397,7 +7379,7 @@
                         "py/object": "borders.Article",
                         "headline": "Fears grow for runner missing in dense Australian bushland for six days",
                         "date": {
-                            "py/id": 531
+                            "py/id": 529
                         },
                         "source": "https://edition.cnn.com/world/2024/02/09/australia/fears-grow-for-australian-runner-missing-in-dense-bushland-for-six-days-intl-hnk/index.html"
                     },
@@ -7585,7 +7567,7 @@
                         "source": "https://www.theguardian.com/australia-news/2024/apr/24/elon-musks-x-was-asked-to-remove-65-tweets-with-video-of-sydney-church-stabbing-court-documents-show"
                     },
                     {
-                        "py/id": 1027
+                        "py/id": 1024
                     },
                     {
                         "py/object": "borders.Article",
@@ -7734,13 +7716,13 @@
                 "code": "NZL",
                 "articles": [
                     {
-                        "py/id": 349
+                        "py/id": 347
                     },
                     {
-                        "py/id": 1193
+                        "py/id": 1190
                     },
                     {
-                        "py/id": 1194
+                        "py/id": 1191
                     },
                     {
                         "py/object": "borders.Article",
