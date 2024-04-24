@@ -111,8 +111,9 @@ news_date {
   right: 15px;
   overflow: auto;
   resize: both;
-  direction: rtl;
   border-radius: 10px;
+  direction: ltr;
+
   text-align: center;
   z-index: 100;
   display: block;
