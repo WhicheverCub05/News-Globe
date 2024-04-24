@@ -145,7 +145,7 @@ function loadGlobe() {
   loader.load('models/NASA_moon.glb', async function (gltf) {
     //globeObject.add
     moonObject = gltf.scene.children[0];
-    moonObject.scale.multiplyScalar(0.0005);
+    moonObject.scale.multiplyScalar(0.0012);
     //moonObject.position.setX(20);
     moonObject.castShadow = true;
     moonObject.receiveShadow = true;
@@ -157,7 +157,7 @@ function loadGlobe() {
     moonGroup.add(moonObject);
     scene.add(moonGroup);
 
-    moonObject.position.set(20, 0, 0);
+    moonObject.position.set(30, 0, 0);
 
     animateMoon();
   });
