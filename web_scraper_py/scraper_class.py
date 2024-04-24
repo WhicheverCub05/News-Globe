@@ -206,7 +206,10 @@ class al_jazeera_scraper(web_scraper):
         for i in range(len(news_items_content)):
             headline = self.format_headline(news_items_content[i].get_text())
             source = self.format_source(news_items_content[i]['href'])
-            date = self.format_date(news_items_date[i].get_text())
+            date = "-"
+            if i <= len(date):
+                date = self.format_date(news_items_date[i].get_text())
+
             if not headline or not source:
                 continue
             self.articles.append(Article(headline, source, date))
