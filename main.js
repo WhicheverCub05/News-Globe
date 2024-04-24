@@ -180,7 +180,7 @@ function animateGlobe() {
 // rotate moon around earth
 function animateMoon() {
   requestAnimationFrame(animateMoon);
-  moonGroup.rotation.y += 0.00015;
+  moonGroup.rotation.y -= 0.00015;
   renderer.render(scene, camera);
 }
 
