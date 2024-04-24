@@ -145,7 +145,7 @@ function loadGlobe() {
   loader.load('models/NASA_moon.glb', async function (gltf) {
     //globeObject.add
     moonObject = gltf.scene.children[0];
-    moonObject.scale.multiplyScalar(0.001);
+    moonObject.scale.multiplyScalar(0.0005);
     //moonObject.position.setX(20);
     moonObject.castShadow = true;
     moonObject.receiveShadow = true;
@@ -180,7 +180,7 @@ function animateGlobe() {
 // rotate moon around earth
 function animateMoon() {
   requestAnimationFrame(animateMoon);
-  moonGroup.rotation.y += 0.00015;
+  moonGroup.rotation.y -= 0.00015;
   renderer.render(scene, camera);
 }
 
@@ -229,7 +229,6 @@ function toggleAutoSpin() {
     auto_spin = true;
     animateGlobe();
   }
-
   console.log('toggle auto spin. now:', auto_spin);
 }
 
