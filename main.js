@@ -180,7 +180,7 @@ function animateGlobe() {
 // rotate moon around earth
 function animateMoon() {
   requestAnimationFrame(animateMoon);
-  moonGroup.rotation.y -= 0.00015;
+  moonGroup.rotation.y += 0.00015;
   renderer.render(scene, camera);
 }
 
@@ -264,6 +264,8 @@ function populateNews(country_name) {
     return 0;
   }
 
+  sortArticlesRandom(country.articles);
+
   const dFrag = document.createDocumentFragment();
   for (let article_index in country.articles) {
     if (country.articles[article_index].headline) {
@@ -289,6 +291,22 @@ function populateNews(country_name) {
   }
   document.getElementById('news').appendChild(dFrag);
   console.log('articles added: ', article_count);
+}
+
+// randomises the articles order
+function sortArticlesRandom(articles) {
+  let current_index = articles.length;
+
+  while (current_index != 0) {
+    let random_index = Math.floor(Math.random() * current_index);
+    current_index--;
+
+    [articles[current_index], articles[random_index]] = [
+      articles[random_index],
+      articles[current_index],
+    ];
+  }
+  return articles;
 }
 
 // removes current articles on display so another country's articles can take place
