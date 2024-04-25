@@ -85,6 +85,10 @@ news_date {
   text-align: right;
 }
 
+#loading_bay {
+  height: 50%;
+}
+
 #globe_renderer {
   z-index: 0;
   position: relative;

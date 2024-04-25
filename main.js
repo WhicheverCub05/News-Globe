@@ -118,7 +118,13 @@ function loadGlobe() {
       animateGlobe();
     },
     function (xhr) {
-      console.log((xhr.loaded / xhr.total) * 100, ' % loaded');
+      // console.log((xhr.loaded / xhr.total) * 100, ' % loaded');
+      if (xhr.loaded >= xhr.total) {
+        let loading_bar = document.getElementById('loading_bay');
+        if (loading_bar) {
+          loading_bar.remove();
+        }
+      }
     },
     function (error) {
       console.log('an error happened', error);
