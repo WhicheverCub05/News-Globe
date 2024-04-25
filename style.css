@@ -58,6 +58,7 @@ h3 {
   top: -8px;
   z-index: 100;
   padding: 0px;
+  direction: ltr;
 }
 
 about_text {
@@ -103,24 +104,26 @@ news_date {
 #news {
   padding-top: 10px;
   position: fixed;
-  height: 55%;
-  min-height: 300px;
+  height: 15%;
+  min-height: 100px;
+  max-height: 500px;
   width: 30%;
   min-width: 300px;
+  max-width: 600px;
   top: 22%;
   right: 15px;
   overflow: auto;
   resize: both;
   border-radius: 10px;
-  direction: ltr;
+  direction: rtl;
   text-align: center;
   z-index: 100;
   display: block;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: white;
-  font-style: bold;
   border: solid;
   background: rgba(102, 150, 172, 0.35);
+  transition: height 1s;
 }
 
 #article {
@@ -128,12 +131,14 @@ news_date {
   border: 2px solid cadetblue;
   border-radius: 4px;
   height: 26%;
+  min-height: 100px;
   margin: 5px;
   font-family: Verdana;
   color: rgb(206, 190, 82);
   text-align: left;
   background: rgba(51, 72, 81, 0.8);
   overflow: auto;
+  direction: ltr;
 }
 
 a,
@@ -183,9 +188,11 @@ a:focus {
 }
 
 #aboutSidebarButton {
-  padding: 10px;
+  padding: 3px;
+  font-size: small;
+  border-radius: 0px;
   color: rgb(145, 145, 145);
-  background: #131313;
+  background: #000000;
   border-color: #000000;
 }
 

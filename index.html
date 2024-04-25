@@ -40,8 +40,8 @@
   </head>
   <body style:"background-color:#000000;">
     <div class="whole_page">
-      <script type="module" src="/globe/main.js"></script> 
-      <!--script type="module" src="/main.js" id="globe_renderer"></script-->
+      <!--script type="module" src="/globe/main.js"></script--> 
+      <script type="module" src="/main.js" id="globe_renderer"></script>
       <div class="page_interactible">
         <button type="button" id="aboutSidebarButton" class="btn btn-success">
           <i class="fas fa-align-left"></i>
@@ -54,28 +54,28 @@
         <ul class="list-unstyled components">
           <about_text>
             Welcome to news globe. This open-source site collects news stories
-            from different sources everyday so you can track the latest news for
+            from different sources everyday so you can track the latest news from
             your country of choice.
           </about_text>
           <about_text
             class="page_interactible"
             href="https://github.com/WhicheverCub05/News-Globe"
           >
-            github/WhicheverCub05/News-Globe
+            github.com/WhicheverCub05/News-Globe
           </about_text>
         </ul>
       </nav>
 
       <div id="news" class="page_interactible">
-        <a id="country_name">Select a country</a>
+        <a id="country_name">Find your country here</a>
         <!--div class="input-group-mb3"></div-->
         <div class="input-group mb-3" id="input_country_code">
           <input
             type="text"
             class="form-control"
             placeholder="country name"
-            id="user_country_code"
-            name="user_country_code"
+            id="user_country_name"
+            name="user_country_name"
             aria-describedby="basic-addon2"/>
           <div class="input-group-append">
             <button
