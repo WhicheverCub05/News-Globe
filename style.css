@@ -86,7 +86,11 @@ news_date {
 }
 
 #loading_bay {
-  height: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 #globe_renderer {
