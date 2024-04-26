@@ -22,6 +22,8 @@ news_dict['Euro News'] = sc.euronews_scraper, ['https://www.euronews.com/',
                                                'my-europe', 'my-europe/europe-news', 'news/international', 'programs/world']
 news_dict['Africa News'] = sc.africanews_scraper, ['https://www.africanews.com/',
                                                    'news', 'business', 'sport', 'culture', 'science-technology']
+news_dict['AP News'] = sc.ap_news_scraper, ['https://apnews.com/hub/', 'asia-pacific',
+                                            'latin-america', 'europe', 'africa', 'middle-east', 'china', 'australia']
 news_dict['Reuters'] = sc.reuters_scraper, ['https://www.reuters.com/', 'world', 'world/africa',
                                             'world/china', 'world/europe', 'world/india', 'world/japan', 'world/middle-east', 'world/americas']
 

@@ -5,6 +5,7 @@ import requests
 import re
 import time
 import pandas as pd
+from datetime import datetime
 
 # from selenium import webdriver
 # from selenium.webdriver import Chrome
@@ -55,7 +56,7 @@ class web_scraper:
         return headline
 
     def format_source(self, source):
-        """formats the source to ensure source is written as web page address rather than subfolder 
+        """formats the source to ensure source is written as web page address rather than subfolder
 
         Args:
             source (string): source string
@@ -85,13 +86,13 @@ class web_scraper:
         return date
 
     def get_page(self, url):
-        """gets page from url using BeautifulSoup 
+        """gets page from url using BeautifulSoup
 
         Args:
             url (string): url of webpage
 
         Returns:
-            BeautifulSoup object: lxml string 
+            BeautifulSoup object: lxml string
         """
         response = requests.get(url)
         return BeautifulSoup(response.content, 'lxml')
@@ -119,7 +120,7 @@ class cnn_scraper(web_scraper):
     """web_scraper subclass to scrape cnn
 
     Args:
-        web_scraper (class web_scraper): Parent class 
+        web_scraper (class web_scraper): Parent class
     """
 
     def scrape_page(self, url):
@@ -149,7 +150,7 @@ class bbc_scraper(web_scraper):
     """web_scraper subclass to scrape bbc
 
     Args:
-        web_scraper (class web_scraper): Parent class 
+        web_scraper (class web_scraper): Parent class
     """
 
     def scrape_page(self, url):
@@ -188,7 +189,7 @@ class al_jazeera_scraper(web_scraper):
     """web_scraper subclass to scrape al jazeera
 
     Args:
-        web_scraper (class web_scraper): Parent class 
+        web_scraper (class web_scraper): Parent class
     """
 
     def scrape_page(self, url):
@@ -219,7 +220,7 @@ class the_guardian_scraper(web_scraper):
     """web_scraper subclass to scrape the guardian
 
     Args:
-        web_scraper (class web_scraper): Parent class 
+        web_scraper (class web_scraper): Parent class
     """
 
     def scrape_page(self, url):
@@ -255,7 +256,7 @@ class euronews_scraper(web_scraper):
     """web_scraper subclass to scrape euronews
 
     Args:
-        web_scraper (class web_scraper): Parent class 
+        web_scraper (class web_scraper): Parent class
     """
 
     def scrape_page(self, url):
@@ -289,7 +290,7 @@ class africanews_scraper(web_scraper):
     """web_scraper subclass to scrape africanews
 
     Args:
-        web_scraper (class web_scraper): Parent class 
+        web_scraper (class web_scraper): Parent class
     """
 
     def scrape_page(self, url):
@@ -311,11 +312,46 @@ class africanews_scraper(web_scraper):
             self.articles.append(Article(headline, source, ""))
 
 
+class ap_news_scraper(web_scraper):
+    """web_scraper subclass to scrape ap news
+
+    Args:
+        web_scraper (class web_scraper): Parent class
+    """
+
+    def scrape_page(self, url):
+        """overritten method from web_scraper parent to scrape ap news
+
+        Args:
+            url (string): webpage url
+        """
+        soup = self.get_page(url)
+
+        news_item_block = soup.select('.PagePromo-content')
+
+        for item in news_item_block:
+            headline = self.format_headline(item.select("bsp-custom-headline a span")
+                                            [0].getText())
+            source = self.format_source(
+                item.select("bsp-custom-headline a")[0].get('href'))
+
+            if (item.select(".PagePromo-date bsp-timestamp")):
+                timestamp = item.select(
+                    ".PagePromo-date bsp-timestamp")[0].get('data-timestamp')
+                date = str(datetime.fromtimestamp((int(timestamp))//1000))
+            else:
+                date = ""
+
+            if not headline or not source:
+                continue
+            self.articles.append(Article(headline, source, date))
+
+
 class reuters_scraper(web_scraper):
     """web_scraper subclass to scrape reuters
 
     Args:
-        web_scraper (class web_scraper): Parent class 
+        web_scraper (class web_scraper): Parent class
     """
 
     def scrape_page(self, url):
