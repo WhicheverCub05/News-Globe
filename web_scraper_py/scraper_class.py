@@ -78,11 +78,13 @@ class web_scraper:
         """formats the date so date is consistent
 
         Args:
-            date (string): the date as a string
+            date (datetime): the date as a datetime object
 
         Returns:
-            datetime: the date as a datetime object
+            date: the date as a string
         """
+        if not isinstance(date, str):
+            date = str(date)
         return date
 
     def get_page(self, url):
@@ -172,7 +174,7 @@ class bbc_scraper(web_scraper):
                 headline = headline[0].get_text()
             else:
                 continue
-            date = "news_item_date"
+            date = "-"
 
             headline = self.format_headline(headline)
 
@@ -249,7 +251,7 @@ class the_guardian_scraper(web_scraper):
                 continue
             if not headline or not source:
                 continue
-            self.articles.append(Article(headline, source, ""))
+            self.articles.append(Article(headline, source, "-"))
 
 
 class euronews_scraper(web_scraper):
