@@ -163,11 +163,10 @@ class bbc_scraper(web_scraper):
         """
         soup = self.get_page(url)
 
-        class_name = ".sc-4befc967-1.gzOvMy"  # .sc-b8778340-3.gxEarx
-
-        news_items = soup.select(f'{class_name}')
+        news_items = soup.select('a[data-testid="internal-link"]')
 
         for i in range(len(news_items)):
+
             headline = news_items[i].select("h2")
 
             if headline != "" and headline != []:
