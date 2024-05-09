@@ -59,7 +59,29 @@ def assign_articles_to_country(articles, continents):
                         relevent_articles += 1
 
 
-def scrape_all_news_pages(news_channels):
+def scrape_news_page(news_dictionary, news_channel_name):
+    """calls news scrape function for news channel and returns all articles
+
+    Args:
+        news_channels (dict): dictionary of news sites
+
+    Returns:
+        Articles array: all_articles
+    """
+    all_articles = []
+
+    news_channel = news_dictionary[news_channel_name]
+
+    print(f'scraping {news_channel_name} + {news_channel[1]}')
+
+    news_object = news_channel[0](news_channel_name, news_channel[1])
+    news_object.scrape_all()
+    all_articles.extend(news_object.articles)
+    print(f'article length {len(all_articles)}')
+    return all_articles
+
+
+def scrape_all_news_pages(news_dictionary):
     """calls all news scrape functions and compiles articles into one array
 
     Args:
@@ -72,7 +94,7 @@ def scrape_all_news_pages(news_channels):
     tmp_article_list = []
     print("\n")
 
-    for news_name, news_info in news_dict.items():
+    for news_name, news_info in news_dictionary.items():
         print(f"\nname: {news_name}, class {news_info[0]}")
 
         news_object = news_info[0](news_name, news_info[1])
@@ -118,7 +140,8 @@ def write_articles_to_database(file_path, continents):
         return
 
     with open(file_path, 'w') as database:
-        database.write(jsonpickle.encode(continents, indent=4))
+        json_obj = jsonpickle.encode(continents, indent=4, make_refs=False)
+        database.write(json_obj)  # type: ignore
 
 
 def update_news():
@@ -130,6 +153,7 @@ def update_news():
         '%B %D %Y - %H:%M:%S'))  # was %d
 
     articles = scrape_all_news_pages(news_dict)
+    # articles = scrape_news_page(news_dict, 'AP News')  # for testing
 
     assign_articles_to_country(articles, borders.continent_list)
     write_articles_to_database(database_file_path, borders.continent_list)

@@ -40,7 +40,7 @@ class Country:
                     return False
 
             self.articles.append(new_article)
-            return True
+        return True
 
     def add_city(self, city):
         # print(f"{self.name} adding city:", city)
@@ -79,7 +79,7 @@ class Continent:
 def make_countries_from_country_list(countries):
     country_objects_list = []
     for country in countries:
-        country_objects_list.append(Country(country))
+        country_objects_list.append(Country(country)) # type: ignore
     return country_objects_list
 
 

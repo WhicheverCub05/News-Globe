@@ -18,7 +18,6 @@ from selenium.webdriver.common.keys import Keys
 class web_scraper:
     """class for webscrapers. news scrapers inherit web_scraper and overwrite scrape_page()
     """
-
     def __init__(self, name, webpages):
         self.name = name
         self.webpages = webpages
@@ -202,7 +201,7 @@ class al_jazeera_scraper(web_scraper):
         soup = self.get_page(url)
 
         # .featured-articles-list__item span
-        news_items_content = soup.select('.u-clickable-card__link', href=True)
+        news_items_content = soup.select('.u-clickable-card__link')
         news_items_date = soup.select(".gc__date__date .screen-reader-text")
 
         for i in range(len(news_items_content)):
@@ -339,7 +338,7 @@ class ap_news_scraper(web_scraper):
             if (item.select(".PagePromo-date bsp-timestamp")):
                 timestamp = item.select(
                     ".PagePromo-date bsp-timestamp")[0].get('data-timestamp')
-                date = str(datetime.fromtimestamp((int(timestamp))//1000))
+                date = str(datetime.fromtimestamp((int(timestamp))//1000)) # type: ignore
             else:
                 date = ""
 
