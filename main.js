@@ -242,10 +242,11 @@ function search_news() {
     var country = getCountryByName(user_country_name);
 
     if (country != 0) {
-      country_message = country.name + ' - ' + country.articles.length + ' found';
       if (country.article_count == 0) {
         country_message = 'Found no articles for ' + country.name;
       } else {
+        country_message =
+          country.name + ' - ' + country.articles.length + ' found';
         clearNews();
         console.log('country: ', country);
         populateNews(country);
