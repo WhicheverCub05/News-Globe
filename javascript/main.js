@@ -7,52 +7,9 @@ import { GUI } from 'dat.gui';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls';
 import Stats from 'three/addons/libs/stats.module.js';
-import data from './news_data/news_data.json' assert { type: 'json' };
-
-// trying to prevent cache compiling when webpage restarted
-THREE.Cache.enabled = false;
-
-// renderer
-const renderer = new THREE.WebGLRenderer({ antialias: true });
-renderer.setPixelRatio(window.devicePixelRatio);
-renderer.setSize(window.innerWidth, window.innerHeight);
-renderer.shadowMap.enabled = true;
-document.body.appendChild(renderer.domElement);
-
-// camera and scene
-const scene = new THREE.Scene();
-const camera = new THREE.PerspectiveCamera(
-  35,
-  window.innerWidth / window.innerHeight,
-  1,
-  100
-);
-camera.position.set(0, 0, 25);
-camera.lookAt(20, 0, 0);
-
-// adding spotlight
-const dirLight = new THREE.DirectionalLight(0xffffff, 3.5);
-dirLight.position.set(-25, 12, 10); // when geometry is smooth, do 20, 12, 10, else 3, 5, 10
-dirLight.castShadow = false;
-dirLight.shadow.camera.top = 2;
-dirLight.shadow.camera.bottom = 2;
-dirLight.shadow.camera.left = 2;
-dirLight.shadow.camera.right = 2;
-dirLight.shadow.camera.near = 0.1;
-dirLight.shadow.camera.far = 4;
-
-// add light to camera
-camera.add(dirLight);
-scene.add(camera);
-
-// window resizer
-window.addEventListener('resize', onWindowResize, false);
-function onWindowResize() {
-  camera.aspect = window.innerWidth / window.innerHeight;
-  camera.updateProjectionMatrix();
-  renderer.setSize(window.innerWidth, window.innerHeight);
-  //renderer.render(camera, scene);
-}
+import data from '../news_data/news_data.json' assert { type: 'json' };
+//import * as AreaSelector from './area_selector.js';
+import * as Scene3D from './scene_3D.js';
 
 // open/close about about sidebar
 var about_button = document.getElementById('aboutSidebarButton');
@@ -69,109 +26,6 @@ function toggleAboutMenu() {
     console.log('closing about sidebar');
   }
 }
-
-// framerate stats
-const stats = new Stats();
-stats.position = 'bottom-left';
-// document.body.appendChild(stats.dom);
-
-// Orbit controls
-const controls = new OrbitControls(camera, renderer.domElement);
-controls.enableDamping = true;
-controls.dampingFactor = 0.12;
-controls.minDistance = 6;
-controls.maxDistance = 40;
-
-// load the globe
-var globeObject;
-var moonObject;
-var moonGroup;
-function loadGlobe() {
-  const loader = new GLTFLoader();
-  loader.load(
-    'models/World.glb',
-    async function (gltf) {
-      globeObject = gltf.scene.children[0];
-      globeObject.castShadow = true;
-      globeObject.receiveShadow = true;
-      globeObject.emissiveIntensity = 12;
-      globeObject.scale.multiplyScalar(5);
-      // try to get cloud layer to spin at different speed
-
-      var globeObjectMesh;
-      globeObject.traverse(function (child) {
-        if (child.isMesh) {
-          globeObjectMesh = child;
-        }
-      });
-
-      globeObjectMesh.geometry.deleteAttribute('normal');
-      globeObjectMesh.geometry = BufferGeometryUtils.mergeVertices(
-        globeObjectMesh.geometry
-      );
-      globeObjectMesh.geometry.computeVertexNormals();
-
-      await renderer.compileAsync(globeObject, camera, scene);
-      scene.add(globeObject);
-      console.log('adding globe', globeObject);
-      // scene.add(helper);
-      animateGlobe();
-    },
-    function (xhr) {
-      // console.log((xhr.loaded / xhr.total) * 100, ' % loaded');
-      if (xhr.loaded >= xhr.total) {
-        let loading_bar = document.getElementById('loading_bay');
-        if (loading_bar) {
-          loading_bar.remove();
-        }
-      }
-    },
-    function (error) {
-      console.log('an error happened', error);
-    }
-  );
-  loader.load('models/NASA_moon.glb', async function (gltf) {
-    //globeObject.add
-    moonObject = gltf.scene.children[0];
-    moonObject.scale.multiplyScalar(0.0012);
-    //moonObject.position.setX(20);
-    moonObject.castShadow = true;
-    moonObject.receiveShadow = true;
-
-    console.log('adding moon', moonObject);
-
-    moonGroup = new THREE.Group();
-    await renderer.compileAsync(moonObject, camera, scene);
-    moonGroup.add(moonObject);
-    scene.add(moonGroup);
-
-    moonObject.position.set(30, 0, 0);
-
-    animateMoon();
-  });
-}
-
-// bool properties of globe
-var auto_spin = true;
-var night_mode = false;
-
-// get the globe spinning
-function animateGlobe() {
-  requestAnimationFrame(animateGlobe);
-  if (auto_spin == true) {
-    globeObject.rotation.y -= 0.0003;
-  }
-  // helper.update();
-  renderer.render(scene, camera);
-}
-
-// rotate moon around earth
-function animateMoon() {
-  requestAnimationFrame(animateMoon);
-  moonGroup.rotation.y -= 0.00015;
-  renderer.render(scene, camera);
-}
-
 // shows the news for the country selected
 function optionsMenu() {
   const settingsPanel = new GUI(); // {width:300}
@@ -189,43 +43,12 @@ function optionsMenu() {
   settingsFolder
     .add(settings, 'night_mode')
     .name('night mode')
-    .onChange(toggleNightGlobe);
+    .onChange(Scene3D.toggleNightGlobe);
   settingsFolder
     .add(settings, 'auto_spin')
     .name('auto spin')
-    .onChange(toggleAutoSpin);
+    .onChange(Scene3D.toggleAutoSpin);
   settingsPanel.close();
-}
-
-// render nightglobe
-function toggleNightGlobe() {
-  // maybe just change lights?
-  if (night_mode == true) {
-    night_mode = false;
-  } else {
-    night_mode = true;
-  }
-  // call function(bol night_globe) that switched globe
-  console.log('toggle night globe. now:', night_mode);
-}
-
-// change state of spin or animation
-function toggleAutoSpin() {
-  if (auto_spin == true) {
-    auto_spin = false;
-  } else {
-    auto_spin = true;
-    animateGlobe();
-  }
-  console.log('toggle auto spin. now:', auto_spin);
-}
-
-// keeps globe animation updates
-function animate() {
-  requestAnimationFrame(animate);
-  controls.update();
-  stats.update();
-  renderer.render(scene, camera);
 }
 
 // search country news (by iso3) using button
@@ -370,20 +193,20 @@ function getCountryByName(country_name) {
 
 // init bruv
 function init() {
-  loadGlobe();
+  Scene3D.loadGlobe();
+  Scene3D.animate();
   optionsMenu();
 }
 
 init();
-animate();
 
 // clearing renderer cache when reloaded
 if (window.performance) {
   console.info('window.performance works fine on this browser');
 }
 if (performance.navigation.type == performance.navigation.TYPE_RELOAD) {
-  if (renderer) {
-    renderer.dispose();
+  if (Scene3D.renderer) {
+    Scene3D.renderer.dispose();
   }
   console.info('This page is reloaded');
 } else {
