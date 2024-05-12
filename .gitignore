@@ -1,6 +1,6 @@
-web_scraper_py/test_scrape.py
-web_scraper_py/update_news.py
-web_scraper_py/__pycache__
+python_web_scraper/test_scrape.py
+python_web_scraper/update_news.py
+python_web_scraper/__pycache__
 .vscode
 node_modules
 
