@@ -126,7 +126,7 @@ export function loadGlobe() {
     console.log('adding moon', moonObject);
 
     var moonObjectMesh;
-    moonObjectMesh.traverse(function (child) {
+    moonObject.traverse(function (child) {
       if (child.isMesh) {
         moonObjectMesh = child;
         sceneMeshes.push(moonObjectMesh);

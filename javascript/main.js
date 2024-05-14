@@ -1,14 +1,6 @@
-import * as THREE from 'three';
-import * as BufferGeometryUtils from 'three/addons/utils/BufferGeometryUtils.js';
-import { VertexNormalsHelper } from 'three/addons/helpers/VertexNormalsHelper.js';
-import * as Popper from '@popperjs/core';
 import * as bootstrap from 'bootstrap';
 import { GUI } from 'dat.gui';
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
-import { OrbitControls } from 'three/addons/controls/OrbitControls';
-import Stats from 'three/addons/libs/stats.module.js';
 import data from '../news_data/news_data.json' assert { type: 'json' };
-//import * as AreaSelector from './area_selector.js';
 import * as Scene3D from './scene_3D.js';
 
 // open/close about about sidebar
