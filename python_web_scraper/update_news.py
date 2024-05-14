@@ -107,10 +107,19 @@ if __name__ == "__main__":
               "1: update the news + push\n",
               "2: update the page + push\n",
               "3: only update news\n",
-              "4: exit\n",
+              "4: only push to web\n",
+              "5: exit\n",
               "9: fly\n")
 
-        user_input = int(input())
+        user_input = input("choice: ")
+
+        if not user_input:
+            pass
+        else:
+            try:
+                user_input = int(user_input)
+            except:
+                pass
 
         match user_input:
             case 1:
@@ -123,6 +132,11 @@ if __name__ == "__main__":
                 print("updating the news")
                 run_python_file(news_scraper_path)
             case 4:
+                print("pushing to web")
+                commit_message = input("commit message: ")
+                git_push(commit_message)
+                ssh_push(default_user, default_host, default_filepath)
+            case 5:
                 print("exiting")
                 time.sleep(3)
                 sys.exit()
