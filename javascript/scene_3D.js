@@ -66,7 +66,7 @@ controls.minDistance = 6;
 controls.maxDistance = 40;
 
 // load the globe
-export const sceneMeshes: THREE.Object3D[] = [];
+export const sceneMeshes = [];
 
 var globeObject;
 var moonObject;
@@ -87,7 +87,7 @@ export function loadGlobe() {
       globeObject.traverse(function (child) {
         if (child.isMesh) {
           globeObjectMesh = child;
-          sceneMeshes.push(globeObjectMesh)
+          sceneMeshes.push(globeObjectMesh);
         }
       });
 
@@ -117,7 +117,6 @@ export function loadGlobe() {
     }
   );
   loader.load('models/NASA_moon.glb', async function (gltf) {
-
     moonObject = gltf.scene.children[0];
     moonObject.scale.multiplyScalar(0.0012);
     //moonObject.position.setX(20);
@@ -127,11 +126,11 @@ export function loadGlobe() {
     console.log('adding moon', moonObject);
 
     var moonObjectMesh;
-    moonObjectMesh.traverse(function child {
-        if (child.isMesh) {
-            moonObjectMesh = child;
-            sceneMesh.push(moonObjectMesh);
-        }
+    moonObjectMesh.traverse(function (child) {
+      if (child.isMesh) {
+        moonObjectMesh = child;
+        sceneMeshes.push(moonObjectMesh);
+      }
     });
 
     moonGroup = new THREE.Group();
