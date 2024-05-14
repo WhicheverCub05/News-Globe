@@ -1,4 +1,3 @@
-python_web_scraper/test_scrape.py
 python_web_scraper/update_news.py
 python_web_scraper/__pycache__
 .vscode
