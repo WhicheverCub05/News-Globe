@@ -47,14 +47,6 @@ def assign_articles_to_country(articles, continents):
         for continent in continents:
             for country in continent.countries.values():
                 if country.is_associated(article.headline):
-                    """if "Canada" in article.headline:
-                        print(article.headline)
-                        print(article.source)
-                        print(article.date, " date type ", type(article.date))
-                        input()
-                    if country.name == "Canada":
-                        print(country.articles)
-                    """
                     if country.add_article(article):
                         relevent_articles += 1
 
