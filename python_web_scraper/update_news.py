@@ -6,7 +6,7 @@ import sys
 
 
 # news scraper script
-news_scraper_path = "web_scraper_py/news_scraper.py"
+news_scraper_path = "python_web_scraper/news_scraper.py"
 
 # connect to git repo
 git_repo_path = "/workspaces/News-Globe/.git"
