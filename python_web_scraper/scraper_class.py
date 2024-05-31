@@ -18,6 +18,7 @@ from selenium.webdriver.common.keys import Keys
 class web_scraper:
     """class for webscrapers. news scrapers inherit web_scraper and overwrite scrape_page()
     """
+
     def __init__(self, name, webpages):
         self.name = name
         self.webpages = webpages
@@ -330,15 +331,24 @@ class ap_news_scraper(web_scraper):
         news_item_block = soup.select('.PagePromo-content')
 
         for item in news_item_block:
-            headline = self.format_headline(item.select("bsp-custom-headline a span")
-                                            [0].getText())
-            source = self.format_source(
-                item.select("bsp-custom-headline a")[0].get('href'))
+            
+            if (item.select("bsp-custom-headline a span")):
+                headline = self.format_headline(item.select("bsp-custom-headline a span")
+                                                [0].getText())
+            else:
+                pass
+            
+            if (item.select("bsp-custom-headline a")):
+                source = self.format_source(
+                    item.select("bsp-custom-headline a")[0].get('href'))
+            else:
+                pass
 
             if (item.select(".PagePromo-date bsp-timestamp")):
                 timestamp = item.select(
                     ".PagePromo-date bsp-timestamp")[0].get('data-timestamp')
-                date = str(datetime.fromtimestamp((int(timestamp))//1000)) # type: ignore
+                date = str(datetime.fromtimestamp(
+                    (int(timestamp))//1000))  # type: ignore
             else:
                 date = ""
 

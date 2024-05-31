@@ -77,6 +77,6 @@ def seleniumExample(url):
     # print("download box:", download_box)
 
 
-testScrape("BBC")
+testScrape("AP News")
 
 # for debugging - https://www.educative.io/answers/beautiful-soup-select
