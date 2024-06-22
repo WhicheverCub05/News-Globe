@@ -1,21 +1,49 @@
 import * as bootstrap from 'bootstrap';
 import { GUI } from 'dat.gui';
-import data from '../news_data/news_data.json' assert { type: 'json' };
+import data from '../news_data/news_data.json' with { type: 'json' };
 import * as Scene3D from './scene_3D.js';
+// import * as Scene3D from './scene_3D_test.js';
+import {
+  userSelectedCountryISO,
+  onAreaMouse,
+  onPointerMove,
+} from './area_selector.js';
+// import {
+//   userSelectedCountryISO,
+//   onAreaMouseClick,
+//   onAreaMouseHover,
+//   onPointerMove,
+// } from './area_selector_test.js';
+
+// event listener for mouse
+//document.addEventListener('click', onAreaMouseClick, false);
+//document.addEventListener('mousemove', onAreaMouseHover, false);
+//document.addEventListener('mousemove', onPointerMove);
+
+// search country news (by iso3) using button
+var searchCountryButton = document.getElementById('search_country_button');
+searchCountryButton.addEventListener('click', getUserTypedCountry);
 
 // open/close about about sidebar
-var about_button = document.getElementById('aboutSidebarButton');
-about_button.addEventListener('click', toggleAboutMenu);
+var aboutButton = document.getElementById('aboutSidebarButton');
+aboutButton.addEventListener('click', toggleAboutMenu);
+
+// search country news (by iso3) using 'enter' keypress
+var searchCountryInput = document.getElementById('user_country_name');
+searchCountryInput.addEventListener('keypress', function (event) {
+  if (event.key == 'Enter') {
+    event.preventDefault();
+    searchCountryButton.click();
+  }
+});
+
 function toggleAboutMenu() {
   var aboutSidebarStatus =
     document.getElementById('aboutSidebar').style.display;
-  console.log(aboutSidebarStatus);
   if (aboutSidebarStatus == 'none' || aboutSidebarStatus == '') {
     document.getElementById('aboutSidebar').style.display = 'block';
-    console.log('opening about sidebar');
   } else {
     document.getElementById('aboutSidebar').style.display = 'none';
-    console.log('closing about sidebar');
   }
 }
 // shows the news for the country selected
@@ -25,117 +53,118 @@ function optionsMenu() {
   const settingsFolder = settingsPanel.addFolder('Graphic');
 
   var settings = {
-    night_mode: false,
-    auto_spin: true,
+    nightMode: false,
+    autoSpin: true,
     refreshNews: function () {
       console.log('Refresh News');
     },
   };
-  newsFolder.add(settings, 'refreshNews').name('refresh').onChange(updateNews);
+  newsFolder
+    .add(settings, 'refreshNews')
+    .name('refresh')
+    .onChange(updateNewsPython);
   settingsFolder
-    .add(settings, 'night_mode')
+    .add(settings, 'nightMode')
     .name('night mode')
     .onChange(Scene3D.toggleNightGlobe);
   settingsFolder
-    .add(settings, 'auto_spin')
+    .add(settings, 'autoSpin')
     .name('auto spin')
     .onChange(Scene3D.toggleAutoSpin);
   settingsPanel.close();
 }
 
-// search country news (by iso3) using button
-var search_country_button = document.getElementById('search_country_button');
-search_country_button.addEventListener('click', search_news);
-
-function search_news() {
-  var user_country_name = document.getElementById('user_country_name').value;
-  console.log('country: ', country);
-  var country_message = '';
-  if (user_country_name == '') {
-    country_message = 'Find your country here';
+function getUserTypedCountry() {
+  var userCountryName = document.getElementById('user_country_name').value;
+  if (userCountryName == '') {
+    countryMessage = 'Find your country here';
   } else {
-    var country = getCountryByName(user_country_name);
-
+    var country = getCountryByName(userCountryName);
+    populateNewsTitle(country);
     if (country != 0) {
-      if (country.article_count == 0) {
-        country_message = 'Found no articles for ' + country.name;
-      } else {
-        country_message =
-          country.name + ' - ' + country.articles.length + ' found';
-        clearNews();
-        console.log('country: ', country);
-        populateNews(country);
-        document.getElementById('news').style.height = '50%';
-      }
-    } else {
-      country_message = "Couldn't find country";
+      populateNews(country);
     }
   }
-  document.getElementById('country_name').text = country_message;
 }
 
-// search country news (by iso3) using 'enter' keypress
-var search_country_input = document.getElementById('user_country_name');
-search_country_input.addEventListener('keypress', function (event) {
-  if (event.key == 'Enter') {
-    event.preventDefault();
-    search_country_button.click();
+// seach country when suer clicks a country
+export function getUserSelectedCountry() {
+  var country = getCountryByISO(userSelectedCountryISO);
+  if (country != 0) {
+    populateNewsTitle(country);
+    populateNews(country);
   }
-});
+}
 
 // update news json file
-function updateNews() {
+function updateNewsPython() {
   var pythonScriptPath = './news_scraper.py';
   process.run(['python', pythonScriptPath]);
 }
 
+function populateNewsTitle(country) {
+  var countryMessage = '';
+  if (country != 0) {
+    clearNews();
+    if (country.articles.length == 0) {
+      countryMessage = 'Found no articles for ' + country.name;
+      document.getElementById('news').style.height = '15%';
+    } else {
+      countryMessage =
+        country.name + ' - ' + country.articles.length + ' found';
+
+      document.getElementById('news').style.height = '50%';
+    }
+  } else {
+    countryMessage = "Couldn't find country";
+  }
+  document.getElementById('country_name').text = countryMessage;
+}
+
 // gets data from the json files onto the webpage. selects which articles to display
 function populateNews(country) {
-  let article_count = 0;
-  console.log('populating news list:', country_name);
+  let articleCount = 0;
 
   sortArticlesRandom(country.articles);
 
   const dFrag = document.createDocumentFragment();
-  for (let article_index in country.articles) {
-    if (country.articles[article_index].headline) {
-      const new_article = document.createElement('div');
-      new_article.setAttribute('id', 'article');
+  for (let articleIndex in country.articles) {
+    if (country.articles[articleIndex].headline) {
+      const newArticle = document.createElement('div');
+      newArticle.setAttribute('id', 'article');
 
       let headline = document.createElement('news_headline');
       let source = document.createElement('news_source');
       // date = document.createElement('news_date');
 
-      headline.textContent = country.articles[article_index].headline + '\n';
-      source.textContent = country.articles[article_index].source;
-      source.setAttribute('href', country.articles[article_index].source);
-      //date.textContent = country.articles[article_index].date;
+      headline.textContent = country.articles[articleIndex].headline + '\n';
+      source.textContent = country.articles[articleIndex].source;
+      source.setAttribute('href', country.articles[articleIndex].source);
+      //date.textContent = country.articles[articleIndex].date;
 
-      new_article.appendChild(headline);
-      new_article.appendChild(source);
-      //new_article.appendChild(date);
+      newArticle.appendChild(headline);
+      newArticle.appendChild(source);
+      //newArticle.appendChild(date);
 
-      dFrag.appendChild(new_article);
-      article_count += 1;
+      dFrag.appendChild(newArticle);
+      articleCount += 1;
     }
   }
   document.getElementById('news').appendChild(dFrag);
-  console.log('articles added: ', article_count);
   return true;
 }
 
 // randomises the articles order
 function sortArticlesRandom(articles) {
-  console.log(articles);
-  let current_index = articles.length;
+  let currentIndex = articles.length;
 
-  while (current_index != 0) {
-    let random_index = Math.floor(Math.random() * current_index);
-    current_index--;
+  while (currentIndex != 0) {
+    let randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex--;
 
-    [articles[current_index], articles[random_index]] = [
-      articles[random_index],
-      articles[current_index],
+    [articles[currentIndex], articles[randomIndex]] = [
+      articles[randomIndex],
+      articles[currentIndex],
     ];
   }
   return articles;
@@ -144,23 +173,20 @@ function sortArticlesRandom(articles) {
 // removes current articles on display so another country's articles can take place
 function clearNews() {
   // find all id="article" and delete them
-  const news_box = document.getElementById('news');
-  let total_articles = 0;
-  let deleted_articles = 0;
-  let all_articles = document.querySelectorAll('div[id=article]');
-  for (let article of all_articles) {
+  const newsBox = document.getElementById('news');
+  let allArticles = document.querySelectorAll('div[id=article]');
+  for (let article of allArticles) {
     article.remove();
-    deleted_articles += 1;
   }
 }
 
 // gets the country object by iso3 code
-function getCountryByCode(country_code) {
-  country_code = country_code.toLowerCase();
-  console.log('looking for:', country_code);
+function getCountryByISO(countryCode) {
+  countryCode = countryCode.toLowerCase();
+  console.log('looking for:', countryCode);
   for (var i = 0; i < data.length; i++) {
-    for (const [country_code, country] of Object.entries(data[i].countries)) {
-      if (country.code.toLowerCase() == country_code) {
+    for (const [name, country] of Object.entries(data[i].countries)) {
+      if (country.code.toLowerCase().includes(countryCode.toLowerCase())) {
         return country;
       }
     }
@@ -169,13 +195,12 @@ function getCountryByCode(country_code) {
 }
 
 // gets the country object by name
-function getCountryByName(country_name) {
-  country_name = country_name.toLowerCase();
-  console.log('looking for:', country_name);
+function getCountryByName(countryName) {
+  countryName = countryName.toLowerCase();
+  console.log('looking for:', countryName);
   for (var i = 0; i < data.length; i++) {
     for (const [name, country] of Object.entries(data[i].countries)) {
-      //console.log(country.name);
-      if (country.name.toLowerCase().includes(country_name)) {
+      if (country.name.toLowerCase().includes(countryName)) {
         return country;
       }
     }
