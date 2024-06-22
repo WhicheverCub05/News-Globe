@@ -3,11 +3,12 @@ import { GUI } from 'dat.gui';
 import data from '../news_data/news_data.json' with { type: 'json' };
 import * as Scene3D from './scene_3D.js';
 // import * as Scene3D from './scene_3D_test.js';
-import {
-  userSelectedCountryISO,
-  onAreaMouse,
-  onPointerMove,
-} from './area_selector.js';
+// import {
+//   userSelectedCountryISO,
+//   onAreaMouse,
+//   onPointerMove,
+// } from './area_selector.js';
+
 // import {
 //   userSelectedCountryISO,
 //   onAreaMouseClick,
