@@ -1,4 +1,4 @@
-# news-globe
+# news_globe
 
 Developing 3D interactive globe which allows the user to see the news of a selected country
 
